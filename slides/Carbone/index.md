@@ -1,0 +1,935 @@
+---
+title       : Structure and Dynamics of Model and Disordered Carbon Materials
+subtitle    : Experiments and Simulations
+author      : Colin Bousige
+job         : Post-Doctoral Researcher, Institut Lumière Matière, Lyon, France
+framework   : revealjs        # {io2012, html5slides, shower, dzslides, ...}
+logo        : NT_eau.png
+adress      : "http://ilm-perso.univ-lyon1.fr/~cbousige/files/Seminaire/"
+revealjs:
+  theme: perso
+  transition: none
+  loop: true
+  font-family: "Computer Modern"
+  center: "true"
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]     # {mathjax, quiz, bootstrap}
+mathjax:
+    preferredFont: "SansSerif"
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+output      : pdf
+--- bg:white
+
+<!-- 
+Run with :
+setwd("/Users/colin/Travail/Conferences/2016/Seminaire_Nantes")
+Sys.setlocale("LC_ALL", 'en_US.UTF-8')
+library(slidify);
+slidify("index.Rmd") 
+-->
+
+<center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><span style='color:black;font-size:20px;text-align:center'>
+Swipe or press right to start the presentation - Pinch out or press ESC to see all the slides<br>
+Swipe or press down to see additional slides when available (see navigation arrows on the right)<br>
+Press F to set fullscreen - Press Alt and click to zoom in or out - Press B to fade to black - Press S for speaker view<br>
+Slides made using <a href="http://slidify.org/">Slidify</a> with 
+<a href="http://lab.hakim.se/reveal-js/?transition=fade#/">Reveal.js</a> framework</span></center>
+
+--- dt:fade &titleslide
+
+
+
+<!-- 
+## Model & Disordered Systems: 
+## Different worlds yet common problems...
+<img src="assets/img/diff_prob.png" style='margin-top:5%;width:80%;'/>
+## ...and common techniques
+<img src="assets/img/comm_tec.png" style='margin-top:10%;width:80%;'/>
+ -->
+
+--- bg:black  dt:fade &twocol w1:48% w2:48% 
+
+<span style="color:white"> Menu </span>
+---------------------------------------------------------------------
+
+<br><br>
+***=left
+<br><br>
+<span style="color:white"> 
+I - Carbon Peapods - A model 1D System <br><br><br><br><br>
+II - Kerogens - A Disordered Natural System <br><br><br><br><br>
+III - Effects of the Low-Dimensionality and Constraints on the Physical Properties of Carbon Materials
+</span>
+
+***=right
+<img src="assets/img/peapods_scheme.png" style='margin-top:10%;width:60%;'/>
+<img src="assets/img/ker_4.png" style='margin-top:10%;width:70%;'/>
+<img src="assets/img/Graphene.jpg" style='float:left;margin-top:15%;margin-left:15%;width:30%;'/><img src="assets/img/NT_eau.png" style='margin-top:10%;width:30%;'/>
+
+
+
+--- bg:black  dt:fade
+
+<span style="color:white"> Chapter I </span>
+========================
+<span style="color:white"> Carbon Peapods - A model 1D System </span>
+---------------------------------------------------------------------
+<br>
+<center style="color:white;font-size:20px">PhD Thesis<br>Institut Laue Langevin (Grenoble) and Laboratoire de Physique des Solides (Orsay)</center>
+
+<img src="assets/img/peapods_scheme.png" style='margin-top:10%;width:60%;'/>
+
+
+--- &twocol w1:48% w2:48% 
+
+## Carbon nano-peapods: a model 1D system
+
+
+<div style='float:left;width:40%;margin-left:5%'>
+<center><b>Two different samples:</b></center>
+<img src="assets/img/peapods_TEM.png" style='width:60%;'/>
+<p stye='align:left'>
+Monomers:
+<img src="assets/img/rotations.png" style='width:80%;'/>
+Polymers: 
+<img src="assets/img/libration.png" style='width:80%;'/>
+</p>
+</div>
+
+<div style='float:right;width:40%;margin-right:5%' class="fragment fade-in">
+<center><b>Observing their dynamics with INS:</b></center>
+<img align:"middle" src="assets/img/peapods_INS.png" style='width:450px;margin-top:10px'/>
+</div>
+
+
+
+--- 
+
+## Carbon nano-peapods: a model 1D system
+
+<img src="assets/img/L_T_peapods.png" style='width:800px;'/>
+
+
+--- &vertical 
+
+## Carbon nano-peapods: a model 1D system
+<div style='float:left;width:45%'>
+<img src="assets/img/L_T_peapods.png" style='margin-top:10%'/>
+<img src="assets/img/rotations.png"/>
+</div>
+
+<div style='float:right;width:55%'>
+   <br>
+   <h3>Mid T: Finite size 1D crystal</h3>
+   <ul> 
+      <li> Elastic diffusion $\rightarrow$ 1D crystal </li>
+      <li> Quasi-elastic diffusion in Mono and Polymers $\rightarrow$ measure speed of sound along C$_{60}$ chains (3.5 km/s)</li>
+   </ul>
+   <p style='text-align:left'>
+   <a href="http://prb.aps.org/abstract/PRB/v87/i19/e195438" style='font-style: italic'>Bousige et al., PRB <b>87</b> (2013) 195438</a><br><br><br>
+   Elastic nature:</p> <br>
+   <img align:"top" src="assets/img/nature_el.png" style='float:left;height:300px;'/><img src="assets/img/peapods_kis_HT2.png" style="width:60%;" />
+</div>
+
+***
+
+<center>__Elastic nature from inelastic data:__</center>
+
+<div style='float:left;width:40%;margin-left:5%'>
+<img src="assets/img/peapods_translations_INS.png" style='margin-top:30%'/>
+</div>
+<div style='float:right;width:40%;margin-right:5%;margin-top:2%'>
+<img src="assets/img/peapods_kis_HT.png"/>
+</div>
+
+
+***
+
+<center>__Simulation of $S(Q,\omega)$ for various geometries__</center>
+
+<center>
+<div style='width:30%;'>
+<img src="assets/img/peapods_simul.png" style='margin-top:-1%;'/>
+</div>
+</center>
+
+--- &vertical 
+
+## Carbon nano-peapods: a model 1D system
+<div style='float:left;width:45%'>
+<img src="assets/img/L_T_peapods_TG.png" style='margin-top:10%'/>
+<img src="assets/img/rotations.png"/>
+</div>
+<div style='float:right;width:55%'>
+   <br>
+   <h3 style="color:red">High T: Progressive fusion</h3>
+   <ul> 
+      <li>First observation of the fusion of a Takahasi-Gürsey chain</li>
+      <li> No elastic diffusion $\Leftrightarrow$ Positionnal and orientationnal disorders</li>
+   </ul>
+   <p style='text-align:left'>
+   <a href="http://prb.aps.org/abstract/PRB/v87/i19/e195438" style='font-style:italic'>Bousige et al., PRB <b>87</b> (2013) 195438</a><br>
+   <a href="http://prb.aps.org/abstract/PRB/v86/i4/e045446" style='font-style:italic'>Bousige et al., PRB <b>86</b> (2012) 045446</a> <br>
+   <span style="color:red">In</span>elastic nature:</p><br>
+   <img align:"top" src="assets/img/nature_el.png" style='float:left;height:300px;'/><img src="assets/img/peapods_kis_THT2.png" style="width:60%;" />
+</div>
+
+***
+
+<center>__At higher temperature: loss of the elastic part__</center>
+
+
+<div style='float:left;width:40%;margin-left:5%'>
+<img src="assets/img/peapods_translations_INS.png" style='margin-top:30%'/>
+</div>
+<div style='float:right;width:40%;margin-right:5%;'>
+<img src="assets/img/peapods_kis_THT.png"/>
+</div>
+
+
+
+--- &vertical 
+
+## Carbon nano-peapods: a model 1D system
+<div style='float:left;width:45%'>
+<img src="assets/img/L_T_peapods.png" style='margin-top:10%'/>
+<img src="assets/img/libration2.png" />
+</div>
+<div style='float:right;width:55%'>
+   <br>
+   <h3 style="color:#7c7cfd">Low T: Orientational ordering</h3>
+   <ul> 
+      <li> Progressive strong contraction </li>
+      <li> Isotropic rotations $\Rightarrow$ librations</li>
+      <li> Evidence of strong rotation-translation coupling</li>
+      <li class="fragment highlight-current-blue" data-fragment-index="1"> Evidence of C$_{60}$-tube friction in <b>both</b> mono- and polymers $\Leftrightarrow$ not linked to this ordering</li>
+   </ul>
+   <br><br>
+   <p style='text-align:left'>
+   Elastic nature:<br><br></p>
+   <img align:"top" src="assets/img/nature_el.png" style='float:left;height:300px;'/><img src="assets/img/Experimental_fit_2.png" style="width:60%;" class="fragment grow" data-fragment-index="1"/>
+</div>
+
+***
+
+<center>__Rotation-translation coupling__</center>
+
+<div style='float:left;width:40%;margin-left:5%'>
+<img src="assets/img/peapods_rotations_INS.png" style='margin-top:45%'/>
+</div>
+<div style='float:right;width:30%;margin-right:10%;margin-top:2%'>
+<img src="assets/img/rot_struct.png" />
+</div>
+
+
+***
+
+<center>__Friction at low temperature__</center>
+
+<div style='float:left;width:40%;margin-left:5%'>
+<img src="assets/img/peapods_translations_INS.png"/>
+<img src="assets/img/Sqw_DHO_gamma=0.000.png"/>
+</div>
+<div style='float:right;width:40%;margin-right:5%'>
+<img src="assets/img/Experimental_fit_2.png"/>
+<img src="assets/img/gammas_ampl_T.png"/>
+</div>
+
+
+--- dt:fade
+
+## Carbon nano-peapods: a model 1D system
+
+
+<br>
+<center><div style='line-height:2em;width:80%;'>
+<ul>
+   <li><b class="fragment highlight-current-blue">A very rich "phase diagram" in this 1D system, with phenomena never seen before in 1D systems</b></li>
+   <ul style="list-style-type:square">
+      <li>Thanks to the thermal stability of peapods</li>
+      <li>Thanks to the 2D orientation of the samples and their "neutron" quality</li>
+   </ul>
+   <li><b class="fragment highlight-current-blue">At low temperatures, insights into the host-tube friction</b></li>
+   <ul style="list-style-type:square">
+      <li>Links with nanofluidics and transport at the nanoscale in general</li>
+   </ul>
+</ul>
+</div>
+</center>
+
+
+--- bg:black dt:fade
+
+<span style="color:white"> Chapter II </span>
+========================
+<span style="color:white"> Kerogens - A Disordered Natural System </span>
+---------------------------------------------------------------------
+
+<br>
+<center style="color:white;font-size:20px">Post-Doc<br>Massachusetts Institute of Technology (Cambridge, USA)</center>
+
+<img src="assets/img/ker_4.png" style='margin-top:10%;width:70%;'/>
+
+
+---  
+
+## Apply the physicist's tools to an industrial problem
+
+Gas shales are mainly composed of minerals and, in minority, of a multi-scale, amorphous porous organic matrix: __kerogen__. 
+
+*__Problem:__* the observed permeabilities are of the order of 10-100 nano-Darcy.
+
+> $\Rightarrow$ We need to develop tools to tend towards a global description of shale beds.
+
+<center><div style='width:30%;'>
+<img src="assets/img/ker_TEM.png" style='margin-top:2%;'/>
+</div></center>
+<center><div style='width:75%;'>
+<img src="assets/img/darcy.png"/>
+</div></center>
+
+
+
+--- &vertical 
+
+## Apply the physicist's tools to an industrial problem
+
+Measure __pair distributions functions__ of samples with various maturities<span class="fragment fade-in" data-fragment-index="1">, and __reconstruct__ atomic structures using __Hybrid Reverse Monte Carlo__^1,2 : </span>
+<center class="fragment fade-in" data-fragment-index="1">$$P^{acc}_{i\to j}(carbon)=min\left[1,exp\left(-\frac{1}{T_\chi}\left(\Delta\chi^2+\frac{\Delta U}{N}\frac{1}{\tilde{\omega}}\right)\right)\right]$$</center>
+
+
+<div style='position:absolute;width:90%;margin-top:1%;margin-left:2%;'>
+<img src="assets/img/ker_gr.png" class="fragment fade-out" data-fragment-index="1"/>
+</div>
+<div style='position:absolute;width:90%;margin-top:1%;margin-left:2%;'>
+<img src="assets/img/ker_gr_simul.png" class="fragment fade-in" data-fragment-index="1"/>
+</div>
+<div style='float:left;width:100%;text-align:left;margin-top:37%;font-size:15px' class="fragment fade-in" data-fragment-index="1">
+[1] <a href="http://scitation.aip.org/content/aip/journal/jcp/142/11/10.1063/1.4914921">Bousige, Botan, Ulm, Pellenq, Coasne, <i>J. Chem. Phys.</i> <b>142</b> (2015) 114112</a><br>
+[2] <a href="http://www.nature.com/nmat/journal/vaop/ncurrent/full/nmat4541.html"> Bousige et al., <i>Nature Materials</i> <b>15</b> (2016) 576</a>
+</div>
+
+***
+
+### About the Hybrid Reverse Monte Carlo procedure
+
+<center>__How can you even build an atomic model for an amorphous system?__</center>
+
+
+<div style='float:left;width:45%'>
+<center><img src="assets/img/ker_disorder.png" style='margin-top:10%'/></center>
+</div>
+
+
+<p><br><br><br></p>
+
+- No long range order
+- Representative sample?
+- No uniqueness of the solution
+
+***
+
+### About the Hybrid Reverse Monte Carlo procedure
+
+<center>__How can you even build an atomic model for an amorphous system?__</center>
+
+
+<div style='float:left;width:45%'>
+<center><img src="assets/img/MDHRMC.png" style='width:90%;margin-top:2%'/></center>
+</div>
+<div style='float:left;width:50%;text-align:left'>
+<br>
+Reconstruction using Hybrid Reverse Monte Carlo method:
+
+$P^{acc}_{i\to j}(carbon)=min\left[1,exp\left(-\frac{1}{T_\chi}\left(\Delta\chi^2+\frac{\Delta U}{N}\frac{1}{\tilde{\omega}}\right)\right)\right]$
+
+with: <br>
+
+$\chi^2=\sum_i\frac{\left(G_{sim}(r_i)-G_{exp}(r_i)\right)^2}{\sigma_{exp}(r_i)^2}$<br><br>
+$\tilde{\omega}=\frac{\omega}{N}=\frac{N}{N_{carbon}}\times\left|E_{carbon}\right| \qquad \omega T_\chi=Nk_BT$
+<br>
+<br>
+<br>
+We recently optimized the method by combining it with MD relaxation steps<br>
+<a href="http://scitation.aip.org/content/aip/journal/jcp/142/11/10.1063/1.4914921"> Bousige et al., <i>J. Chem. Phys.</i> <b>142</b> (2015)</a>
+</div>
+
+***
+
+### About the Hybrid Reverse Monte Carlo procedure
+<center>__OK, but... is the solution unique?__</center>
+
+<div style='float:left;width:45%'>
+<center><img src="assets/img/MDHRMC_solutions.png" style='width:90%;margin-top:20px'/>
+Ensemble of accessible solutions for various reconstructions techniques</center>
+</div>
+
+<div style='float:left;width:50%;text-align:left'>
+<br><br><br>
+<ul>
+<li>$G(r)$ is a pair correlation function</li>
+<li>Information only on 2-body interactions</li>
+<li>REBO, AIREBO, REAXFF... only 3 or 4 body interactions</li>
+</ul>
+<br>
+  $\Rightarrow$ No uniqueness of the solution if more than 2-body interactions in the actual sample<br><br>
+  <blockquote> $\Rightarrow$ We need additional experimental constraints on the models: adsorption, density of states, bulk modulus, etc... </blockquote>
+
+</div>
+
+
+--- &vertical
+
+## Apply the physicist's tools to an industrial problem
+
+<center>Validation of the models by comparison to __non constraigning__ experimental measurements:</center>
+
+<div style='float:left;width:45%;margin-top:3%'>
+<center><b>Chemistry<br></b>
+Vibrational densities of states</center>
+</div>
+<div style='float:right;margin-right:15%;margin-top:3%'>
+<center><b>Texture<br></b>
+Pore size distributions</center>
+</div>
+<div style='position:absolute;width:90%;margin-top:7%;margin-left:2%;'>
+<img src="assets/img/ker_dos_psd.png" class="fragment fade-out" data-fragment-index="1"/>
+</div>
+<div style='position:absolute;width:90%;margin-top:7%;margin-left:2%;'>
+<img src="assets/img/ker_dos_psd_simul.png" class="fragment fade-in" data-fragment-index="1"/>
+</div>
+<div style='float:left;width:100%;text-align:left;margin-top:42%;font-size:15px'>
+<a href="http://www.nature.com/nmat/journal/vaop/ncurrent/full/nmat4541.html"> Bousige et al., <i>Nature Materials</i> <b>15</b> (2016) 576</a>
+</div>
+
+***
+
+<center>__Closure scheme: density, composition and elastic constants__</center>
+
+<center>
+<div style='width:40%;'>
+<img src="assets/img/ker_elastic.png" style='margin-top:1%;'/>
+</div>
+</center>
+
+--- &vertical
+
+## Apply the physicist's tools to an industrial problem
+### Using the models for predictions:
+
+<div class="fragment fade-in">
+<center><b>Study of the fracture properties</b></center>
+
+<center><div style='width:90%;'>
+<img src="assets/img/ker_frac.png" style='margin-top:3%'/>
+</div></center>
+<div style='float:left;width:100%;text-align:left;margin-top:2.1%;font-size:15px'>
+<a href="http://www.nature.com/nmat/journal/vaop/ncurrent/full/nmat4541.html"> Bousige et al., <i>Nature Materials</i> <b>15</b> (2016) 576</a>
+</div>
+
+</div>
+***
+
+### Nature of the process:
+
+<center>At the first stress drops, plot the largest variations in atomic positions (>1Å) :</center>
+
+<center><div style='width:50%;'>
+<img src="assets/img/atomic_displ.png" style='margin-top:10%'/>
+</div></center>
+
+--- &twocol w1:55% w2:35%;margin-right:10%
+
+## Apply the physicist's tools to an industrial problem
+### Using the models for predictions:
+
+<center>__Heat capacity and maturity__</center>
+<br>
+$$C_v(T)=\left(\frac{\partial U}{\partial T}\right)_V=\frac{1}{k_BT^2}
+                          \int_{0}^{\infty}d\omega~G(\omega)\left(\hbar\omega\right)^2\times 
+                          \frac{e^{\hbar\omega/k_BT}}{\left(e^{\hbar\omega/k_BT}-1\right)^2}$$
+
+***=left
+<img src="assets/img/ker_c_p.png" style='margin-top:1%;width:85%'/>
+
+***=right
+
+<br><br><br>
+Linear correlation between H/C ratio (strongly linked to the maturity) and heat capacity $c_p$
+
+***=full
+<div style='float:left;width:100%;text-align:left;margin-top:1%;font-size:15px'>
+<a href="http://www.nature.com/nmat/journal/vaop/ncurrent/full/nmat4541.html"> Bousige et al., <i>Nature Materials</i> <b>15</b> (2016) 576</a>
+</div>
+
+
+--- &threecol w1:35% w2:25%;margin-left:0% w3:35%;margin-right:5%
+
+## Apply the physicist's tools to an industrial problem
+### Using the models for predictions:
+
+<center>__Gas adsorption at 450 K (GCMC)__</center>
+
+***=left
+<img src="assets/img/ker_ads_ch4.png" style='margin-top:20%;width:100%'/>
+
+***=middle
+
+<blockquote style='margin-top:20%;'>Even in the case of "high" O content (MarK), poor adsorption of water compared to CH$_4$</blockquote>
+
+<blockquote style='margin-top:50%;'>Better adsorption of CO$_2$ than CH$_4$</blockquote>
+
+***=right
+<img src="assets/img/ker_ads_h2o.png" style='margin-top:0%;width:100%'/>
+<img src="assets/img/ker_ads_co2.png" style='margin-top:0%;width:100%'/>
+
+--- 
+
+## Apply the physicist's tools to an industrial problem
+### Using the models for predictions:
+
+<center>__Pore connectivity: Methane__</center>
+
+<img src="assets/img/ker_conn_CH4.png" style='margin-top:0%;width:75%'/>
+
+
+--- &twocol w1:40%;margin-left:10% w2:40%;margin-right:10%
+
+## Apply the physicist's tools to an industrial problem
+### Using the models for predictions:
+
+<center>__Pore connectivity: Helium__</center>
+
+***=left
+<img src="assets/img/ker_conn_He.png" style='margin-top:0%;width:80%'/>
+
+***=right
+
+<br><br><br>
+- He "goes everywhere", non regarding of the connectivity.
+- Porosity measurements with He will yield much higher porosities compared to the ones probed with CH$_4$
+- The industrials always assess porosities using He as a probe:
+
+> $\Rightarrow$ Large overestimation of the resource available in the microporosity
+
+
+--- dt:fade
+
+## Kerogens - Conclusions
+
+<center>
+<div style='line-height:1.5em;width:80%;'>
+<ul>
+<li class="fragment highlight-current-blue" data-fragment-index="1"> Realistic molecular models of mature and immature kerogens have been obtained (3 kerogens, 1 pyrobitumen) </li>
+   <ul>
+   <li> Validation in terms of VDOS and PSD </li>
+   <li> Closure scheme: Elastic properties + Compositions $\Leftrightarrow$ Density</li>
+   </ul>
+<li class="fragment highlight-current-blue" data-fragment-index="2"> DOS (or IR) and mechanical testing provide means to assess the density, heterochemistry, and maturity in kerogen</li>
+<center class="fragment highlight-current-blue" data-fragment-index="2">
+   Mature   $\Leftrightarrow$  sp$^2$  $\Leftrightarrow$  Brittle<br>
+   Immature $\Leftrightarrow$  sp$^3$  $\Leftrightarrow$  Plastic<br>
+   Heat capacity $c_p$ decreases with maturity
+</center>
+<li class="fragment highlight-current-blue" data-fragment-index="3"> Because of the closed porosity, adsorption provides biased/incomplete characterization of the porosity</li>
+<li class="fragment highlight-current-blue" data-fragment-index="3"> Water poorly adsorbs in the microporosity  </li>
+</ul>
+</div>
+</center>
+
+<br>
+
+<blockquote class="fragment grow" data-fragment-index="4"> $\Rightarrow$ Maybe not as much resource as expected in kerogen’s microporosity...</blockquote>
+
+<!-- --- 
+
+### In the continuity of this work: 
+<center>
+__Insights into the transport at the interface between the micro- and meso-porosities__<br>
+__Separation of the adsorption and geometrical parts of tortuosity__
+</center>
+
+<div style='float:left;width:10%;margin-left:10%;margin-top:10%;'>
+<img src="assets/img/CS07.png" style='margin-top:5%;'/>
+<img src="assets/img/CS10.png" style='margin-top:5%;'/>
+<img src="assets/img/CS14.png" style='margin-top:5%;'/>
+</div>
+<div style='float:left;width:35%;margin-top:3%;'>
+<center>Tortuosities by Random Walk:</center>
+<img src="assets/img/tau_phi.png" style='margin-top:20%;'/>
+</div>
+<div style='float:left;width:35%;margin-top:3%;'>
+<center>Tortuosities by Molecular Dynamics:</center>
+<img src="assets/img/potentiel_LJ4.png" style='width:85%;'/>
+<img src="assets/img/tau_dyn.png" style='width:85%;'/>
+</div>
+
+<div style='float:left;width:100%;text-align:left;'>
+Work in collaboration with P. Levitz and B. Coasne
+</div> -->
+
+
+--- bg:black dt:fade
+
+<span style="color:white"> Chapter III </span>
+========================
+<span style="color:white"> Effects of the Low-Dimensionality and Constraints on the Physical Properties of Carbon Materials</span>
+---------------------------------------------------------------------
+
+<br>
+<center style="color:white;font-size:20px">Post-Doc<br>Institut Lumière Matière (Villeurbanne)</center>
+<img src="assets/img/Graphene.jpg" style='float:left;margin-top:10%;margin-left:20%;width:30%;'/>
+<img src="assets/img/NT_eau.png" style='float:left;margin-top:5%;width:30%;'/>
+
+
+--- bg:assets/img/Graphene3.png 
+
+<span style="color:white;text-shadow: 10px 10px 10px rgb(0, 0, 0);"> Part I: 2D materials </span>
+-------------------------------------------------------------------------------------------------
+
+
+--- dt:fade &twocol w1:55% w2:45% 
+
+## Exploring strain transfer in supported graphene
+
+***=right
+
+<img src="assets/img/graph_exemple.png" style='margin-top:10%;'/>
+<center>From Ni et al. _ACS Nano_ __2__ (2008) 2301</center>
+
+***=left
+<br>
+<br>
+
+__Context of strain-tronics with graphene:__
+
+Optical and electronic properties can be tuned by the application of strain
+
+$\Rightarrow$ Applications in electronics, sensors, etc.
+
+In the aim of using graphene (or TMDs) in such devices, one need a reproducible strain production.
+
+Graphene is most of the time deposited on a substrate.
+
+***=full
+
+<br>
+
+> How efficiently is strain transferred? 
+
+> What are the limits of strain transfer?
+
+
+--- &twocol w1:40%;margin-left:5% w2:55% 
+
+## Exploring strain transfer in supported graphene
+### Experimental approach
+
+***=left
+<br><br><br>
+- <p class="fragment highlight-current-red" data-fragment-index="1">Evolution of the Raman G-band </p>
+- <p class="fragment highlight-current-red" data-fragment-index="2">Biaxial strain in a Diamond Anvil Cell</p>
+- <p class="fragment highlight-current-red" data-fragment-index="3">Various substrates (Diamond, Sapphire, SiO$_2$)</p>
+
+<ul> 
+   <li class="fragment current-visible" data-fragment-index="1" style='color:blue'>
+   Highly sensitive to in-plane strain</li>
+   <li class="fragment current-visible" data-fragment-index="2" style='color:blue'>
+   Compression due to volume reduction of the substrate </li>
+   <li class="fragment current-visible" data-fragment-index="2" style='color:blue'>
+   Maximization of the conformation of graphene to its substrate by the application of high pressures in a DAC with alcohol pressure transmitting medium (PTM)</li>
+   <li class="fragment current-visible" data-fragment-index="3" style='color:blue'>
+   Various bulk moduli</li>
+</ul>
+
+
+***=right
+<img src="assets/img/gband.png" style='margin-top:5%;width:60%;'/>
+<img src="assets/img/graph_DAC.png" style='margin-top:1%;width:100%;'/>
+
+
+--- &twocol w1:40% w2:60% 
+
+## Exploring strain transfer in supported graphene
+### Results
+
+***=right
+<img src="assets/img/graph_evol.png" style='margin-top:10%;width:100%;'/>
+
+***=left
+
+<br><br>
+
+|            | $\partial\omega_G/\partial P$ | <span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" >$\beta_L$</span> |
+|:----------:|:-----------------------------:|:-----------------------------------------------:|
+|            |  <b>(cm$^{-1}$/GPa)</b>        | <b><span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" > (GPa)   </span></b> |
+|<b>Diamond </b>|         $ 4.0\pm0.2$          | <span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" > $1329$  </span> |
+|<b>Graphite</b>|         $ 4.4\pm0.3$          | <span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" > $1250$  </span> |
+|<b>Sapphire</b>|         $ 7.8\pm0.5$          | <span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" > $ 750$  </span> |
+|<b>Copper  </b>|         $ 9.2\pm0.3$          | <span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" > $ 420$  </span> |
+|<b>SiO$_2$ </b>|         $10.5\pm0.2$          | <span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" > $ 114$  </span> |
+
+<br>
+<span style="margin-top:5%" class="fragment fade-in" data-fragment-index="1" >
+<center>Different substrates : different slopes<br>
+   __How do we explain that ?__</span></center>
+<br>
+<blockquote class="fragment fade-in" data-fragment-index="1" >
+   $\Rightarrow$ Pressure is not the good variable
+</blockquote>
+
+
+--- &vertical
+
+## Exploring strain transfer in supported graphene
+### After renormalization to the relevant physical quantities $\varepsilon$ and $\sigma$
+
+<div style='float:left;width:65%;'>
+<img src="assets/img/graph_epsilon.png" style='margin-top:1%;width:100%;'/>
+</div>
+<div style='float:right;width:35%;margin-top:10%'>
+<blockquote style='background:rgba(76,179,246,0.2);color:black;'> 
+$\varepsilon_G-\varepsilon_S\neq$0 <br> $\Leftrightarrow$ <br> Imperfect strain transmission
+</blockquote>
+<br><br><br>
+<blockquote> $\varepsilon_G-\varepsilon_S=$0 <br> $\Leftrightarrow$ <br> Perfect strain transmission</blockquote>
+</div>
+
+***
+
+### Renormalization to the relevant physical quantities $\varepsilon$ and $\sigma$
+
+<br>
+<div style='float:left;width:45%;margin-left:5%;line-height:1.5em'>
+<br>
+<ol>
+   <li> For 2D materials, <i>Pressure</i> of the PTM and <i>Stress</i> of the material are <b>not equivalent</b></li>
+   <li> Graphite is a 3D material, so $P\Leftrightarrow\sigma$</li>
+   <li> For a Raman shift of the deposited graphene corresponds a stress of the graphene flake:$$\sigma_G^S=\Delta\omega_G^S/\Omega_{gr}$$</li>
+   <li> The strain ε of the graphene flake and the strain of the substrate can be retrieved through the Birch-Murnaghan equation of states:
+   $$\frac{r}{r_0}=\left(1+\sigma\frac{\beta'}{\beta}\right)^{-1/\beta'}$$</li>
+</ol>
+
+</div>
+<div style='float:right;width:50%'>
+   <img src="assets/img/graph_renorm.png" style='margin-top:5%;width:55%;'/>
+</div>
+
+---  &vertical
+
+## Exploring strain transfer in supported graphene
+### Developing a tool to check for strain transfer efficiency
+
+<br>
+<div style='float:left;width:55%;'>
+$\frac{\partial\Delta\omega_G}{\partial\varepsilon} = -57\pm2\text{cm}^{-1}/\%$
+<img src="assets/img/graph_compa.png" style='margin-top:5%;width:100%;'/>
+</div>
+<div style='float:right;width:40%;margin-right:5%;margin-top:10%;line-height:2em'>
+<ul>
+   <li>Ding Nano Lett. 10 (2010): Piezo-actuators, sandwiched graphene</li>
+   <li>Shin J. Appl. Phys. (2016): Glass blower method (suspended graphene)</li>
+</ul>
+</div>
+
+*** 
+
+### Where does the energy go? 
+
+- ~~Defects/tearing~~
+- Buckling/slipping
+
+<img src="assets/img/graph_alpha.png" style='float:left;margin-top:5%;width:55%;'/>
+<img src="assets/img/graph_sio2_avant_apres.png" style='float:right;margin-top:5%;width:40%;'/>
+
+
+--- dt:fade
+
+## Supported Graphene - Conclusions
+
+<br>
+<center>
+<div style='line-height:2em;width:80%;'>
+<ul>
+   <li class="fragment highlight-current-blue" data-fragment-index="1"> Total strain transfer should never be assumed, but carefully checked</li>
+   <li class="fragment highlight-current-blue" data-fragment-index="2"> How to check this? Easy tool:</li>
+   <ul class="fragment highlight-current-blue" data-fragment-index="2">
+      <li>Perfect strain transmission: $\frac{\partial\Delta\omega_G}{\partial\varepsilon} = -57\pm2\text{cm}^{-1}/\%$ </li>   
+      <li>Imperfect strain transmission:$\frac{\partial\Delta\omega_G}{\partial\varepsilon} > -57\pm2\text{cm}^{-1}/\%$ </li>   
+   </ul>
+   <li class="fragment highlight-current-blue" data-fragment-index="3">Still need to explore:</li>
+   <ul class="fragment highlight-current-blue" data-fragment-index="3">
+      <li> The possible correlation between $\sigma_G^c$ and the percolation of the locally buckled regions</li>
+      <li> The role of the topology of the buckled regions</li>
+      <li> Its development mechanism </li>
+      <li> Its relation with the substrate roughness and the graphene microstructure</li>
+</ul>
+</div>
+</center>
+
+--- &vertical
+
+## Work in progress: _suspended_ objects
+### Goals:
+
+- Studying various individual nano-objects at high pressure with Raman or SMS spectroscopies, _e.g_:
+  - sp$^2$-sp$^3$ transition in bi-layer graphene at high pressures ($\gtrsim$10 GPa)
+  - optical absorption of individual nanotube under pressure (SMS)
+  - you name it...
+
+<img src="assets/img/cut_001.png" style='margin-top:4%;width:50%;'/>
+
+
+*** 
+
+## Transferring the substrate
+
+<img src="assets/img/remove.gif" style='margin-top:10%;width:40%;transform:rotate(180deg)'/>
+
+*** 
+
+## Spatial Modulation Spectroscopy (SMS)
+
+<img src="assets/img/SMS.png" style='margin-top:1%;width:90%;'/>
+
+
+--- bg:grey dt:fade
+
+<span style="color:white;text-shadow: 10px 10px 10px rgb(1, 1, 1);"> Part II: 1D materials </span>
+--------------------------------------------------------------------------------------------------
+<img src="assets/img/NT_eau.png" style='margin-top:5%;width:30%;'/>
+
+---  &vertical
+
+## Towards new carbon nanotube-based materials
+
+<div style='float:left;width:48%;'>
+<img src="assets/img/collapse.png" style='margin-top:10%;width:100%;'/>
+</div>
+<div style='float:right;width:48%;text-align:left;line-height:1.5em;'>
+<br><br>
+<b>Goals</b><br>
+Taking advantage of the $sp^2-sp^3$ transition around $\sim$10 GPa and the $1/D^3$ evolution of the radial collapse pressure to:
+<ul>
+   <li> Tune the electrical and mechanical properties of tubes with large diameters</li>
+   <li> Produce $sp^3$  tubular 3D arrangements</li>
+</ul>
+</div>
+
+*** 
+
+### On the feasability of the tubular $sp^3$ 3D structures
+
+<img src="assets/img/feasability.png" style='margin-top:10%;width:50%;'/>
+
+
+--- 
+
+## First results: 
+## Obtaining single-chirality SWNT samples
+
+### Aqueous Two-Phase Separation
+
+Separation of carbon nanotubes in two immiscible aqueous phases based on polymers : polyethylene glycol (PEG) and dextran.
+
+$\Rightarrow$ Spontaneous repartition according to nanotube's diameter and metallicity, and affinity with the surfactants.
+
+<img src="assets/img/separation.png" style='margin-top:5%;width:100%;'/>
+
+<b>We obtain solutions of NT highly enriched in (6,5) chirality (diameter 0.75 nm).</b>
+
+<br>
+[1] Khripin et al., _J. Am. Chem. Soc._ (2013)
+
+[2] Subbaiyan et al., _ACS Nano_ (2014)
+
+--- &twocol w1:48% w2:52%;margin-right:0%
+
+## First results: 
+## Obtaining single-chirality SWNT samples
+
+***=left
+
+<center>Photoluminescence maps</center>
+<img src="assets/img/PLE_stock.png" style='margin-top:1%;width:70%;'/>
+<img src="assets/img/PLE_top2_1.png" style='margin-top:-5%;width:70%;'/>
+
+***=right
+
+<br><br><br>
+
+Once single chirality NT solutions are obtained, the tubes ares re-bundled by heat treatment.
+
+<br>
+
+__Next steps:__
+
+- High pressure-high temperature treatment $\Rightarrow$ $sp^2-sp^3$ transition? (tomorrow)
+- Adsorption of gases and water (july)
+- High pressure of water-filled tubes
+- Dynamics of water and other adsorbed molecules
+
+
+--- dt:fade
+
+## Conclusions
+
+<br>
+<center>
+<b>Very different systems, and yet:</b>
+<div style='line-height:1.5em;width:80%;'>
+<ul>
+   <li><b>Similar problematics :</b></li>
+   <ul>
+      <li>Carbon compounds</li>
+      <li>Study of the structure</li>
+      <li>Study of the dynamics</li>
+      <li>Trying to draw a link between local and macroscopic behaviors</li>
+   </ul>
+<li><b>Similar techniques:</b></li>
+   <ul>
+      <li>Diffraction (x-rays, neutrons)</li>
+      <li>Inelastic Neutrons Scattering</li>
+      <li>Raman spectroscopy</li>
+      <li>Monte Carlo and Molecular Dynamics Simulations </li>
+      <li>Playing on pressure, temperature...</li>
+   </ul>
+</ul>
+</div>
+</center>
+
+
+--- &threecol w1:30%;margin-left:10% w2:30% w3:30%
+
+# Thanks!
+<br><br>
+<br><br>
+
+***=left
+
+
+__ILL and LPS__
+
+Pascale Launois
+
+Stéphane Rols
+
+Julien Cambedouzou
+
+***=middle
+
+__MIT__
+
+Benoît Coasne
+
+Roland Pellenq
+
+***=right
+
+__ILM__
+
+Alfonso san Miguel
+
+Denis Machon

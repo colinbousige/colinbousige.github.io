@@ -1,0 +1,8 @@
+base
+tikzDevice
+ggplot2
+reshape
+rmarkdown
+plotly
+akima
+cowplot

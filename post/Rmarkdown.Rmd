@@ -1,0 +1,8 @@
+---
+date: 2017-06-09T19:56:21+02:00
+title: Writing in Rmarkdown for academics
+tags : ["markdown","R","Rmarkdown"]
+summary : This is yet another tutorial to a working setup for writing in Rmarkdown for academics
+---
+
+Still need to write it!

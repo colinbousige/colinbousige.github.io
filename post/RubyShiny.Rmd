@@ -1,0 +1,28 @@
+---
+date: 2017-06-08T19:56:21+02:00
+title: My first attempt at a Shiny app
+tags : ["R","Shiny"]
+summary : Computing Pressure <--> Ruby Raman shift with a Shiny app
+---
+
+This is my first try as a Shiny app, I made it to help my students during their high pressure experiments using diamond anvil cell. It computes:  
+
+- The pressure if you give it values of $\lambda_{laser}$, the R1 Raman shift at 0 pressure $\omega_0$, and the measured R1 Raman shift $\omega_{ruby}$  
+- The expected Raman shift for the ruby, $\omega_{ruby}$, if you give it the other info  
+- The pressure if you upload a ruby spectrum and give it the other info  
+
+Either go on the Shiny server: https://cbousige.shinyapps.io/rubypressure/
+
+Or run it directly in R with:
+```
+require(shiny)
+runGitHub("RubyPressure","colinbousige")
+```
+
+Or clone the [repo](https://github.com/colinbousige/RubyPressure), `setwd()` to the folder where all the files are, and run it in R with:
+```
+require(shiny)
+runApp()
+```
+I even went so far as providing a sample ruby spectrum: try it out!  
+The laser wavelength for this experiment was 568.2 nm.
