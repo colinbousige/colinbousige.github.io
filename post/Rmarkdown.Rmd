@@ -93,9 +93,9 @@ How to understand this header:
     + `reference_docx`: tells pandoc the reference style to use. Just write a dummy .docx file in which you [edit the style](http://www.dummies.com/software/microsoft-office/word/how-to-change-an-existing-style-in-word-2016/), save it as `word-template.docx`, and you're good to go.
     + `latex`: the $\LaTeX$ engine. You can also use pdflatex, for example.
     + `keep_tex`: when pandoc compiles your markdown file to a PDF, it goes through the intermediate step of creating a .tex file. You can decide to keep it for tweaking the style of the PDF output, like you would normally do with a .tex file.
-    + `fig_caption`: Allows for figure caption.
+    + `fig_caption`: allows for figure caption.
     + `toc`: creates a table of contents.
-    + `number_sections`: transparent.
+    + `number_sections`: allows for section numbering.
     + `highlight`: syntax highlighting theme for the code chunks.
     + `pandoc_args`: add pandoc-eqnos or pandoc-tablenos if you want to number equations or tables.
 - `bibliography`: path to your .bib file. To create a bibliography, add a ```# References``` header at the end of your document.
