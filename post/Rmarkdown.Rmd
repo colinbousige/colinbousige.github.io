@@ -11,7 +11,7 @@ summary : This is yet another tutorial to a working setup for writing in Rmarkdo
 
 <!-- /MarkdownTOC -->
 
-Like many physicists, I have been using $\LaTeX$ since the very beginning of my undergrad studies, because it's just that great. The main interests are that the content is dissociated from the form (so you can focus on your writing), it handles your references to articles, sections, figures and citations, and it just makes _very_ nice documents. 
+Like many physicists, I have been using $\LaTeX$ since the very beginning of my undergrad studies, because it's just that great. The main interests are that the content is dissociated from the form (so you can focus on your writing), it handles your references to articles, sections, figures and equations, and it just makes _very_ nice documents. 
 
 __*But*__, in some cases, you __*have to*__ work in Microsoft Word. Because you collaborate with someone who just don't want to use $\LaTeX$, because you are writing a grant or an abstract and have to use the provided Word template... Shit happens. And then, all your $\LaTeX$-based work-flow crumbles. You can't find a way to properly insert a citation and end up writing them all by hand, you get crazy trying to place that f****** figure/table that keeps on moving to wherever it wants... You just end up crazy and losing your time.
 
