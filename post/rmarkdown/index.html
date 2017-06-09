@@ -38,7 +38,7 @@
 
   
 
-  <title>Writing in Rmarkdown for academics | Colin Bousige</title>
+  <title>Switching from $\LaTeX$ to Rmarkdown for all-purpose academics-related writing | Colin Bousige</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -163,7 +163,7 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Writing in Rmarkdown for academics</h1>
+    <h1 itemprop="name">Switching from $\LaTeX$ to Rmarkdown for all-purpose academics-related writing</h1>
     
 
 <div class="article-metadata">
@@ -208,28 +208,28 @@
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Writing%20in%20Rmarkdown%20for%20academics&amp;url=%2fpost%2frmarkdown%2f"
+         href="https://twitter.com/intent/tweet?text=Switching%20from%20%24%5cLaTeX%24%20to%20Rmarkdown%20for%20all-purpose%20academics-related%20writing&amp;url=%2fpost%2frmarkdown%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2frmarkdown%2f&amp;title=Writing%20in%20Rmarkdown%20for%20academics"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2frmarkdown%2f&amp;title=Switching%20from%20%24%5cLaTeX%24%20to%20Rmarkdown%20for%20all-purpose%20academics-related%20writing"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpost%2frmarkdown%2f&amp;title=Writing%20in%20Rmarkdown%20for%20academics"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2frmarkdown%2f&amp;title=Switching%20from%20%24%5cLaTeX%24%20to%20Rmarkdown%20for%20all-purpose%20academics-related%20writing"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Writing%20in%20Rmarkdown%20for%20academics&amp;body=%2fpost%2frmarkdown%2f">
+         href="mailto:?subject=Switching%20from%20%24%5cLaTeX%24%20to%20Rmarkdown%20for%20all-purpose%20academics-related%20writing&amp;body=%2fpost%2frmarkdown%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -242,7 +242,121 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <p>Still need to write it!</p>
+      <!-- MarkdownTOC -->
+<ul>
+<li><a href="#setting-up-your-system">Setting up your system</a></li>
+<li><a href="#writing-in-markdown-and-exporting-to-various-formats">Writing in markdown and exporting to various formats</a></li>
+</ul>
+<!-- /MarkdownTOC -->
+<p>Like many physicists, I have been using <span class="math inline">\(\LaTeX\)</span> since the very beginning of my undergrad studies, because it’s just that great. The main interests are that the content is dissociated from the form (so you can focus on your writing), it handles your references to articles, sections, figures and citations, and it just makes <em>very</em> nice documents.</p>
+<p><strong><em>But</em></strong>, in some cases, you <strong><em>have to</em></strong> work in Microsoft Word. Because you collaborate with someone who just don’t want to use <span class="math inline">\(\LaTeX\)</span>, because you are writing a grant or an abstract and have to use the provided Word template… Shit happens. And then, all your <span class="math inline">\(\LaTeX\)</span>-based work-flow crumbles. You can’t find a way to properly insert a citation and end up writing them all by hand, you get crazy trying to place that f****** figure/table that keeps on moving to wherever it wants… You just end up crazy and losing your time.</p>
+<p>And then, you discover <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a> (and its various flavors like <a href="http://rmarkdown.rstudio.com/articles_intro.html">Rmarkdown</a>) and <a href="http://pandoc.org/">pandoc</a>, and your life changes. Really.</p>
+<p>You can see markdown as a simplified version of <span class="math inline">\(\LaTeX\)</span> (see a cheat sheet <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">here</a> and a tutorial <a href="http://www.markdowntutorial.com/">here</a>), so it’s really simple to use, even by your <span class="math inline">\(\LaTeX\)</span>-reluctant colleagues. And like <span class="math inline">\(\LaTeX\)</span>, it handles automatic numbering of citations (using <code>[@Bibkey]</code> instead of <code>\cite{Bibkey}</code>) and references to figures (by inserting the figure using <code>![Caption](image.png) {#fig:description}</code> and referencing it by <code>@fig:description</code>).</p>
+<p>What is <em>really</em> interesting with markdown is that a single master file, say <em>article.md</em>, can easily be exported to a variety of formats, like html, TeX, PDF or Word. Even better, with Rmarkdown, you can even include code chunks that will be computed when compiling, and the output will directly be included in the resulting file. Great for producing experimental log files, for example.</p>
+<p>So, here it comes, a little tutorial to setup your system to work in markdown. There are many tutorials for markdown out there, just Google them. Here, I tried to keep it to a minimum by gathering information that I have found here and there but never really all together.</p>
+<div id="setting-up-your-system" class="section level2">
+<h2>Setting up your system</h2>
+<p>This is Mac-oriented for now, but it should work on any platform – the installation procedure will just be different.</p>
+<ul>
+<li>First, install <span class="math inline">\(\LaTeX\)</span>. On Mac, go <a href="http://tug.org/mactex/">there</a> or just <code>brew cask install mactex</code> if you have homebrew installed (which I recommend). Install the full distribution, it is just a pain in the ass otherwise. Pandoc needs <span class="math inline">\(\LaTeX\)</span> to produce PDF files.</li>
+<li><p>Install pandoc and the filters eqnos, fignos and tablenos that will allow for referencing equations, figures and tables. You also need citeproc that will handle citations. On Mac, do:</p>
+<pre><code>brew install pandoc
+brew install pandoc-citeproc
+pip install pandoc-eqnos
+pip install pandoc-fignos
+pip install pandoc-tablenos</code></pre>
+You will need python and pip <a href="https://stackoverflow.com/questions/17271319/how-do-i-install-pip-on-macos-or-os-x">installed</a>.</li>
+<li><p>Install R, even if you don’t want to use R:</p>
+<pre><code>brew tap homebrew/science
+brew install Caskroom/cask/xquartz
+brew install R --build-from-source</code></pre>
+Launch R (type <code>R</code> in your Terminal) and type: <code>install.packages(&quot;rmarkdown&quot;)</code>. Having R installed will allow you to compile Rmarkdown files in which you can include code chunks in various languages, <em>that will be computed upon compilation</em> and print the output in your resulting file. Yes.</li>
+<li>Install <a href="http://www.sublimetext.com/3">Sublime Text 3</a>. This text editor is <a href="https://scotch.io/bar-talk/the-complete-visual-guide-to-sublime-text-3-getting-started-and-keyboard-shortcuts">so good</a> I even bought a license. But you don’t need one to work with it, you’ll just get the occasional popup. There are cool free editors like <a href="https://atom.io/">Atom</a> that I would be keen on using, but I couldn’t figure out an easy way to compile markdown or <span class="math inline">\(\LaTeX\)</span> documents with it like I do with ST. If you know how to do it I’m all ears, because Atom has some very cool packages like <a href="https://atom.io/packages/hydrogen">Hydrogen</a>, but for now I like ST better.<br />
+</li>
+<li>Install Sublime Text package control: <a href="https://packagecontrol.io/installation" class="uri">https://packagecontrol.io/installation</a><br />
+</li>
+<li>Install the following ST packages (<em>a minima</em>): Rbox, Citer, Markdown​Editing, AcademicMarkdown. I also recommend LatexTools, MarkdownTOC, BracketHighlighter, SublimeREPL, SendCode and wordcount. To install a package, hit Cmd+Maj+P in ST, type Install Package, and find the name of the package you want. Google them to see what they do.</li>
+<li><a href="https://github.com/mangecoeur/Citer">Configure Citer</a> by providing it the path to your biblio.bib file.</li>
+<li><p>You’re good to go!</p></li>
+</ul>
+</div>
+<div id="writing-in-markdown-and-exporting-to-various-formats" class="section level2">
+<h2>Writing in markdown and exporting to various formats</h2>
+<p>Now that your system is set up, you can focus on your writing. You can read this cheat sheet for <a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">Rmarkdown</a>, very useful. Create an <em>example.Rmd</em> file with the following YAML header:</p>
+<pre class="yaml"><code>---
+title  : Your Title
+author : John Doe
+date   : 09/06/2017
+output :
+    word_document:
+        reference_docx: path/to/word-template.docx
+        pandoc_args: [&quot;--filter&quot;, &quot;pandoc-fignos&quot;]
+    pdf_document:
+        latex: xelatex
+        fig_caption: true
+        keep_tex: true
+        pandoc_args: [&quot;--filter&quot;, &quot;pandoc-fignos&quot;]
+    beamer_presentation:
+        keep_tex: true
+    html_document:
+        toc: yes
+        highlight: tango
+        number_sections: false
+        pandoc_args: [&quot;--filter&quot;, &quot;pandoc-fignos&quot;]
+    html_notebook:
+        toc: yes
+        highlight: tango
+        number_sections: false
+        pandoc_args: [&quot;--filter&quot;, &quot;pandoc-fignos&quot;]
+bibliography: &quot;path/to/biblio.bib&quot;
+csl: &quot;path/to/nature.csl&quot;
+---</code></pre>
+<p>How to understand this header:</p>
+<ul>
+<li><code>---</code>: surrounds the YAML header. The body comes after that.</li>
+<li><code>title</code>, <code>author</code> and <code>date</code>: easy. The date can automatically be set to the current one by setting it to “`r format(Sys.time(), ‘%d/%m/%Y’)`” .</li>
+<li><code>output</code>: this tells pandoc the output format you want. When compiling (we’ll see that just after), the compiler will look to the <em><strong>first</strong></em> entry – in this case, <code>word_document</code>. Note that the indentation matters. I like to have all these output possibilities written there, then I just have to switch the first entry to the one I want when I want to change the output format. The difference between <code>html_document</code> and <code>html_notebook</code> is that in notebooks you can fold/unfold the code chunks. Maybe there is another but it’s not obvious.
+<ul>
+<li><code>reference_docx</code>: tells pandoc the reference style to use. Just write a dummy .docx file in which you <a href="http://www.dummies.com/software/microsoft-office/word/how-to-change-an-existing-style-in-word-2016/">edit the style</a>, save it as <code>word-template.docx</code>, and you’re good to go.</li>
+<li><code>latex</code>: the <span class="math inline">\(\LaTeX\)</span> engine. You can also use pdflatex, for example.</li>
+<li><code>keep_tex</code>: when pandoc compiles your markdown file to a PDF, it goes through the intermediate step of creating a .tex file. You can decide to keep it for tweaking the style of the PDF output, like you would normally do with a .tex file.</li>
+<li><code>fig_caption</code>: Allows for figure caption.</li>
+<li><code>toc</code>: creates a table of contents.</li>
+<li><code>number_sections</code>: transparent.</li>
+<li><code>highlight</code>: syntax highlighting theme for the code chunks.</li>
+<li><code>pandoc_args</code>: add pandoc-eqnos or pandoc-tablenos if you want to number equations or tables.</li>
+</ul></li>
+<li><code>bibliography</code>: path to your .bib file. To create a bibliography, add a <code># References</code> header at the end of your document.</li>
+<li><code>csl</code>: path to the bibliography style for the output – in this example, <em>nature.csl</em>. <a href="https://www.zotero.org/styles">Find your style</a> or edit your own.</li>
+<li>There are many <a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">other options</a>, but with this you’ll fulfill most of your needs (at least, it works fine for mine).</li>
+</ul>
+<p>Now you can start adding some content, like:</p>
+<pre class="markdown"><code># First section
+## First subsection
+I am writing _italic_ and __bold__ stuff.
+
+- This is an item
+- This is another item with a citation [@Bibkey]
+
+# Second section
+## First subsection
+
+This is a text with a footnote[^1].
+
+Figure @fig:image is an image with a caption:
+
+![Image with a caption](https://cdn.foliovision.com/images/2017/03/i-love-markdown.png){#fig:image}
+
+While this image has no caption 
+![Image with no caption because I didn&#39;t skip a line](http://markdown-here.com/img/icon256.png)
+
+# References
+
+[^1]: This is a footnote.</code></pre>
+<p>To compile your document with ST, just hit Cmd+B (“Build”). The first time, it may ask you with what build system you want to go: choose Rmarkdown. And: voilà! It’s <em>that</em> easy.</p>
+<p>If you don’t want to use ST, you can for example use <a href="http://rmarkdown.rstudio.com/lesson-1.html">RStudio</a> to compile. It’s free and has no popup. You may also want to use pandoc from the command line, e.g. if you don’t want to use ST and don’t write code chunks that you want to be computed. In that case it’s a bit more complicated, I invite you to read a nice tutorial <a href="http://blog.kdheepak.com/writing-papers-with-markdown.html">here</a>.</p>
+<p>Note that when you choose to output to an html format, you can’t use PDF images: use .svg (<a href="http://www.cityinthesky.co.uk/opensource/pdf2svg/">pdf2svg</a>) or other non vectorial images. What’s nice with html output though, it’s that you can include <em>interactive</em> figures (e.g. with <a href="https://plot.ly/">plotly</a>). Of course, this won’t work with static documents like PDF or Word…</p>
+</div>
 
     </div>
   </div>
