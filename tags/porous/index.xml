@@ -23,7 +23,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#collapsed-nanotubes-of-large-diameter-a-new-model-1d-system&#34;&gt;Collapsed nanotubes of large diameter: a new model 1D system&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#carbon-nanotubes-under-extreme-pressure&#34;&gt;Carbon nanotubes under extreme pressure&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#phd-carbon-peapods&#34;&gt;PhD: Carbon peapods&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#carbon-peapods&#34;&gt;Carbon peapods&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;!-- /MarkdownTOC --&gt;
@@ -36,7 +36,7 @@
 
 &lt;p&gt;More details soon!&lt;/p&gt;
 
-&lt;h3 id=&#34;phd-carbon-peapods&#34;&gt;PhD: Carbon peapods&lt;/h3&gt;
+&lt;h3 id=&#34;carbon-peapods&#34;&gt;Carbon peapods&lt;/h3&gt;
 
 &lt;p&gt;My PhD research was focused on the study of the one-dimensional (1D) system that are the carbon nano-peapods. During my work, I primarily used inelastic neutron scattering and x-ray diffraction in order to investigate the structure and dynamics of this system.
 At the beginning of my thesis, I spent three months in Tsukuba, Japan, with Dr. Hiromichi Kataura. There, I learnt from the best his method to produce ultra-pure peapods – pure in the neutron sense, i.e. without hydrogen impurities – method that I used to produce large quantities of 2D oriented C$_{60}$ and C$_{70}$ peapods.
@@ -56,8 +56,8 @@ Thanks to the 2D orientation of the samples, we could separate the translational
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#ongoing-work-transport-in-amorphous-porous-systems&#34;&gt;Ongoing work: Transport in amorphous porous systems&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#post-doc-at-mit-kerogens&#34;&gt;Post-doc at MIT: Kerogens&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#phd-carbon-peapods&#34;&gt;PhD: Carbon peapods&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#kerogens&#34;&gt;Kerogens&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#carbon-peapods&#34;&gt;Carbon peapods&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;!-- /MarkdownTOC --&gt;
@@ -66,13 +66,13 @@ Thanks to the 2D orientation of the samples, we could separate the translational
 
 &lt;p&gt;I currently focus on the formalization of the tortuosity in amorphous porous systems. More details soon!&lt;/p&gt;
 
-&lt;h3 id=&#34;post-doc-at-mit-kerogens&#34;&gt;Post-doc at MIT: Kerogens&lt;/h3&gt;
+&lt;h3 id=&#34;kerogens&#34;&gt;Kerogens&lt;/h3&gt;
 
-&lt;p&gt;My work at the MIT was focused on the simulation of disordered nanoporous carbons that are found in sedimentary rocks (gas shale), the so-called &amp;ldquo;kerogens&amp;rdquo;. These kerogens are the result of the decay of various types of organic matter (marine, terrestrial, lacustrial&amp;hellip;) with pressure and temperature, and they are the ones that produce the gas and oil that the industrials try to recover. As kerogen constitutes a minor phase of the shale mixture, they are poorly understood as a stand alone compound.
+&lt;p&gt;My work during my post-doc at MIT was focused on the simulation of disordered nanoporous carbons that are found in sedimentary rocks (gas shale), the so-called &amp;ldquo;kerogens&amp;rdquo;. These kerogens are the result of the decay of various types of organic matter (marine, terrestrial, lacustrial&amp;hellip;) with pressure and temperature, and they are the ones that produce the gas and oil that the industrials try to recover. As kerogen constitutes a minor phase of the shale mixture, they are poorly understood as a stand alone compound.
 In order to produce molecular models of these kerogens, I combined experimental measurements of their structure (x-ray and neutron diffraction) with molecular simulation tools such as Hybrid Reverse Monte Carlo and Molecular Dynamics in order to produce atomic structures that match the experimental measurements and are physically and chemically acceptable. These models were then used in other atomistic simulations in order to predict their adsorption and transport properties (Grand Canonical Monte Carlo simulations), as well as their vibrational or mechanical properties.
 In particular, I have shown that the maturity of these kerogen plays an important role on their fracture properties while their composition one influences their elastic properties.&lt;/p&gt;
 
-&lt;h3 id=&#34;phd-carbon-peapods&#34;&gt;PhD: Carbon peapods&lt;/h3&gt;
+&lt;h3 id=&#34;carbon-peapods&#34;&gt;Carbon peapods&lt;/h3&gt;
 
 &lt;p&gt;My PhD research was focused on the study of the one-dimensional (1D) system that are the carbon nano-peapods. During my work, I primarily used inelastic neutron scattering and x-ray diffraction in order to investigate the structure and dynamics of this system.
 At the beginning of my thesis, I spent three months in Tsukuba, Japan, with Dr. Hiromichi Kataura. There, I learnt from the best his method to produce ultra-pure peapods – pure in the neutron sense, i.e. without hydrogen impurities – method that I used to produce large quantities of 2D oriented C$_{60}$ and C$_{70}$ peapods.
