@@ -13,7 +13,7 @@ summary : This is yet another tutorial to a working setup for writing in Rmarkdo
 
 Like many physicists, I have been using $\LaTeX$ since the very beginning of my undergrad studies, because it's just that great. The main interests are that the content is dissociated from the form (so you can focus on your writing), it handles your references to articles, sections, figures and equations, and it just makes _very_ nice documents. 
 
-__*But*__, in some cases, you __*have to*__ work in Microsoft Word. Because you collaborate with someone who just don't want to use $\LaTeX$, because you are writing a grant or an abstract and have to use the provided Word template... Shit happens. And then, all your $\LaTeX$-based work-flow crumbles. You can't find a way to properly insert a citation and end up writing them all by hand, you get crazy trying to place that f****** figure/table that keeps on moving to wherever it wants... You just end up crazy and losing your time.
+__*But*__, in some cases, you __*have to*__ work in Microsoft Word. Because you collaborate with someone who just don't want to use $\LaTeX$, because you are writing a grant or an abstract and have to use the provided Word template... Shit happens. And then, all your $\LaTeX$-based work-flow crumbles. You can't find a way to properly insert a citation and end up writing them all by hand, you get crazy trying to place that damn figure/table that keeps on moving to wherever it wants... You just end up crazy and losing your time.
 
 And then, you discover [markdown](https://en.wikipedia.org/wiki/Markdown) (and its various flavors like [Rmarkdown](http://rmarkdown.rstudio.com/articles_intro.html)) and [pandoc](http://pandoc.org/), and your life changes. Really. 
 
@@ -103,7 +103,7 @@ How to understand this header:
 - There are many [other options](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf), but with this you'll fulfill most of your needs (at least, it works fine for mine).
 
 Now you can start adding some content, like:
-```markdown
+```` markdown
 # First section
 ## First subsection
 I am writing _italic_ and __bold__ stuff.
@@ -123,17 +123,27 @@ Figure @fig:image is an image with a caption:
 While this image has no caption 
 ![Image with no caption because I didn't skip a line](http://markdown-here.com/img/icon256.png)
 
+Here's a code chunk in R:
+``` {r}
+x<-seq(0,10,1)
+```
+And one in python:
+``` {python}
+x=1+1
+```
+
 # References
 
 [^1]: This is a footnote.
-```
+```` 
 
 To compile your document with ST, just hit Cmd+B ("Build"). The first time, it may ask you with what build system you want to go: choose Rmarkdown. And: voilà! It's _that_ easy.
 
 If you don't want to use ST, you can for example use [RStudio](http://rmarkdown.rstudio.com/lesson-1.html) to compile. It's free and has no popup.
-You may also want to use pandoc from the command line, e.g. if you don't want to use ST and don't write code chunks that you want to be computed. In that case it's a bit more complicated, I invite you to read a nice tutorial [here](http://blog.kdheepak.com/writing-papers-with-markdown.html).
+You may also want to use pandoc from the command line, _e.g._ if you don't want to use ST and don't write code chunks that you want to be computed. In that case it's a bit more complicated, I invite you to read a nice tutorial [here](http://blog.kdheepak.com/writing-papers-with-markdown.html).
 
-Note that when you choose to output to an html format, you can't use PDF images: use .svg ([pdf2svg](http://www.cityinthesky.co.uk/opensource/pdf2svg/)) or other non vectorial images. What's nice with html output though, it's that you can include _interactive_ figures (e.g. with [plotly](https://plot.ly/)). Of course, this won't work with static documents like PDF or Word...
+Note that when you choose to output to an html format, you can't use PDF images: use .svg ([pdf2svg](http://www.cityinthesky.co.uk/opensource/pdf2svg/)) or other non vectorial images. What's nice with html output though, it's that you can include _interactive_ figures (_e.g._ with [plotly](https://plot.ly/), like I did [here](../3dplotR)). Of course, this won't work with static documents like PDF or Word...
+
 
 
 

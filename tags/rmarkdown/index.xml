@@ -23,7 +23,7 @@
 &lt;/ul&gt;
 &lt;!-- /MarkdownTOC --&gt;
 &lt;p&gt;Like many physicists, I have been using &lt;span class=&#34;math inline&#34;&gt;\(\LaTeX\)&lt;/span&gt; since the very beginning of my undergrad studies, because it’s just that great. The main interests are that the content is dissociated from the form (so you can focus on your writing), it handles your references to articles, sections, figures and equations, and it just makes &lt;em&gt;very&lt;/em&gt; nice documents.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;But&lt;/em&gt;&lt;/strong&gt;, in some cases, you &lt;strong&gt;&lt;em&gt;have to&lt;/em&gt;&lt;/strong&gt; work in Microsoft Word. Because you collaborate with someone who just don’t want to use &lt;span class=&#34;math inline&#34;&gt;\(\LaTeX\)&lt;/span&gt;, because you are writing a grant or an abstract and have to use the provided Word template… Shit happens. And then, all your &lt;span class=&#34;math inline&#34;&gt;\(\LaTeX\)&lt;/span&gt;-based work-flow crumbles. You can’t find a way to properly insert a citation and end up writing them all by hand, you get crazy trying to place that f****** figure/table that keeps on moving to wherever it wants… You just end up crazy and losing your time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;But&lt;/em&gt;&lt;/strong&gt;, in some cases, you &lt;strong&gt;&lt;em&gt;have to&lt;/em&gt;&lt;/strong&gt; work in Microsoft Word. Because you collaborate with someone who just don’t want to use &lt;span class=&#34;math inline&#34;&gt;\(\LaTeX\)&lt;/span&gt;, because you are writing a grant or an abstract and have to use the provided Word template… Shit happens. And then, all your &lt;span class=&#34;math inline&#34;&gt;\(\LaTeX\)&lt;/span&gt;-based work-flow crumbles. You can’t find a way to properly insert a citation and end up writing them all by hand, you get crazy trying to place that damn figure/table that keeps on moving to wherever it wants… You just end up crazy and losing your time.&lt;/p&gt;
 &lt;p&gt;And then, you discover &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;markdown&lt;/a&gt; (and its various flavors like &lt;a href=&#34;http://rmarkdown.rstudio.com/articles_intro.html&#34;&gt;Rmarkdown&lt;/a&gt;) and &lt;a href=&#34;http://pandoc.org/&#34;&gt;pandoc&lt;/a&gt;, and your life changes. Really.&lt;/p&gt;
 &lt;p&gt;You can see markdown as a simplified version of &lt;span class=&#34;math inline&#34;&gt;\(\LaTeX\)&lt;/span&gt; (see a cheat sheet &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;here&lt;/a&gt; and a tutorial &lt;a href=&#34;http://www.markdowntutorial.com/&#34;&gt;here&lt;/a&gt;), so it’s really simple to use, even by your &lt;span class=&#34;math inline&#34;&gt;\(\LaTeX\)&lt;/span&gt;-reluctant colleagues. And like &lt;span class=&#34;math inline&#34;&gt;\(\LaTeX\)&lt;/span&gt;, it handles automatic numbering of citations (using &lt;code&gt;[@Bibkey]&lt;/code&gt; instead of &lt;code&gt;\cite{Bibkey}&lt;/code&gt;) and references to figures (by inserting the figure using &lt;code&gt;![Caption](image.png) {#fig:description}&lt;/code&gt; and referencing it by &lt;code&gt;@fig:description&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;What is &lt;em&gt;really&lt;/em&gt; interesting with markdown is that a single master file, say &lt;em&gt;article.md&lt;/em&gt;, can easily be exported to a variety of formats, like html, TeX, PDF or Word. Even better, with Rmarkdown, you can even include code chunks that will be computed when compiling, and the output will directly be included in the resulting file. Great for producing experimental log files, for example.&lt;/p&gt;
@@ -60,7 +60,7 @@ Launch R (type &lt;code&gt;R&lt;/code&gt; in your Terminal) and type: &lt;code&g
 &lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;---
 title  : Your Title
 author : John Doe
-date   : 09/06/2017
+date   : 10/06/2017
 output :
     word_document:
         reference_docx: path/to/word-template.docx
@@ -124,12 +124,23 @@ Figure @fig:image is an image with a caption:
 While this image has no caption 
 ![Image with no caption because I didn&amp;#39;t skip a line](http://markdown-here.com/img/icon256.png)
 
+Here&amp;#39;s a code chunk in R:
+
+```r
+x&amp;lt;-seq(0,10,1)
+```
+And one in python:
+
+```python
+x=1+1
+```
+
 # References
 
 [^1]: This is a footnote.&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;To compile your document with ST, just hit Cmd+B (“Build”). The first time, it may ask you with what build system you want to go: choose Rmarkdown. And: voilà! It’s &lt;em&gt;that&lt;/em&gt; easy.&lt;/p&gt;
-&lt;p&gt;If you don’t want to use ST, you can for example use &lt;a href=&#34;http://rmarkdown.rstudio.com/lesson-1.html&#34;&gt;RStudio&lt;/a&gt; to compile. It’s free and has no popup. You may also want to use pandoc from the command line, e.g. if you don’t want to use ST and don’t write code chunks that you want to be computed. In that case it’s a bit more complicated, I invite you to read a nice tutorial &lt;a href=&#34;http://blog.kdheepak.com/writing-papers-with-markdown.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Note that when you choose to output to an html format, you can’t use PDF images: use .svg (&lt;a href=&#34;http://www.cityinthesky.co.uk/opensource/pdf2svg/&#34;&gt;pdf2svg&lt;/a&gt;) or other non vectorial images. What’s nice with html output though, it’s that you can include &lt;em&gt;interactive&lt;/em&gt; figures (e.g. with &lt;a href=&#34;https://plot.ly/&#34;&gt;plotly&lt;/a&gt;). Of course, this won’t work with static documents like PDF or Word…&lt;/p&gt;
+&lt;p&gt;If you don’t want to use ST, you can for example use &lt;a href=&#34;http://rmarkdown.rstudio.com/lesson-1.html&#34;&gt;RStudio&lt;/a&gt; to compile. It’s free and has no popup. You may also want to use pandoc from the command line, &lt;em&gt;e.g.&lt;/em&gt; if you don’t want to use ST and don’t write code chunks that you want to be computed. In that case it’s a bit more complicated, I invite you to read a nice tutorial &lt;a href=&#34;http://blog.kdheepak.com/writing-papers-with-markdown.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note that when you choose to output to an html format, you can’t use PDF images: use .svg (&lt;a href=&#34;http://www.cityinthesky.co.uk/opensource/pdf2svg/&#34;&gt;pdf2svg&lt;/a&gt;) or other non vectorial images. What’s nice with html output though, it’s that you can include &lt;em&gt;interactive&lt;/em&gt; figures (&lt;em&gt;e.g.&lt;/em&gt; with &lt;a href=&#34;https://plot.ly/&#34;&gt;plotly&lt;/a&gt;, like I did &lt;a href=&#34;../3dplotR&#34;&gt;here&lt;/a&gt;). Of course, this won’t work with static documents like PDF or Word…&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
