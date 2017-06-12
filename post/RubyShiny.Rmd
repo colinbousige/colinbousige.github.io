@@ -11,18 +11,19 @@ This is my first try as a Shiny app, I made it to help my students during their 
 - The expected Raman shift for the ruby, $\omega_{ruby}$, if you give it the other info  
 - The pressure if you upload a ruby spectrum and give it the other info  
 
-Either go on the Shiny server: https://cbousige.shinyapps.io/rubypressure/
+To use it:
 
-Or run it directly in R with:
+- Either go on the Shiny server: https://cbousige.shinyapps.io/rubypressure/
+- Or run it directly in R with:
 ```
 require(shiny)
 runGitHub("RubyPressure","colinbousige")
 ```
-
-Or clone the [repo](https://github.com/colinbousige/RubyPressure), `setwd()` to the folder where all the files are, and run it in R with:
+- Or clone the [repo](https://github.com/colinbousige/RubyPressure), `setwd()` to the folder where all the files are, and run it in R with:
 ```
 require(shiny)
 runApp()
 ```
+
 I even went so far as providing a sample ruby spectrum: try it out!  
 The laser wavelength for this experiment was 568.2 nm.

@@ -24,13 +24,16 @@
 &lt;/li&gt;
 &lt;li&gt;The pressure if you upload a ruby spectrum and give it the other info&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Either go on the Shiny server: &lt;a href=&#34;https://cbousige.shinyapps.io/rubypressure/&#34; class=&#34;uri&#34;&gt;https://cbousige.shinyapps.io/rubypressure/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Or run it directly in R with:&lt;/p&gt;
+&lt;p&gt;To use it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Either go on the Shiny server: &lt;a href=&#34;https://cbousige.shinyapps.io/rubypressure/&#34; class=&#34;uri&#34;&gt;https://cbousige.shinyapps.io/rubypressure/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Or run it directly in R with:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;require(shiny)
-runGitHub(&amp;quot;RubyPressure&amp;quot;,&amp;quot;colinbousige&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Or clone the &lt;a href=&#34;https://github.com/colinbousige/RubyPressure&#34;&gt;repo&lt;/a&gt;, &lt;code&gt;setwd()&lt;/code&gt; to the folder where all the files are, and run it in R with:&lt;/p&gt;
+runGitHub(&amp;quot;RubyPressure&amp;quot;,&amp;quot;colinbousige&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Or clone the &lt;a href=&#34;https://github.com/colinbousige/RubyPressure&#34;&gt;repo&lt;/a&gt;, &lt;code&gt;setwd()&lt;/code&gt; to the folder where all the files are, and run it in R with:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;require(shiny)
-runApp()&lt;/code&gt;&lt;/pre&gt;
+runApp()&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;I even went so far as providing a sample ruby spectrum: try it out!&lt;br /&gt;
 The laser wavelength for this experiment was 568.2 nm.&lt;/p&gt;
 </description>
