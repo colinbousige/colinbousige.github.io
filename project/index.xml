@@ -39,7 +39,7 @@
 &lt;h3 id=&#34;carbon-peapods&#34;&gt;Carbon peapods&lt;/h3&gt;
 
 &lt;p&gt;My PhD research was focused on the study of the one-dimensional (1D) system that are the carbon nano-peapods. During my work, I primarily used inelastic neutron scattering and x-ray diffraction in order to investigate the structure and dynamics of this system.
-At the beginning of my thesis, I spent three months in Tsukuba, Japan, with Dr. Hiromichi Kataura. There, I learnt from the best his method to produce ultra-pure peapods – pure in the neutron sense, i.e. without hydrogen impurities – method that I used to produce large quantities of 2D oriented C$_{60}$ and C$_{70}$ peapods.
+At the beginning of my thesis, I spent three months in Tsukuba, Japan, with Dr. Hiromichi Kataura. There, I learned from the best his method to produce ultra-pure peapods – pure in the neutron sense, i.e. without hydrogen impurities – method that I used to produce large quantities of 2D oriented C$_{60}$ and C$_{70}$ peapods.
 Thanks to the 2D orientation of the samples, we could separate the translational part of the inelastic response of the spectra, which allowed us to finely study the translational motion of the fullerenes. Then, by studying the inter-fullerene distance, the fullerenes rotation and translations from 2 K up to 1200 K – an unprecedented large temperature domain of stability for 1D systems – I highlighted the true crystalline behavior of the fullerene chains at room temperature, the melting of these chains at high temperature, and the orientational ordering of the fullerenes at low temperature. Quite a lot of phase transitions for a 1D system!&lt;/p&gt;
 </description>
     </item>
@@ -63,21 +63,13 @@ Thanks to the 2D orientation of the samples, we could separate the translational
 
 &lt;h2 id=&#34;borophene&#34;&gt;Borophene&lt;/h2&gt;
 
-&lt;p&gt;More details soon!&lt;/p&gt;
+&lt;p&gt;My project at the LMI consists in the synthesis and characterization of borophene, a new 2D material with very interesting properties. More details soon!&lt;/p&gt;
 
 &lt;h2 id=&#34;graphene-under-extreme-conditions&#34;&gt;Graphene under extreme conditions&lt;/h2&gt;
 
 &lt;p&gt;Graphene is the simplest of bi-dimensional materials, and thus constitutes a reference for all 2D systems. In most cases, graphene is deposited on a substrate. Assessing the effects of graphene interaction with its environment is thus of primordial concern in the aim of developing graphene-based applications. In particular, understanding the mechanisms and limits of the transfer of deformations between the substrate and the graphene flake is at the cornerstone of the development of strain engineering at the nano-scale.&lt;/p&gt;
 
-&lt;p&gt;In this aim, we have studied single-layer graphene [1] and isotopically labeled bi-layer graphene [2] deposited on various types of substrates and submitted to high biaxial compression – the latter being caused by the volume reduction of the substrate when submitted to high pressures in a diamond anvil cell. We observe very different responses of the graphene flakes as a function of both the substrate it is deposited on and the pressure transmitting medium. These results can be explained by a mechanical model that supposes a transmission of the deformations to the graphene flake through the substrate. We show that, contrary to what is generally pre-supposed, the adhesion of graphene can vary as a function of the characteristics of the surface of the substrate, and can even disappear under high stress. This study supplies tools to characterize the strain transmission efficiency between substrate and graphene that can be generalized to other 2D systems, and our results allow dressing a critical review of previous studies of graphene under high-pressure conditions [3-5].&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;[1] Bousige et al., &lt;em&gt;Nano Lett.&lt;/em&gt; &lt;strong&gt;17&lt;/strong&gt;, 21–27 (2017)&lt;br /&gt;
-[2] Frank et al., &lt;em&gt;Nanoscale&lt;/em&gt; &lt;strong&gt;6&lt;/strong&gt;, 6363 (2014)&lt;br /&gt;
-[3] Proctor et al., &lt;em&gt;Phys. Rev. B&lt;/em&gt; &lt;strong&gt;80&lt;/strong&gt;, 073408 (2009)&lt;br /&gt;
-[4] Nicolle et al., &lt;em&gt;Nano Letters&lt;/em&gt; &lt;strong&gt;11&lt;/strong&gt;, 3564 (2011)&lt;br /&gt;
-[5] Filintoglou et al., &lt;em&gt;Phys. Rev. B&lt;/em&gt; &lt;strong&gt;88&lt;/strong&gt;, 045418 (2013)&lt;/p&gt;
+&lt;p&gt;In this aim, we have studied single-layer graphene and isotopically labeled bi-layer graphene deposited on various types of substrates and submitted to high biaxial compression – the latter being caused by the volume reduction of the substrate when submitted to high pressures in a diamond anvil cell. We observe very different responses of the graphene flakes as a function of both the substrate it is deposited on and the pressure transmitting medium. These results can be explained by a mechanical model that supposes a transmission of the deformations to the graphene flake through the substrate. We show that, contrary to what is generally pre-supposed, the adhesion of graphene can vary as a function of the characteristics of the surface of the substrate, and can even disappear under high stress. This study supplies tools to characterize the strain transmission efficiency between substrate and graphene that can be generalized to other 2D systems, and our results allow dressing a critical review of previous studies of graphene under high-pressure conditions.&lt;/p&gt;
 </description>
     </item>
     
