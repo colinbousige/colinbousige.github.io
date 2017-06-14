@@ -43,7 +43,7 @@ brew tap homebrew/science
 brew install Caskroom/cask/xquartz
 brew install R --build-from-source
 ```
-Launch R (type `R` in your Terminal) and type: `install.packages("rmarkdown")`. Having R installed will allow you to compile Rmarkdown files in which you can include code chunks in various languages, _that will be computed upon compilation_ and print the output in your resulting file. Yes. List of supported languages (based on the installed languages on my laptop, you can add other):
+Launch R (type `R` in your Terminal) and type: `install.packages("rmarkdown")`. Having R installed will allow you to compile Rmarkdown files in which you can include code chunks in various languages, _that will be computed upon compilation_ and print the output in your resulting file. Yes. List of supported languages:
 ```{r}
 names(knitr::knit_engines$get())
 ```
