@@ -52,6 +52,7 @@ names(knitr::knit_engines$get())
 - Install the following ST packages (_a minima_): Rbox, Citer, Markdown​Editing, AcademicMarkdown. I also recommend LatexTools, MarkdownTOC, BracketHighlighter, SublimeREPL, SendCode and wordcount. To install a package, hit Cmd+Maj+P in ST, type Install Package, and find the name of the package you want. Google them to see what they do.
 - [Configure Citer](https://github.com/mangecoeur/Citer) by providing it the path to your biblio.bib file.
 - You're good to go!
+- You can also take a look at the [editR](https://github.com/swarm-lab/editR) package if you don't want to use ST.
 
 
 

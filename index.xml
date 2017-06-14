@@ -65,6 +65,7 @@ brew install R --build-from-source&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;Install the following ST packages (&lt;em&gt;a minima&lt;/em&gt;): Rbox, Citer, Markdown​Editing, AcademicMarkdown. I also recommend LatexTools, MarkdownTOC, BracketHighlighter, SublimeREPL, SendCode and wordcount. To install a package, hit Cmd+Maj+P in ST, type Install Package, and find the name of the package you want. Google them to see what they do.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/mangecoeur/Citer&#34;&gt;Configure Citer&lt;/a&gt; by providing it the path to your biblio.bib file.&lt;/li&gt;
 &lt;li&gt;You’re good to go!&lt;/li&gt;
+&lt;li&gt;You can also take a look at the &lt;a href=&#34;https://github.com/swarm-lab/editR&#34;&gt;editR&lt;/a&gt; package if you don’t want to use ST.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;writing-in-markdown-and-exporting-to-various-formats&#34; class=&#34;section level2&#34;&gt;
