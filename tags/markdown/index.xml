@@ -44,7 +44,7 @@ You will need python and pip &lt;a href=&#34;https://stackoverflow.com/questions
 &lt;pre&gt;&lt;code&gt;brew tap homebrew/science
 brew install Caskroom/cask/xquartz
 brew install R --build-from-source&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Launch R (type &lt;code&gt;R&lt;/code&gt; in your Terminal) and type: &lt;code&gt;install.packages(&amp;quot;rmarkdown&amp;quot;)&lt;/code&gt;. Having R installed will allow you to compile Rmarkdown files in which you can include code chunks in various languages, &lt;em&gt;that will be computed upon compilation&lt;/em&gt; and print the output in your resulting file. Yes. List of supported languages:&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;Launch R (type &lt;code&gt;R&lt;/code&gt; in your Terminal) and type: &lt;code&gt;install.packages(&amp;quot;rmarkdown&amp;quot;)&lt;/code&gt;. Having R installed will allow you to compile Rmarkdown files in which you can include code chunks in various languages, &lt;em&gt;that will be computed upon compilation&lt;/em&gt; and print the output in your resulting file. Yes. List of supported languages (based on the installed languages on my laptop, you can add other):&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;names(knitr::knit_engines$get())&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;awk&amp;quot;         &amp;quot;bash&amp;quot;        &amp;quot;coffee&amp;quot;      &amp;quot;gawk&amp;quot;        &amp;quot;groovy&amp;quot;     
