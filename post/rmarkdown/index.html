@@ -270,7 +270,7 @@ You will need python and pip <a href="https://stackoverflow.com/questions/172713
 <pre><code>brew tap homebrew/science
 brew install Caskroom/cask/xquartz
 brew install R --build-from-source</code></pre>
-<p>Launch R (type <code>R</code> in your Terminal) and type: <code>install.packages(&quot;rmarkdown&quot;)</code>. Having R installed will allow you to compile Rmarkdown files in which you can include code chunks in various languages, <em>that will be computed upon compilation</em> and print the output in your resulting file. Yes. List of supported languages:</p></li>
+<p>Launch R (type <code>R</code> in your Terminal) and type: <code>install.packages(c(&quot;knitr&quot;, &quot;rmarkdown&quot;))</code>. Having R installed will allow you to compile Rmarkdown files in which you can include code chunks in various languages, <em>that will be computed upon compilation</em> and print the output in your resulting file. Yes. List of supported languages:</p></li>
 </ul>
 <pre class="r"><code>names(knitr::knit_engines$get())</code></pre>
 <pre><code>##  [1] &quot;awk&quot;         &quot;bash&quot;        &quot;coffee&quot;      &quot;gawk&quot;        &quot;groovy&quot;     
