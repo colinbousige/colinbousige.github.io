@@ -44,14 +44,27 @@ You will need python and pip &lt;a href=&#34;https://stackoverflow.com/questions
 &lt;pre&gt;&lt;code&gt;brew tap homebrew/science
 brew install Caskroom/cask/xquartz
 brew install R --build-from-source&lt;/code&gt;&lt;/pre&gt;
-Launch R (type &lt;code&gt;R&lt;/code&gt; in your Terminal) and type: &lt;code&gt;install.packages(&amp;quot;rmarkdown&amp;quot;)&lt;/code&gt;. Having R installed will allow you to compile Rmarkdown files in which you can include code chunks in various languages, &lt;em&gt;that will be computed upon compilation&lt;/em&gt; and print the output in your resulting file. Yes.&lt;/li&gt;
+&lt;p&gt;Launch R (type &lt;code&gt;R&lt;/code&gt; in your Terminal) and type: &lt;code&gt;install.packages(&amp;quot;rmarkdown&amp;quot;)&lt;/code&gt;. Having R installed will allow you to compile Rmarkdown files in which you can include code chunks in various languages, &lt;em&gt;that will be computed upon compilation&lt;/em&gt; and print the output in your resulting file. Yes. List of supported languages:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;names(knitr::knit_engines$get())&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;awk&amp;quot;         &amp;quot;bash&amp;quot;        &amp;quot;coffee&amp;quot;      &amp;quot;gawk&amp;quot;        &amp;quot;groovy&amp;quot;     
+##  [6] &amp;quot;haskell&amp;quot;     &amp;quot;lein&amp;quot;        &amp;quot;mysql&amp;quot;       &amp;quot;node&amp;quot;        &amp;quot;octave&amp;quot;     
+## [11] &amp;quot;perl&amp;quot;        &amp;quot;psql&amp;quot;        &amp;quot;python&amp;quot;      &amp;quot;Rscript&amp;quot;     &amp;quot;ruby&amp;quot;       
+## [16] &amp;quot;sas&amp;quot;         &amp;quot;scala&amp;quot;       &amp;quot;sed&amp;quot;         &amp;quot;sh&amp;quot;          &amp;quot;stata&amp;quot;      
+## [21] &amp;quot;zsh&amp;quot;         &amp;quot;highlight&amp;quot;   &amp;quot;Rcpp&amp;quot;        &amp;quot;tikz&amp;quot;        &amp;quot;dot&amp;quot;        
+## [26] &amp;quot;c&amp;quot;           &amp;quot;fortran&amp;quot;     &amp;quot;fortran95&amp;quot;   &amp;quot;asy&amp;quot;         &amp;quot;cat&amp;quot;        
+## [31] &amp;quot;asis&amp;quot;        &amp;quot;stan&amp;quot;        &amp;quot;block&amp;quot;       &amp;quot;block2&amp;quot;      &amp;quot;js&amp;quot;         
+## [36] &amp;quot;css&amp;quot;         &amp;quot;sql&amp;quot;         &amp;quot;go&amp;quot;          &amp;quot;theorem&amp;quot;     &amp;quot;lemma&amp;quot;      
+## [41] &amp;quot;definition&amp;quot;  &amp;quot;corollary&amp;quot;   &amp;quot;proposition&amp;quot; &amp;quot;example&amp;quot;     &amp;quot;proof&amp;quot;      
+## [46] &amp;quot;remark&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
 &lt;li&gt;Install &lt;a href=&#34;http://www.sublimetext.com/3&#34;&gt;Sublime Text 3&lt;/a&gt;. This text editor is &lt;a href=&#34;https://scotch.io/bar-talk/the-complete-visual-guide-to-sublime-text-3-getting-started-and-keyboard-shortcuts&#34;&gt;so good&lt;/a&gt; I even bought a license. But you don’t need one to work with it, you’ll just get the occasional popup. There are cool free editors like &lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt; that I would be keen on using, but I couldn’t figure out an easy way to compile markdown or &lt;span class=&#34;math inline&#34;&gt;\(\LaTeX\)&lt;/span&gt; documents with it like I do with ST. If you know how to do it I’m all ears, because Atom has some very cool packages like &lt;a href=&#34;https://atom.io/packages/hydrogen&#34;&gt;Hydrogen&lt;/a&gt;, but for now I like ST better.&lt;br /&gt;
 &lt;/li&gt;
 &lt;li&gt;Install Sublime Text package control: &lt;a href=&#34;https://packagecontrol.io/installation&#34; class=&#34;uri&#34;&gt;https://packagecontrol.io/installation&lt;/a&gt;&lt;br /&gt;
 &lt;/li&gt;
 &lt;li&gt;Install the following ST packages (&lt;em&gt;a minima&lt;/em&gt;): Rbox, Citer, Markdown​Editing, AcademicMarkdown. I also recommend LatexTools, MarkdownTOC, BracketHighlighter, SublimeREPL, SendCode and wordcount. To install a package, hit Cmd+Maj+P in ST, type Install Package, and find the name of the package you want. Google them to see what they do.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/mangecoeur/Citer&#34;&gt;Configure Citer&lt;/a&gt; by providing it the path to your biblio.bib file.&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;You’re good to go!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;You’re good to go!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;writing-in-markdown-and-exporting-to-various-formats&#34; class=&#34;section level2&#34;&gt;
@@ -60,7 +73,7 @@ Launch R (type &lt;code&gt;R&lt;/code&gt; in your Terminal) and type: &lt;code&g
 &lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;---
 title  : Your Title
 author : John Doe
-date   : 10/06/2017
+date   : 14/06/2017
 output :
     word_document:
         reference_docx: path/to/word-template.docx

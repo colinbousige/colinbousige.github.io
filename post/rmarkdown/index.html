@@ -270,14 +270,27 @@ You will need python and pip <a href="https://stackoverflow.com/questions/172713
 <pre><code>brew tap homebrew/science
 brew install Caskroom/cask/xquartz
 brew install R --build-from-source</code></pre>
-Launch R (type <code>R</code> in your Terminal) and type: <code>install.packages(&quot;rmarkdown&quot;)</code>. Having R installed will allow you to compile Rmarkdown files in which you can include code chunks in various languages, <em>that will be computed upon compilation</em> and print the output in your resulting file. Yes.</li>
+<p>Launch R (type <code>R</code> in your Terminal) and type: <code>install.packages(&quot;rmarkdown&quot;)</code>. Having R installed will allow you to compile Rmarkdown files in which you can include code chunks in various languages, <em>that will be computed upon compilation</em> and print the output in your resulting file. Yes. List of supported languages:</p></li>
+</ul>
+<pre class="r"><code>names(knitr::knit_engines$get())</code></pre>
+<pre><code>##  [1] &quot;awk&quot;         &quot;bash&quot;        &quot;coffee&quot;      &quot;gawk&quot;        &quot;groovy&quot;     
+##  [6] &quot;haskell&quot;     &quot;lein&quot;        &quot;mysql&quot;       &quot;node&quot;        &quot;octave&quot;     
+## [11] &quot;perl&quot;        &quot;psql&quot;        &quot;python&quot;      &quot;Rscript&quot;     &quot;ruby&quot;       
+## [16] &quot;sas&quot;         &quot;scala&quot;       &quot;sed&quot;         &quot;sh&quot;          &quot;stata&quot;      
+## [21] &quot;zsh&quot;         &quot;highlight&quot;   &quot;Rcpp&quot;        &quot;tikz&quot;        &quot;dot&quot;        
+## [26] &quot;c&quot;           &quot;fortran&quot;     &quot;fortran95&quot;   &quot;asy&quot;         &quot;cat&quot;        
+## [31] &quot;asis&quot;        &quot;stan&quot;        &quot;block&quot;       &quot;block2&quot;      &quot;js&quot;         
+## [36] &quot;css&quot;         &quot;sql&quot;         &quot;go&quot;          &quot;theorem&quot;     &quot;lemma&quot;      
+## [41] &quot;definition&quot;  &quot;corollary&quot;   &quot;proposition&quot; &quot;example&quot;     &quot;proof&quot;      
+## [46] &quot;remark&quot;</code></pre>
+<ul>
 <li>Install <a href="http://www.sublimetext.com/3">Sublime Text 3</a>. This text editor is <a href="https://scotch.io/bar-talk/the-complete-visual-guide-to-sublime-text-3-getting-started-and-keyboard-shortcuts">so good</a> I even bought a license. But you don’t need one to work with it, you’ll just get the occasional popup. There are cool free editors like <a href="https://atom.io/">Atom</a> that I would be keen on using, but I couldn’t figure out an easy way to compile markdown or <span class="math inline">\(\LaTeX\)</span> documents with it like I do with ST. If you know how to do it I’m all ears, because Atom has some very cool packages like <a href="https://atom.io/packages/hydrogen">Hydrogen</a>, but for now I like ST better.<br />
 </li>
 <li>Install Sublime Text package control: <a href="https://packagecontrol.io/installation" class="uri">https://packagecontrol.io/installation</a><br />
 </li>
 <li>Install the following ST packages (<em>a minima</em>): Rbox, Citer, Markdown​Editing, AcademicMarkdown. I also recommend LatexTools, MarkdownTOC, BracketHighlighter, SublimeREPL, SendCode and wordcount. To install a package, hit Cmd+Maj+P in ST, type Install Package, and find the name of the package you want. Google them to see what they do.</li>
 <li><a href="https://github.com/mangecoeur/Citer">Configure Citer</a> by providing it the path to your biblio.bib file.</li>
-<li><p>You’re good to go!</p></li>
+<li>You’re good to go!</li>
 </ul>
 </div>
 <div id="writing-in-markdown-and-exporting-to-various-formats" class="section level2">
@@ -286,7 +299,7 @@ Launch R (type <code>R</code> in your Terminal) and type: <code>install.packages
 <pre class="yaml"><code>---
 title  : Your Title
 author : John Doe
-date   : 10/06/2017
+date   : 14/06/2017
 output :
     word_document:
         reference_docx: path/to/word-template.docx
