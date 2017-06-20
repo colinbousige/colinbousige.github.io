@@ -148,10 +148,3 @@ You may also want to use pandoc from the command line, _e.g._ if you don't want 
 
 Note that when you choose to output to an html format, you can't use PDF images: use .svg ([pdf2svg](http://www.cityinthesky.co.uk/opensource/pdf2svg/)) or other non vectorial images. What's nice with html output though, it's that you can include _interactive_ figures (_e.g._ with [plotly](https://plot.ly/), like I did [here](../3dplotr)). Of course, this won't work with static documents like PDF or Word...
 
-
-
-
-
-
-
-

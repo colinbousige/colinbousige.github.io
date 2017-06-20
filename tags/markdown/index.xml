@@ -74,7 +74,7 @@ brew install R --build-from-source&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;---
 title  : Your Title
 author : John Doe
-date   : 14/06/2017
+date   : 16/06/2017
 output :
     word_document:
         reference_docx: path/to/word-template.docx
