@@ -11,6 +11,26 @@
     <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>High pressure study of graphene interaction with its environment </title>
+      <link>/talk/sbpmatbrazil/</link>
+      <pubDate>Mon, 11 Sep 2017 11:00:00 +0000</pubDate>
+      
+      <guid>/talk/sbpmatbrazil/</guid>
+      <description>&lt;p&gt;Graphene is the simplest of bi-dimensional materials, and thus constitutes a reference for all 2D systems. In most cases, graphene is deposited on a substrate. Assessing the effects of graphene interaction with its environment is thus of primordial concern in the aim of developing graphene-based applications. In particular, understanding the mechanisms and limits of the transfer of deformations between the substrate and the graphene flake is at the cornerstone of the development of strain engineering at the nano-scale.&lt;/p&gt;
+
+&lt;p&gt;In this aim, we have studied single-layer graphene [1] and isotopically labelled bi-layer graphene [2] deposited on various types of substrates and submitted to high biaxial compression – the latter being caused by the volume reduction of the substrate when submitted to high pressures in a diamond anvil cell. We observe very different responses of the graphene flakes as a function of both the substrate it is deposited on and the pressure transmitting medium. These results can be explained by a mechanical model that supposes a transmission of the deformations to the graphene flake through the substrate. We show that, contrary to what is generally pre-supposed, the adhesion of graphene can vary as a function of the characteristics of the surface of the substrate, and can even disappear under high stress. This study supplies tools to characterize the strain transmission efficiency between substrate and graphene that can be generalized to other 2D systems, and our results allow dressing a critical review of previous studies of graphene under high-pressure conditions [3-5].&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;[1] Bousige et al., Nano Lett. 17, 21–27 (2017)
+[2] Frank et al., Nanoscale 6, 6363 (2014)
+[3] Proctor et al., Phys. Rev. B 80, 073408 (2009)
+[4] Nicolle et al., Nano Letters 11, 3564 (2011)
+[5] Filintoglou et al., Phys. Rev. B 88, 045418 (2013)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Adhesion and friction in 1D and 2D systems</title>
       <link>/talk/friction/</link>
       <pubDate>Thu, 03 Nov 2016 10:00:00 +0000</pubDate>
