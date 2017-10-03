@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shiny on Colin Bousige</title>
-    <link>/tags/shiny/</link>
+    <link>/https://colinbousige.github.io/tags/shiny/</link>
     <description>Recent content in Shiny on Colin Bousige</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Colin Bousige</copyright>
     <lastBuildDate>Thu, 08 Jun 2017 19:56:21 +0200</lastBuildDate>
-    <atom:link href="/tags/shiny/" rel="self" type="application/rss+xml" />
+    <atom:link href="/https:/colinbousige.github.io/tags/shiny/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My first attempt at a Shiny app</title>
-      <link>/post/rubyshiny/</link>
+      <link>/https://colinbousige.github.io/post/rubyshiny/</link>
       <pubDate>Thu, 08 Jun 2017 19:56:21 +0200</pubDate>
       
-      <guid>/post/rubyshiny/</guid>
+      <guid>/https://colinbousige.github.io/post/rubyshiny/</guid>
       <description>&lt;p&gt;This is my first try as a Shiny app, I made it to help my students during their high pressure experiments using diamond anvil cell. It computes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The pressure if you give it values of &lt;span class=&#34;math inline&#34;&gt;\(\lambda_{laser}\)&lt;/span&gt;, the R1 Raman shift at 0 pressure &lt;span class=&#34;math inline&#34;&gt;\(\omega_0\)&lt;/span&gt;, and the measured R1 Raman shift &lt;span class=&#34;math inline&#34;&gt;\(\omega_{ruby}\)&lt;/span&gt;&lt;br /&gt;
