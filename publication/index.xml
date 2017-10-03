@@ -2,20 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Colin Bousige</title>
-    <link>/https://colinbousige.github.io/publication/</link>
+    <link>/publication/</link>
     <description>Recent content in Publications on Colin Bousige</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Colin Bousige</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/https:/colinbousige.github.io/publication/" rel="self" type="application/rss+xml" />
+    <atom:link href="/publication/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Raman scattering studies of graphene under high pressure</title>
+      <link>/publication/reviewjramanspec/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/reviewjramanspec/</guid>
+      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
+
+&lt;!-- url_video = &#34;#&#34; --&gt;
+
+&lt;!-- url_code = &#34;#&#34; --&gt;
+
+&lt;!-- url_dataset = &#34;#&#34; --&gt;
+</description>
+    </item>
     
     <item>
       <title>Biaxial strain transfer in supported graphene</title>
-      <link>/https://colinbousige.github.io/publication/nanolett2017/</link>
+      <link>/publication/nanolett2017/</link>
       <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/nanolett2017/</guid>
+      <guid>/publication/nanolett2017/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -28,10 +44,10 @@
     
     <item>
       <title>Realistic molecular model of kerogen&#39;s nanostructure</title>
-      <link>/https://colinbousige.github.io/publication/natmat/</link>
+      <link>/publication/natmat/</link>
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/natmat/</guid>
+      <guid>/publication/natmat/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -44,10 +60,10 @@
     
     <item>
       <title>Optimized molecular reconstruction procedure combining hybrid reverse Monte Carlo and molecular dynamics.</title>
-      <link>/https://colinbousige.github.io/publication/jchemphys2015/</link>
+      <link>/publication/jchemphys2015/</link>
       <pubDate>Tue, 03 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/jchemphys2015/</guid>
+      <guid>/publication/jchemphys2015/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -60,10 +76,10 @@
     
     <item>
       <title>In situ x-ray diffraction observation of two-step fullerene coalescence in carbon peapods.</title>
-      <link>/https://colinbousige.github.io/publication/epl2013/</link>
+      <link>/publication/epl2013/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/epl2013/</guid>
+      <guid>/publication/epl2013/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -76,10 +92,10 @@
     
     <item>
       <title>From a one-dimensional crystal to a one-dimensional liquid: A comprehensive dynamical study of C60 peapods</title>
-      <link>/https://colinbousige.github.io/publication/prb2013/</link>
+      <link>/publication/prb2013/</link>
       <pubDate>Wed, 22 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/prb2013/</guid>
+      <guid>/publication/prb2013/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -92,10 +108,10 @@
     
     <item>
       <title>Unravelling low lying phonons and vibrations of carbon nanostructures: The contribution of inelastic and quasi-elastic neutron scattering.</title>
-      <link>/https://colinbousige.github.io/publication/epjst2012/</link>
+      <link>/publication/epjst2012/</link>
       <pubDate>Mon, 03 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/epjst2012/</guid>
+      <guid>/publication/epjst2012/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -108,10 +124,10 @@
     
     <item>
       <title>Structure and dynamics of model 1D systems: carbon nano-peapods</title>
-      <link>/https://colinbousige.github.io/publication/thesis/</link>
+      <link>/publication/thesis/</link>
       <pubDate>Wed, 28 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/thesis/</guid>
+      <guid>/publication/thesis/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -124,10 +140,10 @@
     
     <item>
       <title>Progressive melting in confined one-dimensional C60 chains.</title>
-      <link>/https://colinbousige.github.io/publication/prb2012/</link>
+      <link>/publication/prb2012/</link>
       <pubDate>Thu, 26 Jul 2012 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/prb2012/</guid>
+      <guid>/publication/prb2012/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -140,10 +156,10 @@
     
     <item>
       <title>Translational dynamics of one-dimensional fullerene chains encapsulated inside single-walled carbon nanotubes</title>
-      <link>/https://colinbousige.github.io/publication/fullnanotubes/</link>
+      <link>/publication/fullnanotubes/</link>
       <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/fullnanotubes/</guid>
+      <guid>/publication/fullnanotubes/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -156,10 +172,10 @@
     
     <item>
       <title>Determining the energy-dependent x-ray flux variation of a synchrotron beamline using laue diffraction patterns.</title>
-      <link>/https://colinbousige.github.io/publication/dejoie/</link>
+      <link>/publication/dejoie/</link>
       <pubDate>Sat, 11 Dec 2010 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/dejoie/</guid>
+      <guid>/publication/dejoie/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -172,10 +188,10 @@
     
     <item>
       <title>Lattice dynamics of a rotor-stator molecular crystal: Fullerene-cubane C60-C8H8</title>
-      <link>/https://colinbousige.github.io/publication/fullerene-cubane/</link>
+      <link>/publication/fullerene-cubane/</link>
       <pubDate>Fri, 08 Oct 2010 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/fullerene-cubane/</guid>
+      <guid>/publication/fullerene-cubane/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;

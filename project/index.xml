@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Colin Bousige</title>
-    <link>/https://colinbousige.github.io/project/</link>
+    <link>/project/</link>
     <description>Recent content in Projects on Colin Bousige</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Colin Bousige</copyright>
     <lastBuildDate>Wed, 07 Jun 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/https:/colinbousige.github.io/project/" rel="self" type="application/rss+xml" />
+    <atom:link href="/project/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>1D Materials</title>
-      <link>/https://colinbousige.github.io/project/1d/</link>
+      <link>/project/1d/</link>
       <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/project/1d/</guid>
+      <guid>/project/1d/</guid>
       <description>
 
 &lt;!-- MarkdownTOC --&gt;
@@ -46,10 +46,10 @@ Thanks to the 2D orientation of the samples, we could separate the translational
     
     <item>
       <title>2D Materials</title>
-      <link>/https://colinbousige.github.io/project/2d/</link>
+      <link>/project/2d/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/project/2d/</guid>
+      <guid>/project/2d/</guid>
       <description>
 
 &lt;!-- MarkdownTOC --&gt;
@@ -75,10 +75,10 @@ Thanks to the 2D orientation of the samples, we could separate the translational
     
     <item>
       <title>Porous Materials and Confinement</title>
-      <link>/https://colinbousige.github.io/project/porous/</link>
+      <link>/project/porous/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/project/porous/</guid>
+      <guid>/project/porous/</guid>
       <description>
 
 &lt;!-- MarkdownTOC --&gt;

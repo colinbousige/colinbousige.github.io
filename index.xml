@@ -2,20 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Colin Bousige on Colin Bousige</title>
-    <link>/https://colinbousige.github.io/</link>
+    <link>/</link>
     <description>Recent content in Colin Bousige on Colin Bousige</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Colin Bousige</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/https:/colinbousige.github.io/" rel="self" type="application/rss+xml" />
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Raman scattering studies of graphene under high pressure</title>
+      <link>/publication/reviewjramanspec/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/reviewjramanspec/</guid>
+      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
+
+&lt;!-- url_video = &#34;#&#34; --&gt;
+
+&lt;!-- url_code = &#34;#&#34; --&gt;
+
+&lt;!-- url_dataset = &#34;#&#34; --&gt;
+</description>
+    </item>
     
     <item>
       <title>High pressure study of graphene interaction with its environment </title>
-      <link>/https://colinbousige.github.io/talk/sbpmatbrazil/</link>
+      <link>/talk/sbpmatbrazil/</link>
       <pubDate>Mon, 11 Sep 2017 11:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/talk/sbpmatbrazil/</guid>
+      <guid>/talk/sbpmatbrazil/</guid>
       <description>&lt;p&gt;Graphene is the simplest of bi-dimensional materials, and thus constitutes a reference for all 2D systems. In most cases, graphene is deposited on a substrate. Assessing the effects of graphene interaction with its environment is thus of primordial concern in the aim of developing graphene-based applications. In particular, understanding the mechanisms and limits of the transfer of deformations between the substrate and the graphene flake is at the cornerstone of the development of strain engineering at the nano-scale.&lt;/p&gt;
 
 &lt;p&gt;In this aim, we have studied single-layer graphene [1] and isotopically labelled bi-layer graphene [2] deposited on various types of substrates and submitted to high biaxial compression – the latter being caused by the volume reduction of the substrate when submitted to high pressures in a diamond anvil cell. We observe very different responses of the graphene flakes as a function of both the substrate it is deposited on and the pressure transmitting medium. These results can be explained by a mechanical model that supposes a transmission of the deformations to the graphene flake through the substrate. We show that, contrary to what is generally pre-supposed, the adhesion of graphene can vary as a function of the characteristics of the surface of the substrate, and can even disappear under high stress. This study supplies tools to characterize the strain transmission efficiency between substrate and graphene that can be generalized to other 2D systems, and our results allow dressing a critical review of previous studies of graphene under high-pressure conditions [3-5].&lt;/p&gt;
@@ -32,10 +48,10 @@
     
     <item>
       <title>Switching from $\LaTeX$ to Rmarkdown for all-purpose academics-related writing</title>
-      <link>/https://colinbousige.github.io/post/rmarkdown/</link>
+      <link>/post/rmarkdown/</link>
       <pubDate>Fri, 09 Jun 2017 19:56:21 +0200</pubDate>
       
-      <guid>/https://colinbousige.github.io/post/rmarkdown/</guid>
+      <guid>/post/rmarkdown/</guid>
       <description>&lt;!-- MarkdownTOC --&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#setting-up-your-system&#34;&gt;Setting up your system&lt;/a&gt;&lt;/li&gt;
@@ -181,10 +197,10 @@ x=1+1
     
     <item>
       <title>My first attempt at a Shiny app</title>
-      <link>/https://colinbousige.github.io/post/rubyshiny/</link>
+      <link>/post/rubyshiny/</link>
       <pubDate>Thu, 08 Jun 2017 19:56:21 +0200</pubDate>
       
-      <guid>/https://colinbousige.github.io/post/rubyshiny/</guid>
+      <guid>/post/rubyshiny/</guid>
       <description>&lt;p&gt;This is my first try as a Shiny app, I made it to help my students during their high pressure experiments using diamond anvil cell. It computes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The pressure if you give it values of &lt;span class=&#34;math inline&#34;&gt;\(\lambda_{laser}\)&lt;/span&gt;, the R1 Raman shift at 0 pressure &lt;span class=&#34;math inline&#34;&gt;\(\omega_0\)&lt;/span&gt;, and the measured R1 Raman shift &lt;span class=&#34;math inline&#34;&gt;\(\omega_{ruby}\)&lt;/span&gt;&lt;br /&gt;
@@ -210,18 +226,18 @@ The laser wavelength for this experiment was 568.2 nm.&lt;/p&gt;
     
     <item>
       <title>Plotting 3D data with R</title>
-      <link>/https://colinbousige.github.io/post/3dplotr/</link>
+      <link>/post/3dplotr/</link>
       <pubDate>Wed, 07 Jun 2017 19:56:21 +0200</pubDate>
       
-      <guid>/https://colinbousige.github.io/post/3dplotr/</guid>
-      <description>&lt;script src=&#34;/https://colinbousige.github.io/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/https://colinbousige.github.io/rmarkdown-libs/plotlyjs/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/https://colinbousige.github.io/rmarkdown-libs/plotlyjs/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;/https://colinbousige.github.io/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;/https://colinbousige.github.io/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/https://colinbousige.github.io/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/https://colinbousige.github.io/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;/https://colinbousige.github.io/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+      <guid>/post/3dplotr/</guid>
+      <description>&lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/plotlyjs/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/plotlyjs/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;In my work I do a lot of measurements that I like to plot as a color map, like the evolution of a Raman spectrum as a function of temperature, pressure or position. In some cases I end up with a 3-columns &lt;code&gt;data.frame&lt;/code&gt; with x, y, and z values (&lt;em&gt;e.g.&lt;/em&gt; intensity of a peak as a function of the position on my sample), in some cases I have a list of spectra evolving with a given parameter. I have been looking for the best ways to plot this kind of data as a color map, and I’d like to share it here for people who have been struggling like me to do this.&lt;/p&gt;
@@ -261,7 +277,7 @@ legend(&amp;quot;topleft&amp;quot;,cex=1.3,bty = &amp;quot;n&amp;quot;,pch=16,
     col=c(&amp;quot;black&amp;quot;,&amp;quot;royalblue&amp;quot;),
     legend=c(spec[[1]]$name,spec[[Nspec]]$name)
     )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/https://colinbousige.github.io/post/3dplotR_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt; OK, so now we have some fake experimental data stored in a list called &lt;code&gt;spec&lt;/code&gt;. Now we want to plot it as a color map in order to grasp the evolution of the spectra. We will do it using &lt;code&gt;ggplot&lt;/code&gt;, because it’s good and also because you can even make it an interactive plot thanks to &lt;code&gt;plotly&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/3dplotR_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt; OK, so now we have some fake experimental data stored in a list called &lt;code&gt;spec&lt;/code&gt;. Now we want to plot it as a color map in order to grasp the evolution of the spectra. We will do it using &lt;code&gt;ggplot&lt;/code&gt;, because it’s good and also because you can even make it an interactive plot thanks to &lt;code&gt;plotly&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;require(ggplot2)
 require(plotly)
 # Regrouping data in a 3-columns data.frame
@@ -318,7 +334,7 @@ P2 &amp;lt;- ggplot(data=evol.smooth, aes(x=w, y=Temperature, fill=Intensity)) +
 require(cowplot)
 plot_grid(P1 + theme(legend.position=&amp;quot;none&amp;quot;), 
           P2 + theme(legend.position=&amp;quot;none&amp;quot;),align=&amp;quot;hv&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/https://colinbousige.github.io/post/3dplotR_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/3dplotR_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;matrix-of-data&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Matrix of data&lt;/h2&gt;
@@ -332,11 +348,11 @@ y &amp;lt;- y[order(y)]
 colors &amp;lt;- colorRampPalette(c(&amp;quot;white&amp;quot;,&amp;quot;royalblue&amp;quot;,&amp;quot;seagreen&amp;quot;,&amp;quot;orange&amp;quot;,&amp;quot;red&amp;quot;,&amp;quot;brown&amp;quot;))(500)
 par(mar=c(4, 4, .5, 4), lwd=2)
 image(x,y,z,col = colors)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/https://colinbousige.github.io/post/3dplotR_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;100%&#34; /&gt; You can add a legend by using the &lt;code&gt;image.plot&lt;/code&gt; function:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/3dplotR_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;100%&#34; /&gt; You can add a legend by using the &lt;code&gt;image.plot&lt;/code&gt; function:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;require(fields)
 par(mar=c(4, 4, .5, 4), lwd=2)
 image.plot(x,y,z,col = colors)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/https://colinbousige.github.io/post/3dplotR_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;100%&#34; /&gt; And finally, if you want to make this an interactive plot, you can use &lt;code&gt;plotly&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/3dplotR_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;100%&#34; /&gt; And finally, if you want to make this an interactive plot, you can use &lt;code&gt;plotly&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;require(plotly)
 aX &amp;lt;- list(title = &amp;quot;Raman Shift [1/cm]&amp;quot;)
 aY &amp;lt;- list(title = &amp;quot;Temperature [K]&amp;quot;)
@@ -361,10 +377,10 @@ plot_ly(x=x,y=y,z=z,type = &amp;quot;heatmap&amp;quot;,colors=colors) %&amp;gt;%
     
     <item>
       <title>1D Materials</title>
-      <link>/https://colinbousige.github.io/project/1d/</link>
+      <link>/project/1d/</link>
       <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/project/1d/</guid>
+      <guid>/project/1d/</guid>
       <description>
 
 &lt;!-- MarkdownTOC --&gt;
@@ -395,10 +411,10 @@ Thanks to the 2D orientation of the samples, we could separate the translational
     
     <item>
       <title>Setting up your new Mac for academic work</title>
-      <link>/https://colinbousige.github.io/post/new_install/</link>
+      <link>/post/new_install/</link>
       <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/post/new_install/</guid>
+      <guid>/post/new_install/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is mainly for my own use, but I figured it might be useful to put it on-line&amp;hellip;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;When changing computer, it&amp;rsquo;s always a pain in the ass to set up your new machine like the old one. Over time, I tried to gather the different commands for installing the various programs I use to ease the setup of my next computer (or the update of my current one). You&amp;rsquo;ll find the following entries on my &lt;a href=&#34;https://github.com/colinbousige/New-Install&#34; target=&#34;_blank&#34;&gt;github page&lt;/a&gt;, as well as my &lt;code&gt;.bash_profile&lt;/code&gt; and my &lt;code&gt;.Rprofile&lt;/code&gt; files.&lt;/p&gt;
@@ -428,10 +444,10 @@ Thanks to the 2D orientation of the samples, we could separate the translational
     
     <item>
       <title>Biaxial strain transfer in supported graphene</title>
-      <link>/https://colinbousige.github.io/publication/nanolett2017/</link>
+      <link>/publication/nanolett2017/</link>
       <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/nanolett2017/</guid>
+      <guid>/publication/nanolett2017/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -444,10 +460,10 @@ Thanks to the 2D orientation of the samples, we could separate the translational
     
     <item>
       <title>Adhesion and friction in 1D and 2D systems</title>
-      <link>/https://colinbousige.github.io/talk/friction/</link>
+      <link>/talk/friction/</link>
       <pubDate>Thu, 03 Nov 2016 10:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/talk/friction/</guid>
+      <guid>/talk/friction/</guid>
       <description>&lt;p&gt;A summary of my recent works turned on the perspective of friction in 1D and 2D materials.&lt;/p&gt;
 
 &lt;p&gt;In this presentation, I will focus on aspects of adhesion and friction that I have encountered in two low dimensional systems, namely carbon peapods and graphene.&lt;/p&gt;
@@ -470,20 +486,20 @@ Peapods (C$_{60}$ fullerenes adsorbed inside single walled carbon nanotubes) con
     
     <item>
       <title>Structure and Dynamics of Model and Disordered Carbon Materials</title>
-      <link>/https://colinbousige.github.io/talk/carbon/</link>
+      <link>/talk/carbon/</link>
       <pubDate>Fri, 10 Jun 2016 10:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/talk/carbon/</guid>
+      <guid>/talk/carbon/</guid>
       <description>&lt;p&gt;A summary of my recent works on model (1D) and disordered carbon materials.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>2D Materials</title>
-      <link>/https://colinbousige.github.io/project/2d/</link>
+      <link>/project/2d/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/project/2d/</guid>
+      <guid>/project/2d/</guid>
       <description>
 
 &lt;!-- MarkdownTOC --&gt;
@@ -509,10 +525,10 @@ Peapods (C$_{60}$ fullerenes adsorbed inside single walled carbon nanotubes) con
     
     <item>
       <title>Porous Materials and Confinement</title>
-      <link>/https://colinbousige.github.io/project/porous/</link>
+      <link>/project/porous/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/project/porous/</guid>
+      <guid>/project/porous/</guid>
       <description>
 
 &lt;!-- MarkdownTOC --&gt;
@@ -545,10 +561,10 @@ Thanks to the 2D orientation of the samples, we could separate the translational
     
     <item>
       <title>Realistic molecular model of kerogen&#39;s nanostructure</title>
-      <link>/https://colinbousige.github.io/publication/natmat/</link>
+      <link>/publication/natmat/</link>
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/natmat/</guid>
+      <guid>/publication/natmat/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -561,10 +577,10 @@ Thanks to the 2D orientation of the samples, we could separate the translational
     
     <item>
       <title>Optimized molecular reconstruction procedure combining hybrid reverse Monte Carlo and molecular dynamics.</title>
-      <link>/https://colinbousige.github.io/publication/jchemphys2015/</link>
+      <link>/publication/jchemphys2015/</link>
       <pubDate>Tue, 03 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/jchemphys2015/</guid>
+      <guid>/publication/jchemphys2015/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;
@@ -577,26 +593,10 @@ Thanks to the 2D orientation of the samples, we could separate the translational
     
     <item>
       <title>In situ x-ray diffraction observation of two-step fullerene coalescence in carbon peapods.</title>
-      <link>/https://colinbousige.github.io/publication/epl2013/</link>
+      <link>/publication/epl2013/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/publication/epl2013/</guid>
-      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
-
-&lt;!-- url_video = &#34;#&#34; --&gt;
-
-&lt;!-- url_code = &#34;#&#34; --&gt;
-
-&lt;!-- url_dataset = &#34;#&#34; --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>From a one-dimensional crystal to a one-dimensional liquid: A comprehensive dynamical study of C60 peapods</title>
-      <link>/https://colinbousige.github.io/publication/prb2013/</link>
-      <pubDate>Wed, 22 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/https://colinbousige.github.io/publication/prb2013/</guid>
+      <guid>/publication/epl2013/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;

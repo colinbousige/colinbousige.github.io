@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Colin Bousige</title>
-    <link>/https://colinbousige.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Colin Bousige</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Colin Bousige</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/https:/colinbousige.github.io/tags/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Content tagged as &#39;Academic&#39;</title>
-      <link>/https://colinbousige.github.io/tags/academic/</link>
+      <link>/tags/academic/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/tags/academic/</guid>
+      <guid>/tags/academic/</guid>
       <description>&lt;p&gt;Here is a list of all the content that has been tagged as &lt;em&gt;academic&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>1d</title>
-      <link>/https://colinbousige.github.io/tags/1d/</link>
+      <link>/tags/1d/</link>
       <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/tags/1d/</guid>
+      <guid>/tags/1d/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2d</title>
-      <link>/https://colinbousige.github.io/tags/2d/</link>
+      <link>/tags/2d/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/tags/2d/</guid>
+      <guid>/tags/2d/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>/https://colinbousige.github.io/tags/markdown/</link>
+      <link>/tags/markdown/</link>
       <pubDate>Fri, 09 Jun 2017 19:56:21 +0200</pubDate>
       
-      <guid>/https://colinbousige.github.io/tags/markdown/</guid>
+      <guid>/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>New Installation</title>
-      <link>/https://colinbousige.github.io/tags/new-installation/</link>
+      <link>/tags/new-installation/</link>
       <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/tags/new-installation/</guid>
+      <guid>/tags/new-installation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Porous</title>
-      <link>/https://colinbousige.github.io/tags/porous/</link>
+      <link>/tags/porous/</link>
       <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/https://colinbousige.github.io/tags/porous/</guid>
+      <guid>/tags/porous/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/https://colinbousige.github.io/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Fri, 09 Jun 2017 19:56:21 +0200</pubDate>
       
-      <guid>/https://colinbousige.github.io/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rmarkdown</title>
-      <link>/https://colinbousige.github.io/tags/rmarkdown/</link>
+      <link>/tags/rmarkdown/</link>
       <pubDate>Fri, 09 Jun 2017 19:56:21 +0200</pubDate>
       
-      <guid>/https://colinbousige.github.io/tags/rmarkdown/</guid>
+      <guid>/tags/rmarkdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shiny</title>
-      <link>/https://colinbousige.github.io/tags/shiny/</link>
+      <link>/tags/shiny/</link>
       <pubDate>Thu, 08 Jun 2017 19:56:21 +0200</pubDate>
       
-      <guid>/https://colinbousige.github.io/tags/shiny/</guid>
+      <guid>/tags/shiny/</guid>
       <description></description>
     </item>
     
