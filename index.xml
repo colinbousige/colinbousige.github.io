@@ -25,7 +25,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;../tutoR_float.html#getting-ready&#34;&gt;Getting ready&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#begginers&#34;&gt;Begginers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#beginners&#34;&gt;Beginners&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../tutoR_float.html#advanced&#34;&gt;Advanced&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../tutoR_float.html#variables&#34;&gt;Variables&lt;/a&gt;
@@ -48,7 +48,7 @@
 &lt;li&gt;&lt;a href=&#34;../tutoR_float.html#matrices-and-data-frames&#34;&gt;Matrices and data frames&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;../tutoR_float.html#matrices&#34;&gt;Matrices&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#defining-a-dataframe&#34;&gt;Defining a data.frame&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#defining-a-data-frame&#34;&gt;Defining a data frame&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../tutoR_float.html#accessing-values-1&#34;&gt;Accessing values&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../tutoR_float.html#adding-columns-or-rows&#34;&gt;Adding columns or rows&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
@@ -81,10 +81,9 @@
 &lt;li&gt;&lt;a href=&#34;../tutoR_float.html#base-graphics-1&#34;&gt;Base graphics&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../tutoR_float.html#ggplot2&#34;&gt;ggplot2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#non-linear-fitting&#34;&gt;Non linear fitting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#non-linear-fitting&#34;&gt;Non linear fitting&lt;/a&gt; &lt;!-- /MarkdownTOC --&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- /MarkdownTOC --&gt;
 &lt;/div&gt;
 </description>
     </item>

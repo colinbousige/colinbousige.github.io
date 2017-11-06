@@ -14,7 +14,7 @@ date   : 2017-10-27T19:56:21+02:00
 <!-- MarkdownTOC depth=4 -->
 
 - [Getting ready](../tutoR_float.html#getting-ready)
-    - [Begginers](../tutoR_float.html#begginers)
+    - [Beginners](../tutoR_float.html#beginners)
     - [Advanced](../tutoR_float.html#advanced)
 - [Variables](../tutoR_float.html#variables)
     - [Scalars and booleans](../tutoR_float.html#scalars-and-booleans)
@@ -29,7 +29,7 @@ date   : 2017-10-27T19:56:21+02:00
             - [More stuff](../tutoR_float.html#more-stuff)
 - [Matrices and data frames](../tutoR_float.html#matrices-and-data-frames)
     - [Matrices](../tutoR_float.html#matrices)
-    - [Defining a data.frame](../tutoR_float.html#defining-a-dataframe)
+    - [Defining a data frame](../tutoR_float.html#defining-a-data-frame)
     - [Accessing values](../tutoR_float.html#accessing-values-1)
     - [Adding columns or rows](../tutoR_float.html#adding-columns-or-rows)
 - [Lists](../tutoR_float.html#lists)
@@ -51,7 +51,6 @@ date   : 2017-10-27T19:56:21+02:00
         - [Base graphics](../tutoR_float.html#base-graphics-1)
         - [ggplot2](../tutoR_float.html#ggplot2)
     - [Non linear fitting](../tutoR_float.html#non-linear-fitting)
-
 <!-- /MarkdownTOC -->
 
 
