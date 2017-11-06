@@ -11,6 +11,85 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Introduction to R for data treatment and plotting</title>
+      <link>/post/tutor/</link>
+      <pubDate>Fri, 27 Oct 2017 19:56:21 +0200</pubDate>
+      
+      <guid>/post/tutor/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Go &lt;a href=&#34;../tutoR_float.html&#34;&gt;here&lt;/a&gt; for the post with floating TOC (easier to navigate)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div id=&#34;table-of-contents&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Table of contents&lt;/h2&gt;
+&lt;!-- MarkdownTOC depth=4 --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#getting-ready&#34;&gt;Getting ready&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#begginers&#34;&gt;Begginers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#advanced&#34;&gt;Advanced&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#variables&#34;&gt;Variables&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#scalars-and-booleans&#34;&gt;Scalars and booleans&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#vectors&#34;&gt;Vectors&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#different-ways-of-defining-a-vector&#34;&gt;Different ways of defining a vector&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#principal-operations-on-vectors&#34;&gt;Principal operations on vectors&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#accessing-values&#34;&gt;Accessing values&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#sorting&#34;&gt;Sorting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#maximum-and-minimum&#34;&gt;Maximum and minimum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#mathematical-operations&#34;&gt;Mathematical operations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#statistics-on-vectors&#34;&gt;Statistics on vectors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#more-stuff&#34;&gt;More stuff&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#matrices-and-data-frames&#34;&gt;Matrices and data frames&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#matrices&#34;&gt;Matrices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#defining-a-dataframe&#34;&gt;Defining a &lt;code&gt;data.frame&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#accessing-values-1&#34;&gt;Accessing values&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#adding-columns-or-rows&#34;&gt;Adding columns or rows&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#lists&#34;&gt;Lists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#functions&#34;&gt;Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#libraries&#34;&gt;Libraries&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#install-libraries&#34;&gt;Install libraries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#load-libraries&#34;&gt;Load libraries&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#plotting&#34;&gt;Plotting&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#base-graphics&#34;&gt;Base graphics&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#basic-plotting&#34;&gt;Basic plotting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#adding-some-style&#34;&gt;Adding some style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#stacking-plots&#34;&gt;Stacking plots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#barplots-and-densities&#34;&gt;Barplots and densities&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#image-plots&#34;&gt;Image plots&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#advanced-plotting-using-ggplot2&#34;&gt;Advanced plotting using &lt;code&gt;ggplot2&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#making-interactive-plots-with-ggplot2-and-plotly&#34;&gt;Making interactive plots with ggplot2 and plotly&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#fitting&#34;&gt;Fitting&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#linear-fitting&#34;&gt;Linear fitting&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#base-graphics-1&#34;&gt;Base graphics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#ggplot2&#34;&gt;ggplot2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutoR_float.html#non-linear-fitting&#34;&gt;Non linear fitting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /MarkdownTOC --&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Raman scattering studies of graphene under high pressure</title>
       <link>/publication/reviewjramanspec/</link>
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
@@ -581,22 +660,6 @@ Thanks to the 2D orientation of the samples, we could separate the translational
       <pubDate>Tue, 03 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>/publication/jchemphys2015/</guid>
-      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
-
-&lt;!-- url_video = &#34;#&#34; --&gt;
-
-&lt;!-- url_code = &#34;#&#34; --&gt;
-
-&lt;!-- url_dataset = &#34;#&#34; --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>In situ x-ray diffraction observation of two-step fullerene coalescence in carbon peapods.</title>
-      <link>/publication/epl2013/</link>
-      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/epl2013/</guid>
       <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
 
 &lt;!-- url_video = &#34;#&#34; --&gt;

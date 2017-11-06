@@ -1,0 +1,59 @@
+---
+title: Introduction to R for data treatment and plotting
+summary : A short introduction to the R language and its application to data treatment for physico-chemists
+tags : ["R"]
+author : Colin Bousige
+date   : 2017-10-27T19:56:21+02:00
+---
+
+
+> Go [here](../tutoR_float.html) for the post with floating TOC (easier to navigate)
+
+## Table of contents
+
+<!-- MarkdownTOC depth=4 -->
+
+- [Getting ready](../tutoR_float.html#getting-ready)
+    - [Begginers](../tutoR_float.html#begginers)
+    - [Advanced](../tutoR_float.html#advanced)
+- [Variables](../tutoR_float.html#variables)
+    - [Scalars and booleans](../tutoR_float.html#scalars-and-booleans)
+    - [Vectors](../tutoR_float.html#vectors)
+        - [Different ways of defining a vector](../tutoR_float.html#different-ways-of-defining-a-vector)
+        - [Principal operations on vectors](../tutoR_float.html#principal-operations-on-vectors)
+            - [Accessing values](../tutoR_float.html#accessing-values)
+            - [Sorting](../tutoR_float.html#sorting)
+            - [Maximum and minimum](../tutoR_float.html#maximum-and-minimum)
+            - [Mathematical operations](../tutoR_float.html#mathematical-operations)
+            - [Statistics on vectors](../tutoR_float.html#statistics-on-vectors)
+            - [More stuff](../tutoR_float.html#more-stuff)
+- [Matrices and data frames](../tutoR_float.html#matrices-and-data-frames)
+    - [Matrices](../tutoR_float.html#matrices)
+    - [Defining a `data.frame`](../tutoR_float.html#defining-a-dataframe)
+    - [Accessing values](../tutoR_float.html#accessing-values-1)
+    - [Adding columns or rows](../tutoR_float.html#adding-columns-or-rows)
+- [Lists](../tutoR_float.html#lists)
+- [Functions](../tutoR_float.html#functions)
+- [Libraries](../tutoR_float.html#libraries)
+    - [Install libraries](../tutoR_float.html#install-libraries)
+    - [Load libraries](../tutoR_float.html#load-libraries)
+- [Plotting](../tutoR_float.html#plotting)
+    - [Base graphics](../tutoR_float.html#base-graphics)
+        - [Basic plotting](../tutoR_float.html#basic-plotting)
+        - [Adding some style](../tutoR_float.html#adding-some-style)
+        - [Stacking plots](../tutoR_float.html#stacking-plots)
+        - [Barplots and densities](../tutoR_float.html#barplots-and-densities)
+        - [Image plots](../tutoR_float.html#image-plots)
+    - [Advanced plotting using `ggplot2`](../tutoR_float.html#advanced-plotting-using-ggplot2)
+        - [Making interactive plots with ggplot2 and plotly](../tutoR_float.html#making-interactive-plots-with-ggplot2-and-plotly)
+- [Fitting](../tutoR_float.html#fitting)
+    - [Linear fitting](../tutoR_float.html#linear-fitting)
+        - [Base graphics](../tutoR_float.html#base-graphics-1)
+        - [ggplot2](../tutoR_float.html#ggplot2)
+    - [Non linear fitting](../tutoR_float.html#non-linear-fitting)
+
+<!-- /MarkdownTOC -->
+
+
+
+
