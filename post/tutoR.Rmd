@@ -51,6 +51,8 @@ date   : 2017-10-27T19:56:21+02:00
         - [Base graphics](../tutoR_float.html#base-graphics-1)
         - [ggplot2](../tutoR_float.html#ggplot2)
     - [Non linear fitting](../tutoR_float.html#non-linear-fitting)
+- [Example of data treatment with interactive plotting](../tutoR_float.html#example-of-data-treatment-with-interactive-plotting)
+
 <!-- /MarkdownTOC -->
 
 
