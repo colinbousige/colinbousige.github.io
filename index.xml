@@ -16,7 +16,8 @@
       <pubDate>Fri, 27 Oct 2017 19:56:21 +0200</pubDate>
       
       <guid>/post/tutor/</guid>
-      <description>&lt;blockquote&gt;
+      <description>&lt;p&gt;This is a short introduction to the R language and its application to data treatment for physico-chemists. This tutorial was mainly written for internal use (&lt;em&gt;i.e.&lt;/em&gt; for reference for my students).&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;Go &lt;a href=&#34;../tutoR_float.html&#34;&gt;here&lt;/a&gt; for the post with floating TOC (easier to navigate)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div id=&#34;table-of-contents&#34; class=&#34;section level2&#34;&gt;
