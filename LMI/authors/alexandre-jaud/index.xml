@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alexandre Jaud on LMI</title>
-    <link>/authors/alexandre-jaud/</link>
+    <link>/LMI/authors/alexandre-jaud/</link>
     <description>Recent content in Alexandre Jaud on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Thu, 01 Jun 2017 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/alexandre-jaud/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/alexandre-jaud/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Low temperature homoepitaxy of GaN structures by Vapor Liquid Solidtransport</title>
-      <link>/publication/isi-000401128400004/</link>
+      <link>/LMI/publication/isi-000401128400004/</link>
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000401128400004/</guid>
+      <guid>/LMI/publication/isi-000401128400004/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Highly Mg-doped GaN dots and films grown by VLS transport at lowtemperature</title>
-      <link>/publication/isi-000402158300018/</link>
+      <link>/LMI/publication/isi-000402158300018/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000402158300018/</guid>
+      <guid>/LMI/publication/isi-000402158300018/</guid>
       <description></description>
     </item>
     

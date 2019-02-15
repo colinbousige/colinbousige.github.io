@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Franck Cadoux on LMI</title>
-    <link>/authors/franck-cadoux/</link>
+    <link>/LMI/authors/franck-cadoux/</link>
     <description>Recent content in Franck Cadoux on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Thu, 01 Oct 2015 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/franck-cadoux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/franck-cadoux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Synthesis and Surface Reactivity of Vinylized Macroporous SilicaMonoliths: One-Pot Hybrid versus Postsynthesis Grafting Strategies</title>
-      <link>/publication/isi-000363914600033/</link>
+      <link>/LMI/publication/isi-000363914600033/</link>
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000363914600033/</guid>
+      <guid>/LMI/publication/isi-000363914600033/</guid>
       <description></description>
     </item>
     

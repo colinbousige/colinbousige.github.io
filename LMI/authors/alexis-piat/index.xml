@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alexis Piat on LMI</title>
-    <link>/authors/alexis-piat/</link>
+    <link>/LMI/authors/alexis-piat/</link>
     <description>Recent content in Alexis Piat on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Tue, 01 May 2018 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/alexis-piat/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/alexis-piat/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Devising tissue ingrowth metrics: a contribution to the computationalcharacterization of engineered soft tissue healing</title>
-      <link>/publication/isi-000427581000002/</link>
+      <link>/LMI/publication/isi-000427581000002/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000427581000002/</guid>
+      <guid>/LMI/publication/isi-000427581000002/</guid>
       <description></description>
     </item>
     

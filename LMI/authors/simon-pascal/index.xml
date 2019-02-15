@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Simon Pascal on LMI</title>
-    <link>/authors/simon-pascal/</link>
+    <link>/LMI/authors/simon-pascal/</link>
     <description>Recent content in Simon Pascal on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Tue, 01 May 2018 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/simon-pascal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/simon-pascal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Design of Near-Infrared-Absorbing Unsymmetrical Polymethine Dyes withLarge Quadratic Hyperpolarizabilities</title>
-      <link>/publication/isi-000433403800028/</link>
+      <link>/LMI/publication/isi-000433403800028/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000433403800028/</guid>
+      <guid>/LMI/publication/isi-000433403800028/</guid>
       <description></description>
     </item>
     

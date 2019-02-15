@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emilio Velez-Fort on LMI</title>
-    <link>/authors/emilio-velez-fort/</link>
+    <link>/LMI/authors/emilio-velez-fort/</link>
     <description>Recent content in Emilio Velez-Fort on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Fri, 01 May 2015 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/emilio-velez-fort/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/emilio-velez-fort/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Evidence for Flat Bands near the Fermi Level in Epitaxial RhombohedralMultilayer Graphene</title>
-      <link>/publication/isi-000355383000079/</link>
+      <link>/LMI/publication/isi-000355383000079/</link>
       <pubDate>Fri, 01 May 2015 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000355383000079/</guid>
+      <guid>/LMI/publication/isi-000355383000079/</guid>
       <description></description>
     </item>
     

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Magalie Faivre on LMI</title>
-    <link>/authors/magalie-faivre/</link>
+    <link>/LMI/authors/magalie-faivre/</link>
     <description>Recent content in Magalie Faivre on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Sun, 01 May 2016 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/magalie-faivre/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/magalie-faivre/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Anisotropic ferromagnetic polymer: A first step for their implementationin microfluidic systems</title>
-      <link>/publication/isi-000377962500274/</link>
+      <link>/LMI/publication/isi-000377962500274/</link>
       <pubDate>Sun, 01 May 2016 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000377962500274/</guid>
+      <guid>/LMI/publication/isi-000377962500274/</guid>
       <description></description>
     </item>
     

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Christophe Morell on LMI</title>
-    <link>/authors/christophe-morell/</link>
+    <link>/LMI/authors/christophe-morell/</link>
     <description>Recent content in Christophe Morell on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Sat, 01 Jul 2017 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/christophe-morell/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/christophe-morell/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Structural effects in octahedral carbonyl complexes: anatoms-in-molecules study</title>
-      <link>/publication/isi-000405683400001/</link>
+      <link>/LMI/publication/isi-000405683400001/</link>
       <pubDate>Sat, 01 Jul 2017 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000405683400001/</guid>
+      <guid>/LMI/publication/isi-000405683400001/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Towards the first theoretical scale of the trans effect in octahedralcomplexes</title>
-      <link>/publication/isi-000369480600039/</link>
+      <link>/LMI/publication/isi-000369480600039/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
       
-      <guid>/publication/isi-000369480600039/</guid>
+      <guid>/LMI/publication/isi-000369480600039/</guid>
       <description></description>
     </item>
     

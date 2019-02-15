@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kerstin Gritsch on LMI</title>
-    <link>/authors/kerstin-gritsch/</link>
+    <link>/LMI/authors/kerstin-gritsch/</link>
     <description>Recent content in Kerstin Gritsch on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Tue, 01 May 2018 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/kerstin-gritsch/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/kerstin-gritsch/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Devising tissue ingrowth metrics: a contribution to the computationalcharacterization of engineered soft tissue healing</title>
-      <link>/publication/isi-000427581000002/</link>
+      <link>/LMI/publication/isi-000427581000002/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000427581000002/</guid>
+      <guid>/LMI/publication/isi-000427581000002/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The use of FDI criteria in clinical trials on direct dentalrestorations: A scoping review</title>
-      <link>/publication/isi-000418891700001/</link>
+      <link>/LMI/publication/isi-000418891700001/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
       
-      <guid>/publication/isi-000418891700001/</guid>
+      <guid>/LMI/publication/isi-000418891700001/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A chitosan-hyaluronic acid hydrogel scaffold for periodontal tissueengineering</title>
-      <link>/publication/isi-000391808000018/</link>
+      <link>/LMI/publication/isi-000391808000018/</link>
       <pubDate>Tue, 01 Nov 2016 00:00:00 +0100</pubDate>
       
-      <guid>/publication/isi-000391808000018/</guid>
+      <guid>/LMI/publication/isi-000391808000018/</guid>
       <description></description>
     </item>
     

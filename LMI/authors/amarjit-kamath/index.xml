@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Amarjit Kamath on LMI</title>
-    <link>/authors/amarjit-kamath/</link>
+    <link>/LMI/authors/amarjit-kamath/</link>
     <description>Recent content in Amarjit Kamath on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/amarjit-kamath/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/amarjit-kamath/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[Bis(picolinate-kappa N-2:O)Copper(II)] di(benzene1,3,5-tricarboxylicacid): Hydrothermal synthesis, structural characterization, magneticproperties and DFT study</title>
-      <link>/publication/isi-000432502800027/</link>
+      <link>/LMI/publication/isi-000432502800027/</link>
       <pubDate>Wed, 01 Aug 2018 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000432502800027/</guid>
+      <guid>/LMI/publication/isi-000432502800027/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Poly[diaquo(1,10-phenanthroline-kappaN-2(1):N-10)(mu(2)-sulphato-kappa O-2:O `) copper(II)]: hydrothermalsynthesis, crystal structure and magnetic properties</title>
-      <link>/publication/isi-000376120100125/</link>
+      <link>/LMI/publication/isi-000376120100125/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
       
-      <guid>/publication/isi-000376120100125/</guid>
+      <guid>/LMI/publication/isi-000376120100125/</guid>
       <description></description>
     </item>
     

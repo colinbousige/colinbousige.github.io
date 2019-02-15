@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gaelle Dolmazon on LMI</title>
-    <link>/authors/gaelle-dolmazon/</link>
+    <link>/LMI/authors/gaelle-dolmazon/</link>
     <description>Recent content in Gaelle Dolmazon on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Tue, 01 May 2018 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/gaelle-dolmazon/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/gaelle-dolmazon/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Devising tissue ingrowth metrics: a contribution to the computationalcharacterization of engineered soft tissue healing</title>
-      <link>/publication/isi-000427581000002/</link>
+      <link>/LMI/publication/isi-000427581000002/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000427581000002/</guid>
+      <guid>/LMI/publication/isi-000427581000002/</guid>
       <description></description>
     </item>
     

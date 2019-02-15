@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Events on LMI</title>
-    <link>/events/</link>
+    <link>/LMI/events/</link>
     <description>Recent content in Events on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/events/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/events/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Publication dans Nature</title>
-      <link>/events/publi1/</link>
+      <link>/LMI/events/publi1/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/events/publi1/</guid>
+      <guid>/LMI/events/publi1/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
     </item>
     
     <item>
       <title>Publication dans Nature Chemistry</title>
-      <link>/events/publi2/</link>
+      <link>/LMI/events/publi2/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/events/publi2/</guid>
+      <guid>/LMI/events/publi2/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
     </item>
     
     <item>
       <title>Séminaire à venir</title>
-      <link>/events/seminar/</link>
+      <link>/LMI/events/seminar/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/events/seminar/</guid>
+      <guid>/LMI/events/seminar/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
     </item>
     

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mathieu Maillard on LMI</title>
-    <link>/authors/mathieu-maillard/</link>
+    <link>/LMI/authors/mathieu-maillard/</link>
     <description>Recent content in Mathieu Maillard on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/authors/mathieu-maillard/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/mathieu-maillard/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Failure mode analysis on thermally aged hydrophobic coatings applied toelectro wetting</title>
-      <link>/publication/isi-000418575900008/</link>
+      <link>/LMI/publication/isi-000418575900008/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
       
-      <guid>/publication/isi-000418575900008/</guid>
+      <guid>/LMI/publication/isi-000418575900008/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Charge injection in dielectric films during electrowetting actuationunder direct current voltage</title>
-      <link>/publication/isi-000361057100035/</link>
+      <link>/LMI/publication/isi-000361057100035/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000361057100035/</guid>
+      <guid>/LMI/publication/isi-000361057100035/</guid>
       <description></description>
     </item>
     

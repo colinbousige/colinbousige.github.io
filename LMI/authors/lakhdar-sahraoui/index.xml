@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lakhdar Sahraoui on LMI</title>
-    <link>/authors/lakhdar-sahraoui/</link>
+    <link>/LMI/authors/lakhdar-sahraoui/</link>
     <description>Recent content in Lakhdar Sahraoui on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Thu, 01 Jun 2017 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/lakhdar-sahraoui/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/lakhdar-sahraoui/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Isothermal Vapor Pressures of Three Binary Systems: n-Tetradecane plusMethyl Dodecanoate, Methyl Tetradecanoate, or Methyl Hexadecanoatebetween 353.15 and 453.15 K</title>
-      <link>/publication/isi-000403192100013/</link>
+      <link>/LMI/publication/isi-000403192100013/</link>
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000403192100013/</guid>
+      <guid>/LMI/publication/isi-000403192100013/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Experimental vapor pressures (from 1 Pa to 100 kPa) of six saturatedFatty Acid Methyl Esters (FAMEs): Methyl hexanoate, methyl octanoate,methyl decanoate, methyl dodecanoate, methyl tetradecanoate and methylhexadecanoate</title>
-      <link>/publication/isi-000382266200028/</link>
+      <link>/LMI/publication/isi-000382266200028/</link>
       <pubDate>Tue, 01 Nov 2016 00:00:00 +0100</pubDate>
       
-      <guid>/publication/isi-000382266200028/</guid>
+      <guid>/LMI/publication/isi-000382266200028/</guid>
       <description></description>
     </item>
     

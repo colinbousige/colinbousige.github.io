@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Krystelle Lionti on LMI</title>
-    <link>/authors/krystelle-lionti/</link>
+    <link>/LMI/authors/krystelle-lionti/</link>
     <description>Recent content in Krystelle Lionti on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Fri, 01 Jul 2016 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/krystelle-lionti/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/krystelle-lionti/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>In vitro toxicity assessment of extracts derived from sol-gel coatingson polycarbonate intended to be used in food contact applications</title>
-      <link>/publication/isi-000378453900007/</link>
+      <link>/LMI/publication/isi-000378453900007/</link>
       <pubDate>Fri, 01 Jul 2016 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000378453900007/</guid>
+      <guid>/LMI/publication/isi-000378453900007/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scratch-resistant sol-gel coatings on pristine polycarbonate</title>
-      <link>/publication/isi-000363668200010/</link>
+      <link>/LMI/publication/isi-000363668200010/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
       
-      <guid>/publication/isi-000363668200010/</guid>
+      <guid>/LMI/publication/isi-000363668200010/</guid>
       <description></description>
     </item>
     

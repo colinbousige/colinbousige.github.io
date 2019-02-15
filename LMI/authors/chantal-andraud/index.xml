@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chantal Andraud on LMI</title>
-    <link>/authors/chantal-andraud/</link>
+    <link>/LMI/authors/chantal-andraud/</link>
     <description>Recent content in Chantal Andraud on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Tue, 01 May 2018 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/authors/chantal-andraud/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/chantal-andraud/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Design of Near-Infrared-Absorbing Unsymmetrical Polymethine Dyes withLarge Quadratic Hyperpolarizabilities</title>
-      <link>/publication/isi-000433403800028/</link>
+      <link>/LMI/publication/isi-000433403800028/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0200</pubDate>
       
-      <guid>/publication/isi-000433403800028/</guid>
+      <guid>/LMI/publication/isi-000433403800028/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Two-Color Three-State Luminescent Lanthanide Core-Shell Crystals</title>
-      <link>/publication/isi-000395754800010/</link>
+      <link>/LMI/publication/isi-000395754800010/</link>
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0100</pubDate>
       
-      <guid>/publication/isi-000395754800010/</guid>
+      <guid>/LMI/publication/isi-000395754800010/</guid>
       <description></description>
     </item>
     

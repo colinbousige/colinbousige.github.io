@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Guillaume Bonnefont on LMI</title>
-    <link>/authors/guillaume-bonnefont/</link>
+    <link>/LMI/authors/guillaume-bonnefont/</link>
     <description>Recent content in Guillaume Bonnefont on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>UMR CNRS 5615</copyright>
     <lastBuildDate>Mon, 01 Feb 2016 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/authors/guillaume-bonnefont/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/authors/guillaume-bonnefont/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Pure &amp; crystallized 2D Boron Nitride sheets synthesized via a novelprocess coupling both PDCs and SPS methods</title>
-      <link>/publication/isi-000369271700001/</link>
+      <link>/LMI/publication/isi-000369271700001/</link>
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0100</pubDate>
       
-      <guid>/publication/isi-000369271700001/</guid>
+      <guid>/LMI/publication/isi-000369271700001/</guid>
       <description></description>
     </item>
     
