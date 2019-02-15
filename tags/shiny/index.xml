@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Colin Bousige</copyright>
     <lastBuildDate>Thu, 08 Jun 2017 19:56:21 +0200</lastBuildDate>
-    <atom:link href="/tags/shiny/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/shiny/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>My first attempt at a Shiny app</title>
@@ -16,27 +18,10 @@
       <pubDate>Thu, 08 Jun 2017 19:56:21 +0200</pubDate>
       
       <guid>/post/rubyshiny/</guid>
-      <description>&lt;p&gt;This is my first try as a Shiny app, I made it to help my students during their high pressure experiments using diamond anvil cell. It computes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The pressure if you give it values of &lt;span class=&#34;math inline&#34;&gt;\(\lambda_{laser}\)&lt;/span&gt;, the R1 Raman shift at 0 pressure &lt;span class=&#34;math inline&#34;&gt;\(\omega_0\)&lt;/span&gt;, and the measured R1 Raman shift &lt;span class=&#34;math inline&#34;&gt;\(\omega_{ruby}\)&lt;/span&gt;&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;The expected Raman shift for the ruby, &lt;span class=&#34;math inline&#34;&gt;\(\omega_{ruby}\)&lt;/span&gt;, if you give it the other info&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;The pressure if you upload a ruby spectrum and give it the other info&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To use it:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Either go on the Shiny server: &lt;a href=&#34;https://cbousige.shinyapps.io/rubypressure/&#34; class=&#34;uri&#34;&gt;https://cbousige.shinyapps.io/rubypressure/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Or run it directly in R with:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;require(shiny)
-runGitHub(&amp;quot;RubyPressure&amp;quot;,&amp;quot;colinbousige&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Or clone the &lt;a href=&#34;https://github.com/colinbousige/RubyPressure&#34;&gt;repo&lt;/a&gt;, &lt;code&gt;setwd()&lt;/code&gt; to the folder where all the files are, and run it in R with:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;require(shiny)
-runApp()&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I even went so far as providing a sample ruby spectrum: try it out!&lt;br /&gt;
-The laser wavelength for this experiment was 568.2 nm.&lt;/p&gt;
-</description>
+      <description>This is my first try as a Shiny app, I made it to help my students during their high pressure experiments using diamond anvil cell. It computes:
+ The pressure if you give it values of \(\lambda_{laser}\), the R1 Raman shift at 0 pressure \(\omega_0\), and the measured R1 Raman shift \(\omega_{ruby}\)
+ The expected Raman shift for the ruby, \(\omega_{ruby}\), if you give it the other info
+ The pressure if you upload a ruby spectrum and give it the other info  To use it:</description>
     </item>
     
   </channel>

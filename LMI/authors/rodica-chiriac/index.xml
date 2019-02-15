@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rodica Chiriac on LMI</title>
+    <link>/authors/rodica-chiriac/</link>
+    <description>Recent content in Rodica Chiriac on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Fri, 01 Apr 2016 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/authors/rodica-chiriac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Experimental investigation of As, Sb and Cs behavior during olivineserpentinization in hydrothermal alkaline systems</title>
+      <link>/publication/isi-000372565800010/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000372565800010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synthesis of ceria (CeO2 and CeO2-X) nanoparticles via decarbonation andCe(III) oxydation of synthetic bastnasite (CeCO3F)</title>
+      <link>/publication/isi-000371370100028/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000371370100028/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AlN hollow-nanofilaments by electrospinning</title>
+      <link>/publication/isi-000349244600015/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/isi-000349244600015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A luminescent double helical gold(I)-thiophenolate coordination polymerobtained by hydrothermal synthesis or by thermal solid-stateamorphous-to-crystalline isomerization</title>
+      <link>/publication/isi-000352870400036/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/isi-000352870400036/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

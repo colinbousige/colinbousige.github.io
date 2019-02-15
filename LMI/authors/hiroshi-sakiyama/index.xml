@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hiroshi Sakiyama on LMI</title>
+    <link>/authors/hiroshi-sakiyama/</link>
+    <description>Recent content in Hiroshi Sakiyama on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/authors/hiroshi-sakiyama/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An unprecedented up-field shift in the C-13 NMR spectrum of the carboxylcarbons of the lantern-type dinuclear complex TBA[Ru-2(O2CCH3)(4)Cl-2](TBA(&#43;) = tetra(n-butyl)ammonium cation)</title>
+      <link>/publication/isi-000358208400003/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/isi-000358208400003/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

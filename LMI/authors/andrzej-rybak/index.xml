@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrzej Rybak on LMI</title>
+    <link>/authors/andrzej-rybak/</link>
+    <description>Recent content in Andrzej Rybak on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/authors/andrzej-rybak/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Epoxy composites with ceramic core-shell fillers for thermal managementin electrical devices</title>
+      <link>/publication/isi-000415684200016/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/isi-000415684200016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

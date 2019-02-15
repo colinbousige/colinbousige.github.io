@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>M. Soueidan on LMI</title>
+    <link>/authors/m.-soueidan/</link>
+    <description>Recent content in M. Soueidan on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sat, 01 Aug 2015 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/authors/m.-soueidan/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Parametric investigation of the formation of epitaxial Ti3SiC2 on 4H-SiCfrom Al-Ti annealing</title>
+      <link>/publication/isi-000356058500025/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000356058500025/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Amel Messai on LMI</title>
+    <link>/authors/amel-messai/</link>
+    <description>Recent content in Amel Messai on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sat, 01 Oct 2016 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/authors/amel-messai/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1-Formyl-3-phenyl-5-(4-isopropylphenyl)-2-pyrazoline: Synthesis,characterization, antimicrobial activity and DFT studies</title>
+      <link>/publication/isi-000379094100006/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000379094100006/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synthesis, Crystal Structures, Hydrogen Bonds and Antibacterial Activityof New Quinoline Derivatives</title>
+      <link>/publication/isi-000356572100005/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000356572100005/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

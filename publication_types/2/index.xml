@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Colin Bousige</copyright>
     <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication_types/2/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Raman scattering studies of graphene under high pressure</title>
@@ -16,14 +18,7 @@
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/publication/reviewjramanspec/</guid>
-      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
-
-&lt;!-- url_video = &#34;#&#34; --&gt;
-
-&lt;!-- url_code = &#34;#&#34; --&gt;
-
-&lt;!-- url_dataset = &#34;#&#34; --&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -32,14 +27,7 @@
       <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>/publication/nanolett2017/</guid>
-      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
-
-&lt;!-- url_video = &#34;#&#34; --&gt;
-
-&lt;!-- url_code = &#34;#&#34; --&gt;
-
-&lt;!-- url_dataset = &#34;#&#34; --&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -48,14 +36,7 @@
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
       <guid>/publication/natmat/</guid>
-      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
-
-&lt;!-- url_video = &#34;#&#34; --&gt;
-
-&lt;!-- url_code = &#34;#&#34; --&gt;
-
-&lt;!-- url_dataset = &#34;#&#34; --&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -64,14 +45,7 @@
       <pubDate>Tue, 03 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>/publication/jchemphys2015/</guid>
-      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
-
-&lt;!-- url_video = &#34;#&#34; --&gt;
-
-&lt;!-- url_code = &#34;#&#34; --&gt;
-
-&lt;!-- url_dataset = &#34;#&#34; --&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -80,14 +54,7 @@
       <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>/publication/epl2013/</guid>
-      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
-
-&lt;!-- url_video = &#34;#&#34; --&gt;
-
-&lt;!-- url_code = &#34;#&#34; --&gt;
-
-&lt;!-- url_dataset = &#34;#&#34; --&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -96,14 +63,7 @@
       <pubDate>Wed, 22 May 2013 00:00:00 +0000</pubDate>
       
       <guid>/publication/prb2013/</guid>
-      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
-
-&lt;!-- url_video = &#34;#&#34; --&gt;
-
-&lt;!-- url_code = &#34;#&#34; --&gt;
-
-&lt;!-- url_dataset = &#34;#&#34; --&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -112,14 +72,7 @@
       <pubDate>Mon, 03 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>/publication/epjst2012/</guid>
-      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
-
-&lt;!-- url_video = &#34;#&#34; --&gt;
-
-&lt;!-- url_code = &#34;#&#34; --&gt;
-
-&lt;!-- url_dataset = &#34;#&#34; --&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -128,14 +81,7 @@
       <pubDate>Thu, 26 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>/publication/prb2012/</guid>
-      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
-
-&lt;!-- url_video = &#34;#&#34; --&gt;
-
-&lt;!-- url_code = &#34;#&#34; --&gt;
-
-&lt;!-- url_dataset = &#34;#&#34; --&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -144,14 +90,7 @@
       <pubDate>Sat, 11 Dec 2010 00:00:00 +0000</pubDate>
       
       <guid>/publication/dejoie/</guid>
-      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
-
-&lt;!-- url_video = &#34;#&#34; --&gt;
-
-&lt;!-- url_code = &#34;#&#34; --&gt;
-
-&lt;!-- url_dataset = &#34;#&#34; --&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -160,14 +99,7 @@
       <pubDate>Fri, 08 Oct 2010 00:00:00 +0000</pubDate>
       
       <guid>/publication/fullerene-cubane/</guid>
-      <description>&lt;!-- url_slides = &#34;#&#34; --&gt;
-
-&lt;!-- url_video = &#34;#&#34; --&gt;
-
-&lt;!-- url_code = &#34;#&#34; --&gt;
-
-&lt;!-- url_dataset = &#34;#&#34; --&gt;
-</description>
+      <description></description>
     </item>
     
   </channel>

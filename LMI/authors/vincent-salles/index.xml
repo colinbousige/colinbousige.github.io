@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vincent Salles on LMI</title>
+    <link>/authors/vincent-salles/</link>
+    <description>Recent content in Vincent Salles on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/authors/vincent-salles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Epoxy composites with ceramic core-shell fillers for thermal managementin electrical devices</title>
+      <link>/publication/isi-000415684200016/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/isi-000415684200016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synthesis of Continuous Conductive PEDOT:PSS Nanofibers byElectrospinning: A Conformal Coating for Optoelectronics</title>
+      <link>/publication/isi-000392037400109/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/isi-000392037400109/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anisotropic ferromagnetic polymer: A first step for their implementationin microfluidic systems</title>
+      <link>/publication/isi-000377962500274/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000377962500274/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AlN hollow-nanofilaments by electrospinning</title>
+      <link>/publication/isi-000349244600015/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/isi-000349244600015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

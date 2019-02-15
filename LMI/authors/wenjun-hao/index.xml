@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wenjun Hao on LMI</title>
+    <link>/authors/wenjun-hao/</link>
+    <description>Recent content in Wenjun Hao on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/authors/wenjun-hao/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Novel Two-Step Ammonia-Free Atomic Layer Deposition Approach for BoronNitride</title>
+      <link>/publication/isi-000409874100008/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000409874100008/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>B. El Goundali on LMI</title>
+    <link>/authors/b.-el-goundali/</link>
+    <description>Recent content in B. El Goundali on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sat, 01 Oct 2016 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/authors/b.-el-goundali/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linear behaviour in isothermal equilibria involving saturatedelectrolyte solutions: The H2O-Co(NO3)(2)-Ni(NO3)(2) ternary system atlow temperature</title>
+      <link>/publication/isi-000380751400043/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000380751400043/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

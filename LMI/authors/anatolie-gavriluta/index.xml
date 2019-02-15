@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anatolie Gavriluta on LMI</title>
+    <link>/authors/anatolie-gavriluta/</link>
+    <description>Recent content in Anatolie Gavriluta on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Thu, 01 Sep 2016 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/authors/anatolie-gavriluta/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The First Homoleptic Complex of Seven-Coordinated Osmium: Synthesis andCrystallographical Evidence of Pentagonal Bipyramidal Polyhedron ofHeptacyanoosmate(IV)</title>
+      <link>/publication/isi-000384529800002/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000384529800002/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heteropentanuclear Oxalato-Bridged nd-4f (n=4, 5) Metal Complexes withNO Ligand: Synthesis, Crystal Structures, Aqueous Stability andAntiproliferative Activity</title>
+      <link>/publication/isi-000361190200030/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000361190200030/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Osmium-Nitrosyl Oxalato-Bridged Lanthanide-Centered PentanuclearComplexes - Synthesis, Crystal Structures and Magnetic Properties</title>
+      <link>/publication/isi-000351435100016/</link>
+      <pubDate>Sun, 01 Mar 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/isi-000351435100016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

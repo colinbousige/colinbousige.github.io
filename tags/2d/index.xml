@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Colin Bousige</copyright>
     <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/2d/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/2d/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>2D Materials</title>
@@ -16,27 +18,8 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/project/2d/</guid>
-      <description>
-
-&lt;!-- MarkdownTOC --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#borophene&#34;&gt;Borophene&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#graphene-under-extreme-conditions&#34;&gt;Graphene under extreme conditions&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h2 id=&#34;borophene&#34;&gt;Borophene&lt;/h2&gt;
-
-&lt;p&gt;My project at the LMI consists in the synthesis and characterization of borophene, a new 2D material with very interesting properties. More details soon!&lt;/p&gt;
-
-&lt;h2 id=&#34;graphene-under-extreme-conditions&#34;&gt;Graphene under extreme conditions&lt;/h2&gt;
-
-&lt;p&gt;Graphene is the simplest of bi-dimensional materials, and thus constitutes a reference for all 2D systems. In most cases, graphene is deposited on a substrate. Assessing the effects of graphene interaction with its environment is thus of primordial concern in the aim of developing graphene-based applications. In particular, understanding the mechanisms and limits of the transfer of deformations between the substrate and the graphene flake is at the cornerstone of the development of strain engineering at the nano-scale.&lt;/p&gt;
-
-&lt;p&gt;In this aim, we have studied single-layer graphene and isotopically labeled bi-layer graphene deposited on various types of substrates and submitted to high biaxial compression – the latter being caused by the volume reduction of the substrate when submitted to high pressures in a diamond anvil cell. We observe very different responses of the graphene flakes as a function of both the substrate it is deposited on and the pressure transmitting medium. These results can be explained by a mechanical model that supposes a transmission of the deformations to the graphene flake through the substrate. We show that, contrary to what is generally pre-supposed, the adhesion of graphene can vary as a function of the characteristics of the surface of the substrate, and can even disappear under high stress. This study supplies tools to characterize the strain transmission efficiency between substrate and graphene that can be generalized to other 2D systems, and our results allow dressing a critical review of previous studies of graphene under high-pressure conditions.&lt;/p&gt;
-</description>
+      <description>Borophene Graphene under extreme conditions  Borophene My project at the LMI consists in the synthesis and characterization of borophene, a new 2D material with very interesting properties. More details soon!
+Graphene under extreme conditions Graphene is the simplest of bi-dimensional materials, and thus constitutes a reference for all 2D systems. In most cases, graphene is deposited on a substrate. Assessing the effects of graphene interaction with its environment is thus of primordial concern in the aim of developing graphene-based applications.</description>
     </item>
     
   </channel>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on LMI</title>
+    <link>/home/</link>
+    <description>Recent content in Homes on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    
+	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Laboratoire des Multimatériaux et Interfaces</title>
+      <link>/home/hero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/hero/</guid>
+      <description>UMR CNRS – 5615</description>
+    </item>
+    
+    <item>
+      <title>Le Laboratoire des Multimatériaux et Interfaces</title>
+      <link>/home/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Le LMI en chiffres</title>
+      <link>/home/nombres/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/nombres/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/home/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Equipes de Recherche</title>
+      <link>/home/equipes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/equipes/</guid>
+      <description>La structuration actuelle de l&amp;rsquo;unité comprend 5 équipes de recherche appuyées par deux plateformes techniques internes, un atelier et un service &amp;ldquo; Gestion et Logistique &amp;ldquo;.</description>
+    </item>
+    
+    <item>
+      <title>Faits Marquants</title>
+      <link>/home/posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formations</title>
+      <link>/home/formation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/formation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Offres d&#39;Emplois</title>
+      <link>/home/emploi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/emploi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/home/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/contact/</guid>
+      <description> </description>
+    </item>
+    
+  </channel>
+</rss>

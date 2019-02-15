@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sandeepta Saha on LMI</title>
+    <link>/authors/sandeepta-saha/</link>
+    <description>Recent content in Sandeepta Saha on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Mon, 01 May 2017 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/authors/sandeepta-saha/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Magneto-structural and theoretical study of the weak interactions in aMn(II) complex with a very unusual N,O-chelating coordination mode of2-aminoterephthalate</title>
+      <link>/publication/isi-000399712200025/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000399712200025/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design of end-on cyanato bridged trinuclear Cu(II) Schiff base complexwith salen type Schiff base ligand: synthesis, structural investigationand DFT study</title>
+      <link>/publication/isi-000398291400007/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/isi-000398291400007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synthesis, crystal structure, antimicrobial screening and densityfunctional theory calculation of nickel(II), cobalt(II) and zinc(II)mononuclear Schiff base complexes</title>
+      <link>/publication/isi-000345755700028/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/isi-000345755700028/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

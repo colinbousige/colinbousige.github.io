@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kira E. Vostrikova on LMI</title>
+    <link>/authors/kira-e.-vostrikova/</link>
+    <description>Recent content in Kira E. Vostrikova on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Thu, 01 Jun 2017 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/authors/kira-e.-vostrikova/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Neutral Low-Dimensional Assemblies of a Mn(III) Schiff Base Complex andOctacyanotungstate(V): Synthesis, Characterization, and MagneticProperties</title>
+      <link>/publication/isi-000406182100004/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000406182100004/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The First Homoleptic Complex of Seven-Coordinated Osmium: Synthesis andCrystallographical Evidence of Pentagonal Bipyramidal Polyhedron ofHeptacyanoosmate(IV)</title>
+      <link>/publication/isi-000384529800002/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000384529800002/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

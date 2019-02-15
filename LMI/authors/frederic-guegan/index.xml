@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frederic Guegan on LMI</title>
+    <link>/authors/frederic-guegan/</link>
+    <description>Recent content in Frederic Guegan on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/authors/frederic-guegan/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mapping the Magnetic Anisotropy inside a Ni-4 Cubane Spin Cluster UsingPolarized Neutron Diffraction</title>
+      <link>/publication/isi-000423308000003/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000423308000003/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Structural effects in octahedral carbonyl complexes: anatoms-in-molecules study</title>
+      <link>/publication/isi-000405683400001/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/publication/isi-000405683400001/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards the first theoretical scale of the trans effect in octahedralcomplexes</title>
+      <link>/publication/isi-000369480600039/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/isi-000369480600039/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An unprecedented up-field shift in the C-13 NMR spectrum of the carboxylcarbons of the lantern-type dinuclear complex TBA[Ru-2(O2CCH3)(4)Cl-2](TBA(&#43;) = tetra(n-butyl)ammonium cation)</title>
+      <link>/publication/isi-000358208400003/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/isi-000358208400003/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

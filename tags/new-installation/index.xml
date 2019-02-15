@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Colin Bousige</copyright>
     <lastBuildDate>Wed, 07 Jun 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/new-installation/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/new-installation/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Setting up your new Mac for academic work</title>
@@ -16,31 +18,8 @@
       <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/new_install/</guid>
-      <description>&lt;p&gt;&lt;em&gt;This is mainly for my own use, but I figured it might be useful to put it on-line&amp;hellip;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;When changing computer, it&amp;rsquo;s always a pain in the ass to set up your new machine like the old one. Over time, I tried to gather the different commands for installing the various programs I use to ease the setup of my next computer (or the update of my current one). You&amp;rsquo;ll find the following entries on my &lt;a href=&#34;https://github.com/colinbousige/New-Install&#34; target=&#34;_blank&#34;&gt;github page&lt;/a&gt;, as well as my &lt;code&gt;.bash_profile&lt;/code&gt; and my &lt;code&gt;.Rprofile&lt;/code&gt; files.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#xcode-command-line-tools&#34; target=&#34;_blank&#34;&gt;Xcode Command Line Tools&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#install-homebrew&#34; target=&#34;_blank&#34;&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#git&#34; target=&#34;_blank&#34;&gt;GIT&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#gfortran-and-gcc&#34; target=&#34;_blank&#34;&gt;Gfortran and GCC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#install-xquartz&#34; target=&#34;_blank&#34;&gt;XQuartz&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#gnu-commands&#34; target=&#34;_blank&#34;&gt;GNU commands&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#xmgrace-and-gnuplot&#34; target=&#34;_blank&#34;&gt;xmgrace and gnuplot&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#imagemagick&#34; target=&#34;_blank&#34;&gt;ImageMagick&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#latex&#34; target=&#34;_blank&#34;&gt;LaTeX&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#python&#34; target=&#34;_blank&#34;&gt;PYTHON&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#r&#34; target=&#34;_blank&#34;&gt;R&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#lapack&#34; target=&#34;_blank&#34;&gt;LAPACK&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#lammps&#34; target=&#34;_blank&#34;&gt;LAMMPS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#sublime-text&#34; target=&#34;_blank&#34;&gt;Sublime Text&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#list-of-my-applications&#34; target=&#34;_blank&#34;&gt;List of my Applications&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#to-have-no-time-to-wait-when-pointing-on-the-hidden-dock&#34; target=&#34;_blank&#34;&gt;To have no time to wait when pointing on the hidden Dock&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#write-screenshots-as-pdf&#34; target=&#34;_blank&#34;&gt;Write screenshots as pdf&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/colinbousige/New-Install#academic-website-with-hugo&#34; target=&#34;_blank&#34;&gt;Academic website with hugo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>This is mainly for my own use, but I figured it might be useful to put it on-line&amp;hellip;
+When changing computer, it&amp;rsquo;s always a pain in the ass to set up your new machine like the old one. Over time, I tried to gather the different commands for installing the various programs I use to ease the setup of my next computer (or the update of my current one). You&amp;rsquo;ll find the following entries on my github page, as well as my .</description>
     </item>
     
   </channel>

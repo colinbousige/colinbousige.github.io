@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Colin Bousige</copyright>
     <lastBuildDate>Wed, 07 Jun 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/project/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>1D Materials</title>
@@ -16,32 +18,9 @@
       <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/project/1d/</guid>
-      <description>
-
-&lt;!-- MarkdownTOC --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#collapsed-nanotubes-of-large-diameter-a-new-model-1d-system&#34;&gt;Collapsed nanotubes of large diameter: a new model 1D system&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#carbon-nanotubes-under-extreme-pressure&#34;&gt;Carbon nanotubes under extreme pressure&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#carbon-peapods&#34;&gt;Carbon peapods&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h3 id=&#34;collapsed-nanotubes-of-large-diameter-a-new-model-1d-system&#34;&gt;Collapsed nanotubes of large diameter: a new model 1D system&lt;/h3&gt;
-
-&lt;p&gt;More details soon!&lt;/p&gt;
-
-&lt;h3 id=&#34;carbon-nanotubes-under-extreme-pressure&#34;&gt;Carbon nanotubes under extreme pressure&lt;/h3&gt;
-
-&lt;p&gt;More details soon!&lt;/p&gt;
-
-&lt;h3 id=&#34;carbon-peapods&#34;&gt;Carbon peapods&lt;/h3&gt;
-
-&lt;p&gt;My PhD research was focused on the study of the one-dimensional (1D) system that are the carbon nano-peapods. During my work, I primarily used inelastic neutron scattering and x-ray diffraction in order to investigate the structure and dynamics of this system.
-At the beginning of my thesis, I spent three months in Tsukuba, Japan, with Dr. Hiromichi Kataura. There, I learned from the best his method to produce ultra-pure peapods – pure in the neutron sense, i.e. without hydrogen impurities – method that I used to produce large quantities of 2D oriented C$_{60}$ and C$_{70}$ peapods.
-Thanks to the 2D orientation of the samples, we could separate the translational part of the inelastic response of the spectra, which allowed us to finely study the translational motion of the fullerenes. Then, by studying the inter-fullerene distance, the fullerenes rotation and translations from 2 K up to 1200 K – an unprecedented large temperature domain of stability for 1D systems – I highlighted the true crystalline behavior of the fullerene chains at room temperature, the melting of these chains at high temperature, and the orientational ordering of the fullerenes at low temperature. Quite a lot of phase transitions for a 1D system!&lt;/p&gt;
-</description>
+      <description>Collapsed nanotubes of large diameter: a new model 1D system Carbon nanotubes under extreme pressure Carbon peapods  Collapsed nanotubes of large diameter: a new model 1D system More details soon!
+Carbon nanotubes under extreme pressure More details soon!
+Carbon peapods My PhD research was focused on the study of the one-dimensional (1D) system that are the carbon nano-peapods. During my work, I primarily used inelastic neutron scattering and x-ray diffraction in order to investigate the structure and dynamics of this system.</description>
     </item>
     
     <item>
@@ -50,27 +29,8 @@ Thanks to the 2D orientation of the samples, we could separate the translational
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/project/2d/</guid>
-      <description>
-
-&lt;!-- MarkdownTOC --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#borophene&#34;&gt;Borophene&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#graphene-under-extreme-conditions&#34;&gt;Graphene under extreme conditions&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h2 id=&#34;borophene&#34;&gt;Borophene&lt;/h2&gt;
-
-&lt;p&gt;My project at the LMI consists in the synthesis and characterization of borophene, a new 2D material with very interesting properties. More details soon!&lt;/p&gt;
-
-&lt;h2 id=&#34;graphene-under-extreme-conditions&#34;&gt;Graphene under extreme conditions&lt;/h2&gt;
-
-&lt;p&gt;Graphene is the simplest of bi-dimensional materials, and thus constitutes a reference for all 2D systems. In most cases, graphene is deposited on a substrate. Assessing the effects of graphene interaction with its environment is thus of primordial concern in the aim of developing graphene-based applications. In particular, understanding the mechanisms and limits of the transfer of deformations between the substrate and the graphene flake is at the cornerstone of the development of strain engineering at the nano-scale.&lt;/p&gt;
-
-&lt;p&gt;In this aim, we have studied single-layer graphene and isotopically labeled bi-layer graphene deposited on various types of substrates and submitted to high biaxial compression – the latter being caused by the volume reduction of the substrate when submitted to high pressures in a diamond anvil cell. We observe very different responses of the graphene flakes as a function of both the substrate it is deposited on and the pressure transmitting medium. These results can be explained by a mechanical model that supposes a transmission of the deformations to the graphene flake through the substrate. We show that, contrary to what is generally pre-supposed, the adhesion of graphene can vary as a function of the characteristics of the surface of the substrate, and can even disappear under high stress. This study supplies tools to characterize the strain transmission efficiency between substrate and graphene that can be generalized to other 2D systems, and our results allow dressing a critical review of previous studies of graphene under high-pressure conditions.&lt;/p&gt;
-</description>
+      <description>Borophene Graphene under extreme conditions  Borophene My project at the LMI consists in the synthesis and characterization of borophene, a new 2D material with very interesting properties. More details soon!
+Graphene under extreme conditions Graphene is the simplest of bi-dimensional materials, and thus constitutes a reference for all 2D systems. In most cases, graphene is deposited on a substrate. Assessing the effects of graphene interaction with its environment is thus of primordial concern in the aim of developing graphene-based applications.</description>
     </item>
     
     <item>
@@ -79,34 +39,8 @@ Thanks to the 2D orientation of the samples, we could separate the translational
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/project/porous/</guid>
-      <description>
-
-&lt;!-- MarkdownTOC --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#adsorption-and-transport-in-amorphous-porous-systems&#34;&gt;Adsorption and transport in amorphous porous systems&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#kerogens&#34;&gt;Kerogens&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#carbon-peapods&#34;&gt;Carbon peapods&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- /MarkdownTOC --&gt;
-
-&lt;h3 id=&#34;adsorption-and-transport-in-amorphous-porous-systems&#34;&gt;Adsorption and transport in amorphous porous systems&lt;/h3&gt;
-
-&lt;p&gt;I currently focus on the formalization of the tortuosity in amorphous porous systems. More details soon!&lt;/p&gt;
-
-&lt;h3 id=&#34;kerogens&#34;&gt;Kerogens&lt;/h3&gt;
-
-&lt;p&gt;My work during my post-doc at MIT was focused on the simulation of disordered nanoporous carbons that are found in sedimentary rocks (gas shale), the so-called &amp;ldquo;kerogens&amp;rdquo;. These kerogens are the result of the decay of various types of organic matter (marine, terrestrial, lacustrial&amp;hellip;) with pressure and temperature, and they are the ones that produce the gas and oil that the industrials try to recover. As kerogen constitutes a minor phase of the shale mixture, they are poorly understood as a stand alone compound.
-In order to produce molecular models of these kerogens, I combined experimental measurements of their structure (x-ray and neutron diffraction) with molecular simulation tools such as Hybrid Reverse Monte Carlo and Molecular Dynamics in order to produce atomic structures that match the experimental measurements and are physically and chemically acceptable. These models were then used in other atomistic simulations in order to predict their adsorption and transport properties (Grand Canonical Monte Carlo simulations), as well as their vibrational or mechanical properties.
-In particular, I have shown that the maturity of these kerogen plays an important role on their fracture properties while their composition one influences their elastic properties.&lt;/p&gt;
-
-&lt;h3 id=&#34;carbon-peapods&#34;&gt;Carbon peapods&lt;/h3&gt;
-
-&lt;p&gt;My PhD research was focused on the study of the one-dimensional (1D) system that are the carbon nano-peapods. During my work, I primarily used inelastic neutron scattering and x-ray diffraction in order to investigate the structure and dynamics of this system.
-At the beginning of my thesis, I spent three months in Tsukuba, Japan, with Dr. Hiromichi Kataura. There, I learnt from the best his method to produce ultra-pure peapods – pure in the neutron sense, i.e. without hydrogen impurities – method that I used to produce large quantities of 2D oriented C$_{60}$ and C$_{70}$ peapods.
-Thanks to the 2D orientation of the samples, we could separate the translational part of the inelastic response of the spectra, which allowed us to finely study the translational motion of the fullerenes. Then, by studying the inter-fullerene distance, the fullerenes rotation and translations from 2 K up to 1200 K – an unprecedented large temperature domain of stability for 1D systems – I highlighted the true crystalline behavior of the fullerene chains at room temperature, the melting of these chains at high temperature, and the orientational ordering of the fullerenes at low temperature. Quite a lot of phase transitions for a 1D system!&lt;/p&gt;
-</description>
+      <description>Adsorption and transport in amorphous porous systems Kerogens Carbon peapods  Adsorption and transport in amorphous porous systems I currently focus on the formalization of the tortuosity in amorphous porous systems. More details soon!
+Kerogens My work during my post-doc at MIT was focused on the simulation of disordered nanoporous carbons that are found in sedimentary rocks (gas shale), the so-called &amp;ldquo;kerogens&amp;rdquo;. These kerogens are the result of the decay of various types of organic matter (marine, terrestrial, lacustrial&amp;hellip;) with pressure and temperature, and they are the ones that produce the gas and oil that the industrials try to recover.</description>
     </item>
     
   </channel>
