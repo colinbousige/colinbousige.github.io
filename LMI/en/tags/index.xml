@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on LMI</title>
+    <link>/LMI/en/tags/</link>
+    <description>Recent content in Tags on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Informatique</title>
+      <link>/LMI/en/tags/informatique/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/en/tags/informatique/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microscopie</title>
+      <link>/LMI/en/tags/microscopie/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/en/tags/microscopie/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

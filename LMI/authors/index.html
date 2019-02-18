@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="fr">
 <head>
 
   <meta charset="utf-8">
@@ -31,7 +31,11 @@
   <meta name="description" content="UMR CNRS 5615">
 
   
-  <link rel="alternate" hreflang="en-us" href="/LMI/authors/">
+  <link rel="alternate" hreflang="en" href="/LMI/en/authors/">
+  
+  <link rel="alternate" hreflang="de" href="/LMI/de/authors/">
+  
+  <link rel="alternate" hreflang="fr" href="/LMI/authors/">
 
   
 
@@ -118,7 +122,7 @@
   <meta property="og:url" content="/LMI/authors/">
   <meta property="og:title" content="Authors | LMI">
   <meta property="og:description" content="UMR CNRS 5615"><meta property="og:image" content="/LMI/img/icon-192.png">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:locale" content="fr">
   
   <meta property="og:updated_time" content="2015-01-01T00:00:00&#43;01:00">
   
@@ -137,7 +141,7 @@
 
       <div class="row no-gutters justify-content-between mb-3">
         <div class="col-6">
-          <h1>Search</h1>
+          <h1>Rechercher</h1>
         </div>
         <div class="col-6 col-search-close">
           <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
@@ -146,7 +150,7 @@
 
       <div id="search-box">
         
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        <input name="q" id="search-query" placeholder="Recherche..." autocapitalize="off"
         autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
         
       </div>
@@ -170,7 +174,7 @@
       <a class="navbar-brand" href="/LMI/">LMI</a>
       
       <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Ouvrir la barre de navigation">
         <span><i class="fas fa-bars"></i></span>
       </button>
       
@@ -232,7 +236,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/LMI/#equipes">
             
-            <span>Equipes de Recherche</span>
+            <span>Equipes</span>
             
           </a>
         </li>
@@ -251,7 +255,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/LMI/#posts">
             
-            <span>Faits Marquants</span>
+            <span>Evènements</span>
             
           </a>
         </li>
@@ -270,7 +274,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/LMI/#formation">
             
-            <span>Formation</span>
+            <span>Formations</span>
             
           </a>
         </li>
@@ -289,7 +293,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/LMI/#emploi">
             
-            <span>Offres d'Emploi</span>
+            <span>Emplois</span>
             
           </a>
         </li>
@@ -348,6 +352,28 @@
         </li>
         
 
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <span>Français</span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/LMI/en/authors/">
+                <span>English</span>
+              </a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/LMI/de/authors/">
+                <span>Deutsch</span>
+              </a>
+            </li>
+            
+          </ul>
+        </li>
         
 
         
@@ -417,7 +443,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
+        <h5 class="modal-title">Citation</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -427,10 +453,10 @@
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
+          <i class="fas fa-copy"></i> Copier
         </a>
         <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
+          <i class="fas fa-download"></i> Télécharger
         </a>
         <div id="modal-error"></div>
       </div>
@@ -481,15 +507,15 @@
     <script>
       const search_index_filename = "/LMI/index.json";
       const i18n = {
-        'placeholder': "Search...",
-        'results': "results found",
-        'no_results': "No results found"
+        'placeholder': "Recherche...",
+        'results': "Résultats trouvés",
+        'no_results': "Aucun résultat n'a été trouvé"
       };
       const content_type = {
         'post': "Posts",
-        'project': "Projects",
+        'project': "Projets",
         'publication' : "Publications",
-        'talk' : "Talks"
+        'talk' : "Présentations"
         };
     </script>
     

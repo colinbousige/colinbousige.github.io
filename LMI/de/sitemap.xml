@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/de/author/admin/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/author/admin/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/author/admin/" hreflang="en"/>
+    
+      <loc>/LMI/de/author/admin/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/de/author/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/author/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/author/" hreflang="en"/>
+    
+      <loc>/LMI/de/author/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/de/authors/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/authors/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/authors/" hreflang="en"/>
+    
+      <loc>/LMI/de/authors/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/de/categories/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/categories/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/categories/" hreflang="en"/>
+    
+      <loc>/LMI/de/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/de/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/" hreflang="en"/>
+    
+      <loc>/LMI/de/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/de/publication_types/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/publication_types/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/publication_types/" hreflang="en"/>
+    
+      <loc>/LMI/de/publication_types/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/de/tags/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/" hreflang="en"/>
+    
+      <loc>/LMI/de/tags/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/de/authors/admin/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/authors/admin/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/authors/admin/" hreflang="en"/>
+    
+      <loc>/LMI/de/authors/admin/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+</urlset>

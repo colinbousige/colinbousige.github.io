@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+    <url>
+    
+      <loc>/LMI/en/formations/microscopie/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/formations/r/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/formations/r/" hreflang="fr"/>
+    
+      <loc>/LMI/en/formations/r/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/author/admin/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/author/admin/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/de/author/admin/" hreflang="de"/>
+    
+      <loc>/LMI/en/author/admin/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/author/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/author/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/de/author/" hreflang="de"/>
+    
+      <loc>/LMI/en/author/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/authors/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/authors/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/de/authors/" hreflang="de"/>
+    
+      <loc>/LMI/en/authors/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/categories/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/categories/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/de/categories/" hreflang="de"/>
+    
+      <loc>/LMI/en/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/formations/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/formations/" hreflang="fr"/>
+    
+      <loc>/LMI/en/formations/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/informatique/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/informatique/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/informatique/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/de/" hreflang="de"/>
+    
+      <loc>/LMI/en/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/LMI/en/tags/microscopie/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/publication_types/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/publication_types/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/de/publication_types/" hreflang="de"/>
+    
+      <loc>/LMI/en/publication_types/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/de/tags/" hreflang="de"/>
+    
+      <loc>/LMI/en/tags/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/authors/admin/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/authors/admin/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/de/authors/admin/" hreflang="de"/>
+    
+      <loc>/LMI/en/authors/admin/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+</urlset>

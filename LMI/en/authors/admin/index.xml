@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>admin on LMI</title>
+    <link>/LMI/en/authors/admin/</link>
+    <description>Recent content in admin on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>UMR CNRS 5615</copyright>
+    
+	<atom:link href="/LMI/en/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/LMI/en/author/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/en/author/admin/</guid>
+      <description>Le Laboratoire des Multimatériaux et Interfaces a été créé autour de 12 enseignants chercheurs et chercheurs par le Professeur Jean BOUIX en 1995. C&amp;rsquo;est une Unité Mixte de Recherche (UMR 5615) résultant d&amp;rsquo;un accord contractuel entre le CNRS et l&amp;rsquo;Université Claude Bernard Lyon 1 (UCBL). Depuis janvier 2016, il est dirigé par le Professeur Arnaud BRIOUDE. Le LMI rassemble aujourd&amp;rsquo;hui 43 membres permanents et environ autant de non-permanents (masters, doctorants et post-doctorants) autour de projets et programmes de recherche, de valorisation et de formation dans le domaine des Sciences de la Matière et plus particulièrement de la Chimie des Molécules et Matériaux.</description>
+    </item>
+    
+  </channel>
+</rss>
