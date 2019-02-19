@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Olivier Cador on LMI</title>
+    <link>/LMI/authors/olivier-cador/</link>
+    <description>Recent content in Olivier Cador on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/olivier-cador/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fine Control of the Metal Environment within Dysprosium-BasedMononuclear Single-Molecule Magnets</title>
+      <link>/LMI/publication/isi-000428530600014/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000428530600014/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

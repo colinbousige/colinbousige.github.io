@@ -1,44 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent &amp; Upcoming Talks on Colin Bousige</title>
+    <title>Recent &amp; Upcoming Talks on LMI</title>
     <link>/talk/</link>
-    <description>Recent content in Recent &amp; Upcoming Talks on Colin Bousige</description>
+    <description>Recent content in Recent &amp; Upcoming Talks on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018 Colin Bousige</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>High pressure study of graphene interaction with its environment </title>
-      <link>/talk/sbpmatbrazil/</link>
-      <pubDate>Mon, 11 Sep 2017 11:00:00 +0000</pubDate>
+      <title>Example Talk</title>
+      <link>/talk/example/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       
-      <guid>/talk/sbpmatbrazil/</guid>
-      <description>Graphene is the simplest of bi-dimensional materials, and thus constitutes a reference for all 2D systems. In most cases, graphene is deposited on a substrate. Assessing the effects of graphene interaction with its environment is thus of primordial concern in the aim of developing graphene-based applications. In particular, understanding the mechanisms and limits of the transfer of deformations between the substrate and the graphene flake is at the cornerstone of the development of strain engineering at the nano-scale.</description>
-    </item>
-    
-    <item>
-      <title>Adhesion and friction in 1D and 2D systems</title>
-      <link>/talk/friction/</link>
-      <pubDate>Thu, 03 Nov 2016 10:00:00 +0000</pubDate>
-      
-      <guid>/talk/friction/</guid>
-      <description>A summary of my recent works turned on the perspective of friction in 1D and 2D materials.
-In this presentation, I will focus on aspects of adhesion and friction that I have encountered in two low dimensional systems, namely carbon peapods and graphene.
-Adhesion and friction between a 2D system and the substrate it is deposited on are key parameters governing the transfer of deformation from the substrate to the 2D system, and understanding the mechanism and limits of such strain transfer is a most needed step towards the development of strain engineering at the nanoscale.</description>
-    </item>
-    
-    <item>
-      <title>Structure and Dynamics of Model and Disordered Carbon Materials</title>
-      <link>/talk/carbon/</link>
-      <pubDate>Fri, 10 Jun 2016 10:00:00 +0000</pubDate>
-      
-      <guid>/talk/carbon/</guid>
-      <description>A summary of my recent works on model (1D) and disordered carbon materials.</description>
+      <guid>/talk/example/</guid>
+      <description>Click on the Slides button above to view the built-in slides feature.
+  Slides can be added in a few ways:
+ Create slides using Academic&amp;rsquo;s Slides feature and link using url_slides parameter in the front matter of the talk file Upload an existing slide deck to static/ and link using url_slides parameter in the front matter of the talk file Embed your slides (e.g. Google Slides) or presentation video on this page using shortcodes.</description>
     </item>
     
   </channel>

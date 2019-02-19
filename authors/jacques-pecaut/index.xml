@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jacques Pecaut on LMI</title>
+    <link>/LMI/authors/jacques-pecaut/</link>
+    <description>Recent content in Jacques Pecaut on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/jacques-pecaut/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bromine-lithium exchange as a straightforward method to obtainmeso-tetrakis(4-formylphenyl)porphyrin: a versatile intermediate</title>
+      <link>/LMI/publication/isi-000360597400002/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000360597400002/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

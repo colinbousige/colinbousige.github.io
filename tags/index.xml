@@ -1,95 +1,842 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Colin Bousige</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Colin Bousige</description>
+    <title>Tags on LMI</title>
+    <link>/LMI/tags/</link>
+    <description>Recent content in Tags on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 Colin Bousige</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Content tagged as &#39;Academic&#39;</title>
-      <link>/tags/academic/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/academic/</guid>
-      <description>Here is a list of all the content that has been tagged as academic.</description>
-    </item>
     
     <item>
-      <title>1d</title>
-      <link>/tags/1d/</link>
-      <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
+      <title>(Vapor plus liquid) equilibria; Diamines; Water; Enthalpy ofvaporization; NRTL; UNIQUAC</title>
+      <link>/LMI/tags/vapor-plus-liquid-equilibria-diamines-water-enthalpy-ofvaporization-nrtl-uniquac/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
       
-      <guid>/tags/1d/</guid>
+      <guid>/LMI/tags/vapor-plus-liquid-equilibria-diamines-water-enthalpy-ofvaporization-nrtl-uniquac/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>2d</title>
-      <link>/tags/2d/</link>
+      <title>(Vapor plus liquid) equilibria; Diamines; Water; NRTL; UNIQUAC; ModifiedUNIFAC (Do)</title>
+      <link>/LMI/tags/vapor-plus-liquid-equilibria-diamines-water-nrtl-uniquac-modifiedunifac-do/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/vapor-plus-liquid-equilibria-diamines-water-nrtl-uniquac-modifiedunifac-do/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>1</title>
+      <link>/LMI/tags/1/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3-Propanediol; Biomass; Vapor pressure; Density; Sound velocity;Redlich-Kister polynomial equation</title>
+      <link>/LMI/tags/3-propanediol-biomass-vapor-pressure-density-sound-velocityredlich-kister-polynomial-equation/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/3-propanediol-biomass-vapor-pressure-density-sound-velocityredlich-kister-polynomial-equation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3C-SiC; XPS; LEED; HREELS; Band diagram; Wet chemical etching; Workfunction; Interface</title>
+      <link>/LMI/tags/3c-sic-xps-leed-hreels-band-diagram-wet-chemical-etching-workfunction-interface/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/3c-sic-xps-leed-hreels-band-diagram-wet-chemical-etching-workfunction-interface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adhesion; Electrowetting; Interface; Ageing; Surface</title>
+      <link>/LMI/tags/adhesion-electrowetting-interface-ageing-surface/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/adhesion-electrowetting-interface-ageing-surface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ames test; Micronucleus assay; Endocrine disruption; HepG2 cell line;Sol-gel coating; Food contact coating; Polycarbonate; Migration;Extracts</title>
+      <link>/LMI/tags/ames-test-micronucleus-assay-endocrine-disruption-hepg2-cell-linesol-gel-coating-food-contact-coating-polycarbonate-migrationextracts/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/ames-test-micronucleus-assay-endocrine-disruption-hepg2-cell-linesol-gel-coating-food-contact-coating-polycarbonate-migrationextracts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aqueous solubility; Vapor pressures; Octanol-water partitioncoefficient; Dibutyl phthalate; Di-isobutyl phthalate</title>
+      <link>/LMI/tags/aqueous-solubility-vapor-pressures-octanol-water-partitioncoefficient-dibutyl-phthalate-di-isobutyl-phthalate/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/aqueous-solubility-vapor-pressures-octanol-water-partitioncoefficient-dibutyl-phthalate-di-isobutyl-phthalate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BIO</title>
+      <link>/LMI/tags/bio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/bio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bioglass; Mechanical properties; Borate; Bioactivity; Dentistry</title>
+      <link>/LMI/tags/bioglass-mechanical-properties-borate-bioactivity-dentistry/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/bioglass-mechanical-properties-borate-bioactivity-dentistry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CIMP</title>
+      <link>/LMI/tags/cimp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/cimp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COM</title>
+      <link>/LMI/tags/com/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calcium hydride; Hydrazine borane; Hydrides; Hydrogen storage;Thermolysis</title>
+      <link>/LMI/tags/calcium-hydride-hydrazine-borane-hydrides-hydrogen-storagethermolysis/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/calcium-hydride-hydrazine-borane-hydrides-hydrogen-storagethermolysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calix[4]arene; nucleic bases; co-crystal; X-ray analysis; Hirshfeldsurface analysis</title>
+      <link>/LMI/tags/calix4arene-nucleic-bases-co-crystal-x-ray-analysis-hirshfeldsurface-analysis/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/calix4arene-nucleic-bases-co-crystal-x-ray-analysis-hirshfeldsurface-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calix[n] arenes; in vitro; in vivo; cells; biological applications;Active Pharmaceutical Ingredients</title>
+      <link>/LMI/tags/calixn-arenes-in-vitro-in-vivo-cells-biological-applicationsactive-pharmaceutical-ingredients/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/calixn-arenes-in-vitro-in-vivo-cells-biological-applicationsactive-pharmaceutical-ingredients/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calix[n]arenes; Silver Nanoparticles; Biomolecules; OpticalBiosensors; Therapeutically Agents; Antibacterial; Antiviral; ReactiveOxygen Species</title>
+      <link>/LMI/tags/calixnarenes-silver-nanoparticles-biomolecules-opticalbiosensors-therapeutically-agents-antibacterial-antiviral-reactiveoxygen-species/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/calixnarenes-silver-nanoparticles-biomolecules-opticalbiosensors-therapeutically-agents-antibacterial-antiviral-reactiveoxygen-species/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calorimeter methods; Calorimeters; Scintillators and scintillatingfibres and light guides; Scintillators; scintillation and light emissionprocesses (solid</title>
+      <link>/LMI/tags/calorimeter-methods-calorimeters-scintillators-and-scintillatingfibres-and-light-guides-scintillators-scintillation-and-light-emissionprocesses-solid/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/calorimeter-methods-calorimeters-scintillators-and-scintillatingfibres-and-light-guides-scintillators-scintillation-and-light-emissionprocesses-solid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cluster compounds; Lanthanides; Luminescence; Molecular doping</title>
+      <link>/LMI/tags/cluster-compounds-lanthanides-luminescence-molecular-doping/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/cluster-compounds-lanthanides-luminescence-molecular-doping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coordination polymers; Density functional calculations; Noncovalentinteractions; Hydrogen bonds; pi-Interactions</title>
+      <link>/LMI/tags/coordination-polymers-density-functional-calculations-noncovalentinteractions-hydrogen-bonds-pi-interactions/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/coordination-polymers-density-functional-calculations-noncovalentinteractions-hydrogen-bonds-pi-interactions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crystallites; Segregation; Hydrothermal crystal growth; Nanomaterials;Oxides</title>
+      <link>/LMI/tags/crystallites-segregation-hydrothermal-crystal-growth-nanomaterialsoxides/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/crystallites-segregation-hydrothermal-crystal-growth-nanomaterialsoxides/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dental composite; Porous fillers; Human gingival fibroblast;Cytocompatibility; Confocal microscopy; Time lapse imaging; FTIR;Conversion rate</title>
+      <link>/LMI/tags/dental-composite-porous-fillers-human-gingival-fibroblastcytocompatibility-confocal-microscopy-time-lapse-imaging-ftirconversion-rate/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/dental-composite-porous-fillers-human-gingival-fibroblastcytocompatibility-confocal-microscopy-time-lapse-imaging-ftirconversion-rate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dental composite; Quaternary ammonium salt; Streptococcus mutans; DHMAI;MPC; Degree of conversion; Mechanical properties; Antibacterial activity</title>
+      <link>/LMI/tags/dental-composite-quaternary-ammonium-salt-streptococcus-mutans-dhmaimpc-degree-of-conversion-mechanical-properties-antibacterial-activity/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/dental-composite-quaternary-ammonium-salt-streptococcus-mutans-dhmaimpc-degree-of-conversion-mechanical-properties-antibacterial-activity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dental implant; Chitosan; Cytocompatibility; Peptide bond; Chemicalresistance</title>
+      <link>/LMI/tags/dental-implant-chitosan-cytocompatibility-peptide-bond-chemicalresistance/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/dental-implant-chitosan-cytocompatibility-peptide-bond-chemicalresistance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dysprosium; Single-molecule studies; Crystal structures; Magneticproperties; Ab initio calculations</title>
+      <link>/LMI/tags/dysprosium-single-molecule-studies-crystal-structures-magneticproperties-ab-initio-calculations/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/dysprosium-single-molecule-studies-crystal-structures-magneticproperties-ab-initio-calculations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Electrowetting; Charge injection; Leakage current</title>
+      <link>/LMI/tags/electrowetting-charge-injection-leakage-current/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/electrowetting-charge-injection-leakage-current/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy storage materials; Hydrogen absorbing materials; Synchrotronradiation</title>
+      <link>/LMI/tags/energy-storage-materials-hydrogen-absorbing-materials-synchrotronradiation/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/energy-storage-materials-hydrogen-absorbing-materials-synchrotronradiation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Growth models; VLS transport; Nitrides; Semiconducting III-V materials</title>
+      <link>/LMI/tags/growth-models-vls-transport-nitrides-semiconducting-iii-v-materials/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/growth-models-vls-transport-nitrides-semiconducting-iii-v-materials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Host-guest complex; Crystal structure; Cucurbit[6]uril;p-sulphonatocalix[8]arene; Anesthetic drug</title>
+      <link>/LMI/tags/host-guest-complex-crystal-structure-cucurbit6urilp-sulphonatocalix8arene-anesthetic-drug/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/host-guest-complex-crystal-structure-cucurbit6urilp-sulphonatocalix8arene-anesthetic-drug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hydrazone ligands; Manganese; Structure elucidation; Noncovalentinteractions; Supramolecular energy calculations</title>
+      <link>/LMI/tags/hydrazone-ligands-manganese-structure-elucidation-noncovalentinteractions-supramolecular-energy-calculations/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/hydrazone-ligands-manganese-structure-elucidation-noncovalentinteractions-supramolecular-energy-calculations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hydrothermal synthesis; Single crystal; Trimesic acid; Picolinic acid;Magnetic properties</title>
+      <link>/LMI/tags/hydrothermal-synthesis-single-crystal-trimesic-acid-picolinic-acidmagnetic-properties/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/hydrothermal-synthesis-single-crystal-trimesic-acid-picolinic-acidmagnetic-properties/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Informatique</title>
+      <link>/LMI/tags/informatique/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/informatique/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inorganic compounds; Precipitation; Heat treatment; Crystallisation;Differential scanning calorimetry; Electron microscopy</title>
+      <link>/LMI/tags/inorganic-compounds-precipitation-heat-treatment-crystallisationdifferential-scanning-calorimetry-electron-microscopy/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/inorganic-compounds-precipitation-heat-treatment-crystallisationdifferential-scanning-calorimetry-electron-microscopy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MAX phase; Copper; Reactivity; Insertion</title>
+      <link>/LMI/tags/max-phase-copper-reactivity-insertion/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/max-phase-copper-reactivity-insertion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Manganese oxide; Titanium oxide; Sol-gel; Block copolymer; Mesoporousoxide</title>
+      <link>/LMI/tags/manganese-oxide-titanium-oxide-sol-gel-block-copolymer-mesoporousoxide/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/manganese-oxide-titanium-oxide-sol-gel-block-copolymer-mesoporousoxide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microcontact printing; Submerged microcontact printing; Metal patterns;Palladium(II)-thiol complexes; Palladium nanoparticles; Electrolessdeposition</title>
+      <link>/LMI/tags/microcontact-printing-submerged-microcontact-printing-metal-patternspalladiumii-thiol-complexes-palladium-nanoparticles-electrolessdeposition/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/microcontact-printing-submerged-microcontact-printing-metal-patternspalladiumii-thiol-complexes-palladium-nanoparticles-electrolessdeposition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microscopie</title>
+      <link>/LMI/tags/microscopie/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/microscopie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monoethyleneglycol-water; Hydrate inhibition; Solubility; n-Alkanes;NRTL modelling</title>
+      <link>/LMI/tags/monoethyleneglycol-water-hydrate-inhibition-solubility-n-alkanesnrtl-modelling/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/monoethyleneglycol-water-hydrate-inhibition-solubility-n-alkanesnrtl-modelling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monoterpenoids; Vapor pressure; Heat capacity; Ideal-gas thermodynamicproperties; Vaporization and sublimation enthalpy</title>
+      <link>/LMI/tags/monoterpenoids-vapor-pressure-heat-capacity-ideal-gas-thermodynamicproperties-vaporization-and-sublimation-enthalpy/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/monoterpenoids-vapor-pressure-heat-capacity-ideal-gas-thermodynamicproperties-vaporization-and-sublimation-enthalpy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nanoparticles; Iron oxide; Silica; Superparamagnetism</title>
+      <link>/LMI/tags/nanoparticles-iron-oxide-silica-superparamagnetism/</link>
+      <pubDate>Sun, 01 Mar 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/nanoparticles-iron-oxide-silica-superparamagnetism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ni/NiO bilayer; Magnetic properties; Preisach model</title>
+      <link>/LMI/tags/ni/nio-bilayer-magnetic-properties-preisach-model/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/ni/nio-bilayer-magnetic-properties-preisach-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Non-covalent interactions; Hydrogen bonding; pi center dot center dotcenter dot pi stacking; Antimicrobial activity; DFT calculations</title>
+      <link>/LMI/tags/non-covalent-interactions-hydrogen-bonding-pi-center-dot-center-dotcenter-dot-pi-stacking-antimicrobial-activity-dft-calculations/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/non-covalent-interactions-hydrogen-bonding-pi-center-dot-center-dotcenter-dot-pi-stacking-antimicrobial-activity-dft-calculations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Osmium; Lanthanides; Heterometallic complexes; Magnetic properties; Drugdesign; Anticancer agents</title>
+      <link>/LMI/tags/osmium-lanthanides-heterometallic-complexes-magnetic-properties-drugdesign-anticancer-agents/</link>
+      <pubDate>Sun, 01 Mar 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/osmium-lanthanides-heterometallic-complexes-magnetic-properties-drugdesign-anticancer-agents/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Partition of metal cations; Thermodynamic modelling; Cobalt and nickelnitrate; Solid-liquid equilibria</title>
+      <link>/LMI/tags/partition-of-metal-cations-thermodynamic-modelling-cobalt-and-nickelnitrate-solid-liquid-equilibria/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/partition-of-metal-cations-thermodynamic-modelling-cobalt-and-nickelnitrate-solid-liquid-equilibria/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Personnel</title>
+      <link>/LMI/tags/personnel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/personnel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phosphoric acid production; Hexafluosilicic acid attack; Phosphate rock</title>
+      <link>/LMI/tags/phosphoric-acid-production-hexafluosilicic-acid-attack-phosphate-rock/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/phosphoric-acid-production-hexafluosilicic-acid-attack-phosphate-rock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plateformes Techniques</title>
+      <link>/LMI/tags/plateformes-techniques/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/plateformes-techniques/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Porphyrin; Bromine-lithium exchange; Bouveault reaction; Formyl group</title>
+      <link>/LMI/tags/porphyrin-bromine-lithium-exchange-bouveault-reaction-formyl-group/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/porphyrin-bromine-lithium-exchange-bouveault-reaction-formyl-group/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Power electronics; Mechanical characterization; Ceramic substrates</title>
+      <link>/LMI/tags/power-electronics-mechanical-characterization-ceramic-substrates/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/power-electronics-mechanical-characterization-ceramic-substrates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/LMI/tags/publications/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pyrazolines; Crystal structure; Hydrogen-bonding; Antimicrobial activity</title>
+      <link>/LMI/tags/pyrazolines-crystal-structure-hydrogen-bonding-antimicrobial-activity/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/pyrazolines-crystal-structure-hydrogen-bonding-antimicrobial-activity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum theory of atoms-in-molecules (QTAIM); Carbonyl complexes; Transeffect; Cis effect; Metal-ligand bonds; Atomic descriptors; Energydecompositions; Conceptual DFT</title>
+      <link>/LMI/tags/quantum-theory-of-atoms-in-molecules-qtaim-carbonyl-complexes-transeffect-cis-effect-metal-ligand-bonds-atomic-descriptors-energydecompositions-conceptual-dft/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/quantum-theory-of-atoms-in-molecules-qtaim-carbonyl-complexes-transeffect-cis-effect-metal-ligand-bonds-atomic-descriptors-energydecompositions-conceptual-dft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quinoline derivatives; Baylis-Hillman reaction; Crystal structure; X-raydiffraction; Hydrogen bond; Antimicrobial</title>
+      <link>/LMI/tags/quinoline-derivatives-baylis-hillman-reaction-crystal-structure-x-raydiffraction-hydrogen-bond-antimicrobial/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/quinoline-derivatives-baylis-hillman-reaction-crystal-structure-x-raydiffraction-hydrogen-bond-antimicrobial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recherche</title>
+      <link>/LMI/tags/recherche/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/2d/</guid>
+      <guid>/LMI/tags/recherche/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Markdown</title>
-      <link>/tags/markdown/</link>
-      <pubDate>Fri, 09 Jun 2017 19:56:21 +0200</pubDate>
+      <title>Restorative dentistry; Direct dental restorations; FDI criteria;Clinical trial; Clinical assessment</title>
+      <link>/LMI/tags/restorative-dentistry-direct-dental-restorations-fdi-criteriaclinical-trial-clinical-assessment/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
       
-      <guid>/tags/markdown/</guid>
+      <guid>/LMI/tags/restorative-dentistry-direct-dental-restorations-fdi-criteriaclinical-trial-clinical-assessment/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>New Installation</title>
-      <link>/tags/new-installation/</link>
-      <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
+      <title>S2M</title>
+      <link>/LMI/tags/s2m/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/new-installation/</guid>
+      <guid>/LMI/tags/s2m/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Porous</title>
-      <link>/tags/porous/</link>
-      <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Secrétariat</title>
+      <link>/LMI/tags/secr%C3%A9tariat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/porous/</guid>
+      <guid>/LMI/tags/secr%C3%A9tariat/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Fri, 27 Oct 2017 19:56:21 +0200</pubDate>
+      <title>Sol-gel; Coating; Polycarbonate; Mechanical properties</title>
+      <link>/LMI/tags/sol-gel-coating-polycarbonate-mechanical-properties/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>/LMI/tags/sol-gel-coating-polycarbonate-mechanical-properties/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Rmarkdown</title>
-      <link>/tags/rmarkdown/</link>
-      <pubDate>Fri, 09 Jun 2017 19:56:21 +0200</pubDate>
+      <title>Solid-liquid equilibria; Polythermal diagrams; DSC applied to ternarymixtures</title>
+      <link>/LMI/tags/solid-liquid-equilibria-polythermal-diagrams-dsc-applied-to-ternarymixtures/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0100</pubDate>
       
-      <guid>/tags/rmarkdown/</guid>
+      <guid>/LMI/tags/solid-liquid-equilibria-polythermal-diagrams-dsc-applied-to-ternarymixtures/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Shiny</title>
-      <link>/tags/shiny/</link>
-      <pubDate>Thu, 08 Jun 2017 19:56:21 +0200</pubDate>
+      <title>Solid-liquid equilibria; Solubility curves; Nickel and cobalt nitratehexahydrate; Ice liquidus; Quasi-ideal model; Solid solutions</title>
+      <link>/LMI/tags/solid-liquid-equilibria-solubility-curves-nickel-and-cobalt-nitratehexahydrate-ice-liquidus-quasi-ideal-model-solid-solutions/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0200</pubDate>
       
-      <guid>/tags/shiny/</guid>
+      <guid>/LMI/tags/solid-liquid-equilibria-solubility-curves-nickel-and-cobalt-nitratehexahydrate-ice-liquidus-quasi-ideal-model-solid-solutions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stage</title>
+      <link>/LMI/tags/stage/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/stage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Séminaires</title>
+      <link>/LMI/tags/s%C3%A9minaires/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/s%C3%A9minaires/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TMP</title>
+      <link>/LMI/tags/tmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/tmp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tetradentate Schiff base; trinuclear copper complex; X-ray study; DFTcalculation</title>
+      <link>/LMI/tags/tetradentate-schiff-base-trinuclear-copper-complex-x-ray-study-dftcalculation/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/tetradentate-schiff-base-trinuclear-copper-complex-x-ray-study-dftcalculation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thèses</title>
+      <link>/LMI/tags/th%C3%A8ses/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/th%C3%A8ses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ti-Al alloy; Ti3SiC2; 4H-SiC; XRD; XPS; TEM</title>
+      <link>/LMI/tags/ti-al-alloy-ti3sic2-4h-sic-xrd-xps-tem/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/ti-al-alloy-ti3sic2-4h-sic-xrd-xps-tem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vapor pressures; Methylesters; Vaporization enthalpy</title>
+      <link>/LMI/tags/vapor-pressures-methylesters-vaporization-enthalpy/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/vapor-pressures-methylesters-vaporization-enthalpy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vapor-liquid equilibria; Diethylenetriamine; Dipropylenetriamine;Enthalpy of vaporization; NRTL; UNIQUAC; Aqueous solutions of amine</title>
+      <link>/LMI/tags/vapor-liquid-equilibria-diethylenetriamine-dipropylenetriamineenthalpy-of-vaporization-nrtl-uniquac-aqueous-solutions-of-amine/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/vapor-liquid-equilibria-diethylenetriamine-dipropylenetriamineenthalpy-of-vaporization-nrtl-uniquac-aqueous-solutions-of-amine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vapor-liquid equilibria; Static apparatus; Diamines; Water; Environment</title>
+      <link>/LMI/tags/vapor-liquid-equilibria-static-apparatus-diamines-water-environment/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/vapor-liquid-equilibria-static-apparatus-diamines-water-environment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wetting; Superhydrophobicity; Fakir state; Carbon nanotubes;Nanostructures</title>
+      <link>/LMI/tags/wetting-superhydrophobicity-fakir-state-carbon-nanotubesnanostructures/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/wetting-superhydrophobicity-fakir-state-carbon-nanotubesnanostructures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aluminum nitride; nanofilaments; polymer-derived ceramics;electrospinning</title>
+      <link>/LMI/tags/aluminum-nitride-nanofilaments-polymer-derived-ceramicselectrospinning/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/aluminum-nitride-nanofilaments-polymer-derived-ceramicselectrospinning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>antitumor agents; lanthanide; nitrosyl; osmium; ruthenium</title>
+      <link>/LMI/tags/antitumor-agents-lanthanide-nitrosyl-osmium-ruthenium/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/antitumor-agents-lanthanide-nitrosyl-osmium-ruthenium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>asymmetric catalysis; C-C coupling C-H activation; chiral phosphines;palladium</title>
+      <link>/LMI/tags/asymmetric-catalysis-c-c-coupling-c-h-activation-chiral-phosphinespalladium/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/asymmetric-catalysis-c-c-coupling-c-h-activation-chiral-phosphinespalladium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>asymmetric synthesis; chiral auxiliaries; computational studies;phosphanes; stereochemistry</title>
+      <link>/LMI/tags/asymmetric-synthesis-chiral-auxiliaries-computational-studiesphosphanes-stereochemistry/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/asymmetric-synthesis-chiral-auxiliaries-computational-studiesphosphanes-stereochemistry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>atomic layer deposition; carbon nanotube; titanium dioxide; gas sensing;heterostructures</title>
+      <link>/LMI/tags/atomic-layer-deposition-carbon-nanotube-titanium-dioxide-gas-sensingheterostructures/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/atomic-layer-deposition-carbon-nanotube-titanium-dioxide-gas-sensingheterostructures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>atomic layer deposition; hexagonal boron nitride; polymer-derivedceramics; thin films; water filtration</title>
+      <link>/LMI/tags/atomic-layer-deposition-hexagonal-boron-nitride-polymer-derivedceramics-thin-films-water-filtration/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/atomic-layer-deposition-hexagonal-boron-nitride-polymer-derivedceramics-thin-films-water-filtration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>biomaterial; hydrogel; chitosan; hyaluronic acid; periodontal tissueengineering</title>
+      <link>/LMI/tags/biomaterial-hydrogel-chitosan-hyaluronic-acid-periodontal-tissueengineering/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/biomaterial-hydrogel-chitosan-hyaluronic-acid-periodontal-tissueengineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>composite crystals; core-shell crystals; lanthanides; luminescence</title>
+      <link>/LMI/tags/composite-crystals-core-shell-crystals-lanthanides-luminescence/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/composite-crystals-core-shell-crystals-lanthanides-luminescence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cyanide-bridged heterometallic assemblies; octacyanotungstate(V);Mn(III) Schiff base complexes; single-chain magnet; 1D coordinationpolymers; metamagnet; ferromagnetic coupling</title>
+      <link>/LMI/tags/cyanide-bridged-heterometallic-assemblies-octacyanotungstatevmniii-schiff-base-complexes-single-chain-magnet-1d-coordinationpolymers-metamagnet-ferromagnetic-coupling/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/cyanide-bridged-heterometallic-assemblies-octacyanotungstatevmniii-schiff-base-complexes-single-chain-magnet-1d-coordinationpolymers-metamagnet-ferromagnetic-coupling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cyclotriphosphazene; electrochemistry; nitronyl nitroxide; nucleophilicsubstitution; polyradicals</title>
+      <link>/LMI/tags/cyclotriphosphazene-electrochemistry-nitronyl-nitroxide-nucleophilicsubstitution-polyradicals/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/cyclotriphosphazene-electrochemistry-nitronyl-nitroxide-nucleophilicsubstitution-polyradicals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dehydration; formyl-substituted phthalocyanine; imino nitroxide;radical; Ullman&#39;s synthesis</title>
+      <link>/LMI/tags/dehydration-formyl-substituted-phthalocyanine-imino-nitroxideradical-ullmans-synthesis/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/dehydration-formyl-substituted-phthalocyanine-imino-nitroxideradical-ullmans-synthesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>doping; GaN; magnesium; nanostructures; thin films; vapor-liquid-solidtransport</title>
+      <link>/LMI/tags/doping-gan-magnesium-nanostructures-thin-films-vapor-liquid-solidtransport/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/doping-gan-magnesium-nanostructures-thin-films-vapor-liquid-solidtransport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>electrospinning; PEDOT/PSS; transparent electrode; conformant coating;conductivity; nanofibers</title>
+      <link>/LMI/tags/electrospinning-pedot/pss-transparent-electrode-conformant-coatingconductivity-nanofibers/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/electrospinning-pedot/pss-transparent-electrode-conformant-coatingconductivity-nanofibers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functional composite; core-shell filler; thermal management; thermalconductivity</title>
+      <link>/LMI/tags/functional-composite-core-shell-filler-thermal-management-thermalconductivity/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/functional-composite-core-shell-filler-thermal-management-thermalconductivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gas and liquid scintillators)</title>
+      <link>/LMI/tags/gas-and-liquid-scintillators/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/gas-and-liquid-scintillators/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gold nanoparticles; sol-gel; zirconia coating; thermal stability</title>
+      <link>/LMI/tags/gold-nanoparticles-sol-gel-zirconia-coating-thermal-stability/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/gold-nanoparticles-sol-gel-zirconia-coating-thermal-stability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>h-BN; PDCs; 2D nanolayers; coatings; nanosheets</title>
+      <link>/LMI/tags/h-bn-pdcs-2d-nanolayers-coatings-nanosheets/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/h-bn-pdcs-2d-nanolayers-coatings-nanosheets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>human tooth enamel; neutron powder diffraction; hydroxyapatite</title>
+      <link>/LMI/tags/human-tooth-enamel-neutron-powder-diffraction-hydroxyapatite/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/human-tooth-enamel-neutron-powder-diffraction-hydroxyapatite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>magnetic anisotropy; spin cluster; polarized neutron diffraction; localsusceptibility tensor; molecular magnetism; transition metal complexes</title>
+      <link>/LMI/tags/magnetic-anisotropy-spin-cluster-polarized-neutron-diffraction-localsusceptibility-tensor-molecular-magnetism-transition-metal-complexes/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/magnetic-anisotropy-spin-cluster-polarized-neutron-diffraction-localsusceptibility-tensor-molecular-magnetism-transition-metal-complexes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>osmium; heptacyanoosmate(IV); pentagonal bipyramid polyhedron</title>
+      <link>/LMI/tags/osmium-heptacyanoosmateiv-pentagonal-bipyramid-polyhedron/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/osmium-heptacyanoosmateiv-pentagonal-bipyramid-polyhedron/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quantitative pathology; scaffold; tissue engineering; diabetes;collagen; regeneration; tissue ingrowth</title>
+      <link>/LMI/tags/quantitative-pathology-scaffold-tissue-engineering-diabetescollagen-regeneration-tissue-ingrowth/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/quantitative-pathology-scaffold-tissue-engineering-diabetescollagen-regeneration-tissue-ingrowth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rhombohedral multilayer graphene; flat band; density functional theory;angle-resolved photoemission spectroscopy; STM/STS; STEM</title>
+      <link>/LMI/tags/rhombohedral-multilayer-graphene-flat-band-density-functional-theoryangle-resolved-photoemission-spectroscopy-stm/sts-stem/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/rhombohedral-multilayer-graphene-flat-band-density-functional-theoryangle-resolved-photoemission-spectroscopy-stm/sts-stem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>strain; crystalline defects; thin films; Silicon; heteroepitaxy; bufferlayer; 3C-SiC</title>
+      <link>/LMI/tags/strain-crystalline-defects-thin-films-silicon-heteroepitaxy-bufferlayer-3c-sic/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/tags/strain-crystalline-defects-thin-films-silicon-heteroepitaxy-bufferlayer-3c-sic/</guid>
       <description></description>
     </item>
     

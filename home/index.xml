@@ -1,77 +1,103 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on Colin Bousige</title>
-    <link>/home/</link>
-    <description>Recent content in Homes on Colin Bousige</description>
+    <title>Homes on LMI</title>
+    <link>/LMI/home/</link>
+    <description>Recent content in Homes on LMI</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 Colin Bousige</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
     
-	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/LMI/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Laboratoire des Multimatériaux et Interfaces</title>
+      <link>/LMI/home/hero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/about/</guid>
-      <description>About me Since October 2017, I am a CNRS researcher at the Laboratoire Multimatériaux et Interfaces (LMI) in Lyon, principally working on the synthesis and the characterization of borophene. Apart from that, my interests include 1D and 2D nano-materials in general and carbon-based compounds in particular, as well as studying the effects of strong confinement in amorphous porous systems.</description>
+      <guid>/LMI/home/hero/</guid>
+      <description>UMR CNRS – 5615</description>
     </item>
     
     <item>
-      <title>Recent Publications</title>
-      <link>/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Le Laboratoire des Multimatériaux et Interfaces</title>
+      <link>/LMI/home/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/publications/</guid>
+      <guid>/LMI/home/about/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Recent &amp; Upcoming Talks</title>
-      <link>/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Le LMI en chiffres</title>
+      <link>/LMI/home/nombres/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/talks/</guid>
+      <guid>/LMI/home/nombres/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Recent Posts</title>
-      <link>/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Publications</title>
+      <link>/LMI/home/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/posts/</guid>
+      <guid>/LMI/home/publications/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Projects</title>
-      <link>/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Equipes de Recherche</title>
+      <link>/LMI/home/equipes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/projects/</guid>
+      <guid>/LMI/home/equipes/</guid>
+      <description>La structuration actuelle de l&amp;rsquo;unité comprend 5 équipes de recherche appuyées par deux plateformes techniques internes, un atelier et un service &amp;ldquo; Gestion et Logistique &amp;ldquo;.</description>
+    </item>
+    
+    <item>
+      <title>Faits Marquants</title>
+      <link>/LMI/home/posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/home/posts/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>CV</title>
-      <link>/home/cv/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Formations</title>
+      <link>/LMI/home/formation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/cv/</guid>
+      <guid>/LMI/home/formation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Offres d&#39;Emplois</title>
+      <link>/LMI/home/emploi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/home/emploi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <link>/LMI/home/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/contact/</guid>
+      <guid>/LMI/home/contact/</guid>
+      <description>   Accueil, logistique, évènements, et courrier      Irina BOUSSIN 04 72 43 29 62   Elodie RAVIS 04 72 43 12 05   Direction    Arnaud BRIOUDE 04 72 44 84 03   Responsable Administrative et Financière    Patricia COMBIER 04 26 23 45 23    </description>
+    </item>
+    
+    <item>
+      <title>Equipes de Recherche</title>
+      <link>/LMI/home/personnel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/home/personnel/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kinga Suwinska on LMI</title>
+    <link>/LMI/authors/kinga-suwinska/</link>
+    <description>Recent content in Kinga Suwinska on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/kinga-suwinska/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The solid-state structures of organic salts formed by calix[4]arenedihydroxyphosphonic acid with nucleic bases cations: adeninium,cytosinium, guaninium and uracilium</title>
+      <link>/LMI/publication/isi-000426952200023/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000426952200023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Host-guest complexes of local anesthetics with cucurbit[6]uril andpara-sulphonatocalix[8]arene in the solid state</title>
+      <link>/LMI/publication/isi-000413387400004/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000413387400004/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pseudopolymorphs - a variety of self-organization ofpara-sulphonato-calix[8]arene and phenanthroline in the solid state</title>
+      <link>/LMI/publication/isi-000392448100007/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000392448100007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solvent control in the formation of supramolecular host-guest complexesof isoniazid with p-sulfonatocalix[4]arene</title>
+      <link>/LMI/publication/isi-000349311700004/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000349311700004/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

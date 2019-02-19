@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alice Ferrand on LMI</title>
+    <link>/LMI/authors/alice-ferrand/</link>
+    <description>Recent content in Alice Ferrand on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Fri, 01 May 2015 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/alice-ferrand/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acidic pH resistance of grafted chitosan on dental implant</title>
+      <link>/LMI/publication/isi-000356883700012/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000356883700012/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
