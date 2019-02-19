@@ -85,11 +85,38 @@
     </item>
     
     <item>
+      <title>BIO</title>
+      <link>/LMI/tags/bio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/bio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bioglass; Mechanical properties; Borate; Bioactivity; Dentistry</title>
       <link>/LMI/tags/bioglass-mechanical-properties-borate-bioactivity-dentistry/</link>
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0200</pubDate>
       
       <guid>/LMI/tags/bioglass-mechanical-properties-borate-bioactivity-dentistry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CIMP</title>
+      <link>/LMI/tags/cimp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/cimp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COM</title>
+      <link>/LMI/tags/com/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/com/</guid>
       <description></description>
     </item>
     
@@ -301,6 +328,15 @@
     </item>
     
     <item>
+      <title>Microscopie</title>
+      <link>/LMI/tags/microscopie/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/tags/microscopie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Monoethyleneglycol-water; Hydrate inhibition; Solubility; n-Alkanes;NRTL modelling</title>
       <link>/LMI/tags/monoethyleneglycol-water-hydrate-inhibition-solubility-n-alkanesnrtl-modelling/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
@@ -364,6 +400,15 @@
     </item>
     
     <item>
+      <title>Personnel</title>
+      <link>/LMI/tags/personnel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/personnel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Phosphoric acid production; Hexafluosilicic acid attack; Phosphate rock</title>
       <link>/LMI/tags/phosphoric-acid-production-hexafluosilicic-acid-attack-phosphate-rock/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 +0200</pubDate>
@@ -375,7 +420,7 @@
     <item>
       <title>Plateformes Techniques</title>
       <link>/LMI/tags/plateformes-techniques/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/LMI/tags/plateformes-techniques/</guid>
       <description></description>
@@ -454,6 +499,24 @@
     </item>
     
     <item>
+      <title>S2M</title>
+      <link>/LMI/tags/s2m/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/s2m/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Secrétariat</title>
+      <link>/LMI/tags/secr%C3%A9tariat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/secr%C3%A9tariat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sol-gel; Coating; Polycarbonate; Mechanical properties</title>
       <link>/LMI/tags/sol-gel-coating-polycarbonate-mechanical-properties/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
@@ -495,6 +558,15 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/LMI/tags/s%C3%A9minaires/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TMP</title>
+      <link>/LMI/tags/tmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/tags/tmp/</guid>
       <description></description>
     </item>
     

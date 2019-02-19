@@ -4,6 +4,17 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/equipes/plateforme/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/plateforme/" hreflang="en"/>
+    
+      <loc>/LMI/equipes/plateforme/</loc>
+      <lastmod>2019-02-19T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/tutorial/example/</loc>
       <lastmod>2018-09-09T00:00:00+02:00</lastmod>
     </url>
@@ -532,6 +543,9 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/equipes/bio/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/bio/" hreflang="en"/>
+    
       <loc>/LMI/equipes/bio/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     </url>
@@ -539,6 +553,9 @@
   
     
     <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/equipes/cimp/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/cimp/" hreflang="en"/>
     
       <loc>/LMI/equipes/cimp/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
@@ -548,6 +565,9 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/equipes/com/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/com/" hreflang="en"/>
+    
       <loc>/LMI/equipes/com/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     </url>
@@ -556,13 +576,8 @@
     
     <url>
     
-      <loc>/LMI/equipes/plateforme/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
+      <xhtml:link rel="alternate" href="/LMI/equipes/s2m/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/s2m/" hreflang="en"/>
     
       <loc>/LMI/equipes/s2m/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
@@ -572,8 +587,22 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/equipes/tmp/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/tmp/" hreflang="en"/>
+    
       <loc>/LMI/equipes/tmp/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/formations/microscopie/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/formations/microscopie/" hreflang="en"/>
+    
+      <loc>/LMI/formations/microscopie/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
     </url>
     
   
@@ -591,6 +620,9 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/events/publi1/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/events/publi1/" hreflang="en"/>
+    
       <loc>/LMI/events/publi1/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
     </url>
@@ -598,6 +630,9 @@
   
     
     <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/events/publi2/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/events/publi2/" hreflang="en"/>
     
       <loc>/LMI/events/publi2/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
@@ -607,6 +642,9 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/emplois/stagem1/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/emplois/stagem1/" hreflang="en"/>
+    
       <loc>/LMI/emplois/stagem1/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
     </url>
@@ -614,6 +652,9 @@
   
     
     <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/emplois/stagem2/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/emplois/stagem2/" hreflang="en"/>
     
       <loc>/LMI/emplois/stagem2/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
@@ -623,6 +664,9 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/events/seminar/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/events/seminar/" hreflang="en"/>
+    
       <loc>/LMI/events/seminar/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
     </url>
@@ -631,6 +675,20 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/events/seminar2/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/events/seminar2/" hreflang="en"/>
+    
+      <loc>/LMI/events/seminar2/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/emplois/these/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/emplois/these/" hreflang="en"/>
+    
       <loc>/LMI/emplois/these/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
     </url>
@@ -638,6 +696,9 @@
   
     
     <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/emplois/these2/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/emplois/these2/" hreflang="en"/>
     
       <loc>/LMI/emplois/these2/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
@@ -1063,16 +1124,8 @@
     
     <url>
     
-      <loc>/LMI/annuaire/people/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
       <xhtml:link rel="alternate" href="/LMI/author/admin/" hreflang="fr"/>
       <xhtml:link rel="alternate" href="/LMI/en/author/admin/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="/LMI/de/author/admin/" hreflang="de"/>
     
       <loc>/LMI/author/admin/</loc>
     </url>
@@ -1378,6 +1431,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/fateeva_alexandra/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/fateeva_alexandra/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/fateeva_alexandra/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/alexandra-fateeva/</loc>
       <lastmod>2018-03-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -1587,6 +1650,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/coleman_anthony/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/coleman_anthony/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/coleman_anthony/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/anthony-lannes/</loc>
       <lastmod>2018-02-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -1659,6 +1732,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/brioude_arnaud/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/brioude_arnaud/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/brioude_arnaud/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/arnaud-brioude/</loc>
       <lastmod>2017-09-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
@@ -1697,7 +1780,6 @@
     
       <xhtml:link rel="alternate" href="/LMI/author/" hreflang="fr"/>
       <xhtml:link rel="alternate" href="/LMI/en/author/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="/LMI/de/author/" hreflang="de"/>
     
       <loc>/LMI/author/</loc>
       <priority>0</priority>
@@ -1709,7 +1791,6 @@
     
       <xhtml:link rel="alternate" href="/LMI/authors/" hreflang="fr"/>
       <xhtml:link rel="alternate" href="/LMI/en/authors/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="/LMI/de/authors/" hreflang="de"/>
     
       <loc>/LMI/authors/</loc>
       <lastmod>2015-01-01T00:00:00+01:00</lastmod>
@@ -1767,6 +1848,17 @@
     
       <loc>/LMI/authors/b.-toury/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/tags/bio/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/bio/" hreflang="en"/>
+    
+      <loc>/LMI/tags/bio/</loc>
       <priority>0</priority>
     </url>
     
@@ -1909,6 +2001,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/grosgogeat_brigitte/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/grosgogeat_brigitte/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/grosgogeat_brigitte/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/brigitte-grosgogeat/</loc>
       <lastmod>2018-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
@@ -1936,9 +2038,29 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/gardiola_bruno/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/gardiola_bruno/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/gardiola_bruno/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/bruno-gardiola/</loc>
       <lastmod>2018-07-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/toury_berangere/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/toury_berangere/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/toury_berangere/</loc>
     </url>
     
   
@@ -2019,6 +2141,28 @@
     
       <loc>/LMI/authors/c.-de-montferrand/</loc>
       <lastmod>2015-03-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/tags/cimp/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/cimp/" hreflang="en"/>
+    
+      <loc>/LMI/tags/cimp/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/tags/com/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/com/" hreflang="en"/>
+    
+      <loc>/LMI/tags/com/</loc>
       <priority>0</priority>
     </url>
     
@@ -2109,7 +2253,6 @@
     
       <xhtml:link rel="alternate" href="/LMI/categories/" hreflang="fr"/>
       <xhtml:link rel="alternate" href="/LMI/en/categories/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="/LMI/de/categories/" hreflang="de"/>
     
       <loc>/LMI/categories/</loc>
       <priority>0</priority>
@@ -2122,6 +2265,16 @@
       <loc>/LMI/authors/catherine-hirel/</loc>
       <lastmod>2018-04-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/journet_gautier_catherine/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/journet_gautier_catherine/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/journet_gautier_catherine/</loc>
     </url>
     
   
@@ -2149,6 +2302,16 @@
       <loc>/LMI/authors/catherine-loriot/</loc>
       <lastmod>2016-07-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/marichy_catherine/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/marichy_catherine/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/marichy_catherine/</loc>
     </url>
     
   
@@ -2245,9 +2408,29 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/goutaudier_christelle/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/goutaudier_christelle/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/goutaudier_christelle/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/christelle-goutaudier/</loc>
       <lastmod>2018-03-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/brylinski_christian/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/brylinski_christian/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/brylinski_christian/</loc>
     </url>
     
   
@@ -2284,6 +2467,16 @@
       <loc>/LMI/authors/christophe-dujardin/</loc>
       <lastmod>2015-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/jeannin_christophe/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/jeannin_christophe/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/jeannin_christophe/</loc>
     </url>
     
   
@@ -2329,6 +2522,16 @@
       <loc>/LMI/tags/cluster-compounds-lanthanides-luminescence-molecular-doping/</loc>
       <lastmod>2016-08-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/bousige_colin/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/bousige_colin/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/bousige_colin/</loc>
     </url>
     
   
@@ -2389,6 +2592,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/villat_cyril/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/villat_cyril/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/villat_cyril/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/cyril-villat/</loc>
       <lastmod>2015-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -2419,6 +2632,16 @@
       <loc>/LMI/authors/czeslaw-kapusta/</loc>
       <lastmod>2017-12-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/desroches_cedric/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/desroches_cedric/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/desroches_cedric/</loc>
     </url>
     
   
@@ -2509,6 +2732,16 @@
       <loc>/LMI/authors/david-gueyrard/</loc>
       <lastmod>2017-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/carole_davy/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/carole_davy/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/carole_davy/</loc>
     </url>
     
   
@@ -2668,9 +2901,29 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/luneau_dominique/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/luneau_dominique/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/luneau_dominique/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/dominique-luneau/</loc>
       <lastmod>2018-04-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/seux_dominique/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/seux_dominique/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/seux_dominique/</loc>
     </url>
     
   
@@ -2758,6 +3011,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/ravis_elodie/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/ravis_elodie/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/ravis_elodie/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/elodie-royet/</loc>
       <lastmod>2018-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
@@ -2803,6 +3066,9 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/emplois/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/emplois/" hreflang="en"/>
+    
       <loc>/LMI/emplois/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
       <priority>0</priority>
@@ -2830,8 +3096,11 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/equipes/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/" hreflang="en"/>
+    
       <loc>/LMI/equipes/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2019-02-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -2851,6 +3120,16 @@
       <loc>/LMI/authors/eric-framery/</loc>
       <lastmod>2015-06-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/jeanneau_erwann/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/jeanneau_erwann/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/jeanneau_erwann/</loc>
     </url>
     
   
@@ -2883,6 +3162,9 @@
   
     
     <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/events/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/events/" hreflang="en"/>
     
       <loc>/LMI/events/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
@@ -2968,6 +3250,16 @@
       <loc>/LMI/authors/fausto-sirotti/</loc>
       <lastmod>2015-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/chassagneux_fernand/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/chassagneux_fernand/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/chassagneux_fernand/</loc>
     </url>
     
   
@@ -3085,9 +3377,29 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/toche_francois/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/toche_francois/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/toche_francois/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/francois-toche/</loc>
       <lastmod>2017-12-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/cauwet_francois/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/cauwet_francois/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/cauwet_francois/</loc>
     </url>
     
   
@@ -3142,6 +3454,16 @@
       <loc>/LMI/authors/gabriel-e.-buechel/</loc>
       <lastmod>2015-09-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/ferro_gabriel/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/ferro_gabriel/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/ferro_gabriel/</loc>
     </url>
     
   
@@ -3295,6 +3617,16 @@
       <loc>/LMI/authors/guillaume-bonnefont/</loc>
       <lastmod>2016-02-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/pilet_guillaume/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/pilet_guillaume/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/pilet_guillaume/</loc>
     </url>
     
   
@@ -3472,6 +3804,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/mokbel_ilham/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/mokbel_ilham/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/mokbel_ilham/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/ilham-mokbel/</loc>
       <lastmod>2017-06-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
@@ -3505,6 +3847,16 @@
       <loc>/LMI/tags/inorganic-compounds-precipitation-heat-treatment-crystallisationdifferential-scanning-calorimetry-electron-microscopy/</loc>
       <lastmod>2016-04-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/boussin_irina/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/boussin_irina/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/boussin_irina/</loc>
     </url>
     
   
@@ -3646,6 +3998,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/jose_jacques/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/jose_jacques/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/jose_jacques/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/jacques-jose/</loc>
       <lastmod>2017-06-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
@@ -3691,9 +4053,29 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/tommasino_jean_bernard/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/tommasino_jean_bernard/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/tommasino_jean_bernard/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/jean-christophe-girard/</loc>
       <lastmod>2015-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/maurin_jean_christophe/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/maurin_jean_christophe/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/maurin_jean_christophe/</loc>
     </url>
     
   
@@ -3835,6 +4217,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/bosco_bourven_julia/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/bosco_bourven_julia/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/bosco_bourven_julia/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/julien-marchalot/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -3847,6 +4239,16 @@
       <loc>/LMI/authors/justine-le-clerc/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/andrieux_jerome/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/andrieux_jerome/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/andrieux_jerome/</loc>
     </url>
     
   
@@ -3937,6 +4339,16 @@
       <loc>/LMI/authors/katarzyna-raulin/</loc>
       <lastmod>2016-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/gritsch_kerstin/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/gritsch_kerstin/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/gritsch_kerstin/</loc>
     </url>
     
   
@@ -4053,10 +4465,9 @@
     
       <xhtml:link rel="alternate" href="/LMI/" hreflang="fr"/>
       <xhtml:link rel="alternate" href="/LMI/en/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="/LMI/de/" hreflang="de"/>
     
       <loc>/LMI/</loc>
-      <lastmod>2018-09-09T00:00:00+02:00</lastmod>
+      <lastmod>2019-02-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -4118,6 +4529,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/bois_laurence/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/bois_laurence/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/bois_laurence/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/laurence-bois/</loc>
       <lastmod>2017-02-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -4139,6 +4560,16 @@
       <loc>/LMI/authors/laurence-ourry/</loc>
       <lastmod>2016-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/auvray_laurent/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/auvray_laurent/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/auvray_laurent/</loc>
     </url>
     
   
@@ -4175,6 +4606,16 @@
       <loc>/LMI/authors/laurent-joubert/</loc>
       <lastmod>2017-07-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/mollet_laurent/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/mollet_laurent/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/mollet_laurent/</loc>
     </url>
     
   
@@ -4532,6 +4973,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/maillard_mathieu/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/maillard_mathieu/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/maillard_mathieu/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/mathieu-maillard/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -4624,6 +5075,18 @@
     
       <loc>/LMI/tags/microcontact-printing-submerged-microcontact-printing-metal-patternspalladiumii-thiol-complexes-palladium-nanoparticles-electrolessdeposition/</loc>
       <lastmod>2015-02-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/tags/microscopie/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/microscopie/" hreflang="en"/>
+    
+      <loc>/LMI/tags/microscopie/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5027,6 +5490,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/dezellus_olivier/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/dezellus_olivier/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/dezellus_olivier/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/olivier-dezellus/</loc>
       <lastmod>2018-07-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
@@ -5126,6 +5599,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/combier_patricia/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/combier_patricia/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/combier_patricia/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/paul-steffen-kuhn/</loc>
       <lastmod>2015-09-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
@@ -5137,6 +5620,28 @@
     
       <loc>/LMI/authors/pauline-renoud/</loc>
       <lastmod>2015-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/tags/personnel/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/personnel/" hreflang="en"/>
+    
+      <loc>/LMI/tags/personnel/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/</loc>
       <priority>0</priority>
     </url>
     
@@ -5171,6 +5676,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/colon_pierre/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/colon_pierre/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/colon_pierre/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/pierre-colon/</loc>
       <lastmod>2017-02-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -5198,8 +5713,11 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/tags/plateformes-techniques/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/plateformes-techniques/" hreflang="en"/>
+    
       <loc>/LMI/tags/plateformes-techniques/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2019-02-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5236,7 +5754,6 @@
     
       <xhtml:link rel="alternate" href="/LMI/publication_types/" hreflang="fr"/>
       <xhtml:link rel="alternate" href="/LMI/en/publication_types/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="/LMI/de/publication_types/" hreflang="de"/>
     
       <loc>/LMI/publication_types/</loc>
       <lastmod>2015-01-01T00:00:00+01:00</lastmod>
@@ -5246,6 +5763,9 @@
   
     
     <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/tags/publications/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/publications/" hreflang="en"/>
     
       <loc>/LMI/tags/publications/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
@@ -5381,6 +5901,9 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/tags/recherche/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/recherche/" hreflang="en"/>
+    
       <loc>/LMI/tags/recherche/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -5420,6 +5943,16 @@
       <loc>/LMI/authors/robert-keyrouz/</loc>
       <lastmod>2017-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/chiriac_rodica/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/chiriac_rodica/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/chiriac_rodica/</loc>
     </url>
     
   
@@ -5543,6 +6076,17 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/tags/s2m/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/s2m/" hreflang="en"/>
+    
+      <loc>/LMI/tags/s2m/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/sabine-lay/</loc>
       <lastmod>2015-07-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
@@ -5626,6 +6170,17 @@
     
       <loc>/LMI/authors/sebastien-redon/</loc>
       <lastmod>2018-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/tags/secr%C3%A9tariat/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/secr%C3%A9tariat/" hreflang="en"/>
+    
+      <loc>/LMI/tags/secr%C3%A9tariat/</loc>
       <priority>0</priority>
     </url>
     
@@ -5750,6 +6305,9 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/tags/stage/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/stage/" hreflang="en"/>
+    
       <loc>/LMI/tags/stage/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
       <priority>0</priority>
@@ -5812,6 +6370,9 @@
   
     
     <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/tags/s%C3%A9minaires/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/s%C3%A9minaires/" hreflang="en"/>
     
       <loc>/LMI/tags/s%C3%A9minaires/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
@@ -5876,9 +6437,19 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/tags/tmp/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/tmp/" hreflang="en"/>
+    
+      <loc>/LMI/tags/tmp/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/LMI/tags/" hreflang="fr"/>
       <xhtml:link rel="alternate" href="/LMI/en/tags/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="/LMI/de/tags/" hreflang="de"/>
     
       <loc>/LMI/tags/</loc>
       <lastmod>2016-01-01T00:00:00+01:00</lastmod>
@@ -5960,6 +6531,9 @@
   
     
     <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/tags/th%C3%A8ses/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/th%C3%A8ses/" hreflang="en"/>
     
       <loc>/LMI/tags/th%C3%A8ses/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
@@ -6132,6 +6706,16 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/personnel/salles_vincent/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/salles_vincent/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/salles_vincent/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/authors/vincent-salles/</loc>
       <lastmod>2017-12-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -6171,6 +6755,16 @@
       <loc>/LMI/authors/vojtech-stejfa/</loc>
       <lastmod>2015-11-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/personnel/souliere_veronique/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/souliere_veronique/" hreflang="en"/>
+    
+      <loc>/LMI/personnel/souliere_veronique/</loc>
     </url>
     
   
@@ -6368,7 +6962,6 @@
     
       <xhtml:link rel="alternate" href="/LMI/authors/admin/" hreflang="fr"/>
       <xhtml:link rel="alternate" href="/LMI/en/authors/admin/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="/LMI/de/authors/admin/" hreflang="de"/>
     
       <loc>/LMI/authors/admin/</loc>
       <priority>0</priority>

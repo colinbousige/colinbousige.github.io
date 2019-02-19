@@ -4,6 +4,30 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/de/formations/microscopie/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/formations/microscopie/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/formations/microscopie/" hreflang="en"/>
+    
+      <loc>/LMI/de/formations/microscopie/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/de/formations/r/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/formations/r/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/formations/r/" hreflang="en"/>
+    
+      <loc>/LMI/de/formations/r/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/LMI/de/author/admin/" hreflang="de"/>
       <xhtml:link rel="alternate" href="/LMI/author/admin/" hreflang="fr"/>
       <xhtml:link rel="alternate" href="/LMI/en/author/admin/" hreflang="en"/>
@@ -51,11 +75,51 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/de/formations/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/formations/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/formations/" hreflang="en"/>
+    
+      <loc>/LMI/de/formations/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/de/tags/informatique/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/informatique/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/informatique/" hreflang="en"/>
+    
+      <loc>/LMI/de/tags/informatique/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/LMI/de/" hreflang="de"/>
       <xhtml:link rel="alternate" href="/LMI/" hreflang="fr"/>
       <xhtml:link rel="alternate" href="/LMI/en/" hreflang="en"/>
     
       <loc>/LMI/de/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/de/tags/microscopie/" hreflang="de"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/microscopie/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/microscopie/" hreflang="en"/>
+    
+      <loc>/LMI/de/tags/microscopie/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -80,6 +144,7 @@
       <xhtml:link rel="alternate" href="/LMI/en/tags/" hreflang="en"/>
     
       <loc>/LMI/de/tags/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     

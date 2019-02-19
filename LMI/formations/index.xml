@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Formation MET</title>
+      <link>/LMI/formations/microscopie/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/formations/microscopie/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
+    </item>
+    
+    <item>
       <title>Formation à R</title>
       <link>/LMI/formations/r/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>

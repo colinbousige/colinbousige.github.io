@@ -4,6 +4,75 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/bio/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/equipes/bio/" hreflang="fr"/>
+    
+      <loc>/LMI/en/equipes/bio/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/cimp/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/equipes/cimp/" hreflang="fr"/>
+    
+      <loc>/LMI/en/equipes/cimp/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/com/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/equipes/com/" hreflang="fr"/>
+    
+      <loc>/LMI/en/equipes/com/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/plateforme/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/equipes/plateforme/" hreflang="fr"/>
+    
+      <loc>/LMI/en/equipes/plateforme/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/s2m/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/equipes/s2m/" hreflang="fr"/>
+    
+      <loc>/LMI/en/equipes/s2m/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/tmp/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/equipes/tmp/" hreflang="fr"/>
+    
+      <loc>/LMI/en/equipes/tmp/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/formations/microscopie/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/formations/microscopie/" hreflang="fr"/>
+    
       <loc>/LMI/en/formations/microscopie/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
     </url>
@@ -23,9 +92,96 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/en/events/publi1/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/events/publi1/" hreflang="fr"/>
+    
+      <loc>/LMI/en/events/publi1/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/events/publi2/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/events/publi2/" hreflang="fr"/>
+    
+      <loc>/LMI/en/events/publi2/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/emplois/stagem1/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/emplois/stagem1/" hreflang="fr"/>
+    
+      <loc>/LMI/en/emplois/stagem1/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/emplois/stagem2/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/emplois/stagem2/" hreflang="fr"/>
+    
+      <loc>/LMI/en/emplois/stagem2/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/events/seminar/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/events/seminar/" hreflang="fr"/>
+    
+      <loc>/LMI/en/events/seminar/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/events/seminar2/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/events/seminar2/" hreflang="fr"/>
+    
+      <loc>/LMI/en/events/seminar2/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/emplois/these/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/emplois/these/" hreflang="fr"/>
+    
+      <loc>/LMI/en/emplois/these/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/emplois/these2/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/emplois/these2/" hreflang="fr"/>
+    
+      <loc>/LMI/en/emplois/these2/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/LMI/en/author/admin/" hreflang="en"/>
       <xhtml:link rel="alternate" href="/LMI/author/admin/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/de/author/admin/" hreflang="de"/>
     
       <loc>/LMI/en/author/admin/</loc>
     </url>
@@ -34,9 +190,38 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/fateeva_alexandra/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/fateeva_alexandra/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/fateeva_alexandra/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/coleman_anthony/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/coleman_anthony/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/coleman_anthony/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/brioude_arnaud/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/brioude_arnaud/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/brioude_arnaud/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/LMI/en/author/" hreflang="en"/>
       <xhtml:link rel="alternate" href="/LMI/author/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/de/author/" hreflang="de"/>
     
       <loc>/LMI/en/author/</loc>
       <priority>0</priority>
@@ -48,7 +233,6 @@
     
       <xhtml:link rel="alternate" href="/LMI/en/authors/" hreflang="en"/>
       <xhtml:link rel="alternate" href="/LMI/authors/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/de/authors/" hreflang="de"/>
     
       <loc>/LMI/en/authors/</loc>
       <priority>0</priority>
@@ -58,12 +242,252 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/en/tags/bio/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/bio/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/bio/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/grosgogeat_brigitte/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/grosgogeat_brigitte/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/grosgogeat_brigitte/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/gardiola_bruno/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/gardiola_bruno/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/gardiola_bruno/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/toury_berangere/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/toury_berangere/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/toury_berangere/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/cimp/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/cimp/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/cimp/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/com/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/com/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/com/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/LMI/en/categories/" hreflang="en"/>
       <xhtml:link rel="alternate" href="/LMI/categories/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/de/categories/" hreflang="de"/>
     
       <loc>/LMI/en/categories/</loc>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/journet_gautier_catherine/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/journet_gautier_catherine/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/journet_gautier_catherine/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/marichy_catherine/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/marichy_catherine/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/marichy_catherine/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/goutaudier_christelle/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/goutaudier_christelle/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/goutaudier_christelle/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/brylinski_christian/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/brylinski_christian/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/brylinski_christian/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/jeannin_christophe/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/jeannin_christophe/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/jeannin_christophe/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/bousige_colin/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/bousige_colin/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/bousige_colin/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/villat_cyril/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/villat_cyril/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/villat_cyril/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/desroches_cedric/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/desroches_cedric/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/desroches_cedric/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/carole_davy/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/carole_davy/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/carole_davy/</loc>
+    </url>
+    
+  
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/luneau_dominique/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/luneau_dominique/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/luneau_dominique/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/seux_dominique/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/seux_dominique/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/seux_dominique/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/ravis_elodie/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/ravis_elodie/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/ravis_elodie/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/emplois/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/emplois/" hreflang="fr"/>
+    
+      <loc>/LMI/en/emplois/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/equipes/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/equipes/" hreflang="fr"/>
+    
+      <loc>/LMI/en/equipes/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/jeanneau_erwann/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/jeanneau_erwann/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/jeanneau_erwann/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/events/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/events/" hreflang="fr"/>
+    
+      <loc>/LMI/en/events/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/chassagneux_fernand/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/chassagneux_fernand/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/chassagneux_fernand/</loc>
     </url>
     
   
@@ -82,6 +506,56 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/toche_francois/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/toche_francois/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/toche_francois/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/cauwet_francois/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/cauwet_francois/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/cauwet_francois/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/ferro_gabriel/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/ferro_gabriel/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/ferro_gabriel/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/pilet_guillaume/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/pilet_guillaume/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/pilet_guillaume/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/mokbel_ilham/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/mokbel_ilham/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/mokbel_ilham/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/LMI/en/tags/informatique/" hreflang="en"/>
       <xhtml:link rel="alternate" href="/LMI/tags/informatique/" hreflang="fr"/>
     
@@ -94,18 +568,130 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/boussin_irina/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/boussin_irina/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/boussin_irina/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/jose_jacques/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/jose_jacques/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/jose_jacques/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/tommasino_jean_bernard/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/tommasino_jean_bernard/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/tommasino_jean_bernard/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/maurin_jean_christophe/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/maurin_jean_christophe/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/maurin_jean_christophe/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/bosco_bourven_julia/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/bosco_bourven_julia/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/bosco_bourven_julia/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/andrieux_jerome/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/andrieux_jerome/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/andrieux_jerome/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/gritsch_kerstin/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/gritsch_kerstin/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/gritsch_kerstin/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/LMI/en/" hreflang="en"/>
       <xhtml:link rel="alternate" href="/LMI/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/de/" hreflang="de"/>
     
       <loc>/LMI/en/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
     
     <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/bois_laurence/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/bois_laurence/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/bois_laurence/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/auvray_laurent/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/auvray_laurent/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/auvray_laurent/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/mollet_laurent/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/mollet_laurent/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/mollet_laurent/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/maillard_mathieu/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/maillard_mathieu/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/maillard_mathieu/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/microscopie/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/microscopie/" hreflang="fr"/>
     
       <loc>/LMI/en/tags/microscopie/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
@@ -116,9 +702,72 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/dezellus_olivier/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/dezellus_olivier/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/dezellus_olivier/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/combier_patricia/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/combier_patricia/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/combier_patricia/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/personnel/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/personnel/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/personnel/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/colon_pierre/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/colon_pierre/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/colon_pierre/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/plateformes-techniques/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/plateformes-techniques/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/plateformes-techniques/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/LMI/en/publication_types/" hreflang="en"/>
       <xhtml:link rel="alternate" href="/LMI/publication_types/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/de/publication_types/" hreflang="de"/>
     
       <loc>/LMI/en/publication_types/</loc>
       <priority>0</priority>
@@ -128,9 +777,99 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/en/tags/publications/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/publications/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/publications/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/recherche/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/recherche/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/recherche/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/chiriac_rodica/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/chiriac_rodica/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/chiriac_rodica/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/s2m/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/s2m/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/s2m/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/secr%C3%A9tariat/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/secr%C3%A9tariat/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/secr%C3%A9tariat/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/stage/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/stage/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/stage/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/s%C3%A9minaires/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/s%C3%A9minaires/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/s%C3%A9minaires/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/tags/tmp/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/tmp/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/tmp/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/LMI/en/tags/" hreflang="en"/>
       <xhtml:link rel="alternate" href="/LMI/tags/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/de/tags/" hreflang="de"/>
     
       <loc>/LMI/en/tags/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
@@ -141,9 +880,40 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/en/tags/th%C3%A8ses/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/th%C3%A8ses/" hreflang="fr"/>
+    
+      <loc>/LMI/en/tags/th%C3%A8ses/</loc>
+      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/salles_vincent/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/salles_vincent/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/salles_vincent/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/en/personnel/souliere_veronique/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/personnel/souliere_veronique/" hreflang="fr"/>
+    
+      <loc>/LMI/en/personnel/souliere_veronique/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/LMI/en/authors/admin/" hreflang="en"/>
       <xhtml:link rel="alternate" href="/LMI/authors/admin/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/de/authors/admin/" hreflang="de"/>
     
       <loc>/LMI/en/authors/admin/</loc>
       <priority>0</priority>

@@ -7,8 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <copyright>UMR CNRS 5615</copyright>
-    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 19 Feb 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/LMI/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Plateforme Technique</title>
+      <link>/LMI/equipes/plateforme/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/LMI/equipes/plateforme/</guid>
+      <description>
+
+
+&lt;!-- MarkdownTOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#analyses-thermiques-et-calorimetrie&#34;&gt;Analyses Thermiques et Calorimétrie&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#centre-de-magnetometrie-de-lyon&#34;&gt;Centre de Magnétométrie de Lyon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#atelier-mecanique-et-impression-3d&#34;&gt;Atelier Mécanique et Impression 3D&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /MarkdownTOC --&gt;
+&lt;div id=&#34;analyses-thermiques-et-calorimetrie&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Analyses Thermiques et Calorimétrie&lt;/h2&gt;
+&lt;p&gt;Il s’agit d’une plateforme dont le parc d’équipements, le fonctionnement, les orientations scientifiques et techniques sont entièrement sous la responsabilité du LMI. Elle réunit un ensemble très complet d’appareillages de calorimétrie, d’analyses thermo-gravimétriques et thermo-mécaniques, de spectrométrie de masse et de chromatographie.
+Elle fonctionne de manière ouverte, à la fois dans le cadre de projets de recherche des équipes du LMI, de projets de recherche partenariale avec des entités publiques ou industrielles, et aussi en régime de prestation vis-à-vis de clients académiques ou industriels. Elle fait partie des plateformes de l’Institut de Chimie de Lyon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;centre-de-magnetometrie-de-lyon&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Centre de Magnétométrie de Lyon&lt;/h2&gt;
+&lt;p&gt;Cette plateforme permet la mesure de propriétés magnétiques de molécules et matériaux dans une large gamme de températures, y compris des basses températures jusqu’à 2K. Elle fait partie des plateformes de l’Institut de Chimie de Lyon et elle est placée sous la co-responsabilité du laboratoire ILM qui relève du secteur “Physique” et du LMI qui relève du secteur “Chimie”.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;atelier-mecanique-et-impression-3d&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Atelier Mécanique et Impression 3D&lt;/h2&gt;
+&lt;p&gt;Le laboratoire dispose d’un atelier de mécanique utilisable par les équipes et plateformes, pour tous les projets et programmes de recherche. Récemment, des activités de type “impression” 3D ont été initiées. Pour le laboratoire, il s’agit de mettre en œuvre des équipements d’impression 3D commerciaux, désormais très répandus et à des prix accessibles, pour tester les fonctionnalités de nouveaux matériaux ou de traitements de fonctionnalisation, ou encore de construire des micro-réacteurs spécifiques. Sur cette base, qui comprend actuellement 4 imprimantes, un projet de création de plateforme est en cours de montage.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Example Page</title>
@@ -145,15 +177,6 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
       
       <guid>/LMI/publication/isi-000418575900008/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fine Control of the Metal Environment within Dysprosium-BasedMononuclear Single-Molecule Magnets</title>
-      <link>/LMI/publication/isi-000428530600014/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
-      
-      <guid>/LMI/publication/isi-000428530600014/</guid>
       <description></description>
     </item>
     
