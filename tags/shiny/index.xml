@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shiny on Colin Bousige</title>
+    <link>/tags/shiny/</link>
+    <description>Recent content in Shiny on Colin Bousige</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Colin Bousige</copyright>
+    <lastBuildDate>Thu, 08 Jun 2017 19:56:21 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/shiny/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My first attempt at a Shiny app</title>
+      <link>/post/rubyshiny/</link>
+      <pubDate>Thu, 08 Jun 2017 19:56:21 +0200</pubDate>
+      
+      <guid>/post/rubyshiny/</guid>
+      <description>This is my first try as a Shiny app, I made it to help my students during their high pressure experiments using diamond anvil cell. It computes:
+ The pressure if you give it values of \(\lambda_{laser}\), the R1 Raman shift at 0 pressure \(\omega_0\), and the measured R1 Raman shift \(\omega_{ruby}\)
+ The expected Raman shift for the ruby, \(\omega_{ruby}\), if you give it the other info
+ The pressure if you upload a ruby spectrum and give it the other info  To use it:</description>
+    </item>
+    
+  </channel>
+</rss>

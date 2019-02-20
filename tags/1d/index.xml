@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1d on Colin Bousige</title>
+    <link>/tags/1d/</link>
+    <description>Recent content in 1d on Colin Bousige</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Colin Bousige</copyright>
+    <lastBuildDate>Wed, 07 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/1d/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1D Materials</title>
+      <link>/project/1d/</link>
+      <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/1d/</guid>
+      <description>Collapsed nanotubes of large diameter: a new model 1D system Carbon nanotubes under extreme pressure Carbon peapods  Collapsed nanotubes of large diameter: a new model 1D system More details soon!
+Carbon nanotubes under extreme pressure More details soon!
+Carbon peapods My PhD research was focused on the study of the one-dimensional (1D) system that are the carbon nano-peapods. During my work, I primarily used inelastic neutron scattering and x-ray diffraction in order to investigate the structure and dynamics of this system.</description>
+    </item>
+    
+  </channel>
+</rss>

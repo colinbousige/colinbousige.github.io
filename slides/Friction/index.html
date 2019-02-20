@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Adhesion and friction in 1D and 2D systems</title>
+  <meta name="description" content="">
+  <meta name="author" content="Colin Bousige">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/perso.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1' data-background='white' data-transition='' background-transition=''>
+  
+  <div class="hidden">
+   <script type="text/javascript">
+      <!--//--><![CDATA[//><!--
+         var images = new Array()
+         function preload() {
+            for (i = 0; i < preload.arguments.length; i++) {
+               images[i] = new Image()
+               images[i].src = preload.arguments[i]
+            }
+         }
+         preload(
+            "assets/img/remove.gif"
+            "assets/img/CSxx.gif"
+         )
+      //--><!]]>
+   </script>
+
+   <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     "HTML-CSS": {availableFonts: ["TeX"]},
+          MMLorHTML: {prefer: "HTML"}
+   });
+   MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+     var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+     VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+     VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+     VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+     VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+   });
+   MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+     var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+     VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+     VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+     VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+     VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+   });
+   </script>
+</div>
+
+<!-- 
+Run with :
+setwd("/Users/colin/Travail/Conferences/2016/Seminaire_Bordeaux");Sys.setlocale("LC_ALL", 'en_US.UTF-8');library(slidify);
+slidify("index.Rmd") 
+-->
+
+<p><center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><span style='color:black;font-size:20px;text-align:center'>
+Swipe or press right to start the presentation - Pinch out or press ESC to see all the slides<br>
+Swipe or press down to see additional slides when available (see navigation arrows on the right)<br>
+Press F to set fullscreen - Press Alt and click to zoom in or out - Press B to fade to black - Press S for speaker view<br>
+Slides made using <a href="http://slidify.org/">Slidify</a> with 
+<a href="http://lab.hakim.se/reveal-js/?transition=fade#/">Reveal.js</a> framework</span></center></p>
+
+</section>
+<section class='' data-state='' id='slide-2' data-background='' data-transition='fade' background-transition=''>
+  
+  <section data-background="black">
+
+<div class='titleslide' style='float:right;width:100%;'>
+  <hgroup class="auto-fadein" style='text-align:left;position:relative;top:40%;left:10%;width:80%'>
+    <h2><span style='color:#e8e8e8'>Adhesion and friction in 1D and 2D systems</span></h2>
+  </hgroup>
+  <hgroup class="auto-fadein" style='text-align:left;position:relative;top:40%;left:15%;width:70%'>
+    <h3><span style='color:white'></span></h3>
+    <p><span style='color:white'>Colin Bousige<br/>Post-Doctoral Researcher, Institut Lumière Matière, Lyon, France</p>
+  </hgroup>
+  <aside class="gdbar">
+    <img src="assets/img/NT_eau.png" style='width: 400px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);'>
+  </aside>
+  <br><span style='color:white;font-size:20px;'>Slides available @ <a href="http://ilm-perso.univ-lyon1.fr/~cbousige/files/Seminaire/Friction/" style="color:white">http://ilm-perso.univ-lyon1.fr/~cbousige/files/Seminaire/Friction/</a></span>>
+</div>
+</section>
+</section>
+<section class='' data-state='' id='slide-3' data-background='' data-transition='fade' background-transition=''>
+  <h2>Main thematics of my research</h2>
+  <h3>PhD Thesis: 1D physics in carbon peapods</h3>
+
+<p><img src="assets/img/peapods_TEM2.png" style='margin-top:3%;width:30%;'/>
+<img src="assets/img/peapods_diagramme.png" style='margin-top:2%;width:80%;'/></p>
+
+<div style='width:100%;text-align:left;margin-top:1%;font-size:18px'>
+<center>
+<a href="http://prb.aps.org/abstract/PRB/v87/i19/e195438">Bousige et al., <i>Phys. Rev. B</i> <b>87</b> (2013) 195438</a>
+$\bullet$ <a href="http://prb.aps.org/abstract/PRB/v86/i4/e045446">Bousige et al., <i>Phys. Rev. B</i> <b>86</b> (2012) 045446</a><br>
+<a href="http://prb.aps.org/abstract/PRB/v87/i19/e195438">Rols et al., <i>Eur. Phys. J.: Special Topic</i> <b>213</b> (2013) 77</a>
+$\bullet$ <a href="http://iopscience.iop.org/0295-5075/103/6/66002/">Bousige et al., <i>Eur. Phys. Lett.</i> <b>103</b> (2013) 66002</a>
+</center>
+</div>
+
+</section>
+<section class='' data-state='' id='slide-4' data-background='' data-transition='' background-transition=''>
+  <h2>Main thematics of my research</h2>
+  <h3>Post-Doc @ MIT: reconstructing molecular models of kerogen</h3>
+
+<div class='left' style='float:left;width:30%'>
+  <p><img src="assets/img/ker_TEM.png" style='margin-top:30%;width:80%;'/></p>
+
+</div>
+<div class='middle' style='float:left;width:68%'>
+  <p><img src="assets/img/ker_dos_psd_simul.png" style='margin-top:7%;width:100%;'/></p>
+
+</div>
+<div class='right' style='float:right;width:30%'>
+  <!-- <img src="assets/img/CSxx.gif" style='margin-top:20%;width:100%;'/> -->
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  <div style='width:70%;text-align:left;margin-top:3.5%;font-size:18px'>
+<center>
+<a href="http://scitation.aip.org/content/aip/journal/jcp/142/11/10.1063/1.4914921">Bousige, Botan, Ulm, Pellenq, Coasne, <i>J. Chem. Phys.</i> <b>142</b> (2015) 114112</a><br>
+<a href="http://www.nature.com/nmat/journal/vaop/ncurrent/full/nmat4541.html"> Bousige et al., <i>Nature Materials</i> <b>15</b> (2016) 576</a>
+</center>
+</div>
+
+</div>
+</section>
+<section class='' data-state='' id='slide-5' data-background='' data-transition='' background-transition=''>
+  <h2>Main thematics of my research</h2>
+  <h3>Post-Doc @ MIT: reconstructing molecular models of kerogen</h3>
+
+<div class='left' style='float:left;width:30%'>
+  <p><img src="assets/img/ker_TEM.png" style='margin-top:30%;width:80%;'/></p>
+
+</div>
+<div class='middle' style='float:left;width:40%'>
+  <p><img src="assets/img/ker_dos_psd_simul2.png" style='margin-top:11%;margin-left:4%;width:100%;'/></p>
+
+</div>
+<div class='right' style='float:right;width:30%'>
+  <p><img src="assets/img/CSxx.gif" style='margin-top:20%;width:100%;'/>
+<center></p>
+
+<div style='width:100%;margin-top:1%;font-size:18px'>Tortuosity and adsorption in <br>amorphous porous materials<br>with P. Levitz and B. Coasne<br>(in preparation)</div>
+
+<p></center></p>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  <div style='width:70%;text-align:left;margin-top:-5%;font-size:18px'>
+<center>
+<a href="http://scitation.aip.org/content/aip/journal/jcp/142/11/10.1063/1.4914921">Bousige, Botan, Ulm, Pellenq, Coasne, <i>J. Chem. Phys.</i> <b>142</b> (2015) 114112</a><br>
+<a href="http://www.nature.com/nmat/journal/vaop/ncurrent/full/nmat4541.html"> Bousige et al., <i>Nature Materials</i> <b>15</b> (2016) 576</a>
+</center>
+</div>
+
+</div>
+</section>
+<section class='' data-state='' id='slide-6' data-background='' data-transition='' background-transition=''>
+  <h2>Main thematics of my research</h2>
+  <h3>Post-Doc @ ILM: 1D and 2D nano-objects under pressure</h3>
+
+<div class='left' style='float:left;width:30%'>
+  <p><img src="assets/img/Graphene.jpg" style='margin-top:35%;width:100%;'/></p>
+
+</div>
+<div class='middle' style='float:left;width:45%'>
+  <p><img src="assets/img/graph_DAC.png" style='margin-top:25%;width:100%;'/></p>
+
+</div>
+<div class='right' style='float:right;width:25%'>
+  <p><img src="assets/img/NT_eau.png" style='margin-top:35%;width:100%;'/></p>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  <div style='width:100%;text-align:left;margin-top:1%;font-size:18px'>
+<center>
+<br>Bousige et al., <i>Nano Lett.</i> (in reviewing process)</a>
+</center>
+</div>
+
+</div>
+</section>
+<section class='' data-state='' id='slide-7' data-background='' data-transition='fade' background-transition=''>
+  <h2>Main thematics of my research</h2>
+  <h3>Summary</h3>
+
+<p><br><br><br></p>
+
+<div class='left' style='float:left;width:45%;margin-left:10%'>
+  <ul>
+<li><strong>Structure and dynamics of carbon nanostructures</strong></li>
+<li><strong>Confinement and phase transitions</strong></li>
+<li><strong>Mechanical properties</strong></li>
+<li><strong>Transport in complex media</strong>
+
+<ul>
+<li><strong>Adhesion and friction</strong></li>
+</ul></li>
+</ul>
+
+</div>
+<div class='right' style='float:right;width:35%;margin-right:10%'>
+  <ul>
+<li>Experimental
+
+<ul>
+<li>Inelastic Neutron Scattering</li>
+<li>Diffraction (x-rays, neutrons)</li>
+<li>Raman spectroscopy</li>
+<li>High pressures</li>
+</ul></li>
+<li>Simulations
+
+<ul>
+<li>Molecular Dynamics</li>
+<li>Monte Carlo</li>
+</ul></li>
+</ul>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  
+</div>
+</section>
+<section class='' data-state='' id='slide-8' data-background='black' data-transition='fade' background-transition=''>
+  <h2><span style="color:white"> Menu </span></h2>
+  <p><br><br>
+<center>
+<span style='color:white;font-size:25pt'> 
+I - Biaxial strain transfer in supported graphene
+<img src="assets/img/Graphene.jpg" style='margin-top:2%;width:20%;'/><br>
+II - Pinned and unpinned states in carbon peapods:<br>insights into nanotube super-lubricity
+<img src="assets/img/peapods_TEM2.png" style='margin-top:2%;width:50%;'/>
+</span>
+</center></p>
+
+</section>
+<section class='' data-state='' id='slide-9' data-background='grey' data-transition='fade' background-transition=''>
+  <h1><span style="color:white;text-shadow: 10px 10px 10px rgb(1, 1, 1);"> Chapter I </span></h1>
+  <h2><span style="color:white"> Biaxial strain transfer in supported graphene </span></h2>
+
+<p><br>
+<center style="color:white;font-size:20px">Post-Doc<br>Institut Lumière Matière (Lyon)</center>
+<img src="assets/img/Graphene.jpg" style='margin-top:5%;width:30%;border: 4px solid #333333;box-shadow: 5px 5px 5px rgb(1, 1, 1);'/></p>
+
+</section>
+<section class='' data-state='' id='slide-10' data-background='' data-transition='fade' background-transition=''>
+  <h2>Exploring strain transfer in supported graphene</h2>
+  
+<div class='left' style='float:left;width:55%'>
+  <p><br>
+<br></p>
+
+<p><strong>Context of strain-tronics with graphene:</strong></p>
+
+<p>Optical and electronic properties can be tuned by the application of strain</p>
+
+<p>\(\Rightarrow\) Applications in electronics, sensors, etc.</p>
+
+<p>In the aim of using graphene (or TMDs) in such devices, one need a reproducible strain production.</p>
+
+<p>Graphene is most of the time deposited on a substrate.</p>
+
+</div>
+<div class='right' style='float:right;width:45%'>
+  <p><img src="assets/img/graph_exemple.png" style='margin-top:10%;'/>
+<center>From Ni et al. <em>ACS Nano</em> <strong>2</strong> (2008) 2301</center></p>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  <p><br></p>
+
+<blockquote>
+<p>How efficiently is strain transferred? </p>
+
+<p>What are the limits of strain transfer?</p>
+</blockquote>
+
+</div>
+</section>
+<section class='' data-state='' id='slide-11' data-background='' data-transition='' background-transition=''>
+  <h2>Exploring strain transfer in supported graphene</h2>
+  <h3>Experimental approach</h3>
+
+<div class='left' style='float:left;width:40%;margin-left:5%'>
+  <p><br><br></p>
+
+<ul>
+<li><p class="fragment highlight-current-red" data-fragment-index="1">Evolution of the Raman G-band </p></li>
+<li><p class="fragment highlight-current-red" data-fragment-index="2">Biaxial strain in a Diamond Anvil Cell</p></li>
+<li><p class="fragment highlight-current-red" data-fragment-index="3">Various substrates (Diamond, Sapphire, SiO\(_2\))</p>
+<br></li>
+</ul>
+
+<ul style='color:rgba(0,0,0,.3)'> 
+   <li class="fragment highlight-current-blue" data-fragment-index="1">
+   Highly sensitive to in-plane strain</li>
+   <li class="fragment highlight-current-blue" data-fragment-index="2">
+   Compression due to volume reduction of the substrate </li>
+   <li class="fragment highlight-current-blue" data-fragment-index="2">
+   Maximization of the conformation of graphene to its substrate by the application of high pressures in a DAC with alcohol pressure transmitting medium (PTM)</li>
+   <li class="fragment highlight-current-blue" data-fragment-index="3">
+   Various bulk moduli</li>
+</ul>
+
+</div>
+<div class='right' style='float:right;width:55%'>
+  <p><img src="assets/img/gband.png" style='margin-top:5%;width:60%;'/>
+<img src="assets/img/graph_DAC.png" style='margin-top:1%;width:100%;'/></p>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  
+</div>
+</section>
+<section class='' data-state='' id='slide-12' data-background='' data-transition='' background-transition=''>
+  <h2>Exploring strain transfer in supported graphene</h2>
+  <h3>Results</h3>
+
+<div class='left' style='float:left;width:40%'>
+  <p><br><br></p>
+
+<table><thead>
+<tr>
+<th align="center"></th>
+<th align="center">\(\partial\omega_G/\partial P\)</th>
+<th align="center"><span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" >\(\beta_L\)</span></th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="center"></td>
+<td align="center"><b>(cm\(^{-1}\)/GPa)</b></td>
+<td align="center"><b><span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" > (GPa)   </span></b></td>
+</tr>
+<tr>
+<td align="center"><b>Diamond </b></td>
+<td align="center">$ 4.0\pm0.2$</td>
+<td align="center"><span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" > \(1329\)  </span></td>
+</tr>
+<tr>
+<td align="center"><b>Graphite</b></td>
+<td align="center">$ 4.4\pm0.3$</td>
+<td align="center"><span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" > \(1250\)  </span></td>
+</tr>
+<tr>
+<td align="center"><b>Sapphire</b></td>
+<td align="center">$ 7.8\pm0.5$</td>
+<td align="center"><span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" > $ 750$  </span></td>
+</tr>
+<tr>
+<td align="center"><b>Copper  </b></td>
+<td align="center">$ 9.2\pm0.3$</td>
+<td align="center"><span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" > $ 420$  </span></td>
+</tr>
+<tr>
+<td align="center"><b>SiO\(_2\) </b></td>
+<td align="center">\(10.5\pm0.2\)</td>
+<td align="center"><span style="margin-left:20px" class="fragment fade-in" data-fragment-index="1" > $ 114$  </span></td>
+</tr>
+</tbody></table>
+
+<p><br>
+<span style="margin-top:5%" class="fragment fade-in" data-fragment-index="1" >
+<center>Different substrates : different slopes<br>
+   <strong>How do we explain that?</strong></span></center>
+<br></p>
+
+<blockquote class="fragment fade-in" data-fragment-index="1" >
+   $\Rightarrow$ Pressure is not the good variable
+</blockquote>
+
+</div>
+<div class='right' style='float:right;width:60%'>
+  <p><img src="assets/img/graph_evol.png" style='margin-top:10%;width:100%;'/></p>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  
+</div>
+</section>
+<section class='' data-state='' id='slide-13' data-background='' data-transition='' background-transition=''>
+  <h2>Exploring strain transfer in supported graphene</h2>
+  <h3>Renormalization to the relevant physical quantities \(\varepsilon\) and \(\sigma\)</h3>
+
+<p><br></p>
+
+<div style='float:left;width:45%;margin-left:5%;line-height:1.5em'>
+<br>
+<ol>
+   <li> For 2D materials, <i>Pressure</i> of the PTM and <i>Stress</i> of the material are <b>not equivalent</b></li>
+   <li> Graphite is a 3D material, so $P\Leftrightarrow\sigma$</li>
+   <li> For a Raman shift of the deposited graphene corresponds a stress of the graphene flake:$$\sigma_G^S=\Delta\omega_G^S/\Omega_{gr}$$</li>
+   <li> The strain ε of the graphene flake and the strain of the substrate can be retrieved through the Birch-Murnaghan equation of states:
+   $$\frac{r}{r_0}=\left(1+\sigma\frac{\beta'}{\beta}\right)^{-1/\beta'}$$</li>
+</ol>
+
+</div>
+
+<div style='float:right;width:50%'>
+   <img src="assets/img/graph_renorm.png" style='margin-top:5%;width:55%;'/>
+</div>
+
+</section>
+<section class='' data-state='' id='slide-14' data-background='' data-transition='' background-transition=''>
+  <h2>Exploring strain transfer in supported graphene</h2>
+  <h3>After renormalization to the relevant physical quantities \(\varepsilon\) and \(\sigma\)</h3>
+
+<div style='float:left;width:65%;'>
+<img src="assets/img/graph_epsilon.png" style='margin-top:1%;width:100%;'/>
+</div>
+
+<div style='float:right;width:35%;margin-top:10%'>
+<blockquote style='background:rgba(76,179,246,0.2);color:black;'> 
+$\varepsilon_G-\varepsilon_S\neq$0 <br> $\Leftrightarrow$ <br> Partial strain transmission
+</blockquote>
+<br><br><br><br><br>
+<blockquote> $\varepsilon_G-\varepsilon_S=$0 <br> $\Leftrightarrow$ <br> Total strain transmission</blockquote>
+</div>
+
+</section>
+<section class='' data-state='' id='slide-15' data-background='' data-transition='' background-transition=''>
+  <h2>Exploring strain transfer in supported graphene</h2>
+  <h3>Quantifying the efficiency of strain transfer</h3>
+
+<div style='float:left;width:35%;margin-top:5%'>
+$\varepsilon_G=\alpha\varepsilon_S$ <br><br>
+$\varepsilon_S = P/\beta_S$<br><br>
+$\varepsilon_G = \sigma_G/\beta_{ref}$<br><br>
+<blockquote style='background:rgba(76,179,246,0.2);color:black;'>$\sigma_G = \alpha(\sigma_G)\frac{\beta_{ref}}{\beta_S}P$</blockquote><br><br>
+with ref=graphite:<br> $\Omega_{ref}=4.4$ cm$^{-1}$/GPa <br> $\beta_{ref}=1250$ GPa
+</div>
+
+<div style='float:right;width:55%;margin-right:5%'>
+<img src="assets/img/graph_alpha.png" style='margin-top:6%;width:100%;'/>
+</div>
+
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>Exploring strain transfer in supported graphene</h2>
+    <h3>Quantifying the efficiency of strain transfer</h3>
+
+<div style='float:left;width:65%;'>
+<img src="assets/img/alpha_sigma.png" style='float:left;margin-top:5%;width:100%;'/>
+</div>
+
+<div style='float:right;width:35%;margin-top:8%'>
+<blockquote> Total strain transmission</blockquote>
+<br><br><br>
+<blockquote style='background:rgba(76,179,246,0.4);color:black;'>Partial strain transmission</blockquote>
+Creation of a stress field
+</div>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Where does the energy go?</h3>
+
+<ul>
+<li><del>Defects/tearing</del></li>
+<li>Buckling/slipping/stress field</li>
+</ul>
+
+<p><img src="assets/img/graph_sio2_avant_apres.png" style='float:left;margin-top:5%;width:40%;'/>
+<img src="assets/img/graph_evol.png" style='float:right;margin-top:3%;width:50%;'/></p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section class='' data-state='' id='slide-17' data-background='' data-transition='' background-transition=''>
+  <h2>Exploring strain transfer in supported graphene</h2>
+  <h3>Developing a tool to check for strain transfer efficiency</h3>
+
+<p><br></p>
+
+<div style='float:left;width:55%;'>
+$\frac{\partial\Delta\omega_G}{\partial\varepsilon} = -57\pm2~\text{cm}^{-1}/\%$
+<img src="assets/img/graph_compa.png" style='margin-top:5%;width:100%;'/>
+</div>
+
+<div style='float:right;width:44%;margin-right:1%;margin-top:10%;line-height:2em'>
+<ul>
+   <li><a href="http://pubs.acs.org/doi/abs/10.1021/nl101533x">Ding et al., Nano Lett. (2010)</a>:<br>Piezo-actuators, sandwiched graphene</li>
+   <li><a href="http://www.nature.com/articles/srep18219">Androulidakis et al., Sci. Reports (2015)</a>:<br>Deposited graphene, bending substrate</li>
+   <li><a href="http://scitation.aip.org/content/aip/journal/apl/108/22/10.1063/1.4952972">Shin et al., Appl. Phys. Lett. (2016)</a>:<br>Glass blower method (suspended graphene)</li>
+</ul>
+</div>
+
+</section>
+<section class='' data-state='' id='slide-18' data-background='' data-transition='fade' background-transition=''>
+  <h2>Supported Graphene - Conclusions</h2>
+  <p><br>
+<br>
+<br>
+<center></p>
+
+<div style='line-height:2em;width:80%;'>
+<ul>
+   <li class="fragment highlight-current-blue" data-fragment-index="1"> Total strain transfer (adhesion) should never be assumed, but carefully checked</li>
+   <li class="fragment highlight-current-blue" data-fragment-index="2"> How to check this? Easy tool:</li>
+   <ul class="fragment highlight-current-blue" data-fragment-index="2">
+      <li>Total strain transmission: $\frac{\partial\Delta\omega_G}{\partial\varepsilon} = -57\pm2~\text{cm}^{-1}/\%$ </li>   
+      <li>Partial strain transmission:$\frac{\partial\Delta\omega_G}{\partial\varepsilon} > -57\pm2~\text{cm}^{-1}/\%$ </li>   
+   </ul>
+   <li class="fragment highlight-current-blue" data-fragment-index="3">Still need to explore:</li>
+   <ul class="fragment highlight-current-blue" data-fragment-index="3">
+      <li> The possible correlation between $\sigma_G^c$ and the percolation of the locally stressed regions</li>
+      <li> The role of the substrate roughness and the graphene microstructure</li>
+</ul>
+</div>
+
+<p></center></p>
+
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>Work in progress: <em>suspended</em> objects</h2>
+    <h3>Goals:</h3>
+
+<ul>
+<li>Studying various individual nano-objects at high pressure with Raman or SMS spectroscopies, <em>e.g</em>:
+
+<ul>
+<li>sp\(^2\)-sp\(^3\) transition in bi-layer graphene at high pressures ($\gtrsim$10 GPa)</li>
+<li>optical absorption of individual nanotube under pressure (SMS)</li>
+<li>you name it...</li>
+</ul></li>
+</ul>
+
+<p><img src="assets/img/cut_001.png" style='margin-top:2%;width:50%;'/></p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Transferring the substrate</h2>
+
+<p><img src="assets/img/remove.gif" style='margin-top:10%;width:40%;'/>
+<img src="assets/img/remove.gif" style='margin-top:100%;width:0%;'/></p>
+
+<!-- don't know why but have to add a second gif so that the first loops... -->
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Spatial Modulation Spectroscopy (SMS)</h2>
+
+<p><img src="assets/img/SMS.png" style='margin-top:1%;width:85%;'/></p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section class='' data-state='' id='slide-20' data-background='grey' data-transition='fade' background-transition=''>
+  <h1><span style="color:white;text-shadow: 10px 10px 10px rgb(1, 1, 1);"> Chapter II </span></h1>
+  <h2><span style="color:white"> Pinned and unpinned states in carbon peapods:<br>insights into nanotube super-lubricity </span></h2>
+
+<p><br>
+<center style="color:white;font-size:20px">PhD Thesis<br>Institut Laue Langevin (Grenoble) and Laboratoire de Physique des Solides (Orsay)</center></p>
+
+<p><img src="assets/img/peapods_TEM2.png" style='margin-top:10%;width:60%;border:4px solid #333333;box-shadow: 5px 5px 5px rgb(1, 1, 1);'/></p>
+
+</section>
+<section class='' data-state='' id='slide-21' data-background='' data-transition='' background-transition=''>
+  <h2>Carbon nano-peapods: a model 1D system</h2>
+  <div style='float:left;width:40%;margin-left:5%'>
+<center><b>Two different samples:</b></center>
+<img src="assets/img/peapods_TEM.png" style='width:60%;'/>
+<p stye='align:left'>
+Monomers:
+<img src="assets/img/rotations.png" style='width:80%;'/>
+Polymers: 
+<img src="assets/img/libration.png" style='width:80%;'/>
+</p>
+</div>
+
+<div style='float:right;width:40%;margin-right:5%' class="fragment fade-in">
+<center><b>Observing their dynamics with INS:</b></center>
+<img align:"middle" src="assets/img/raw_data_helvetica.png" style='width:450px;margin-top:10px'/>
+</div>
+
+<div class='left' style='float:left;width:48%'>
+  
+</div>
+<div class='right' style='float:right;width:48%'>
+  
+</div>
+<div class='full' style='float:left;width:100%'>
+  
+</div>
+</section>
+<section class='' data-state='' id='slide-22' data-background='' data-transition='' background-transition=''>
+  <h2>Carbon nano-peapods: a model 1D system</h2>
+  <p><img src="assets/img/L_T_peapods.png" style='width:800px;'/></p>
+
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>Carbon nano-peapods: a model 1D system</h2>
+    <div style='float:left;width:45%'>
+<img src="assets/img/L_T_peapods.png" style='margin-top:10%'/>
+<img src="assets/img/rotations.png"/>
+</div>
+
+<div style='float:right;width:55%'>
+   <br>
+   <h3>Mid T: Finite size 1D crystal</h3>
+   <ul> 
+      <li> Elastic diffusion $\rightarrow$ 1D crystal </li>
+      <li> Quasi-elastic diffusion in Mono and Polymers $\rightarrow$ measure speed of sound along C$_{60}$ chains (3.5 km/s)</li>
+   </ul>
+   <p style='text-align:left'>
+   <a href="http://prb.aps.org/abstract/PRB/v87/i19/e195438" style='font-style: italic'>Bousige et al., PRB <b>87</b> (2013) 195438</a><br><br><br>
+   Elastic nature:</p> <br>
+   <img align:"top" src="assets/img/nature_el.png" style='float:left;height:300px;'/><img src="assets/img/peapods_kis_HT2.png" style="width:60%;" />
+</div>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <p><center><strong>Elastic nature from inelastic data:</strong></center></p>
+
+<div style='float:left;width:40%;margin-left:5%'>
+<img src="assets/img/peapods_translations_INS.png" style='margin-top:30%'/>
+</div>
+
+<div style='float:right;width:40%;margin-right:5%;margin-top:2%'>
+<img src="assets/img/peapods_kis_HT.png"/>
+</div>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <p><center><strong>Simulation of \(S(Q,\omega)\) for various geometries</strong></center></p>
+
+<p><center></p>
+
+<div style='width:30%;'>
+<img src="assets/img/peapods_simul.png" style='margin-top:-1%;'/>
+</div>
+
+<p></center></p>
+
+<!-- ***
+
+<center>__Simulation of $S(Q,\omega)$ in the TOF geometry__</center>
+
+<center>
+<iframe width=1100 height=700  src="assets/img/plot_SQW.html"></iframe>
+</center> -->
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>Carbon nano-peapods: a model 1D system</h2>
+    <div style='float:left;width:45%'>
+<img src="assets/img/L_T_peapods_TG.png" style='margin-top:10%'/>
+<img src="assets/img/rotations.png"/>
+</div>
+
+<div style='float:right;width:55%'>
+   <br>
+   <h3 style="color:red">High T: Progressive fusion</h3>
+   <ul> 
+      <li>First observation of the fusion of a Takahasi-Gürsey chain</li>
+      <li> No elastic diffusion $\Leftrightarrow$ Positionnal and orientationnal disorders</li>
+   </ul>
+   <p style='text-align:left'>
+   <a href="http://prb.aps.org/abstract/PRB/v87/i19/e195438" style='font-style:italic'>Bousige et al., PRB <b>87</b> (2013) 195438</a><br>
+   <a href="http://prb.aps.org/abstract/PRB/v86/i4/e045446" style='font-style:italic'>Bousige et al., PRB <b>86</b> (2012) 045446</a><br>
+   <span style="color:red">In</span>elastic nature:</p><br>
+   <img align:"top" src="assets/img/nature_el.png" style='float:left;height:300px;'/><img src="assets/img/peapods_kis_THT2.png" style="width:60%;" />
+</div>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <p><center><strong>At higher temperature: loss of the elastic part</strong></center></p>
+
+<div style='float:left;width:40%;margin-left:5%'>
+<img src="assets/img/peapods_translations_INS.png" style='margin-top:30%'/>
+</div>
+
+<div style='float:right;width:40%;margin-right:5%;'>
+<img src="assets/img/peapods_kis_THT.png"/>
+</div>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section class='' data-state='' id='slide-25' data-background='' data-transition='' background-transition=''>
+  <h2>Carbon nano-peapods: a model 1D system</h2>
+  <h3>Quick summary of the behavior for T &gt; 300 K</h3>
+
+<p><center>
+<img src="assets/img/peapods_TEM2.png" style='margin-top:10%;margin-bottom:7%;width:40%;'/> = 
+<img src="assets/img/peapods_ressort.png" style='margin-top:5%;width:50%;'/> 
+</center></p>
+
+</section>
+<section class='' data-state='' id='slide-26' data-background='' data-transition='' background-transition=''>
+  <h2>Carbon nano-peapods: a model 1D system</h2>
+  <h3><span style="color:#7c7cfd">Low temperatures</span></h3>
+
+<p><img src="assets/img/L_T_peapods.png" style='margin-top:5%;width:55%'/></p>
+
+</section>
+<section class='' data-state='' id='slide-27' data-background='' data-transition='' background-transition=''>
+  <h2>Carbon nano-peapods: a model 1D system</h2>
+  <h3>Rotation-translation coupling and orientationnal ordering</h3>
+
+<div class='left' style='float:left;width:40%;margin-left:5%'>
+  <p><img src="assets/img/peapods_rotations_INS.png" style='margin-top:10%'/>
+<img align:"top" src="assets/img/nature_el.png" style='width:35%;margin-top:2%'/></p>
+
+</div>
+<div class='right' style='float:right;width:27%;margin-right:10%;'>
+  <p><img src="assets/img/rot_struct.png" style='margin-top:2%'/></p>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  
+</div>
+</section>
+<section class='' data-state='' id='slide-28' data-background='' data-transition='fade' background-transition=''>
+  <h2>Carbon nano-peapods: a model 1D system</h2>
+  <h3>Rotation-translation coupling and orientationnal ordering</h3>
+
+<div class='left' style='float:left;width:40%;margin-left:10%'>
+  <p><img src="assets/img/peapods_schema.png" style='margin-top:1%'/>
+<center class="fragment current-visible">
+Still :
+<img src="assets/img/peapods_TEM2.png" style='width:40%;'/> = 
+<img src="assets/img/peapods_ressort.png" style='width:50%;'/> 
+</center></p>
+
+</div>
+<div class='right' style='float:right;width:27%;margin-right:10%;'>
+  <p><img src="assets/img/rot_struct.png" style='margin-top:2%'/></p>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  
+</div>
+</section>
+<section class='' data-state='' id='slide-29' data-background='' data-transition='' background-transition=''>
+  <h2>Carbon nano-peapods: a model 1D system... <em>for friction</em></h2>
+  <h3>Let&#39;s have a look at the translations</h3>
+
+<div class='left' style='float:left;width:40%;margin-left:5%;margin-top:5%'>
+  <p><img src="assets/img/peapods_translations_INS.png"/></p>
+
+</div>
+<div class='right' style='float:right;width:50%;margin-top:5%'>
+  <p><img src="assets/img/Experimental_nofit.png"/></p>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  
+</div>
+</section>
+<section class='' data-state='' id='slide-30' data-background='' data-transition='' background-transition=''>
+  <h2>Carbon nano-peapods: a model 1D system... <em>for friction</em></h2>
+  <h3>Let&#39;s have a look at the translations</h3>
+
+<div class='left' style='float:left;width:40%;margin-left:1%;margin-top:5%'>
+  <p>In the case of a perfectly plane buckypaper and a TAS, one can show:
+\[\frac{S(Q,\omega)}{k_BT} \propto \frac{NF^2(Q)}{4\hbar mc^2}\int\limits_{0}^{2\pi}\text{d}\phi_t\frac{(Q\cos\phi_t)^2}{\sin^2\left(\frac{Q L}{2}\cos\phi_t\right)}\times\]
+\[\quad\quad\quad\quad\quad\delta\left(\omega \pm \frac{2c}{L}\left|\sin\left(\frac{Q L}{2}\cos\phi_t\right)\right|\right)\]</p>
+
+</div>
+<div class='right' style='float:right;width:50%;margin-top:5%'>
+  <p><img src="assets/img/Experimental_nofit.png"/></p>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  
+</div>
+</section>
+<section class='' data-state='' id='slide-31' data-background='' data-transition='' background-transition=''>
+  <h2>Carbon nano-peapods: a model 1D system... <em>for friction</em></h2>
+  <h3>Let&#39;s have a look at the translations</h3>
+
+<div class='left' style='float:left;width:40%;margin-left:1%;margin-top:5%'>
+  <p>In the case of a perfectly plane buckypaper and a TAS, one can show:
+\[\frac{S(Q,\omega)}{k_BT} \propto \frac{NF^2(Q)}{4\hbar mc^2}\int\limits_{0}^{2\pi}\text{d}\phi_t\frac{(Q\cos\phi_t)^2}{\sin^2\left(\frac{Q L}{2}\cos\phi_t\right)}\times\]
+\[\quad\quad\quad\quad\quad\delta\left(\omega \pm \frac{2c}{L}\left|\sin\left(\frac{Q L}{2}\cos\phi_t\right)\right|\right)\]
+<br></p>
+
+<ul>
+<li>With an experimental resolution</li>
+</ul>
+
+</div>
+<div class='right' style='float:right;width:50%;margin-top:5%'>
+  <p><img src="assets/img/Experimental_fitHT.png"/></p>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  
+</div>
+</section>
+<section class='' data-state='' id='slide-32' data-background='' data-transition='' background-transition=''>
+  <h2>Carbon nano-peapods: a model 1D system... <em>for friction</em></h2>
+  <h3>Let&#39;s have a look at the translations</h3>
+
+<div class='left' style='float:left;width:40%;margin-left:1%;margin-top:5%'>
+  <p>In the case of a perfectly plane buckypaper and a TAS, one can show:
+\[\frac{S(Q,\omega)}{k_BT} \propto \frac{NF^2(Q)}{4\hbar mc^2}\int\limits_{0}^{2\pi}\text{d}\phi_t\frac{(Q\cos\phi_t)^2}{\sin^2\left(\frac{Q L}{2}\cos\phi_t\right)}\times\]
+\[\quad\quad\quad\quad\quad\delta\left(\omega \pm \frac{2c}{L}\left|\sin\left(\frac{Q L}{2}\cos\phi_t\right)\right|\right)\]
+<br></p>
+
+<ul>
+<li>With an experimental resolution</li>
+<li><strong>And a damping parameter \(\gamma\)</strong></li>
+</ul>
+
+</div>
+<div class='right' style='float:right;width:50%;margin-top:5%'>
+  <p><img src="assets/img/Experimental_fit.png"/></p>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  
+</div>
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>Carbon nano-peapods: a model 1D system... <em>for friction</em></h2>
+    <h3>Appearance of friction at low temperatures</h3>
+
+<div style='float:left;width:55%;'>
+<img src="assets/img/gammas_ampl_T.png" style="margin-top:10%" />
+</div>
+
+<div style='float:right;width:30%;margin-right:10%;'>
+<br><br>
+Fit by a power law :
+<br><br>
+$$
+\left\lbrace
+\begin{array}{rll}
+\gamma=&0 &\text{ for } T > T_C\\
+\gamma=&\left(T_C-T\right)^{\chi}&\text{ for } T \le T_C
+\end{array}\right.
+$$
+<br>
+${T_C}=230$ K and $\chi=0.75$
+<br>
+<br>
+<blockquote style='background:rgba(0,0,0,0);color:black;width:100%;box-shadow: 3px 0px 5px rgba(0,0,0,0.9);' class="fragment fade-in">
+Now :
+<img src="assets/img/peapods_TEM2.png" style='width:90%;'/> = 
+<img src="assets/img/peapods_friction.png" style="width:100%;"/>
+</blockquote>
+</div>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>No 3D ordering</h3>
+
+<p><center>No symmetrization of the 1D periodicity diffraction peak</center>
+<img src="assets/img/peapods_comparison_xp_simul.png" style="width:35%;margin-top:1%"/></p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section class='' data-state='' id='slide-34' data-background='' data-transition='fade' background-transition=''>
+  <h2>Carbon nano-peapods: a model 1D system... <em>for friction</em></h2>
+  <h3>Summary</h3>
+
+<div class='left' style='float:left;width:40%'>
+  <p><img src="assets/img/peapods_resume.png" style="width:90%;margin-top:2%"/></p>
+
+</div>
+<div class='right' style='float:right;width:60%;margin-top:5%'>
+  <p><center>\(T>T_C\) : <del>Friction</del><br><br></center></p>
+
+<ul>
+<li>Link to super-lubricity observed for water flowing through CNT?
+<br><br><br><br><br>
+<center>\(T\le T_C\) : Friction<br><br></center></li>
+<li>Transition by breaking of analyticity? <br>(Aubry transition in a Frenkel-Kontorova model)</li>
+<li>Role of the RBM?</li>
+<li>Role of the longitudinal CNT modes as in water diffusion?
+<br><br>
+\(\Rightarrow\) MD simulations still running...</li>
+</ul>
+
+<!-- --- dt:fade
+
+## Conclusions
+
+<br>
+<center>
+<b>Very different systems, and yet:</b>
+<div style='line-height:1.5em;width:80%;'>
+<ul>
+   <li><b>Similar problematics :</b></li>
+   <ul>
+      <li>Carbon compounds</li>
+      <li>Study of the structure</li>
+      <li>Study of the dynamics</li>
+      <li>Trying to draw a link between local and macroscopic behaviors</li>
+   </ul>
+<li><b>Similar techniques:</b></li>
+   <ul>
+      <li>Diffraction (x-rays, neutrons)</li>
+      <li>Inelastic Neutrons Scattering</li>
+      <li>Raman spectroscopy</li>
+      <li>Monte Carlo and Molecular Dynamics Simulations </li>
+      <li>Playing on pressure, temperature...</li>
+   </ul>
+</ul>
+</div>
+</center>
+ -->
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  
+</div>
+</section>
+<section class='' data-state='' id='slide-35' data-background='' data-transition='' background-transition=''>
+  <h1>Thanks!</h1>
+  <p><br><br>
+<br><br></p>
+
+<div class='left' style='float:left;width:30%;margin-left:30%'>
+  <p><strong>ILL and LPS</strong></p>
+
+<p>Pascale Launois</p>
+
+<p>Stéphane Rols</p>
+
+</div>
+<div class='right' style='float:right;width:40%'>
+  <p><strong>ILM</strong></p>
+
+<p>Alfonso san Miguel</p>
+
+<p>Denis Machon</p>
+
+</div>
+<div class='full' style='float:left;width:100%'>
+  
+</div>
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    width: '100%',
+    controls: true,
+    progress: true,
+    loop: true,
+    slideNumber: true,
+    rollingLinks: false,
+    keyboard: {
+      32: 'navigateRight',
+      80: 'navigateLeft',
+      33:'navigateLeft',
+      // n, page down
+      78: 'navigateRight',
+      34:'navigateRight',
+      // h, left
+      72: 'navigateLeft',
+      37:'navigateLeft',
+      // l, right
+      76: 'navigateRight',
+      39:'navigateRight',
+      // k, up
+      75: 'navigateUp',
+      38:'navigateUp',
+      // j, down
+      74: 'navigateDown',
+      40:'navigateDown'
+    },
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'perso', 
+    transition: Reveal.getQueryHash().transition || 'none', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script> -->
+<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>

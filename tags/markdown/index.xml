@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on Colin Bousige</title>
+    <link>/tags/markdown/</link>
+    <description>Recent content in Markdown on Colin Bousige</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Colin Bousige</copyright>
+    <lastBuildDate>Fri, 09 Jun 2017 19:56:21 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Switching from $\LaTeX$ to Rmarkdown for all-purpose academics-related writing</title>
+      <link>/post/rmarkdown/</link>
+      <pubDate>Fri, 09 Jun 2017 19:56:21 +0200</pubDate>
+      
+      <guid>/post/rmarkdown/</guid>
+      <description>Setting up your system Writing in markdown and exporting to various formats  Like many physicists, I have been using \(\LaTeX\) since the very beginning of my undergrad studies, because it’s just that great. The main interests are that the content is dissociated from the form (so you can focus on your writing), it handles your references to articles, sections, figures and equations, and it just makes very nice documents.</description>
+    </item>
+    
+  </channel>
+</rss>

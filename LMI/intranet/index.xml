@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pratique on LMI</title>
+    <link>/LMI/intranet/</link>
+    <description>Recent content in Pratique on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/intranet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Assemblée générale du LMI</title>
+      <link>/LMI/intranet/ag_lmi/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/intranet/ag_lmi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutoriel – Modification du Site</title>
+      <link>/LMI/intranet/tutoriel/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/intranet/tutoriel/</guid>
+      <description>In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:
+Tip 1 &amp;hellip;
+Tip 2 &amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

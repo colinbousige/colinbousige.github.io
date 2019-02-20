@@ -684,6 +684,14 @@ a.hero-cta-alt:hover {
   object-fit: cover;
 }
 
+.portrait2 {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .portrait-title h2 {
   font-size: 1.75em;
   font-weight: 300;
