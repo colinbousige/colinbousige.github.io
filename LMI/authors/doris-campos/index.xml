@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Doris Campos on LMI</title>
+    <link>/LMI/authors/doris-campos/</link>
+    <description>Recent content in Doris Campos on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sat, 01 Jun 2013 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/doris-campos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Toxicity Evaluation Of Two Dental Composites: Three-Dimensional Confocallaser Scanning Microscopy Time-Lapse Imaging Of Cell Behavior</title>
+      <link>/LMI/publication/isi-000319126300011/</link>
+      <pubDate>Sat, 01 Jun 2013 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000319126300011/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

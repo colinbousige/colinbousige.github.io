@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raphael Fillon on LMI</title>
+    <link>/LMI/authors/raphael-fillon/</link>
+    <description>Recent content in Raphael Fillon on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/raphael-fillon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sodium-Doped Mo Back Contacts For Cu(In,Ga)Se-2 Solar Cells On Ti Foils:Growth, Morphology, And Sodium Diffusion</title>
+      <link>/LMI/publication/isi-000332320200015/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000332320200015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kestutis Jarasiunas on LMI</title>
+    <link>/LMI/authors/kestutis-jarasiunas/</link>
+    <description>Recent content in Kestutis Jarasiunas on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/kestutis-jarasiunas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nondestructive Evaluation Of Photo-Electrical Properties Of 3C-Sic (111)Homoepitaxial Layers Grown By Cvd</title>
+      <link>/LMI/publication/isi-000291673500036/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000291673500036/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

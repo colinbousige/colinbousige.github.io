@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nushin Aghajari on LMI</title>
+    <link>/LMI/authors/nushin-aghajari/</link>
+    <description>Recent content in Nushin Aghajari on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Tue, 01 Mar 2011 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/nushin-aghajari/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Structuring Detergents For Extracting And Stabilizing Functionalmembrane Proteins</title>
+      <link>/LMI/publication/isi-000289057200021/</link>
+      <pubDate>Tue, 01 Mar 2011 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000289057200021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Supramolecular Stabilization Of Acid Tolerant L-Arabinose Isomerase Fromlactobacillus Sakei</title>
+      <link>/LMI/publication/isi-000296727000014/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000296727000014/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

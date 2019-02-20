@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cyril Cayron on LMI</title>
+    <link>/LMI/authors/cyril-cayron/</link>
+    <description>Recent content in Cyril Cayron on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Wed, 01 Feb 2012 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/cyril-cayron/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aluminum Catalyzed Growth Of Silicon Nanowires: Al Atom Location And Theinfluence Of Silicon Precursor Pressure On The Morphology</title>
+      <link>/LMI/publication/isi-000301013800003/</link>
+      <pubDate>Wed, 01 Feb 2012 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000301013800003/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

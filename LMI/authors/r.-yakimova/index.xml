@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R. Yakimova on LMI</title>
+    <link>/LMI/authors/r.-yakimova/</link>
+    <description>Recent content in R. Yakimova on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/r.-yakimova/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>On Applicability Of Time-Resolved Optical Techniques Forcharacterization Of Differently Grown 3C-Sic Crystals Andheterostructures</title>
+      <link>/LMI/publication/isi-000302673900029/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000302673900029/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seeding Layer Influence On The Low Temperature Photoluminescenceintensity Of 3C-Sic Grown On 6H-Sic By Sublimation Epitaxy</title>
+      <link>/LMI/publication/isi-000302673900027/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000302673900027/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effect Of Initial Substrate Conditions On Growth Of Cubic Siliconcarbide</title>
+      <link>/LMI/publication/isi-000292362600002/</link>
+      <pubDate>Wed, 01 Jun 2011 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000292362600002/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sublimation Growth And Structural Characterization Of 3C-Sic Onhexagonal And Cubic Sic Seeds</title>
+      <link>/LMI/publication/isi-000279657600041/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000279657600041/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

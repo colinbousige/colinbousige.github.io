@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>M. Rebaud on LMI</title>
+    <link>/LMI/authors/m.-rebaud/</link>
+    <description>Recent content in M. Rebaud on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Wed, 01 Oct 2014 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/m.-rebaud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diamond As Substrate For 3C-Sic Growth: A Tem Study</title>
+      <link>/LMI/publication/isi-000344241100015/</link>
+      <pubDate>Wed, 01 Oct 2014 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000344241100015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3C-Sic Seeded Growth On Diamond Substrate By Vls Transport</title>
+      <link>/LMI/publication/isi-000336634100055/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000336634100055/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

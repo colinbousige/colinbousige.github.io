@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Francois Gombault on LMI</title>
+    <link>/LMI/authors/francois-gombault/</link>
+    <description>Recent content in Francois Gombault on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sat, 01 Nov 2014 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/francois-gombault/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Low-Temperature Synthesis Of Highly Crystallized Hexagonal Boron Nitridesheets With Li3N As Additive Agent</title>
+      <link>/LMI/publication/isi-000344791900005/</link>
+      <pubDate>Sat, 01 Nov 2014 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000344791900005/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guillaume Chastanet on LMI</title>
+    <link>/LMI/authors/guillaume-chastanet/</link>
+    <description>Recent content in Guillaume Chastanet on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Thu, 01 Nov 2012 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/guillaume-chastanet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A 1D Coordination Polymer Built On Asymmetric Mu(1,1,3)-Azide Bridge:From Unusual Topology To Magnetic Properties And Cu(Ii)/Cu(I) Redoxreversibility</title>
+      <link>/LMI/publication/isi-000310721000014/</link>
+      <pubDate>Thu, 01 Nov 2012 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000310721000014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Condensation Of A Nickel Tetranuclear Cubane Into A Heptanuclearsingle-Molecule Magnet</title>
+      <link>/LMI/publication/isi-000305314500028/</link>
+      <pubDate>Fri, 01 Jun 2012 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000305314500028/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Site-Selective Lanthanide Doping In A Nonanuclear Yttrium(Iii) Clusterrevealed By Crystal Structures And Luminescence Spectra</title>
+      <link>/LMI/publication/isi-000284518800030/</link>
+      <pubDate>Wed, 01 Dec 2010 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000284518800030/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>K. Jarasiunas on LMI</title>
+    <link>/LMI/authors/k.-jarasiunas/</link>
+    <description>Recent content in K. Jarasiunas on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Fri, 01 Jan 2010 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/k.-jarasiunas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Optical Characterization Of Vls&#43;Cvd Grown 3C-Sic Films By Non-Linear Andphotoluminescence Techniques</title>
+      <link>/LMI/publication/isi-000279657600106/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000279657600106/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Philippe Chaumont on LMI</title>
+    <link>/LMI/authors/philippe-chaumont/</link>
+    <description>Recent content in Philippe Chaumont on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Thu, 01 Apr 2010 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/philippe-chaumont/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Synthesis Of Polystyrene Coated Sic Nanowires As Fillers In Apolyurethane Matrix For Electromechanical Conversion</title>
+      <link>/LMI/publication/isi-000275652200036/</link>
+      <pubDate>Thu, 01 Apr 2010 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000275652200036/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

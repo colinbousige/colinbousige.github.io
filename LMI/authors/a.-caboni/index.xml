@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A. Caboni on LMI</title>
+    <link>/LMI/authors/a.-caboni/</link>
+    <description>Recent content in A. Caboni on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Fri, 01 Jan 2010 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/a.-caboni/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rapid Thermal Oxynitridation And Hydrogenation Of 3C-Sic/Si Using N2Oand H-2 Ambient</title>
+      <link>/LMI/publication/isi-000286950900017/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000286950900017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <copyright>UMR CNRS 5615</copyright>
-    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/LMI/authors/didier-chaussende/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>The (001) 3C SiC surface termination and band structure after common wetchemical etching procedures, stated by XPS, LEED, and HREELS</title>
+      <title>Understanding Al Incorporation Into 4H-Sic During Epitaxy</title>
+      <link>/LMI/publication/isi-000455667500056/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000455667500056/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The (001) 3C Sic Surface Termination And Band Structure After Common Wetchemical Etching Procedures, Stated By Xps, Leed, And Hreels</title>
       <link>/LMI/publication/isi-000415219100059/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
       
@@ -22,11 +31,29 @@
     </item>
     
     <item>
-      <title>A new model for in situ nitrogen incorporation into 4H-SiC duringepitaxy</title>
+      <title>A New Model For In Situ Nitrogen Incorporation Into 4H-Sic Duringepitaxy</title>
       <link>/LMI/publication/isi-000394486800001/</link>
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0100</pubDate>
       
       <guid>/LMI/publication/isi-000394486800001/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ge Assisted Sic Epitaxial Growth By Cvd On Sic Substrate</title>
+      <link>/LMI/publication/isi-000336634100044/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000336634100044/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evolution Of 3C-Sic Islands Nucleated From A Liquid Phase On Si Facealpha-Sic Substrates</title>
+      <link>/LMI/publication/isi-000278242000030/</link>
+      <pubDate>Sat, 01 May 2010 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000278242000030/</guid>
       <description></description>
     </item>
     

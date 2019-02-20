@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stephane Berckmans on LMI</title>
+    <link>/LMI/authors/stephane-berckmans/</link>
+    <description>Recent content in Stephane Berckmans on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sat, 01 Sep 2012 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/stephane-berckmans/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Investigation Of 3C-Sic Growth On Si(111) By Vapor-Liquid-Solidtransport Using A Sige Liquid Phase</title>
+      <link>/LMI/publication/isi-000306605400019/</link>
+      <pubDate>Sat, 01 Sep 2012 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000306605400019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Epitaxial Growth Of 3C-Sic Onto Silicon Substrate By Vls Transport Usingcvd-Grown 3C-Sic Seeding Layer</title>
+      <link>/LMI/publication/isi-000302673900007/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000302673900007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigation Of The Growth Of 3C-Sic On Si By Vapor-Liquid-Solid (Vls)Transport</title>
+      <link>/LMI/publication/isi-000291673500024/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000291673500024/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

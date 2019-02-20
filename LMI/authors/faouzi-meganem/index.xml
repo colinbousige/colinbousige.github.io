@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Faouzi Meganem on LMI</title>
+    <link>/LMI/authors/faouzi-meganem/</link>
+    <description>Recent content in Faouzi Meganem on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Wed, 01 May 2013 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/faouzi-meganem/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Synthesis, Crystal Structure, And Magnetic Properties Of A Bis-Dinuclearoxo-Bridged Iron(Iii) Complex With P-Sulfonatocalix[4]Arene</title>
+      <link>/LMI/publication/isi-000318510300020/</link>
+      <pubDate>Wed, 01 May 2013 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000318510300020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monosubstituted Lower Rim Thiacalix[4]Arene Derivatives</title>
+      <link>/LMI/publication/isi-000302663500017/</link>
+      <pubDate>Sun, 01 Apr 2012 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000302663500017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tetranuclear Manganese(Ii) Complexes Of Sulfonylcalix[4]Arenemacrocycles: Synthesis, Structure, Spectroscopic And Magnetic Properties</title>
+      <link>/LMI/publication/isi-000300314700021/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000300314700021/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

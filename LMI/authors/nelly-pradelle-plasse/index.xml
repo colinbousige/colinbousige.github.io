@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nelly Pradelle-Plasse on LMI</title>
+    <link>/LMI/authors/nelly-pradelle-plasse/</link>
+    <description>Recent content in Nelly Pradelle-Plasse on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/nelly-pradelle-plasse/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Influence Of Precursor Addition Order On The Porosity Of Sol-Gelbioactive Glasses</title>
+      <link>/LMI/publication/isi-000441511000013/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000441511000013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Initial Sliding Wear Kinetics Of Two Types Of Glass Ionomer Cement: Atribological Study</title>
+      <link>/LMI/publication/isi-000338879000001/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000338879000001/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Toxicity Evaluation Of Two Dental Composites: Three-Dimensional Confocallaser Scanning Microscopy Time-Lapse Imaging Of Cell Behavior</title>
+      <link>/LMI/publication/isi-000319126300011/</link>
+      <pubDate>Sat, 01 Jun 2013 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000319126300011/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

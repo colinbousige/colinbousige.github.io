@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emmanuel Beyou on LMI</title>
+    <link>/LMI/authors/emmanuel-beyou/</link>
+    <description>Recent content in Emmanuel Beyou on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/emmanuel-beyou/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Magnetic Properties Of Cellulose-Grafted Reduced Graphite Oxidedecorated With Ni Nanoparticles</title>
+      <link>/LMI/publication/isi-000447874000021/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000447874000021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synthesis Of Polystyrene Coated Sic Nanowires As Fillers In Apolyurethane Matrix For Electromechanical Conversion</title>
+      <link>/LMI/publication/isi-000275652200036/</link>
+      <pubDate>Thu, 01 Apr 2010 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000275652200036/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nathalie Moncoffre on LMI</title>
+    <link>/LMI/authors/nathalie-moncoffre/</link>
+    <description>Recent content in Nathalie Moncoffre on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Mon, 01 Mar 2010 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/nathalie-moncoffre/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Generation Of An Ordered Layer Of Silver Nanoparticles In Mesostructureddielectric Films</title>
+      <link>/LMI/publication/isi-000276883900036/</link>
+      <pubDate>Mon, 01 Mar 2010 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000276883900036/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chemical Growth And Photochromism Of Silver Nanoparticles Into Amesoporous Titania Template</title>
+      <link>/LMI/publication/isi-000273403400080/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000273403400080/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

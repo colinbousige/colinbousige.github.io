@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>G. Pilet on LMI</title>
+    <link>/LMI/authors/g.-pilet/</link>
+    <description>Recent content in G. Pilet on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sun, 01 Jul 2018 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/g.-pilet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Template-Directed Approach For The Synthesis Of A New Mono-Condensedschiff Base Complex Of Copper(Ii)</title>
+      <link>/LMI/publication/isi-000445917100033/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000445917100033/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

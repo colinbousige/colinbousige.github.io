@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>J. Tommasino on LMI</title>
+    <link>/LMI/authors/j.-tommasino/</link>
+    <description>Recent content in J. Tommasino on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sat, 01 Mar 2014 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/j.-tommasino/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mechanism Elucidation Of The Cis-Trans Isomerization Of An Azole</title>
+      <link>/LMI/publication/isi-000332835300548/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000332835300548/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

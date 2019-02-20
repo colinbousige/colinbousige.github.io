@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jean-Fabien Petit on LMI</title>
+    <link>/LMI/authors/jean-fabien-petit/</link>
+    <description>Recent content in Jean-Fabien Petit on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Fri, 01 Aug 2014 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/jean-fabien-petit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hydrazine Borane-Induced Destabilization Of Ammonia Borane, And Viceversa</title>
+      <link>/LMI/publication/isi-000340689100020/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/publication/isi-000340689100020/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

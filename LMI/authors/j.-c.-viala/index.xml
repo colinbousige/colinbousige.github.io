@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>J. C. Viala on LMI</title>
+    <link>/LMI/authors/j.-c.-viala/</link>
+    <description>Recent content in J. C. Viala on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/authors/j.-c.-viala/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Modified 4-Point Bending Test For Adhesion Measurement At The Interfaceof Iron Coated With Aluminum Casting Alloy</title>
+      <link>/LMI/publication/isi-000300037400001/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000300037400001/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chemical Changes At The Interface Between Low Carbon Steel And An Al-Sialloy During Solution Heat Treatment</title>
+      <link>/LMI/publication/isi-000297723500003/</link>
+      <pubDate>Thu, 01 Dec 2011 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000297723500003/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transformation Kinetics And Resulting Microstructure In Mmc Reinforcedwith Tic Particles</title>
+      <link>/LMI/publication/isi-000303359700115/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/publication/isi-000303359700115/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
