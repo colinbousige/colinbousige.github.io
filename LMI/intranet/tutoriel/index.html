@@ -75,7 +75,7 @@ Quelques notions de base Le site utilise un langage simplifié pour produire des
     
       
       
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/xcode.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous">
       
     
 
@@ -219,7 +219,7 @@ Quelques notions de base Le site utilise un langage simplifié pour produire des
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/LMI/#posts">
+          <a class="nav-link" href="/LMI/#events">
             
             <span>Evènements</span>
             
@@ -444,6 +444,15 @@ Quelques notions de base Le site utilise un langage simplifié pour produire des
 <li><a href="#quelques-notions-de-base">Quelques notions de base</a></li>
 <li><a href="#comprendre-l-arborescence-des-fichiers">Comprendre l&rsquo;arborescence des fichiers</a></li>
 <li><a href="#compiler-le-site-pour-le-voir-en-local-avant-upload-sur-le-serveur">Compiler le site pour le voir en local avant upload sur le serveur</a></li>
+<li><a href="#ajouter-supprimer-une-personne">Ajouter/Supprimer une personne</a></li>
+<li><a href="#ajouter-supprimer-un-énènement-un-emploi-une-formation-ou-une-publication">Ajouter/Supprimer un énènement, un emploi, une formation ou une publication</a></li>
+<li><a href="#ajouter-un-fichier-à-télécharger">Ajouter un fichier à télécharger</a>
+<ul>
+<li><a href="#cas-d-une-publication">Cas d&rsquo;une publication</a></li>
+<li><a href="#cas-d-un-lien">Cas d&rsquo;un lien</a></li>
+<li><a href="#cas-d-un-bouton">Cas d&rsquo;un bouton</a></li>
+</ul></li>
+<li><a href="#déployer-le-site">Déployer le site</a></li>
 </ul>
 </nav>
 
@@ -467,6 +476,8 @@ Quelques notions de base Le site utilise un langage simplifié pour produire des
 
 <p>Dans ce tutoriel, nous allons voir pas à pas comment modifier le site.</p>
 
+<hr />
+
 <h1 id="prérequis">Prérequis</h1>
 
 <ul>
@@ -487,10 +498,14 @@ blogdown::install_hugo()
 
 <p>Ca y est, vous êtes prêts à commencer à éditer le site !</p>
 
+<hr />
+
 <h1 id="quelques-notions-de-base">Quelques notions de base</h1>
 
 <p>Le site utilise un langage simplifié pour produire des contenus riches, le <code>markdown</code>.
 <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Voilà</a> une page qui montre les principales caractéristiques.</p>
+
+<hr />
 
 <h1 id="comprendre-l-arborescence-des-fichiers">Comprendre l&rsquo;arborescence des fichiers</h1>
 
@@ -504,21 +519,136 @@ blogdown::install_hugo()
 <p>A priori, vous n&rsquo;avez <strong>PAS</strong> à toucher à cette arborescence. Lors d&rsquo;une utilisation quotidienne, vous n&rsquo;aurez qu&rsquo;à modifier le tableau des personnels, ajouter un article ou un évènement, etc., mais pas à toucher à la structure du site. Nous verrons par la suite comment faire chacune de ces choses.</p>
 </blockquote>
 
+<hr />
+
 <h1 id="compiler-le-site-pour-le-voir-en-local-avant-upload-sur-le-serveur">Compiler le site pour le voir en local avant upload sur le serveur</h1>
 
-<p>Nous avons besoin de Rstudio pour compiler tous ces fichiers *.md en un tas de fichier *.html. Lancer donc Rstudio et ouvrez le fichier <code>build_site.R</code> qui doit se trouver à la racine du site.</p>
+<p>Nous avons besoin de Rstudio pour compiler tous ces fichiers *.md en un tas de fichier *.html. Lancez Rstudio et ouvrez le fichier <code>build_site.R</code> qui doit se trouver à la racine du site.</p>
 
 <p>Nous devons d&rsquo;abord dire à R dans quel dossier nous sommes. Chez moi, cela donne cela :</p>
 
-<pre><code class="language-r">setwd(&quot;/Users/colin/Travail/Site LMI/&quot;)
+<pre><code class="language-r">setwd(&quot;/Users/colin/Travail/Site LMI/Site LMI/&quot;)
 </code></pre>
 
-<p>Sur Windows, il se peut que l&rsquo;arborescence ait une autre structure, taper</p>
+<p>Sur Windows, il se peut que l&rsquo;arborescence ait une autre structure. Tapez <code>getwd()</code> pour savoir où vous êtes et voir cette structure. Une fois que vous avec tapé la bonne arborescence, sauvez <code>build_site.R</code> et vous n&rsquo;aurez plus à y toucher.</p>
 
-<pre><code class="language-r">getwd()
+<p>Pour contruire le site, chargez d&rsquo;abord la librairie <code>blogdown</code>:</p>
+
+<pre><code class="language-r">library(blogdown)
 </code></pre>
 
-<p>pour savoir où vous êtes et voir cette structure. Une fois que vous avec tapé la bonne arborescence, sauvez <code>build_site.R</code> et vous n&rsquo;aurez plus à y toucher.</p>
+<p>Vous pouvez maintenat construire le site et le voir dans le navigateur (qui se lance tout seul) :</p>
+
+<pre><code class="language-r">serve_site() 
+</code></pre>
+
+<blockquote>
+<p><strong>ATTENTION</strong> : avec <code>serve_site()</code>, seuls les fichiers qui ont été édités seront re-compilés.</p>
+</blockquote>
+
+<p>Si vous avez modifié le fichier <code>content/annuaire/people.csv</code>, tous les fichiers *.Rmd doivent être recompilés, car ils lisent ce fichier .csv pour afficher leur contenu (annuaire, pages persos, listes de publications).
+Dans ce cas deux options :</p>
+
+<ol>
+<li>Vous n&rsquo;avez changé qu&rsquo;une ou deux lignes dans <code>people.csv</code> (typiquement, ajouté un DOI). Vous pouvez éditer le fichier <code>index.Rmd</code> de la personne correspondante, le modifier et le sauver, ce qui forcera sa recompilation.</li>
+<li>Vous avez fait des modifications extensives et voulez tout recompiler, lancer :</li>
+</ol>
+
+<pre><code class="language-r">build_site(local = FALSE) 
+</code></pre>
+
+<p>Cette seconde option sera (beaucoup) plus longue : pour chaque page perso, on retrouve les métas-données de toutes les publis via la liste de DOI qui est donnée dans <code>people.csv</code>, il faut donc le temps que les requettes se fassent.</p>
+
+<hr />
+
+<h1 id="ajouter-supprimer-une-personne">Ajouter/Supprimer une personne</h1>
+
+<p>Les pages personnelles sont stockées dans <code>content/personnel/nom_prenom/</code>. Pour supprimer une personne, supprimez son dossier.</p>
+
+<p>Pour ajouter une personne, dupliquez un dossier existant et renommez-le <code>nom_prenom</code>, sans espace, sans majuscule, sans accent, et en remplaçant les tirets &ldquo;-&rdquo; par des underscores &ldquo;_&rdquo;, <em>i.e.</em> Jean-Loïc Du Genøût $\rightarrow$ <code>du_genout_jean_loic</code>.</p>
+
+<p>Vous pouvez mainenant éditer le header (le haut du fichier, entre les balises <code>---</code>) des fichiers index.Rmd et index.en.Rmd qui ont cette tête là :</p>
+
+<pre><code class="language-r">---
+title : &quot;Jean-Loïc DU GENØÛT&quot;
+subtitle : &quot;MCF-UCBL&quot;
+tags : [&quot;Personnel&quot;, &quot;TMP&quot;]
+photo: &quot;du_genout_jean_loic.jpg&quot;
+display_photo: true
+date: 2019-02-21
+---
+
+```{r, include=FALSE}
+source(file.path(&quot;..&quot;,&quot;..&quot;,&quot;annuaire&quot;,&quot;read_people.R&quot;))
+path   &lt;- file.path(&quot;..&quot;,&quot;..&quot;,&quot;annuaire&quot;)
+people &lt;- read_people(path, &quot;people.csv&quot;)
+```
+
+```{r, echo=FALSE}
+display_pers_infos(people, &quot;ANDRIEUX&quot;, english=FALSE)
+```
+
+### Intérêts
+
+- Les multimatériaux
+- Mais surtout aux interfaces
+
+### Biographie
+
+- 2000: Thèse
+- 1994: Bac S
+
+```{r, echo=FALSE, results=&quot;asis&quot;}
+print_ref_list(NOM=&quot;ANDRIEUX&quot;, path=path, file=&quot;people.csv&quot;)
+```
+</code></pre>
+
+<p>Dans la balise <code>tags</code>, laissez &ldquo;Personnel&rdquo; et changez l&rsquo;équipe correspondante. Si vous avec une photo, placez là dans le dossier de la personne et indiquez le nom du fichier. S&rsquo;il n&rsquo;y a pas de photo dans le dossier, un espace blanc sera mis à la place.</p>
+
+<p>Les balises de code sont là pour faire apparaître les infos de la personne et sa liste de publications à partir de la liste de DOI trouvée dans <code>people.csv</code>.</p>
+
+<p>Les personnes qui le souhaitent peuvent décrire leurs intérêts, parcours, etc, en ajoutant des sous-titre (<em>e.g</em> <code>### Biographie</code>) et leur blabla dessous. La commande <code>print_ref_list</code> imprime la liste de publications, donc mettre ce blabla au dessus, comme dans l&rsquo;exemple ci-dessus.</p>
+
+<p>Pour que la personne apparaisse dans l&rsquo;annuaire, vous devez l&rsquo;ajouter dans le fichier <code>content/annuaire/people.csv</code>. Le plus simple est d&rsquo;ouvrir le fichier <code>content/annuaire/people.xlsx</code>, de l&rsquo;éditer et de le sauver, puis de le sauver aussi au format .csv.</p>
+
+<hr />
+
+<h1 id="ajouter-supprimer-un-énènement-un-emploi-une-formation-ou-une-publication">Ajouter/Supprimer un énènement, un emploi, une formation ou une publication</h1>
+
+<p>Comme pour les personnels, il suffit d&rsquo;ajouter/supprimer un dossier dans <code>content/events/</code> (en dupliquer un existant et le renommer) (ou <code>content/emplois/</code>, ou <code>content/formations/</code>, ou <code>content/publications/</code>)</p>
+
+<p>Pour ajouter une image en en-tête, mettre dans le dossier une image appelée <code>featured.jpg</code> ou <code>featured.png</code>.</p>
+
+<hr />
+
+<h1 id="ajouter-un-fichier-à-télécharger">Ajouter un fichier à télécharger</h1>
+
+<h2 id="cas-d-une-publication">Cas d&rsquo;une publication</h2>
+
+<p>Mettez le fichier que vous voulez rentre disponible au téléchargement dans le dossier <code>static/files/</code>, puis ajoutez dans le header l&rsquo;entrée <code>url_pdf = &quot;files/monfichier.pdf&quot;</code>.</p>
+
+<h2 id="cas-d-un-lien">Cas d&rsquo;un lien</h2>
+
+<p>Mettez le fichier que vous voulez rentre disponible au téléchargement dans le dossier courant.
+Pour faire un lien : <code>[ce qui s'affiche](monfichier.pdf)</code></p>
+
+<p>Rendu : <a href="rmarkdown-2.0.pdf" target="_blank">ce qui s&rsquo;affiche</a></p>
+
+<h2 id="cas-d-un-bouton">Cas d&rsquo;un bouton</h2>
+
+<p>Mettez le fichier que vous voulez rentre disponible au téléchargement dans le dossier courant.
+Pour faire un bouton : <code>&lt;a href=&quot;monfichier.pdf&quot;&gt;&lt;button class=&quot;btn-primary&quot;&gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt; Télécharger&lt;/button&gt;&lt;/a&gt;</code></p>
+
+<p>Rendu : <a href="rmarkdown-2.0.pdf"><button class="btn-primary"><i class="fa fa-download"></i> Télécharger</button></a></p>
+
+<hr />
+
+<h1 id="déployer-le-site">Déployer le site</h1>
+
+<p>Ça y est, vous êtes content de ce que vous avez fait, vous voulez maintenant mettre le site en ligne.
+Pour cela, copiez tout le contenu du dossier <code>public</code> sur le serveur du CNRS (utiliser FileZilla, par exemple).</p>
+
+<p>Et voilà !</p>
 
           </div>
 
@@ -604,6 +734,10 @@ blogdown::install_hugo()
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
         
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/markdown.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Rmarkdown.min.js"></script>
         
       
 

@@ -14,6 +14,7 @@ read_people <- function(path, file){
     people       <- read.table(file.path(path, file), header=TRUE, sep=";")
     NOM          <- people[,"NOM"]
     Prenom       <- people[,"Prénom"]
+    people       <- people[order(NOM),]
     foldername   <- tolower(paste(NOM,Prenom,sep="_"))
     foldername   <- iconv(foldername,from="UTF-8",to="ASCII//TRANSLIT")
     foldername   <- sub("\'","",foldername)

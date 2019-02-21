@@ -1607,7 +1607,9 @@ a.badge:hover {
 .btn-primary.active,
 .btn-primary:visited,
 .open > .dropdown-toggle.btn-primary {
-  background: #5e8bad;
+  background: rgba(0,0,0,0);
+  color: rgba(0,0,0,0.4);
+  border-color: rgba(0,0,0,.4);
 }
 
 .btn-outline-light:hover,

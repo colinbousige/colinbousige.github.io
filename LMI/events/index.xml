@@ -14,37 +14,64 @@
     
     <item>
       <title>Publication dans Nature</title>
-      <link>/LMI/events/publi1/</link>
+      <link>/LMI/events/publi1/publi1/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/LMI/events/publi1/</guid>
+      <guid>/LMI/events/publi1/publi1/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
     </item>
     
     <item>
       <title>Publication dans Nature Chemistry</title>
-      <link>/LMI/events/publi2/</link>
+      <link>/LMI/events/publi2/publi2/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/LMI/events/publi2/</guid>
+      <guid>/LMI/events/publi2/publi2/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
+    </item>
+    
+    <item>
+      <title>Publication dans Nature Chemistry</title>
+      <link>/LMI/events/publi3/publi2/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/events/publi3/publi2/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
     </item>
     
     <item>
       <title>Séminaire à venir</title>
-      <link>/LMI/events/seminar/</link>
+      <link>/LMI/events/seminaire1/seminar/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/LMI/events/seminar/</guid>
+      <guid>/LMI/events/seminaire1/seminar/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
     </item>
     
     <item>
       <title>Séminaire à venir</title>
-      <link>/LMI/events/seminar2/</link>
+      <link>/LMI/events/seminaire2/seminar2/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/LMI/events/seminar2/</guid>
+      <guid>/LMI/events/seminaire2/seminar2/</guid>
+      <description>kjadhvgcaudicbn</description>
+    </item>
+    
+    <item>
+      <title>Séminaire à venir</title>
+      <link>/LMI/events/seminaire3/seminar2/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/events/seminaire3/seminar2/</guid>
+      <description>kjadhvgcaudicbn</description>
+    </item>
+    
+    <item>
+      <title>Séminaire à venir</title>
+      <link>/LMI/events/seminaire4/seminar2/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/events/seminaire4/seminar2/</guid>
       <description>kjadhvgcaudicbn</description>
     </item>
     

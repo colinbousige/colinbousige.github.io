@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.0.0">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Laboratoire des Multimatériaux et Interfaces">
+
+  
+  
+  
+    
+  
+  
+  <meta name="description" content="Dans ce tutoriel, nous allons voir pas à pas comment modifier le site.
+Prérequis  Installer R Installer Rstudio Dans Rstudio, installer les packages suivants:  install.packages(&quot;rmarkdown&quot;) install.packages(&quot;knitr&quot;) install.packages(&quot;dplyr&quot;) install.packages(&quot;ggplot2&quot;) install.packages(&quot;plotly&quot;) install.packages(&quot;blogdown&quot;) install.packages(&quot;rcrossref&quot;) blogdown::install_hugo()  Ca y est, vous êtes prêts à commencer à éditer le site !
+Quelques notions de base Le site utilise un langage simplifié pour produire des contenus riches, le markdown. Voilà une page qui montre les principales caractéristiques.">
+
+  
+  <link rel="alternate" hreflang="fr" href="/LMI/intranet/tutoriel/tutoriel/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#5e8bad">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous">
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/LMI/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="/LMI/index.xml" type="application/rss+xml" title="LMI">
+  <link rel="feed" href="/LMI/index.xml" type="application/rss+xml" title="LMI">
+  
+
+  <link rel="manifest" href="/LMI/site.webmanifest">
+  <link rel="icon" type="image/png" href="/LMI/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/LMI/img/icon-192.png">
+
+  <link rel="canonical" href="/LMI/intranet/tutoriel/tutoriel/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="LMI">
+  <meta property="og:url" content="/LMI/intranet/tutoriel/tutoriel/">
+  <meta property="og:title" content="Tutoriel | LMI">
+  <meta property="og:description" content="Dans ce tutoriel, nous allons voir pas à pas comment modifier le site.
+Prérequis  Installer R Installer Rstudio Dans Rstudio, installer les packages suivants:  install.packages(&quot;rmarkdown&quot;) install.packages(&quot;knitr&quot;) install.packages(&quot;dplyr&quot;) install.packages(&quot;ggplot2&quot;) install.packages(&quot;plotly&quot;) install.packages(&quot;blogdown&quot;) install.packages(&quot;rcrossref&quot;) blogdown::install_hugo()  Ca y est, vous êtes prêts à commencer à éditer le site !
+Quelques notions de base Le site utilise un langage simplifié pour produire des contenus riches, le markdown. Voilà une page qui montre les principales caractéristiques."><meta property="og:image" content="/LMI/img/icon-192.png">
+  <meta property="og:locale" content="fr">
+  
+  <meta property="article:published_time" content="2019-02-20T00:00:00&#43;01:00">
+  
+  <meta property="article:modified_time" content="2019-02-20T00:00:00&#43;01:00">
+  
+
+  
+
+  
+
+  <title>Tutoriel | LMI</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Rechercher</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Recherche..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/LMI/"><img src="/LMI/img/LMI.png" alt="LMI"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Ouvrir la barre de navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/LMI/#about">
+            
+            <span>Accueil</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/LMI/#events">
+            
+            <span>Evènements</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/LMI/#equipes">
+            
+            <span>Equipes</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/LMI/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/LMI/#formation">
+            
+            <span>Formations</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/LMI/#emploi">
+            
+            <span>Emplois</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/LMI/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/LMI/annuaire">
+            
+            <span>Annuaire</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/LMI/intranet">
+            
+            <span>Intranet</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+Please define menu items named `[menu.tutoriel]` in your intranet/tutoriel/tutoriel.md front matter or define `[[menu.tutoriel]]` in `config.toml`.
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Recherche..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">Dans cette page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#prérequis">Prérequis</a></li>
+<li><a href="#quelques-notions-de-base">Quelques notions de base</a></li>
+<li><a href="#comprendre-l-arborescence-des-fichiers">Comprendre l&rsquo;arborescence des fichiers</a></li>
+<li><a href="#compiler-le-site-pour-le-voir-en-local-avant-upload-sur-le-serveur">Compiler le site pour le voir en local avant upload sur le serveur</a></li>
+<li><a href="#ajouter-supprimer-une-personne">Ajouter/Supprimer une personne</a></li>
+<li><a href="#ajouter-supprimer-un-énènement-emploi-formation-publication">Ajouter/Supprimer un énènement/emploi/formation/publication</a>
+<ul>
+<li><a href="#cas-particulier-de-l-ajout-d-un-fichier">Cas particulier de l&rsquo;ajout d&rsquo;un fichier</a>
+<ul>
+<li><a href="#cas-d-une-publication">Cas d&rsquo;une publication</a></li>
+<li><a href="#cas-d-un-lien">Cas d&rsquo;un lien</a></li>
+<li><a href="#cas-d-un-bouton">Cas d&rsquo;un bouton</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Retourner au début</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Tutoriel</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<p>Dans ce tutoriel, nous allons voir pas à pas comment modifier le site.</p>
+
+<hr />
+
+<h1 id="prérequis">Prérequis</h1>
+
+<ul>
+<li><a href="https://cran.r-project.org/" target="_blank">Installer R</a></li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">Installer Rstudio</a></li>
+<li>Dans Rstudio, installer les packages suivants:</li>
+</ul>
+
+<pre><code class="language-r">install.packages(&quot;rmarkdown&quot;)
+install.packages(&quot;knitr&quot;)
+install.packages(&quot;dplyr&quot;)
+install.packages(&quot;ggplot2&quot;)
+install.packages(&quot;plotly&quot;)
+install.packages(&quot;blogdown&quot;)
+install.packages(&quot;rcrossref&quot;)
+blogdown::install_hugo()
+</code></pre>
+
+<p>Ca y est, vous êtes prêts à commencer à éditer le site !</p>
+
+<hr />
+
+<h1 id="quelques-notions-de-base">Quelques notions de base</h1>
+
+<p>Le site utilise un langage simplifié pour produire des contenus riches, le <code>markdown</code>.
+<a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Voilà</a> une page qui montre les principales caractéristiques.</p>
+
+<hr />
+
+<h1 id="comprendre-l-arborescence-des-fichiers">Comprendre l&rsquo;arborescence des fichiers</h1>
+
+<p>Ce qui nous intéresse est dans le dossier <code>content</code>:</p>
+
+<p><img src="/img/tuto/arborescence.png" alt="" /></p>
+
+<p>Chacun des sous-dossiers contient des fichiers *.md (markdown) ou *.Rmd (Rmarkdown) qui correspondent au contenu du site. Les fichiers *.en.(R)md correspondent à la version anglaise du fichier correspondant.</p>
+
+<blockquote>
+<p>A priori, vous n&rsquo;avez <strong>PAS</strong> à toucher à cette arborescence. Lors d&rsquo;une utilisation quotidienne, vous n&rsquo;aurez qu&rsquo;à modifier le tableau des personnels, ajouter un article ou un évènement, etc., mais pas à toucher à la structure du site. Nous verrons par la suite comment faire chacune de ces choses.</p>
+</blockquote>
+
+<hr />
+
+<h1 id="compiler-le-site-pour-le-voir-en-local-avant-upload-sur-le-serveur">Compiler le site pour le voir en local avant upload sur le serveur</h1>
+
+<p>Nous avons besoin de Rstudio pour compiler tous ces fichiers *.md en un tas de fichier *.html. Lancez Rstudio et ouvrez le fichier <code>build_site.R</code> qui doit se trouver à la racine du site.</p>
+
+<p>Nous devons d&rsquo;abord dire à R dans quel dossier nous sommes. Chez moi, cela donne cela :</p>
+
+<pre><code class="language-r">setwd(&quot;/Users/colin/Travail/Site LMI/Site LMI/&quot;)
+</code></pre>
+
+<p>Sur Windows, il se peut que l&rsquo;arborescence ait une autre structure. Tapez <code>getwd()</code> pour savoir où vous êtes et voir cette structure. Une fois que vous avec tapé la bonne arborescence, sauvez <code>build_site.R</code> et vous n&rsquo;aurez plus à y toucher.</p>
+
+<p>Pour contruire le site, chargez d&rsquo;abord la librairie <code>blogdown</code>:</p>
+
+<pre><code class="language-r">library(blogdown)
+</code></pre>
+
+<p>Vous pouvez maintenat construire le site et le voir dans le navigateur (qui se lance tout seul) :</p>
+
+<pre><code class="language-r">serve_site() 
+</code></pre>
+
+<blockquote>
+<p><strong>ATTENTION</strong> : avec <code>serve_site()</code>, seuls les fichiers qui ont été édités seront re-compilés.</p>
+</blockquote>
+
+<p>Si vous avez modifié le fichier <code>content/annuaire/people.csv</code>, tous les fichiers *.Rmd doivent être recompilés, car ils lisent ce fichier .csv pour afficher leur contenu (annuaire, pages persos, listes de publications).
+Dans ce cas deux options :</p>
+
+<ol>
+<li>Vous n&rsquo;avez changé qu&rsquo;une ou deux lignes dans <code>people.csv</code> (typiquement, ajouté un DOI). Vous pouvez éditer le fichier <code>index.Rmd</code> de la personne correspondante, le modifier et le sauver, ce qui forcera sa recompilation.</li>
+<li>Vous avez fait des modifications extensives et voulez tout recompiler, lancer :</li>
+</ol>
+
+<pre><code class="language-r">build_site(local = FALSE) 
+</code></pre>
+
+<p>Cette seconde option sera (beaucoup) plus longue : pour chaque page perso, on retrouve les métas-données de toutes les publis via la liste de DOI qui est donnée dans <code>people.csv</code>, il faut donc le temps que les requettes se fassent.</p>
+
+<hr />
+
+<h1 id="ajouter-supprimer-une-personne">Ajouter/Supprimer une personne</h1>
+
+<p>Les pages personnelles sont stockées dans <code>content/personnel/nom_prenom/</code>. Pour supprimer une personne, supprimez son dossier.</p>
+
+<p>Pour ajouter une personne, dupliquez un dossier existant et renommez-le <code>nom_prenom</code>, sans espace, sans majuscule, sans accent, et en remplaçant les tirets &ldquo;-&rdquo; par des underscores &ldquo;_&rdquo;, <em>i.e.</em> Jean-Loïc Du Genøût $\rightarrow$ <code>du_genout_jean_loic</code>.</p>
+
+<p>Vous pouvez mainenant éditer le header (le haut du fichier, entre les balises <code>---</code>) des fichiers index.Rmd et index.en.Rmd qui ont cette tête là :</p>
+
+<pre><code class="language-r">---
+title : &quot;Jean-Loïc DU GENØÛT&quot;
+subtitle : &quot;MCF-UCBL&quot;
+tags : [&quot;Personnel&quot;, &quot;TMP&quot;]
+photo: &quot;du_genout_jean_loic.jpg&quot;
+display_photo: true
+date: 2019-02-21
+---
+
+```{r, include=FALSE}
+source(file.path(&quot;..&quot;,&quot;..&quot;,&quot;annuaire&quot;,&quot;read_people.R&quot;))
+path   &lt;- file.path(&quot;..&quot;,&quot;..&quot;,&quot;annuaire&quot;)
+people &lt;- read_people(path, &quot;people.csv&quot;)
+```
+
+```{r, echo=FALSE}
+display_pers_infos(people, &quot;ANDRIEUX&quot;, english=FALSE)
+```
+
+### Intérêts
+
+- Les multimatériaux
+- Mais surtout aux interfaces
+
+### Biographie
+
+- 2000: Thèse
+- 1994: Bac S
+
+```{r, echo=FALSE, results=&quot;asis&quot;}
+print_ref_list(NOM=&quot;ANDRIEUX&quot;, path=path, file=&quot;people.csv&quot;)
+```
+</code></pre>
+
+<p>Dans la balise <code>tags</code>, laissez &ldquo;Personnel&rdquo; et changez l&rsquo;équipe correspondante. Si vous avec une photo, placez là dans le dossier de la personne et indiquez le nom du fichier. S&rsquo;il n&rsquo;y a pas de photo dans le dossier, un espace blanc sera mis à la place.</p>
+
+<p>Les balises de code sont là pour faire apparaître les infos de la personne et sa liste de publications à partir de la liste de DOI trouvée dans <code>people.csv</code>.</p>
+
+<p>Les personnes qui le souhaitent peuvent décrire leurs intérêts, parcours, etc, en ajoutant des sous-titre (<em>e.g</em> <code>### Biographie</code>) et leur blabla dessous. La commande <code>print_ref_list</code> imprime la liste de publications, donc mettre ce blabla au dessus, comme dans l&rsquo;exemple ci-dessus.</p>
+
+<p>Pour que la personne apparaisse dans l&rsquo;annuaire, vous devez l&rsquo;ajouter dans le fichier <code>content/annuaire/people.csv</code>. Le plus simple est d&rsquo;ouvrir le fichier <code>content/annuaire/people.xlsx</code>, de l&rsquo;éditer et de le sauver, puis de le sauver aussi au format .csv.</p>
+
+<hr />
+
+<h1 id="ajouter-supprimer-un-énènement-emploi-formation-publication">Ajouter/Supprimer un énènement/emploi/formation/publication</h1>
+
+<p>Comme pour les personnels, il suffit d&rsquo;ajouter/supprimer un dossier dans <code>content/events/</code> (en dupliquer un existant et le renommer) (ou <code>content/emplois/</code>, ou <code>content/formations/</code>, ou <code>content/publications/</code>)</p>
+
+<p>Pour ajouter une image en en-tête, mettre dans le dossier une image appelée <code>featured.jpg</code> ou <code>featured.png</code>.</p>
+
+<h2 id="cas-particulier-de-l-ajout-d-un-fichier">Cas particulier de l&rsquo;ajout d&rsquo;un fichier</h2>
+
+<h3 id="cas-d-une-publication">Cas d&rsquo;une publication</h3>
+
+<p>Mettez le fichier que vous voulez rentre disponible au téléchargement dans le dossier <code>static/files/</code>, puis ajoutez dans le header l&rsquo;entrée <code>url_pdf = &quot;files/monfichier.pdf&quot;</code>.</p>
+
+<h3 id="cas-d-un-lien">Cas d&rsquo;un lien</h3>
+
+<p>Mettez le fichier que vous voulez rentre disponible au téléchargement dans le dossier courant.
+Pour faire un lien : <code>[ce qui s'affiche](monfichier.pdf)</code></p>
+
+<p>Rendu : <a href="rmarkdown-2.0.pdf" target="_blank">ce qui s&rsquo;affiche</a></p>
+
+<h3 id="cas-d-un-bouton">Cas d&rsquo;un bouton</h3>
+
+<p>Mettez le fichier que vous voulez rentre disponible au téléchargement dans le dossier courant.
+Pour faire un bouton : <code>&lt;button href=&quot;monfichier.pdf&quot; icon=&quot;fas fa-download&quot;&gt;Télécharger&lt;/button&gt;</code></p>
+
+<p>Rendu : <a href="rmarkdown-2.0.pdf"><button icon="fas fa-download">Télécharger</button></a></p>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Dernière mise à jour le 20/02/2019
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <p class="powered-by">
+    <div class="row" style="text-align: center;">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-xs-3 col-sm-2">
+            <div class="hovereffect">
+                <a href="#">
+                    <img src="/LMI//img/LMI.png" 
+                    style="height:75px;display: block;">
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-2">
+            <div class="hovereffect">
+                <a href="http://www.cnrs.fr" target="_blank">
+                    <img src="/LMI//img/CNRS.jpg" 
+                    style="height:75px;display: block;">
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-2">
+            <div class="hovereffect">
+                <a href="https://www.universite-lyon.fr/" target="_blank">
+                    <img src="/LMI//img/UDL.png" 
+                    style="height:75px;display: block;">
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-2">
+            <div class="hovereffect">
+                <a href="https://www.univ-lyon1.fr/" target="_blank">
+                    <img src="/LMI//img/Lyon1.jpg" 
+                    style="height:75px;display: block;">
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-2">
+        </div>
+    </div>
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/LMI/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/markdown.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Rmarkdown.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/LMI/index.json";
+      const i18n = {
+        'placeholder': "Recherche...",
+        'results': "Résultats trouvés",
+        'no_results': "Aucun résultat n'a été trouvé"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projets",
+        'publication' : "Publications",
+        'talk' : "Présentations"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/LMI/js/academic.min.c1b0baf12cd491effaeeb294faf1e83e.js"></script>
+
+  </body>
+</html>
+
+
