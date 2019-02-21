@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Momoko Kumemura on LMI</title>
+    <link>/LMI/en/authors/momoko-kumemura/</link>
+    <description>Recent content in Momoko Kumemura on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/en/authors/momoko-kumemura/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elucidating The Mechanism Of The Considerable Mechanical Stiffening Of Dna Induced By The Couple Zn(2&#43;/)Calix[4]Arene-1,3-O-Diphosphorous Acid</title>
+      <link>/LMI/en/publication/isi-000422891000056/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/en/publication/isi-000422891000056/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Rapid And Practical Technique For Real-Time Monitoring Of Biomolecular Interactions Using Mechanical Responses Of Macromolecules</title>
+      <link>/LMI/en/publication/isi-000378075900001/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/en/publication/isi-000378075900001/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

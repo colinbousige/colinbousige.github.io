@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Glenn Jones on LMI</title>
+    <link>/LMI/en/authors/glenn-jones/</link>
+    <description>Recent content in Glenn Jones on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/en/authors/glenn-jones/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Investigating The Electrochemical Behaviour And Detection Of Uric Acid On Ito Electrodes Modified With Differently Doped N-Graphene Films</title>
+      <link>/LMI/en/publication/isi-000456759900020/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/en/publication/isi-000456759900020/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

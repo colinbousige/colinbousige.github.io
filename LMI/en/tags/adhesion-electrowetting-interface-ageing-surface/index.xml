@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>adhesion; electrowetting; interface; ageing; surface on LMI</title>
+    <link>/LMI/en/tags/adhesion-electrowetting-interface-ageing-surface/</link>
+    <description>Recent content in adhesion; electrowetting; interface; ageing; surface on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/en/tags/adhesion-electrowetting-interface-ageing-surface/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Failure Mode Analysis On Thermally Aged Hydrophobic Coatings Applied To Electro Wetting</title>
+      <link>/LMI/en/publication/isi-000418575900008/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/en/publication/isi-000418575900008/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

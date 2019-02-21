@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>J. Akimitsu on LMI</title>
+    <link>/LMI/en/authors/j.-akimitsu/</link>
+    <description>Recent content in J. Akimitsu on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/LMI/en/authors/j.-akimitsu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Magneto-Chiral Dichroism Of Cscucl3</title>
+      <link>/LMI/en/publication/isi-000408826800002/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/LMI/en/publication/isi-000408826800002/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

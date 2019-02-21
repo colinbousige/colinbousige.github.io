@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vincent Montigaud on LMI</title>
+    <link>/LMI/en/authors/vincent-montigaud/</link>
+    <description>Recent content in Vincent Montigaud on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/en/authors/vincent-montigaud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Dy-4 Cubane: A New Member In The Single-Molecule Toroics Family</title>
+      <link>/LMI/en/publication/isi-000454575500025/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/en/publication/isi-000454575500025/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fine Control Of The Metal Environment Within Dysprosium-Based Mononuclear Single-Molecule Magnets</title>
+      <link>/LMI/en/publication/isi-000428530600014/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/en/publication/isi-000428530600014/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

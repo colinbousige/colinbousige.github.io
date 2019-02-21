@@ -29,9 +29,9 @@
     
   
   
-  <meta name="description" content="In this tutorial, I&rsquo;ll share my top 10 tips for getting started with Academic:
-Tip 1 &hellip;
-Tip 2 &hellip;">
+  <meta name="description" content="Dans ce tutoriel, nous allons voir pas à pas comment modifier le site.
+Prérequis  Installer R Installer Rstudio Dans Rstudio, installer les packages suivants:  install.packages(&quot;rmarkdown&quot;) install.packages(&quot;knitr&quot;) install.packages(&quot;dplyr&quot;) install.packages(&quot;ggplot2&quot;) install.packages(&quot;plotly&quot;) install.packages(&quot;blogdown&quot;) install.packages(&quot;rcrossref&quot;) blogdown::install_hugo()  Ca y est, vous êtes prêts à commencer à éditer le site !
+Quelques notions de base Le site utilise un langage simplifié pour produire des contenus riches, le markdown. Voilà une page qui montre les principales caractéristiques.">
 
   
   <link rel="alternate" hreflang="fr" href="/LMI/intranet/tutoriel/">
@@ -121,10 +121,10 @@ Tip 2 &hellip;">
   
   <meta property="og:site_name" content="LMI">
   <meta property="og:url" content="/LMI/intranet/tutoriel/">
-  <meta property="og:title" content="Tutoriel – Modification du Site | LMI">
-  <meta property="og:description" content="In this tutorial, I&rsquo;ll share my top 10 tips for getting started with Academic:
-Tip 1 &hellip;
-Tip 2 &hellip;"><meta property="og:image" content="/LMI/img/icon-192.png">
+  <meta property="og:title" content="Tutoriel | LMI">
+  <meta property="og:description" content="Dans ce tutoriel, nous allons voir pas à pas comment modifier le site.
+Prérequis  Installer R Installer Rstudio Dans Rstudio, installer les packages suivants:  install.packages(&quot;rmarkdown&quot;) install.packages(&quot;knitr&quot;) install.packages(&quot;dplyr&quot;) install.packages(&quot;ggplot2&quot;) install.packages(&quot;plotly&quot;) install.packages(&quot;blogdown&quot;) install.packages(&quot;rcrossref&quot;) blogdown::install_hugo()  Ca y est, vous êtes prêts à commencer à éditer le site !
+Quelques notions de base Le site utilise un langage simplifié pour produire des contenus riches, le markdown. Voilà une page qui montre les principales caractéristiques."><meta property="og:image" content="/LMI/img/icon-192.png">
   <meta property="og:locale" content="fr">
   
   <meta property="article:published_time" content="2019-02-20T00:00:00&#43;01:00">
@@ -136,7 +136,7 @@ Tip 2 &hellip;"><meta property="og:image" content="/LMI/img/icon-192.png">
 
   
 
-  <title>Tutoriel – Modification du Site | LMI</title>
+  <title>Tutoriel | LMI</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -162,7 +162,6 @@ Tip 2 &hellip;"><meta property="og:image" content="/LMI/img/icon-192.png">
 
     </section>
     <section class="section-search-results">
-
       <div id="search-hits">
         
       </div>
@@ -441,11 +440,10 @@ Tip 2 &hellip;"><meta property="og:image" content="/LMI/img/icon-192.png">
 
       <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
-<li><a href="#tip-1">Tip 1</a></li>
-<li><a href="#tip-2">Tip 2</a></li>
-</ul></li>
+<li><a href="#prérequis">Prérequis</a></li>
+<li><a href="#quelques-notions-de-base">Quelques notions de base</a></li>
+<li><a href="#comprendre-l-arborescence-des-fichiers">Comprendre l&rsquo;arborescence des fichiers</a></li>
+<li><a href="#compiler-le-site-pour-le-voir-en-local-avant-upload-sur-le-serveur">Compiler le site pour le voir en local avant upload sur le serveur</a></li>
 </ul>
 </nav>
 
@@ -462,20 +460,65 @@ Tip 2 &hellip;"><meta property="og:image" content="/LMI/img/icon-192.png">
       <article class="article" itemscope itemtype="http://schema.org/Article">
 
         <div class="docs-article-container">
-          <h1 itemprop="name">Tutoriel – Modification du Site</h1>
+          <h1 itemprop="name">Tutoriel</h1>
 
           <div class="article-style" itemprop="articleBody">
             
 
-<p>In this tutorial, I&rsquo;ll share my top 10 tips for getting started with Academic:</p>
+<p>Dans ce tutoriel, nous allons voir pas à pas comment modifier le site.</p>
 
-<h2 id="tip-1">Tip 1</h2>
+<h1 id="prérequis">Prérequis</h1>
 
-<p>&hellip;</p>
+<ul>
+<li><a href="https://cran.r-project.org/" target="_blank">Installer R</a></li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">Installer Rstudio</a></li>
+<li>Dans Rstudio, installer les packages suivants:</li>
+</ul>
 
-<h2 id="tip-2">Tip 2</h2>
+<pre><code class="language-r">install.packages(&quot;rmarkdown&quot;)
+install.packages(&quot;knitr&quot;)
+install.packages(&quot;dplyr&quot;)
+install.packages(&quot;ggplot2&quot;)
+install.packages(&quot;plotly&quot;)
+install.packages(&quot;blogdown&quot;)
+install.packages(&quot;rcrossref&quot;)
+blogdown::install_hugo()
+</code></pre>
 
-<p>&hellip;</p>
+<p>Ca y est, vous êtes prêts à commencer à éditer le site !</p>
+
+<h1 id="quelques-notions-de-base">Quelques notions de base</h1>
+
+<p>Le site utilise un langage simplifié pour produire des contenus riches, le <code>markdown</code>.
+<a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Voilà</a> une page qui montre les principales caractéristiques.</p>
+
+<h1 id="comprendre-l-arborescence-des-fichiers">Comprendre l&rsquo;arborescence des fichiers</h1>
+
+<p>Ce qui nous intéresse est dans le dossier <code>content</code>:</p>
+
+<p><img src="/img/tuto/arborescence.png" alt="" /></p>
+
+<p>Chacun des sous-dossiers contient des fichiers *.md (markdown) ou *.Rmd (Rmarkdown) qui correspondent au contenu du site. Les fichiers *.en.(R)md correspondent à la version anglaise du fichier correspondant.</p>
+
+<blockquote>
+<p>A priori, vous n&rsquo;avez <strong>PAS</strong> à toucher à cette arborescence. Lors d&rsquo;une utilisation quotidienne, vous n&rsquo;aurez qu&rsquo;à modifier le tableau des personnels, ajouter un article ou un évènement, etc., mais pas à toucher à la structure du site. Nous verrons par la suite comment faire chacune de ces choses.</p>
+</blockquote>
+
+<h1 id="compiler-le-site-pour-le-voir-en-local-avant-upload-sur-le-serveur">Compiler le site pour le voir en local avant upload sur le serveur</h1>
+
+<p>Nous avons besoin de Rstudio pour compiler tous ces fichiers *.md en un tas de fichier *.html. Lancer donc Rstudio et ouvrez le fichier <code>build_site.R</code> qui doit se trouver à la racine du site.</p>
+
+<p>Nous devons d&rsquo;abord dire à R dans quel dossier nous sommes. Chez moi, cela donne cela :</p>
+
+<pre><code class="language-r">setwd(&quot;/Users/colin/Travail/Site LMI/&quot;)
+</code></pre>
+
+<p>Sur Windows, il se peut que l&rsquo;arborescence ait une autre structure, taper</p>
+
+<pre><code class="language-r">getwd()
+</code></pre>
+
+<p>pour savoir où vous êtes et voir cette structure. Une fois que vous avec tapé la bonne arborescence, sauvez <code>build_site.R</code> et vous n&rsquo;aurez plus à y toucher.</p>
 
           </div>
 

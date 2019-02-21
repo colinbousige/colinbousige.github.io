@@ -22,14 +22,14 @@
     </item>
     
     <item>
-      <title>Tutoriel – Modification du Site</title>
+      <title>Tutoriel</title>
       <link>/LMI/intranet/tutoriel/</link>
       <pubDate>Wed, 20 Feb 2019 00:00:00 +0100</pubDate>
       
       <guid>/LMI/intranet/tutoriel/</guid>
-      <description>In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:
-Tip 1 &amp;hellip;
-Tip 2 &amp;hellip;</description>
+      <description>Dans ce tutoriel, nous allons voir pas à pas comment modifier le site.
+Prérequis  Installer R Installer Rstudio Dans Rstudio, installer les packages suivants:  install.packages(&amp;quot;rmarkdown&amp;quot;) install.packages(&amp;quot;knitr&amp;quot;) install.packages(&amp;quot;dplyr&amp;quot;) install.packages(&amp;quot;ggplot2&amp;quot;) install.packages(&amp;quot;plotly&amp;quot;) install.packages(&amp;quot;blogdown&amp;quot;) install.packages(&amp;quot;rcrossref&amp;quot;) blogdown::install_hugo()  Ca y est, vous êtes prêts à commencer à éditer le site !
+Quelques notions de base Le site utilise un langage simplifié pour produire des contenus riches, le markdown. Voilà une page qui montre les principales caractéristiques.</description>
     </item>
     
   </channel>
