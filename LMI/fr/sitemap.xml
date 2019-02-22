@@ -485,6 +485,61 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/LMI/post/publi1/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/post/publi1/" hreflang="en"/>
+    
+      <loc>/LMI/post/publi1/</loc>
+      <lastmod>2019-02-20T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/post/publi2/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/post/publi2/" hreflang="en"/>
+    
+      <loc>/LMI/post/publi2/</loc>
+      <lastmod>2019-02-20T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/post/publi3/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/post/publi3/" hreflang="en"/>
+    
+      <loc>/LMI/post/publi3/</loc>
+      <lastmod>2019-02-20T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/post/seminar1/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/post/seminar1/" hreflang="en"/>
+    
+      <loc>/LMI/post/seminar1/</loc>
+      <lastmod>2019-02-20T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/post/seminar2/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/post/seminar2/" hreflang="en"/>
+    
+      <loc>/LMI/post/seminar2/</loc>
+      <lastmod>2019-02-20T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/LMI/intranet/tutoriel/</loc>
       <lastmod>2019-02-20T00:00:00+01:00</lastmod>
     </url>
@@ -1414,39 +1469,6 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/LMI/events/publi1/publi1/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/en/events/publi1/publi1/" hreflang="en"/>
-    
-      <loc>/LMI/events/publi1/publi1/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/LMI/events/publi2/publi2/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/en/events/publi2/publi2/" hreflang="en"/>
-    
-      <loc>/LMI/events/publi2/publi2/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/LMI/events/publi3/publi2/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/en/events/publi3/publi2/" hreflang="en"/>
-    
-      <loc>/LMI/events/publi3/publi2/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <xhtml:link rel="alternate" href="/LMI/emplois/stagem1/" hreflang="fr"/>
       <xhtml:link rel="alternate" href="/LMI/en/emplois/stagem1/" hreflang="en"/>
     
@@ -1462,50 +1484,6 @@
       <xhtml:link rel="alternate" href="/LMI/en/emplois/stagem2/" hreflang="en"/>
     
       <loc>/LMI/emplois/stagem2/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/LMI/events/seminaire1/seminar/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/en/events/seminaire1/seminar/" hreflang="en"/>
-    
-      <loc>/LMI/events/seminaire1/seminar/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/LMI/events/seminaire2/seminar2/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/en/events/seminaire2/seminar2/" hreflang="en"/>
-    
-      <loc>/LMI/events/seminaire2/seminar2/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/LMI/events/seminaire3/seminar2/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/en/events/seminaire3/seminar2/" hreflang="en"/>
-    
-      <loc>/LMI/events/seminaire3/seminar2/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/LMI/events/seminaire4/seminar2/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/en/events/seminaire4/seminar2/" hreflang="en"/>
-    
-      <loc>/LMI/events/seminaire4/seminar2/</loc>
       <lastmod>2016-04-27T00:00:00+02:00</lastmod>
     </url>
     
@@ -1957,6 +1935,18 @@
     
       <loc>/LMI/authors/adina-n.-lazar/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/LMI/authors/admin/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/authors/admin/" hreflang="en"/>
+    
+      <loc>/LMI/authors/admin/</loc>
+      <lastmod>2019-02-20T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3584,12 +3574,11 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/LMI/events/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/en/events/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/post/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/post/" hreflang="en"/>
     
-      <loc>/LMI/events/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
-      <priority>0</priority>
+      <loc>/LMI/post/</loc>
+      <lastmod>2019-02-20T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -5924,11 +5913,11 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/LMI/publication_types/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/en/publication_types/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/publication/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/publication/" hreflang="en"/>
     
-      <loc>/LMI/publication_types/</loc>
-      <lastmod>2019-04-01T00:00:00+02:00</lastmod>
+      <loc>/LMI/tags/publication/</loc>
+      <lastmod>2019-02-20T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5936,11 +5925,11 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/LMI/tags/publications/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/en/tags/publications/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/publication_types/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/publication_types/" hreflang="en"/>
     
-      <loc>/LMI/tags/publications/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <loc>/LMI/publication_types/</loc>
+      <lastmod>2019-04-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -6475,11 +6464,11 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/LMI/tags/s%C3%A9minaires/" hreflang="fr"/>
-      <xhtml:link rel="alternate" href="/LMI/en/tags/s%C3%A9minaires/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/LMI/tags/s%C3%A9minaire/" hreflang="fr"/>
+      <xhtml:link rel="alternate" href="/LMI/en/tags/s%C3%A9minaire/" hreflang="en"/>
     
-      <loc>/LMI/tags/s%C3%A9minaires/</loc>
-      <lastmod>2016-04-27T00:00:00+02:00</lastmod>
+      <loc>/LMI/tags/s%C3%A9minaire/</loc>
+      <lastmod>2019-02-20T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     

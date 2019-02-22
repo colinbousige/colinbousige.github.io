@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication on LMI</title>
+    <link>/LMI/en/tags/publication/</link>
+    <description>Recent content in Publication on LMI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>UMR CNRS 5615</copyright>
+    <lastBuildDate>Wed, 20 Feb 2019 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/LMI/en/tags/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Publication in Nature Chemistry</title>
+      <link>/LMI/en/post/publi1/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/en/post/publi1/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>Publication in Nature Chemistry</title>
+      <link>/LMI/en/post/publi2/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/en/post/publi2/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>Publication in Nature Chemistry</title>
+      <link>/LMI/en/post/publi3/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/LMI/en/post/publi3/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+  </channel>
+</rss>
