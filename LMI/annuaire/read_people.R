@@ -97,12 +97,14 @@ print_ref <- function(bib, NOM=NULL){
     toprint
 }
 
-print_ref_list <- function(NOM, path, file){
+print_ref_list <- function(NOM, path, file, english=FALSE){
     people <- read.table(file.path(path, file), header=TRUE, sep=";")
     person <- people[grep(tolower(NOM), tolower(people[,"NOM"])),]
     DOI    <- paste(unique(person[,"DOI"]))
     if(DOI!=""){
-        toprint <- "\n\n### Articles \n\n"
+        if(english){
+            toprint <- "\n\n### Highlights \n\n"
+        }else{toprint <- "\n\n### Articles choisis \n\n"}
         DOI <- paste(DOI, collapse=",")
         DOI <- unlist(strsplit(DOI, ","))
         bib <- cr_cn(dois = DOI, format = "bibentry")
