@@ -446,12 +446,7 @@ Quelques notions de base Le site utilise un langage simplifié pour produire des
 <li><a href="#compiler-le-site-pour-le-voir-en-local-avant-upload-sur-le-serveur">Compiler le site pour le voir en local avant upload sur le serveur</a></li>
 <li><a href="#ajouter-supprimer-une-personne">Ajouter/Supprimer une personne</a></li>
 <li><a href="#ajouter-supprimer-un-énènement-un-emploi-une-formation-ou-une-publication">Ajouter/Supprimer un énènement, un emploi, une formation ou une publication</a></li>
-<li><a href="#ajouter-un-fichier-à-télécharger">Ajouter un fichier à télécharger</a>
-<ul>
-<li><a href="#cas-d-une-publication">Cas d&rsquo;une publication</a></li>
-<li><a href="#cas-d-un-lien">Cas d&rsquo;un lien</a></li>
-<li><a href="#cas-d-un-bouton">Cas d&rsquo;un bouton</a></li>
-</ul></li>
+<li><a href="#ajouter-un-fichier-à-télécharger">Ajouter un fichier à télécharger</a></li>
 <li><a href="#déployer-le-site">Déployer le site</a></li>
 </ul>
 </nav>
@@ -535,7 +530,7 @@ blogdown::install_hugo()
 <pre><code class="language-r">library(blogdown)
 </code></pre>
 
-<p>Vous pouvez maintenat construire le site et le voir dans le navigateur (qui se lance tout seul) :</p>
+<p>Vous pouvez maintenant construire le site et le voir dans le navigateur (qui se lance tout seul) :</p>
 
 <pre><code class="language-r">serve_site() 
 </code></pre>
@@ -597,7 +592,7 @@ display_pers_infos(people, &quot;ANDRIEUX&quot;, english=FALSE)
 - 1994: Bac S
 
 ```{r, echo=FALSE, results=&quot;asis&quot;}
-print_ref_list(NOM=&quot;ANDRIEUX&quot;, path=path, file=&quot;people.csv&quot;)
+print_ref_list(NOM=&quot;DU GENØÛT&quot;, path=path, file=&quot;people.csv&quot;)
 ```
 </code></pre>
 
@@ -621,21 +616,35 @@ print_ref_list(NOM=&quot;ANDRIEUX&quot;, path=path, file=&quot;people.csv&quot;)
 
 <h1 id="ajouter-un-fichier-à-télécharger">Ajouter un fichier à télécharger</h1>
 
-<h2 id="cas-d-une-publication">Cas d&rsquo;une publication</h2>
+<ul>
+<li><strong>Cas d&rsquo;une publication</strong></li>
+</ul>
 
 <p>Mettez le fichier que vous voulez rentre disponible au téléchargement dans le dossier <code>static/files/</code>, puis ajoutez dans le header l&rsquo;entrée <code>url_pdf = &quot;files/monfichier.pdf&quot;</code>.</p>
 
-<h2 id="cas-d-un-lien">Cas d&rsquo;un lien</h2>
+<ul>
+<li><strong>Cas d&rsquo;un lien</strong></li>
+</ul>
 
 <p>Mettez le fichier que vous voulez rentre disponible au téléchargement dans le dossier courant.
-Pour faire un lien : <code>[ce qui s'affiche](monfichier.pdf)</code></p>
+Pour faire un lien :</p>
+
+<pre><code class="language-markdown">[ce qui s'affiche](monfichier.pdf)
+</code></pre>
 
 <p>Rendu : <a href="rmarkdown-2.0.pdf" target="_blank">ce qui s&rsquo;affiche</a></p>
 
-<h2 id="cas-d-un-bouton">Cas d&rsquo;un bouton</h2>
+<ul>
+<li><strong>Cas d&rsquo;un bouton</strong></li>
+</ul>
 
 <p>Mettez le fichier que vous voulez rentre disponible au téléchargement dans le dossier courant.
-Pour faire un bouton : <code>&lt;a href=&quot;monfichier.pdf&quot;&gt;&lt;button class=&quot;btn-primary&quot;&gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt; Télécharger&lt;/button&gt;&lt;/a&gt;</code></p>
+Pour faire un bouton :</p>
+
+<pre><code class="language-html">&lt;a href=&quot;monfichier.pdf&quot;&gt;&lt;button class=&quot;btn-primary&quot;&gt;
+&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt; Télécharger
+&lt;/button&gt;&lt;/a&gt;
+</code></pre>
 
 <p>Rendu : <a href="rmarkdown-2.0.pdf"><button class="btn-primary"><i class="fa fa-download"></i> Télécharger</button></a></p>
 
