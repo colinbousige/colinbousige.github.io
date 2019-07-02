@@ -18,9 +18,9 @@
       <pubDate>Fri, 27 Oct 2017 19:56:21 +0200</pubDate>
       
       <guid>/post/tutor/</guid>
-      <description> This is a short introduction to the R language and its application to data treatment for physico-chemists. This tutorial was mainly written for internal use (i.e. for reference for my students), so it is probably lacking a lot of explanation… I’ll complete it when I find time.
- Go here for the post with floating TOC (easier to navigate)
- Table of contents  Getting ready  Beginners Advanced  Variables  Scalars and booleans Vectors  Different ways of defining a vector Principal operations on vectors  Accessing values Sorting Maximum and minimum Mathematical operations Statistics on vectors More stuff    Matrices and data frames  Matrices Defining a data frame Accessing values Adding columns or rows  Lists Functions Libraries  Install libraries Load libraries  Plotting  Base graphics  Basic plotting Adding some style Stacking plots Barplots and densities Image plots  Advanced plotting using ggplot2  Making interactive plots with ggplot2 and plotly   Fitting  Linear fitting  Base graphics ggplot2  Non linear fitting  Example of data treatment with interactive plotting   </description>
+      <description> This is a short introduction to the R language and its application to data treatment for physico-chemists.
+ Go here
+ </description>
     </item>
     
     <item>

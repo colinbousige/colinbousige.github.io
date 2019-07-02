@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Data frames | Reproducible data treatment with R</title>
+  <meta name="description" content="5 Data frames | Reproducible data treatment with R" />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Data frames | Reproducible data treatment with R" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Data frames | Reproducible data treatment with R" />
+  
+  
+  
+
+<meta name="author" content="Colin Bousige" />
+
+
+<meta name="date" content="2019-02-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="lists.html">
+<link rel="next" href="functions.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.8.0/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.39.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.39.2/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><h4>Reproducible data treatment with R</h4></li>
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html"><i class="fa fa-check"></i>About the class</a><ul>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#objectives-of-the-class"><i class="fa fa-check"></i>Objectives of the class</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#prerequisites"><i class="fa fa-check"></i>Prerequisites</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#teaser"><i class="fa fa-check"></i>Teaser</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#further-readings"><i class="fa fa-check"></i>Further readings</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#motivations"><i class="fa fa-check"></i>Motivations</a><ul>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#reproducible-data-treatment-why-it-matters"><i class="fa fa-check"></i>Reproducible data treatment: why it matters</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#why-with-r-and-not-python"><i class="fa fa-check"></i>Why with R and not python?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="getting-ready.html"><a href="getting-ready.html"><i class="fa fa-check"></i><b>1</b> Getting ready</a><ul>
+<li class="chapter" data-level="1.1" data-path="getting-ready.html"><a href="getting-ready.html#the-easy-way"><i class="fa fa-check"></i><b>1.1</b> The easy way</a></li>
+<li class="chapter" data-level="1.2" data-path="getting-ready.html"><a href="getting-ready.html#the-more-advanced-way"><i class="fa fa-check"></i><b>1.2</b> The more advanced way</a></li>
+<li class="chapter" data-level="1.3" data-path="getting-ready.html"><a href="getting-ready.html#in-any-case-install-latex"><i class="fa fa-check"></i><b>1.3</b> In any case: install LaTeX</a></li>
+<li class="chapter" data-level="1.4" data-path="getting-ready.html"><a href="getting-ready.html#setting-up-the-environment"><i class="fa fa-check"></i><b>1.4</b> Setting up the environment</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="simple-variables.html"><a href="simple-variables.html"><i class="fa fa-check"></i><b>2</b> Simple variables</a><ul>
+<li class="chapter" data-level="2.1" data-path="simple-variables.html"><a href="simple-variables.html#scalars-and-booleans"><i class="fa fa-check"></i><b>2.1</b> Scalars and booleans</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="simple-variables.html"><a href="simple-variables.html#special-values"><i class="fa fa-check"></i><b>2.1.1</b> Special values</a></li>
+<li class="chapter" data-level="2.1.2" data-path="simple-variables.html"><a href="simple-variables.html#booleans"><i class="fa fa-check"></i><b>2.1.2</b> Booleans</a></li>
+<li class="chapter" data-level="2.1.3" data-path="simple-variables.html"><a href="simple-variables.html#complex-values"><i class="fa fa-check"></i><b>2.1.3</b> Complex values</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="simple-variables.html"><a href="simple-variables.html#strings"><i class="fa fa-check"></i><b>2.2</b> Strings</a></li>
+<li class="chapter" data-level="2.3" data-path="simple-variables.html"><a href="simple-variables.html#exercises"><i class="fa fa-check"></i><b>2.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="vectors.html"><a href="vectors.html"><i class="fa fa-check"></i><b>3</b> Vectors</a><ul>
+<li class="chapter" data-level="3.1" data-path="vectors.html"><a href="vectors.html#different-ways-of-defining-a-vector"><i class="fa fa-check"></i><b>3.1</b> Different ways of defining a vector</a></li>
+<li class="chapter" data-level="3.2" data-path="vectors.html"><a href="vectors.html#principal-operations-on-vectors"><i class="fa fa-check"></i><b>3.2</b> Principal operations on vectors</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="vectors.html"><a href="vectors.html#accessing-values"><i class="fa fa-check"></i><b>3.2.1</b> Accessing values</a></li>
+<li class="chapter" data-level="3.2.2" data-path="vectors.html"><a href="vectors.html#sorting"><i class="fa fa-check"></i><b>3.2.2</b> Sorting</a></li>
+<li class="chapter" data-level="3.2.3" data-path="vectors.html"><a href="vectors.html#maximum-and-minimum"><i class="fa fa-check"></i><b>3.2.3</b> Maximum and minimum</a></li>
+<li class="chapter" data-level="3.2.4" data-path="vectors.html"><a href="vectors.html#mathematical-operations"><i class="fa fa-check"></i><b>3.2.4</b> Mathematical operations</a></li>
+<li class="chapter" data-level="3.2.5" data-path="vectors.html"><a href="vectors.html#statistics-on-vectors"><i class="fa fa-check"></i><b>3.2.5</b> Statistics on vectors</a></li>
+<li class="chapter" data-level="3.2.6" data-path="vectors.html"><a href="vectors.html#more-stuff"><i class="fa fa-check"></i><b>3.2.6</b> More stuff</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="vectors.html"><a href="vectors.html#exercises-1"><i class="fa fa-check"></i><b>3.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="lists.html"><a href="lists.html"><i class="fa fa-check"></i><b>4</b> Lists</a></li>
+<li class="chapter" data-level="5" data-path="data-frames.html"><a href="data-frames.html"><i class="fa fa-check"></i><b>5</b> Data frames</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-frames.html"><a href="data-frames.html#defining-a-data.frame"><i class="fa fa-check"></i><b>5.1</b> Defining a data.frame</a></li>
+<li class="chapter" data-level="5.2" data-path="data-frames.html"><a href="data-frames.html#accessing-values-1"><i class="fa fa-check"></i><b>5.2</b> Accessing values</a></li>
+<li class="chapter" data-level="5.3" data-path="data-frames.html"><a href="data-frames.html#adding-columns-or-rows"><i class="fa fa-check"></i><b>5.3</b> Adding columns or rows</a></li>
+<li class="chapter" data-level="5.4" data-path="data-frames.html"><a href="data-frames.html#more-on-data.frame"><i class="fa fa-check"></i><b>5.4</b> More on data.frame</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="data-frames.html"><a href="data-frames.html#more-math-operations"><i class="fa fa-check"></i><b>5.4.1</b> More math operations</a></li>
+<li class="chapter" data-level="5.4.2" data-path="data-frames.html"><a href="data-frames.html#tidy-up"><i class="fa fa-check"></i><b>5.4.2</b> Tidy up!</a></li>
+<li class="chapter" data-level="5.4.3" data-path="data-frames.html"><a href="data-frames.html#tibbles"><i class="fa fa-check"></i><b>5.4.3</b> Tibbles</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="data-frames.html"><a href="data-frames.html#exercises-2"><i class="fa fa-check"></i><b>5.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>6</b> Functions</a><ul>
+<li class="chapter" data-level="6.1" data-path="functions.html"><a href="functions.html#definition"><i class="fa fa-check"></i><b>6.1</b> Definition</a></li>
+<li class="chapter" data-level="6.2" data-path="functions.html"><a href="functions.html#exercises-3"><i class="fa fa-check"></i><b>6.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html"><i class="fa fa-check"></i><b>7</b> Conditional actions and loops</a><ul>
+<li class="chapter" data-level="7.1" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#conditional-actions"><i class="fa fa-check"></i><b>7.1</b> Conditional actions</a></li>
+<li class="chapter" data-level="7.2" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#loops"><i class="fa fa-check"></i><b>7.2</b> Loops…</a></li>
+<li class="chapter" data-level="7.3" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#and-how-to-avoid-them"><i class="fa fa-check"></i><b>7.3</b> … and how to avoid them</a></li>
+<li class="chapter" data-level="7.4" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#exercises-4"><i class="fa fa-check"></i><b>7.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="plotting.html"><a href="plotting.html"><i class="fa fa-check"></i><b>8</b> Plotting</a><ul>
+<li class="chapter" data-level="8.1" data-path="plotting.html"><a href="plotting.html#base-graphics"><i class="fa fa-check"></i><b>8.1</b> Base graphics</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="plotting.html"><a href="plotting.html#basic-plotting"><i class="fa fa-check"></i><b>8.1.1</b> Basic plotting</a></li>
+<li class="chapter" data-level="8.1.2" data-path="plotting.html"><a href="plotting.html#adding-some-style"><i class="fa fa-check"></i><b>8.1.2</b> Adding some style</a></li>
+<li class="chapter" data-level="8.1.3" data-path="plotting.html"><a href="plotting.html#going-further"><i class="fa fa-check"></i><b>8.1.3</b> Going further</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="plotting.html"><a href="plotting.html#advanced-plotting-using-ggplot2"><i class="fa fa-check"></i><b>8.2</b> Advanced plotting using ggplot2</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="plotting.html"><a href="plotting.html#a-quick-plot"><i class="fa fa-check"></i><b>8.2.1</b> A quick plot</a></li>
+<li class="chapter" data-level="8.2.2" data-path="plotting.html"><a href="plotting.html#the-grammar-of-graphics"><i class="fa fa-check"></i><b>8.2.2</b> The grammar of graphics</a></li>
+<li class="chapter" data-level="8.2.3" data-path="plotting.html"><a href="plotting.html#theming"><i class="fa fa-check"></i><b>8.2.3</b> Theming</a></li>
+<li class="chapter" data-level="8.2.4" data-path="plotting.html"><a href="plotting.html#making-interactive-plots-with-ggplot2-and-plotly"><i class="fa fa-check"></i><b>8.2.4</b> Making interactive plots with ggplot2 and plotly</a></li>
+<li class="chapter" data-level="8.2.5" data-path="plotting.html"><a href="plotting.html#gathering-plots-on-a-grid"><i class="fa fa-check"></i><b>8.2.5</b> Gathering plots on a grid</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="plotting.html"><a href="plotting.html#d-color-plots"><i class="fa fa-check"></i><b>8.3</b> 3D color plots</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="plotting.html"><a href="plotting.html#the-ggplot2-solution"><i class="fa fa-check"></i><b>8.3.1</b> The ggplot2 solution</a></li>
+<li class="chapter" data-level="8.3.2" data-path="plotting.html"><a href="plotting.html#the-base-graphics-solution"><i class="fa fa-check"></i><b>8.3.2</b> The base graphics solution</a></li>
+<li class="chapter" data-level="8.3.3" data-path="plotting.html"><a href="plotting.html#the-plotly-solution"><i class="fa fa-check"></i><b>8.3.3</b> The plotly solution</a></li>
+<li class="chapter" data-level="8.3.4" data-path="plotting.html"><a href="plotting.html#d-density-of-points"><i class="fa fa-check"></i><b>8.3.4</b> 2D density of points</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="plotting.html"><a href="plotting.html#exercises-5"><i class="fa fa-check"></i><b>8.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="fitting.html"><a href="fitting.html"><i class="fa fa-check"></i><b>9</b> Fitting</a><ul>
+<li class="chapter" data-level="9.1" data-path="fitting.html"><a href="fitting.html#linear-fitting"><i class="fa fa-check"></i><b>9.1</b> Linear fitting</a></li>
+<li class="chapter" data-level="9.2" data-path="fitting.html"><a href="fitting.html#non-linear-fitting"><i class="fa fa-check"></i><b>9.2</b> Non linear fitting</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="fitting.html"><a href="fitting.html#base-r"><i class="fa fa-check"></i><b>9.2.1</b> Base R</a></li>
+<li class="chapter" data-level="9.2.2" data-path="fitting.html"><a href="fitting.html#fme"><i class="fa fa-check"></i><b>9.2.2</b> FME</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="fitting.html"><a href="fitting.html#exercises-6"><i class="fa fa-check"></i><b>9.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="practical-case-recursive-data-treatment.html"><a href="practical-case-recursive-data-treatment.html"><i class="fa fa-check"></i><b>10</b> Practical case: recursive data treatment</a></li>
+<li class="chapter" data-level="11" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html"><i class="fa fa-check"></i><b>11</b> Writing documents with Rmarkdown</a><ul>
+<li class="chapter" data-level="11.1" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#what-is-markdown"><i class="fa fa-check"></i><b>11.1</b> What is markdown?</a></li>
+<li class="chapter" data-level="11.2" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#and-rmarkdown"><i class="fa fa-check"></i><b>11.2</b> … and Rmarkdown?</a></li>
+<li class="chapter" data-level="11.3" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#further-readings-1"><i class="fa fa-check"></i><b>11.3</b> Further readings</a></li>
+<li class="chapter" data-level="11.4" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#example"><i class="fa fa-check"></i><b>11.4</b> Example</a></li>
+<li class="chapter" data-level="11.5" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#compilation"><i class="fa fa-check"></i><b>11.5</b> Compilation</a></li>
+<li class="chapter" data-level="11.6" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#exercise"><i class="fa fa-check"></i><b>11.6</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html"><i class="fa fa-check"></i><b>12</b> Graphical interfaces with Shiny</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Reproducible data treatment with R</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-frames" class="section level1">
+<h1><span class="header-section-number">5</span> Data frames</h1>
+<div id="defining-a-data.frame" class="section level2">
+<h2><span class="header-section-number">5.1</span> Defining a data.frame</h2>
+<p>In R, the principal object is <em>the data</em>. Hence the <code>data.frame</code> object, which is basically a table of vectors. A <code>data.frame</code> is a list presented under the form of a table – <em>i.e.</em> a spreadsheet. On a day-to-day basis, you will either define <code>data.frame</code> from existing vectors or other <code>data.frame</code>, or define a <code>data.frame</code> from a file (text, Excel…). In this example, we use <a href="Data/test.dat">test.dat</a> and <a href="Data/test.xlsx">test.xlsx</a>.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># x = 10 random numbers between -10 and 10</span>
+x  &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="dv">10</span>, <span class="dt">min=</span><span class="op">-</span><span class="dv">10</span>, <span class="dt">max=</span><span class="dv">10</span>) 
+y  &lt;-<span class="st"> </span><span class="kw">sin</span>(x)
+df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(x,y) <span class="co"># df is a data.frame (a table)</span>
+df</code></pre>
+<pre><code>##            x           y
+## 1   6.926112  0.59954005
+## 2   6.057758 -0.22352241
+## 3   9.845543 -0.40845870
+## 4   4.330748 -0.92805485
+## 5  -8.354083 -0.87753394
+## 6  -2.227421 -0.79205713
+## 7  -9.905075  0.46204277
+## 8  -3.125155 -0.01643643
+## 9   6.735953  0.43745564
+## 10  3.169628 -0.02803148</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># dimension of df</span>
+<span class="kw">dim</span>(df)</code></pre>
+<pre><code>## [1] 10  2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># first and last 3 values</span>
+<span class="kw">head</span>(df, <span class="dv">3</span>); <span class="kw">tail</span>(df, <span class="dv">3</span>)</code></pre>
+<pre><code>##          x          y
+## 1 6.926112  0.5995400
+## 2 6.057758 -0.2235224
+## 3 9.845543 -0.4084587</code></pre>
+<pre><code>##            x           y
+## 8  -3.125155 -0.01643643
+## 9   6.735953  0.43745564
+## 10  3.169628 -0.02803148</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># statistics on df</span>
+<span class="kw">summary</span>(df)</code></pre>
+<pre><code>##        x                y          
+##  Min.   :-9.905   Min.   :-0.9281  
+##  1st Qu.:-2.901   1st Qu.:-0.6962  
+##  Median : 3.750   Median :-0.1258  
+##  Mean   : 1.345   Mean   :-0.1775  
+##  3rd Qu.: 6.566   3rd Qu.: 0.3240  
+##  Max.   : 9.846   Max.   : 0.5995</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># changing column name</span>
+df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">xxx=</span>x,<span class="dt">yyy=</span>y)
+<span class="kw">head</span>(df,<span class="dv">2</span>)</code></pre>
+<pre><code>##        xxx        yyy
+## 1 6.926112  0.5995400
+## 2 6.057758 -0.2235224</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">colnames</span>(df) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;thisISx&quot;</span>,<span class="st">&quot;THISisY&quot;</span>)
+<span class="kw">head</span>(df,<span class="dv">2</span>)</code></pre>
+<pre><code>##    thisISx    THISisY
+## 1 6.926112  0.5995400
+## 2 6.057758 -0.2235224</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># from a matrix</span>
+A &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">9</span>,<span class="dt">ncol=</span><span class="dv">3</span>)
+<span class="kw">as.data.frame</span>(A)</code></pre>
+<pre><code>##   V1 V2 V3
+## 1  1  4  7
+## 2  2  5  8
+## 3  3  6  9</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># from a file</span>
+<span class="kw">read.table</span>(<span class="st">&quot;Data/test.dat&quot;</span>)            <span class="co"># default column name is V1, V2, V3, etc</span></code></pre>
+<pre><code>##   V1 V2
+## 1  x  y
+## 2  1  2
+## 3  2  3</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">read.table</span>(<span class="st">&quot;Data/test.dat&quot;</span>,<span class="dt">header=</span><span class="ot">TRUE</span>)<span class="co"># use first line as column names</span></code></pre>
+<pre><code>##   x y
+## 1 1 2
+## 2 2 3</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">read.table</span>(<span class="st">&quot;Data/test.dat&quot;</span>,<span class="dt">skip=</span><span class="dv">1</span>)     <span class="co"># skip first line. </span></code></pre>
+<pre><code>##   V1 V2
+## 1  1  2
+## 2  2  3</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># ?read.table for more options</span>
+<span class="kw">library</span>(openxlsx) <span class="co"># load openxlsx to read Excel files</span>
+<span class="kw">read.xlsx</span>(<span class="st">&quot;Data/test.xlsx&quot;</span>, <span class="dt">sheet=</span><span class="dv">1</span>)</code></pre>
+<pre><code>##     x          y
+## 1   1  5.2073549
+## 2   2  6.5464871
+## 3   3  3.7056000
+## 4   4  0.2159875
+## 5   5  0.2053786
+## 6   6  4.6029225
+## 7   7 10.2849330
+## 8   8 12.9467912
+## 9   9 11.0605924
+## 10 10  7.2798944</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">read.xlsx</span>(<span class="st">&quot;Data/test.xlsx&quot;</span>, <span class="dt">sheet=</span><span class="dv">2</span>)</code></pre>
+<pre><code>##    hello    world
+## 1     ac       th
+## 2    asc      thh
+## 3  ascsa    dthdh
+## 4 ascacs dthtdhdh</code></pre>
+</div>
+<div id="accessing-values-1" class="section level2">
+<h2><span class="header-section-number">5.2</span> Accessing values</h2>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># column number</span>
+df[,<span class="dv">1</span>] <span class="co"># this is a vector</span></code></pre>
+<pre><code>##  [1]  6.926112  6.057758  9.845543  4.330748 -8.354083 -2.227421 -9.905075
+##  [8] -3.125155  6.735953  3.169628</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># column name</span>
+df<span class="op">$</span>thisISx; df[,<span class="st">&quot;THISisY&quot;</span>] <span class="co"># a vector too</span></code></pre>
+<pre><code>##  [1]  6.926112  6.057758  9.845543  4.330748 -8.354083 -2.227421 -9.905075
+##  [8] -3.125155  6.735953  3.169628</code></pre>
+<pre><code>##  [1]  0.59954005 -0.22352241 -0.40845870 -0.92805485 -0.87753394
+##  [6] -0.79205713  0.46204277 -0.01643643  0.43745564 -0.02803148</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># first row; row 1 to 3</span>
+df[<span class="dv">1</span>,]; df[<span class="dv">1</span><span class="op">:</span><span class="dv">3</span>,]; </code></pre>
+<pre><code>##    thisISx THISisY
+## 1 6.926112 0.59954</code></pre>
+<pre><code>##    thisISx    THISisY
+## 1 6.926112  0.5995400
+## 2 6.057758 -0.2235224
+## 3 9.845543 -0.4084587</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># through conditions</span>
+df[x<span class="op">&lt;</span><span class="dv">0</span> <span class="op">&amp;</span><span class="st"> </span>y<span class="op">&gt;</span><span class="dv">0</span>, ]  <span class="co"># Here x and y are vectors, not the column names</span></code></pre>
+<pre><code>##     thisISx   THISisY
+## 7 -9.905075 0.4620428</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">df[ df[,<span class="st">&quot;thisISx&quot;</span>]<span class="op">&lt;</span><span class="dv">0</span> <span class="op">&amp;</span><span class="st"> </span>df[,<span class="dv">2</span>]<span class="op">&gt;</span><span class="dv">0</span>, ]  <span class="co"># conditions on columns</span></code></pre>
+<pre><code>##     thisISx   THISisY
+## 7 -9.905075 0.4620428</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># subsetting using column names</span>
+<span class="kw">subset</span>(df, thisISx<span class="op">&gt;</span><span class="dv">2</span> <span class="op">&amp;</span><span class="st"> </span>THISisY<span class="op">&gt;</span><span class="dv">0</span>, <span class="dt">select =</span> <span class="kw">c</span>(thisISx))</code></pre>
+<pre><code>##    thisISx
+## 1 6.926112
+## 9 6.735953</code></pre>
+</div>
+<div id="adding-columns-or-rows" class="section level2">
+<h2><span class="header-section-number">5.3</span> Adding columns or rows</h2>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Adding columns</span>
+df   &lt;-<span class="st"> </span><span class="kw">data.frame</span>(x,y)
+df<span class="op">$</span>z &lt;-<span class="st"> </span>(df<span class="op">$</span>x)<span class="op">^</span><span class="dv">2</span>; df</code></pre>
+<pre><code>##            x           y         z
+## 1   6.926112  0.59954005 47.971022
+## 2   6.057758 -0.22352241 36.696438
+## 3   9.845543 -0.40845870 96.934713
+## 4   4.330748 -0.92805485 18.755381
+## 5  -8.354083 -0.87753394 69.790703
+## 6  -2.227421 -0.79205713  4.961405
+## 7  -9.905075  0.46204277 98.110514
+## 8  -3.125155 -0.01643643  9.766597
+## 9   6.735953  0.43745564 45.373057
+## 10  3.169628 -0.02803148 10.046540</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data.frame</span>(df,<span class="dt">w=</span><span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(x), <span class="dt">xx=</span><span class="ot">NA</span>, <span class="dt">yy=</span><span class="dv">1</span>, <span class="dt">zz=</span><span class="dv">1</span><span class="op">:</span><span class="dv">2</span>)</code></pre>
+<pre><code>##            x           y         z  w xx yy zz
+## 1   6.926112  0.59954005 47.971022  1 NA  1  1
+## 2   6.057758 -0.22352241 36.696438  2 NA  1  2
+## 3   9.845543 -0.40845870 96.934713  3 NA  1  1
+## 4   4.330748 -0.92805485 18.755381  4 NA  1  2
+## 5  -8.354083 -0.87753394 69.790703  5 NA  1  1
+## 6  -2.227421 -0.79205713  4.961405  6 NA  1  2
+## 7  -9.905075  0.46204277 98.110514  7 NA  1  1
+## 8  -3.125155 -0.01643643  9.766597  8 NA  1  2
+## 9   6.735953  0.43745564 45.373057  9 NA  1  1
+## 10  3.169628 -0.02803148 10.046540 10 NA  1  2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(df, <span class="kw">data.frame</span>(<span class="dt">a=</span><span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(x), <span class="dt">b=</span><span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(x)) )</code></pre>
+<pre><code>##            x           y         z  a  b
+## 1   6.926112  0.59954005 47.971022  1  1
+## 2   6.057758 -0.22352241 36.696438  2  2
+## 3   9.845543 -0.40845870 96.934713  3  3
+## 4   4.330748 -0.92805485 18.755381  4  4
+## 5  -8.354083 -0.87753394 69.790703  5  5
+## 6  -2.227421 -0.79205713  4.961405  6  6
+## 7  -9.905075  0.46204277 98.110514  7  7
+## 8  -3.125155 -0.01643643  9.766597  8  8
+## 9   6.735953  0.43745564 45.373057  9  9
+## 10  3.169628 -0.02803148 10.046540 10 10</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Adding rows</span>
+<span class="kw">rbind</span>(df, df)     <span class="co"># with a data.frame</span></code></pre>
+<pre><code>##            x           y         z
+## 1   6.926112  0.59954005 47.971022
+## 2   6.057758 -0.22352241 36.696438
+## 3   9.845543 -0.40845870 96.934713
+## 4   4.330748 -0.92805485 18.755381
+## 5  -8.354083 -0.87753394 69.790703
+## 6  -2.227421 -0.79205713  4.961405
+## 7  -9.905075  0.46204277 98.110514
+## 8  -3.125155 -0.01643643  9.766597
+## 9   6.735953  0.43745564 45.373057
+## 10  3.169628 -0.02803148 10.046540
+## 11  6.926112  0.59954005 47.971022
+## 12  6.057758 -0.22352241 36.696438
+## 13  9.845543 -0.40845870 96.934713
+## 14  4.330748 -0.92805485 18.755381
+## 15 -8.354083 -0.87753394 69.790703
+## 16 -2.227421 -0.79205713  4.961405
+## 17 -9.905075  0.46204277 98.110514
+## 18 -3.125155 -0.01643643  9.766597
+## 19  6.735953  0.43745564 45.373057
+## 20  3.169628 -0.02803148 10.046540</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">rbind</span>(df, df[<span class="dv">1</span>,]) <span class="co"># with a vector</span></code></pre>
+<pre><code>##            x           y         z
+## 1   6.926112  0.59954005 47.971022
+## 2   6.057758 -0.22352241 36.696438
+## 3   9.845543 -0.40845870 96.934713
+## 4   4.330748 -0.92805485 18.755381
+## 5  -8.354083 -0.87753394 69.790703
+## 6  -2.227421 -0.79205713  4.961405
+## 7  -9.905075  0.46204277 98.110514
+## 8  -3.125155 -0.01643643  9.766597
+## 9   6.735953  0.43745564 45.373057
+## 10  3.169628 -0.02803148 10.046540
+## 11  6.926112  0.59954005 47.971022</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># deleting rows/columns</span>
+df[<span class="op">-</span><span class="dv">1</span>,]</code></pre>
+<pre><code>##            x           y         z
+## 2   6.057758 -0.22352241 36.696438
+## 3   9.845543 -0.40845870 96.934713
+## 4   4.330748 -0.92805485 18.755381
+## 5  -8.354083 -0.87753394 69.790703
+## 6  -2.227421 -0.79205713  4.961405
+## 7  -9.905075  0.46204277 98.110514
+## 8  -3.125155 -0.01643643  9.766597
+## 9   6.735953  0.43745564 45.373057
+## 10  3.169628 -0.02803148 10.046540</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">df[,<span class="op">-</span><span class="dv">1</span>]</code></pre>
+<pre><code>##              y         z
+## 1   0.59954005 47.971022
+## 2  -0.22352241 36.696438
+## 3  -0.40845870 96.934713
+## 4  -0.92805485 18.755381
+## 5  -0.87753394 69.790703
+## 6  -0.79205713  4.961405
+## 7   0.46204277 98.110514
+## 8  -0.01643643  9.766597
+## 9   0.43745564 45.373057
+## 10 -0.02803148 10.046540</code></pre>
+</div>
+<div id="more-on-data.frame" class="section level2">
+<h2><span class="header-section-number">5.4</span> More on data.frame</h2>
+<div id="more-math-operations" class="section level3">
+<h3><span class="header-section-number">5.4.1</span> More math operations</h3>
+<p>Almost everything that we saw on the operations on vectors are basically applicable to the <code>data.frame</code> object.</p>
+</div>
+<div id="tidy-up" class="section level3">
+<h3><span class="header-section-number">5.4.2</span> Tidy up!</h3>
+<p><strong>A good practice in R is to <em>tidy</em> your data.</strong> R follows a set of conventions that makes one layout of tabular data much easier to work with than others. Your data will be easier to work with in R if it follows three rules:</p>
+<ul>
+<li>Each variable in the data set is placed in its own column</li>
+<li>Each observation is placed in its own row</li>
+<li>Each value is placed in its own cell</li>
+</ul>
+<p>Data that satisfies these rules is known as tidy data. Example:</p>
+<pre class="sourceCode r"><code class="sourceCode r">df &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;Data/population.csv&quot;</span>)
+df <span class="co"># is not tidy</span></code></pre>
+<details>
+<p><summary>Show output</summary></p>
+<pre><code>##   Année Angers Bordeaux  Brest  Dijon Grenoble Le.Havre Le.Mans  Lille
+## 1  1962 115273   278403 136104 135694   156707   187845  132181 239955
+## 2  1968 128557   266662 154023 145357   161616   207150  143246 238554
+## 3  1975 137591   223131 166826 151705   166037   217882  152285 219204
+## 4  1982 136038   208159 156060 140942   156637   199388  147697 196705
+## 5  1990 141404   210336 147956 146703   150758   195854  145502 198691
+## 6  1999 151279   215363 149634 149867   153317   190905  146105 212597
+## 7  2007 151108   235178 142722 151543   156793   179751  144164 225789
+## 8  2012 149017   241287 139676 152071   158346   173142  143599 228652
+##     Lyon Marseille Montpellier Nantes   Nice   Paris  Reims Rennes
+## 1 535746    778071      118864 240048 292958 2790091 134856 151948
+## 2 527800    889029      161910 260244 322442 2590771 154534 180943
+## 3 456716    908600      191354 256693 344481 2299830 178381 198305
+## 4 413095    874436      197231 240539 337085 2176243 177234 194656
+## 5 415487    800550      207996 244995 342439 2152423 180620 197536
+## 6 445452    798430      225392 270251 342738 2125246 187206 206229
+## 7 472330    852395      253712 283025 348721 2193030 183500 207922
+## 8 496343    852516      268456 291604 343629 2240621 181893 209860
+##   Saint.Étienne Strasbourg Toulon Toulouse
+## 1        210311     228971 161797   323724
+## 2        223223     249396 174746   370796
+## 3        220181     253384 181801   373796
+## 4        204955     248712 179423   347995
+## 5        199396     252338 167619   358688
+## 6        180210     264115 160639   390350
+## 7        175318     272123 166537   439453
+## 8        171483     274394 164899   453317</code></pre>
+</details>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyr)
+df &lt;-<span class="st"> </span><span class="kw">gather</span>(df, <span class="kw">names</span>(df)[<span class="op">-</span><span class="dv">1</span>], <span class="dt">key=</span><span class="st">&quot;city&quot;</span>, <span class="dt">value=</span><span class="st">&quot;pop&quot;</span>)
+df <span class="co">#is tidy</span>
+<span class="kw">spread</span>(df, city, pop) <span class="co"># is not tidy</span></code></pre>
+<details>
+<p><summary>Show output</summary></p>
+<pre><code>##     Année          city     pop
+## 1    1962        Angers  115273
+## 2    1968        Angers  128557
+## 3    1975        Angers  137591
+## 4    1982        Angers  136038
+## 5    1990        Angers  141404
+## 6    1999        Angers  151279
+## 7    2007        Angers  151108
+## 8    2012        Angers  149017
+## 9    1962      Bordeaux  278403
+## 10   1968      Bordeaux  266662
+## 11   1975      Bordeaux  223131
+## 12   1982      Bordeaux  208159
+## 13   1990      Bordeaux  210336
+## 14   1999      Bordeaux  215363
+## 15   2007      Bordeaux  235178
+## 16   2012      Bordeaux  241287
+## 17   1962         Brest  136104
+## 18   1968         Brest  154023
+## 19   1975         Brest  166826
+## 20   1982         Brest  156060
+## 21   1990         Brest  147956
+## 22   1999         Brest  149634
+## 23   2007         Brest  142722
+## 24   2012         Brest  139676
+## 25   1962         Dijon  135694
+## 26   1968         Dijon  145357
+## 27   1975         Dijon  151705
+## 28   1982         Dijon  140942
+## 29   1990         Dijon  146703
+## 30   1999         Dijon  149867
+## 31   2007         Dijon  151543
+## 32   2012         Dijon  152071
+## 33   1962      Grenoble  156707
+## 34   1968      Grenoble  161616
+## 35   1975      Grenoble  166037
+## 36   1982      Grenoble  156637
+## 37   1990      Grenoble  150758
+## 38   1999      Grenoble  153317
+## 39   2007      Grenoble  156793
+## 40   2012      Grenoble  158346
+## 41   1962      Le.Havre  187845
+## 42   1968      Le.Havre  207150
+## 43   1975      Le.Havre  217882
+## 44   1982      Le.Havre  199388
+## 45   1990      Le.Havre  195854
+## 46   1999      Le.Havre  190905
+## 47   2007      Le.Havre  179751
+## 48   2012      Le.Havre  173142
+## 49   1962       Le.Mans  132181
+## 50   1968       Le.Mans  143246
+## 51   1975       Le.Mans  152285
+## 52   1982       Le.Mans  147697
+## 53   1990       Le.Mans  145502
+## 54   1999       Le.Mans  146105
+## 55   2007       Le.Mans  144164
+## 56   2012       Le.Mans  143599
+## 57   1962         Lille  239955
+## 58   1968         Lille  238554
+## 59   1975         Lille  219204
+## 60   1982         Lille  196705
+## 61   1990         Lille  198691
+## 62   1999         Lille  212597
+## 63   2007         Lille  225789
+## 64   2012         Lille  228652
+## 65   1962          Lyon  535746
+## 66   1968          Lyon  527800
+## 67   1975          Lyon  456716
+## 68   1982          Lyon  413095
+## 69   1990          Lyon  415487
+## 70   1999          Lyon  445452
+## 71   2007          Lyon  472330
+## 72   2012          Lyon  496343
+## 73   1962     Marseille  778071
+## 74   1968     Marseille  889029
+## 75   1975     Marseille  908600
+## 76   1982     Marseille  874436
+## 77   1990     Marseille  800550
+## 78   1999     Marseille  798430
+## 79   2007     Marseille  852395
+## 80   2012     Marseille  852516
+## 81   1962   Montpellier  118864
+## 82   1968   Montpellier  161910
+## 83   1975   Montpellier  191354
+## 84   1982   Montpellier  197231
+## 85   1990   Montpellier  207996
+## 86   1999   Montpellier  225392
+## 87   2007   Montpellier  253712
+## 88   2012   Montpellier  268456
+## 89   1962        Nantes  240048
+## 90   1968        Nantes  260244
+## 91   1975        Nantes  256693
+## 92   1982        Nantes  240539
+## 93   1990        Nantes  244995
+## 94   1999        Nantes  270251
+## 95   2007        Nantes  283025
+## 96   2012        Nantes  291604
+## 97   1962          Nice  292958
+## 98   1968          Nice  322442
+## 99   1975          Nice  344481
+## 100  1982          Nice  337085
+## 101  1990          Nice  342439
+## 102  1999          Nice  342738
+## 103  2007          Nice  348721
+## 104  2012          Nice  343629
+## 105  1962         Paris 2790091
+## 106  1968         Paris 2590771
+## 107  1975         Paris 2299830
+## 108  1982         Paris 2176243
+## 109  1990         Paris 2152423
+## 110  1999         Paris 2125246
+## 111  2007         Paris 2193030
+## 112  2012         Paris 2240621
+## 113  1962         Reims  134856
+## 114  1968         Reims  154534
+## 115  1975         Reims  178381
+## 116  1982         Reims  177234
+## 117  1990         Reims  180620
+## 118  1999         Reims  187206
+## 119  2007         Reims  183500
+## 120  2012         Reims  181893
+## 121  1962        Rennes  151948
+## 122  1968        Rennes  180943
+## 123  1975        Rennes  198305
+## 124  1982        Rennes  194656
+## 125  1990        Rennes  197536
+## 126  1999        Rennes  206229
+## 127  2007        Rennes  207922
+## 128  2012        Rennes  209860
+## 129  1962 Saint.Étienne  210311
+## 130  1968 Saint.Étienne  223223
+## 131  1975 Saint.Étienne  220181
+## 132  1982 Saint.Étienne  204955
+## 133  1990 Saint.Étienne  199396
+## 134  1999 Saint.Étienne  180210
+## 135  2007 Saint.Étienne  175318
+## 136  2012 Saint.Étienne  171483
+## 137  1962    Strasbourg  228971
+## 138  1968    Strasbourg  249396
+## 139  1975    Strasbourg  253384
+## 140  1982    Strasbourg  248712
+## 141  1990    Strasbourg  252338
+## 142  1999    Strasbourg  264115
+## 143  2007    Strasbourg  272123
+## 144  2012    Strasbourg  274394
+## 145  1962        Toulon  161797
+## 146  1968        Toulon  174746
+## 147  1975        Toulon  181801
+## 148  1982        Toulon  179423
+## 149  1990        Toulon  167619
+## 150  1999        Toulon  160639
+## 151  2007        Toulon  166537
+## 152  2012        Toulon  164899
+## 153  1962      Toulouse  323724
+## 154  1968      Toulouse  370796
+## 155  1975      Toulouse  373796
+## 156  1982      Toulouse  347995
+## 157  1990      Toulouse  358688
+## 158  1999      Toulouse  390350
+## 159  2007      Toulouse  439453
+## 160  2012      Toulouse  453317</code></pre>
+<pre><code>##   Année Angers Bordeaux  Brest  Dijon Grenoble Le.Havre Le.Mans  Lille
+## 1  1962 115273   278403 136104 135694   156707   187845  132181 239955
+## 2  1968 128557   266662 154023 145357   161616   207150  143246 238554
+## 3  1975 137591   223131 166826 151705   166037   217882  152285 219204
+## 4  1982 136038   208159 156060 140942   156637   199388  147697 196705
+## 5  1990 141404   210336 147956 146703   150758   195854  145502 198691
+## 6  1999 151279   215363 149634 149867   153317   190905  146105 212597
+## 7  2007 151108   235178 142722 151543   156793   179751  144164 225789
+## 8  2012 149017   241287 139676 152071   158346   173142  143599 228652
+##     Lyon Marseille Montpellier Nantes   Nice   Paris  Reims Rennes
+## 1 535746    778071      118864 240048 292958 2790091 134856 151948
+## 2 527800    889029      161910 260244 322442 2590771 154534 180943
+## 3 456716    908600      191354 256693 344481 2299830 178381 198305
+## 4 413095    874436      197231 240539 337085 2176243 177234 194656
+## 5 415487    800550      207996 244995 342439 2152423 180620 197536
+## 6 445452    798430      225392 270251 342738 2125246 187206 206229
+## 7 472330    852395      253712 283025 348721 2193030 183500 207922
+## 8 496343    852516      268456 291604 343629 2240621 181893 209860
+##   Saint.Étienne Strasbourg Toulon Toulouse
+## 1        210311     228971 161797   323724
+## 2        223223     249396 174746   370796
+## 3        220181     253384 181801   373796
+## 4        204955     248712 179423   347995
+## 5        199396     252338 167619   358688
+## 6        180210     264115 160639   390350
+## 7        175318     272123 166537   439453
+## 8        171483     274394 164899   453317</code></pre>
+</details>
+<p>You can find more information on data import and <a href="https://garrettgman.github.io/tidying/">tidyness</a> on the <a href="https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf">data-import cheatsheet</a>.</p>
+</div>
+<div id="tibbles" class="section level3">
+<h3><span class="header-section-number">5.4.3</span> Tibbles</h3>
+<p>A <code>tibble</code> is an enhanced version of the <code>data.frame</code> provided by the <code>tidyverse</code> package. The main advantage of <code>tibble</code> is that it shows better performance than <code>data.frame</code> for large datasets, and it has easier initialization and nicer printing. Otherwise, the handling is basically the same.</p>
+<p>More on tibbles <a href="https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html">here</a>.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
+<span class="kw">tibble</span>(<span class="dt">x=</span><span class="kw">runif</span>(<span class="fl">1e3</span>), <span class="dt">y=</span><span class="kw">cumsum</span>(x))</code></pre>
+<pre><code>## # A tibble: 1,000 x 2
+##        x     y
+##    &lt;dbl&gt; &lt;dbl&gt;
+##  1 0.193 0.193
+##  2 0.831 1.02 
+##  3 0.710 1.73 
+##  4 0.829 2.56 
+##  5 0.294 2.86 
+##  6 0.867 3.72 
+##  7 0.133 3.86 
+##  8 0.791 4.65 
+##  9 0.928 5.58 
+## 10 0.421 6.00 
+## # … with 990 more rows</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data.frame</span>(<span class="dt">x=</span><span class="kw">runif</span>(<span class="fl">1e3</span>), <span class="dt">y=</span><span class="kw">cumsum</span>(x))</code></pre>
+<pre><code>## Error in data.frame(x = runif(1000), y = cumsum(x)): object &#39;x&#39; not found</code></pre>
+</div>
+</div>
+<div id="exercises-2" class="section level2">
+<h2><span class="header-section-number">5.5</span> Exercises</h2>
+<details>
+<p><summary><strong>Exercise 1</strong></summary></p>
+<p>Create a 3 column <code>data.frame</code> containing 100 random values, their sinus, and the sum of the two first columns.</p>
+<p>Do the same with a <code>tibble</code></p>
+</details>
+<details>
+<p><summary><strong>Exercise 2</strong></summary></p>
+<p>Download <a href="Data/population.txt">population.txt</a> and load it into a <code>data.frame</code>.</p>
+<ul>
+<li>Are the data tidy?</li>
+<li>What are the names of the columns?</li>
+<li>Create a subset containing the data for Montpellier
+<ul>
+<li>What is the max and min of population in this city?</li>
+<li>The average population over time?</li>
+</ul></li>
+<li>What is the total population in 2012?</li>
+</ul>
+<details>
+<p><summary>Solution</summary></p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Download [population.txt](Data/population.txt) and load it into a `data.frame`.</span>
+popul &lt;-<span class="st"> </span><span class="kw">read.table</span>(<span class="st">&quot;Data/population.txt&quot;</span>, <span class="dt">header=</span><span class="ot">TRUE</span>)
+<span class="co"># Are the data tidy?</span>
+<span class="kw">head</span>(popul)</code></pre>
+<pre><code>##   year   city    pop
+## 1 1962 Angers 115273
+## 2 1968 Angers 128557
+## 3 1975 Angers 137591
+## 4 1982 Angers 136038
+## 5 1990 Angers 141404
+## 6 1999 Angers 151279</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># What are the names of the columns and the dimension of the table?</span>
+<span class="kw">names</span>(popul); <span class="kw">dim</span>(popul)</code></pre>
+<pre><code>## [1] &quot;year&quot; &quot;city&quot; &quot;pop&quot;</code></pre>
+<pre><code>## [1] 160   3</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Create a subset containing the data for Montpellier</span>
+mtp &lt;-<span class="st"> </span><span class="kw">subset</span>(popul, city<span class="op">==</span><span class="st">&quot;Montpellier&quot;</span>)
+<span class="co">#     What is the max and min of population in this city?</span>
+<span class="kw">range</span>(mtp[,<span class="st">&quot;pop&quot;</span>])</code></pre>
+<pre><code>## [1] 118864 268456</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co">#     The average population over time?</span>
+<span class="kw">mean</span>(mtp[,<span class="st">&quot;pop&quot;</span>])</code></pre>
+<pre><code>## [1] 203114.4</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># What is the total population in 2012?</span>
+<span class="kw">sum</span>(popul[popul[,<span class="st">&quot;year&quot;</span>]<span class="op">==</span><span class="dv">2012</span>, <span class="st">&quot;pop&quot;</span>])</code></pre>
+<pre><code>## [1] 7334805</code></pre>
+</details>
+</details>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="lists.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="functions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": {}
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": [["tutoR.Rmd", "Rmd file"]],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"fig_caption": true,
+"fig_number": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
