@@ -264,12 +264,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Launch Rstudio, click <code>File &gt; New File &gt; R script</code>.</p>
 <p>Write whatever you want in the “Source code” panel, and <strong>run</strong> it by selecting it and hitting ⌘+⏎ (Ctrl+⏎ on Windows). If no text is selected, hitting ⌘+⏎ will launch the current line.</p>
 <p>The code output will be seen in the “R Console” panel if it’s a text, or in the “Graph” panel if it’s a graph. A list of all defined variables and functions is available in the “Environment” panel.</p>
-<p><a href="Img/Rstudio.png"><img src="Img/rstudio.png" /></a></p>
+<div class="figure"><span id="fig:fig1"></span>
+<img src="Img/rstudio.png" alt="The Rstudio environment" width="2666" />
+<p class="caption">
+Figure 1.1: The Rstudio environment
+</p>
+</div>
 <p>More on the <a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf">Rstudio cheatsheet</a>.</p>
 </div>
 <div id="the-more-advanced-way" class="section level2">
 <h2><span class="header-section-number">1.2</span> The more advanced way</h2>
-<p>If you don’t want to use Rstudio but rather want to keep with your favorite text editor, like I do<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> (<a href="https://www.sublimetext.com/3">Sublime Text</a>, <a href="https://atom.io/">Atom</a>, <a href="https://code.visualstudio.com/">Visual Studio Code</a>…)</p>
+<p>If you don’t want to use Rstudio but rather want to keep with your favorite text editor, like I do<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> (<a href="https://www.sublimetext.com/3">Sublime Text</a>, <a href="https://atom.io/">Atom</a>, <a href="https://code.visualstudio.com/">Visual Studio Code</a>…)</p>
 <ul>
 <li>I still recommend <a href="https://cran.r-project.org/">downloading</a> and installing R via CRAN (I had some packages problems due to a homebrew installation).</li>
 <li>To be fully operational with Rmarkdown files without using Rstudio, you need to install <code>pandoc</code>:</li>
@@ -355,7 +360,7 @@ gitbook.start({
 "toolbar": {
 "position": "fixed"
 },
-"search": false
+"search": true
 });
 });
 </script>

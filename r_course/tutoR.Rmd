@@ -184,7 +184,9 @@ Write whatever you want in the "Source code" panel, and __run__ it by selecting 
 The code output will be seen in the "R Console" panel if it's a text, or in the "Graph" panel if it's a graph. A list of all defined variables and functions is available in the "Environment" panel.
 
 
-[![](Img/Rstudio.png)](Img/Rstudio.png)
+```{r fig1, fig.cap='The Rstudio environment', echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./Img/Rstudio.png")
+```
 
 
 More on the [Rstudio cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
@@ -1686,10 +1688,12 @@ OK, so now we have some fake experimental data stored in a tidy `tibble` called 
 
 ```{r, out.width='100%', message = FALSE, fig.asp=.7,cache=FALSE}
 # Plotting
+colors <- colorRampPalette(c("white","royalblue","seagreen",
+                             "orange","red","brown"))(500)
 P1 <- ggplot(data=fake_data, aes(x=w, y=T, fill=Intensity)) + 
           geom_raster() + #geom_tile would work to
           ggtitle("Some fake data") + 
-          scale_fill_gradientn(colors=colorRampPalette(c("white","royalblue","seagreen","orange","red","brown"))(500),name="Intensity\n[arb. units]") +
+          scale_fill_gradientn(colors=colors,name="Intensity\n[arb. units]") +
           labs(x = "Fake Raman Shift [1/cm]",y="Fake Temperature [K]") +
           theme_bw()
 ggplotly(P1)
