@@ -3,8 +3,12 @@ title    : Reproducible data treatment with R
 subtitle : An introduction
 author   : Colin Bousige
 date     : "`r format(Sys.time(), '%d/%m/%Y')`"
+url      : 'https\://colinbousige.github.io/r_course/'
 output: 
     bookdown::gitbook:
+      self_contained: FALSE
+      fig_caption : TRUE
+      fig_number : TRUE
       config:
         toc:
           collapse: subsection
@@ -20,18 +24,7 @@ output:
           theme: white
           family: sans
           size: 2
-        fig_caption : TRUE
-        fig_number : TRUE
-        url: 'https\://colinbousige.github.io/r_course/'
-        sharing:
-          facebook: no
-          twitter: no
-          google: no
-          linkedin: no
-          weibo: no
-          instapaper: no
-          vk: no
-          all: []
+        sharing: no
 ---
 
 <!-- 
@@ -171,17 +164,6 @@ Both languages are great and being able to use both is the best thing that can h
 
 So, since my goal is to provide you with tools for seamlessly read, make sense, and plot your data in the reproducible science philosophy, let's go with __R__.
 
-
-```{r, warnings=FALSE}
-x  <- seq(-3*pi,3*pi,length=1000)
-y  <- sinc(x)
-z  <- sinc(x)^2
-df <- data.frame(x=x, y=y)
-plot(x,y) # plot providing x and y data
-plot(df)  # plot providing a two-columns data.frame
-df <- data.frame(x=x, y=y, z=z, w=z*y)
-plot(df)  # plot providing a multi-columns data.frame
-```
 
 
 # Getting ready
