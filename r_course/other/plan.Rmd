@@ -1,0 +1,47 @@
+---
+title: Reproducible data treatment with R
+author: Colin Bousige
+date: "`r Sys.Date()`"
+output: pdf_document
+header-includes: 
+    - \usepackage{cmbright}
+---
+
+# Objectives of the class
+
+The goal of this class is that at the end, the students are able to:
+
+- Treat their data with the free and open source language **[R](https://www.r-project.org/)**, *i.e.*:
+    + Read, browse, manipulate and plot their data
+    + Model or simulate their data
+- Make automatic reporting through **[Rmarkdown](https://rmarkdown.rstudio.com/)** and/or **[Jupyter notebooks](https://jupyter.org/)**
+- Build a graphical interface with **[Shiny](https://shiny.rstudio.com/)** to interact with their data and output something (a value, a pdf report, a graph...)
+
+
+# Prerequisites
+
+- Coding skills: none expected
+- The students should come with a laptop with admin rights (should be able to install stuff)
+
+# Format
+
+- 6 slots of interactive course
+- Final project : 4 slots
+
+# Details
+
+1. Introduction to R (*4 slots*)
+    1. Installing R and R Studio
+    1. Learning the basics
+        1. Installing packages
+        1. Variables, vectors, matrices, data frames, lists...
+        1. `If then else`, `for`, `while`, and how to avoid it (`apply` & co.)
+        1. Functions
+    1. Plotting using base graphics
+    1. Plotting using `ggplot2`
+    1. Fitting and modeling data
+2. Introduction to `Rmarkdown` (*1 slot*)
+    1. Basics of `Rmarkdown`
+    2. Example of full data treatment and automatic reporting
+3. Building a graphical interface with `Shiny` (*1 slot*)
+4. Projects (*4 slots*)

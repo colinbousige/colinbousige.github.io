@@ -1,0 +1,454 @@
+---
+title       : Example measurement of low temperature Raman spectra
+author      : Colin Bousige
+date        : "`r format(Sys.time(), '%d/%m/%Y')`"
+always_allow_html: yes
+output:
+    html_notebook: 
+        toc: yes
+        toc_float: TRUE
+        code_folding: hide
+        highlight: pygments
+        number_sections: false
+        theme: cosmo
+bibliography: "/Users/colin/Dropbox/Biblio/all.bib" # change your path here
+csl: "/Users/colin/Dropbox/Biblio/nature_notitle.csl" # change your path here
+---
+
+<!-- Edit your style here -->
+<style type="text/css">
+   body{font-size: 16px;font-family: Helvetica;}
+   h1{font-size: 26px;color:RoyalBlue;font-weight: bold;}
+   a{color:RoyalBlue;font-weight: bold;}
+   h2{font-size: 22px;color:RoyalBlue;font-weight: bold;}
+   h3{font-size: 18px;color:RoyalBlue;font-weight: bold;}
+   code{font-size: 16px;}
+</style>
+
+<!-- Setup : load libraries, define path -->
+```{r setup, include=FALSE, warning = FALSE, cache=FALSE}
+# Set your own working directory :
+setwd("/Users/colin/Travail/Cours/TutoR/") 
+library(plotly)
+library(ggplot2)
+library(reshape2)
+library(knitr)
+library(akima)
+library(grid)
+library(FME)
+source("myfunc.R") # this contains many functions
+path <- "Data"
+my_theme <- theme_bw()+
+            theme(axis.text = element_text(size = 14,family = "Helvetica",colour="black"),
+                  text = element_text(size = 14,family = "Helvetica"),
+                  axis.ticks = element_line(colour = "black"),
+                  legend.text = element_text(size = 14,family = "Helvetica",colour="black"),
+                  panel.border = element_rect(colour = "black", fill=NA, size=1),
+                  legend.key.height=unit(2,"cm")
+                  )
+```
+
+
+# Goal of experiment
+
+Write your stuff here, site some stuff [@Iijima1991; @Geim2013a].
+
+# Measurement parameters
+
+$~$                      | $~$
+-------------------------|-----------------------------
+__Spectrometer__         | LabRAM HR Evolution - Horiba
+__Laser__                | 532 nm
+__Grating__              | 1800 tr/mm
+__Hole__                 | 100 $\mu$m
+__Objective__            | $\times$ 50 LWD
+__Acquisition time__     | 10 $\times$ 30 s
+__Temperature control__  | Linkam TMS 92
+__Position Si__          | 520.7 cm^-1^ - 1300 hits/s
+__Max laser power__      | 3.2 mW
+__Filter__               | 0.1 %
+
+Blablabla
+
+
+# Specters, background and fits 
+
+Use the slider under the plot
+
+```{r, out.width='100%', fig.asp=.85,cache=FALSE, warning=FALSE}
+# Temperatures
+Temp <-c(40,30,20,10,0,-10,-20,-30,-40,-50,-55,
+         -60,-65,-70,-75,-80,-85,-90,-95,-100,-105,
+         -110,-115,-120,-125,-130,-135,-140,-145,-150,-155)
+Temp <- Temp + 273 # Celsius to Kelvin – temperature accuracy ~ ±0.3K
+# Find files names
+fRBM <- list.files(path=path,pattern = "RBM")
+fG   <- list.files(path=path,pattern = "G")
+# Create a list to store spectra for each temperature
+spec <- vector("list",length=(length(fRBM)))
+
+# Reading and storing all treated data 
+for(i in 1:length(fRBM)){
+# Reading raw RBM data
+    dRBM <- read.table(file.path(path,fRBM[i]),sep="\t")
+    xRBM <- dRBM[,1]
+    dRBM <- dRBM[which(xRBM>=100 & xRBM<=300),]
+    xRBM <- dRBM[,1]
+    yRBM <- dRBM[,2]
+    # Fitting polynomial background of order np
+    backgrRBM <- baseline(xRBM,yRBM, poly=TRUE, np=0, 
+                           BGpoints=list(c(100,130),c(240,300)),noise=10)$bg
+    # Fitting peak positions
+    if(i==1){
+        params <- c(y0=0,
+                    A =c(400,400,400,400),
+                    x0=c(157,171,177,185),
+                    FW=c(10,10,10,10))
+    }
+    else{params <- spec[[i-1]]$parRBM$coef}
+    fitRBM <- fitspec(xRBM,yRBM-backgrRBM,params=params)
+    # qplot(xRBM,yRBM-backgrRBM) +
+    # geom_line(data=fitRBM$curves,aes(x,y,color=id))+theme_bw()
+    
+# Reading raw G data
+    dG <- read.table(file.path(path,fG[i]),sep="\t")
+    xG <- dG[,1]
+    # dG <- dG[xG>1400,]
+    xG <- dG[,1]
+    yG <- dG[,2]
+    # Fitting background with rubberband algorithm
+    backgrG   <- baseline(xG,yG,noise=2)$bg
+    # Fitting peak positions
+    if(i==1) {
+        params <- c(y0=0,
+                    x0=c(1538,1557,1573,1594,1616),
+                    A=c(900,900,900,900,900),
+                    FW=c(10,10,10,10,10))
+    }
+    else{params <- spec[[i-1]]$parG$coef}
+    fitG <- fitspec(xG[which(xG>1530)],
+                    yG[which(xG>1530)]-backgrG[which(xG>1530)],
+                    params=params, control=list(maxiter=1000)
+                    )
+    # qplot(xG,yG-backgrG) +
+    # geom_line(data=fitG$curves,aes(x,y,color=id))+theme_bw()
+# Storing spectrum for temperature_i and all other information
+    spec[[i]] <- list(name    = paste(i," - T = ",Temp[i],sep=""),
+                      T       = Temp[i],
+                      visible = FALSE, 
+                      RBM     = data.frame(x = xRBM,
+                                           y = yRBM, 
+                                           ycor = yRBM - backgrRBM, 
+                                           bg = backgrRBM),
+                      parRBM  = fitRBM,
+                      G       = data.frame(x = xG, 
+                                           y = yG, 
+                                           ycor = yG - backgrG,
+                                           bg = backgrG),
+                      parG    = fitG
+                     )
+}
+# For the visualization in the slider plot, spec[[1]] is the only one visible at first
+spec[[1]]$visible <- TRUE
+```
+
+## RBM peak
+
+```{r, out.width='100%', fig.asp=.85,cache=FALSE, warning=FALSE}
+# Create plot with slider control
+steps <- list()
+p     <- plot_ly()
+for (i in 1:length(fRBM)) {
+   x <- spec[[i]]$RBM[,"x"]
+   y <- spec[[i]]$RBM[,"y"]
+   bg   <- spec[[i]]$RBM[,"bg"]
+   vis  <- spec[[i]]$visible
+   name <- spec[[i]]$name
+   curves <- spec[[i]]$parRBM$curves
+   xfit <- curves[which(curves[,"id"]=="ytot"),"x"]
+   ytot <- bg + curves[which(curves[,"id"]=="ytot"),"y"]
+   y1   <- bg + curves[which(curves[,"id"]=="y1"),"y"]
+   y2   <- bg + curves[which(curves[,"id"]=="y2"),"y"]
+   y3   <- bg + curves[which(curves[,"id"]=="y3"),"y"]
+   y4   <- bg + curves[which(curves[,"id"]=="y4"),"y"]
+   colors <- colorRampPalette(c("black","royalblue","seagreen","orange","red"))(4)
+   p <- add_markers(p, x=x, y=y, visible = vis, 
+                    name = name, type = "scatter", showlegend = FALSE, 
+                    marker = list(color='black')
+                    ) 
+   p <- add_lines(p, x=xfit, y=ytot, visible = vis, 
+                  name = name, text='Fit', showlegend = FALSE,
+                  line=list(color='red', width=2)
+                  )
+   p <- add_lines(p, x=xfit, y=y1, visible = vis, 
+                  name = name, text='Lor 1', showlegend = FALSE,
+                  line=list(color=add.alpha(colors[1],.4), width=2)
+                  )
+   p <- add_lines(p, x=xfit, y=y2, visible = vis, 
+                  name = name, text='Lor 2', showlegend = FALSE,
+                  line=list(color=add.alpha(colors[2],.4), width=2)
+                  )
+   p <- add_lines(p, x=xfit, y=y3, visible = vis, 
+                  name = name, text='Lor 3', showlegend = FALSE,
+                  line=list(color=add.alpha(colors[3],.4), width=2)
+                  )
+   p <- add_lines(p, x=xfit, y=y4, visible = vis, 
+                  name = name, text='Lor 4', showlegend = FALSE,
+                  line=list(color=add.alpha(colors[4],.4), width=2)
+                  )
+   p <- add_lines(p, x=x, y=bg, visible = vis, 
+                  name = name, text='Background', showlegend = FALSE,
+                  line=list(color='royalblue', width=2)
+                  )
+   nlines <- 7
+   step <- list(args = list('visible', rep(FALSE, length(spec)*nlines ) ), 
+                label = spec[[i]]$T, 
+                method = 'restyle'
+                )
+   step$args[[2]][1:nlines+nlines*(i-1)] <- TRUE
+   steps[[i]] <- step
+} 
+# add slider control to plot
+p <- p %>% 
+  layout(sliders = list(list(x = 0, y=-.05, active = 0,
+                             currentvalue = list(prefix = "Temperature: ",suffix=" K"),
+                             steps = steps)),
+         xaxis = list(title = "Raman Shift [1/cm]",
+                     zeroline = TRUE, showline = TRUE, mirror = "ticks",linewidth = 2,
+                     tickfont=list(size=14),titlefont=list(size=16)), 
+         yaxis = list(title = "Intensity [arb. units]",
+                     zeroline = TRUE, showline = TRUE, mirror = "ticks",linewidth = 2,
+                     tickfont=list(size=14),titlefont=list(size=16))
+         ) 
+p
+```
+
+## G peak
+
+```{r, out.width='100%', fig.asp=.85,cache=FALSE, warning=FALSE}
+# Create plot with slider control
+steps <- list()
+p     <- plot_ly()
+for (i in 1:length(fG)) {
+   x <- spec[[i]]$G[,"x"]
+   y <- spec[[i]]$G[,"y"]
+   bg   <- spec[[i]]$G[,"bg"]
+   vis  <- spec[[i]]$visible
+   name <- spec[[i]]$name
+   params <- spec[[i]]$parG$coef
+   ytot <- bg + sumLor(x,params)
+   y0   <- params["y0"]
+   y1   <- bg + sumLor(x,c(y0,params[grep("1",names(params))]))
+   y2   <- bg + sumLor(x,c(y0,params[grep("2",names(params))]))
+   y3   <- bg + sumLor(x,c(y0,params[grep("3",names(params))]))
+   y4   <- bg + sumLor(x,c(y0,params[grep("4",names(params))]))
+   y5   <- bg + sumLor(x,c(y0,params[grep("5",names(params))]))
+   colors <- colorRampPalette(c("black","royalblue","seagreen","orange","red"))(5)
+   p <- add_markers(p, x=x, y=y, visible = vis, 
+                    name = name, type = "scatter", showlegend = FALSE, 
+                    marker = list(color='black')
+                    ) 
+   p <- add_lines(p, x=x, y=ytot, visible = vis, 
+                  name = name, text='Fit', showlegend = FALSE,
+                  line=list(color='red', width=2)
+                  )
+   p <- add_lines(p, x=x, y=y1, visible = vis, 
+                  name = name, text='Lor 1', showlegend = FALSE,
+                  line=list(color=add.alpha(colors[1],.4), width=2)
+                  )
+   p <- add_lines(p, x=x, y=y2, visible = vis, 
+                  name = name, text='Lor 2', showlegend = FALSE,
+                  line=list(color=add.alpha(colors[2],.4), width=2)
+                  )
+   p <- add_lines(p, x=x, y=y3, visible = vis, 
+                  name = name, text='Lor 3', showlegend = FALSE,
+                  line=list(color=add.alpha(colors[3],.4), width=2)
+                  )
+   p <- add_lines(p, x=x, y=y4, visible = vis, 
+                  name = name, text='Lor 4', showlegend = FALSE,
+                  line=list(color=add.alpha(colors[4],.4), width=2)
+                  )
+   p <- add_lines(p, x=x, y=y5, visible = vis, 
+                  name = name, text='Lor 5', showlegend = FALSE,
+                  line=list(color=add.alpha(colors[5],.4), width=2)
+                  )
+   p <- add_lines(p, x=x, y=bg, visible = vis, 
+                  name = name, text='Background', showlegend = FALSE,
+                  line=list(color='royalblue', width=2)
+                  )
+   nlines <- 8
+   step <- list(args = list('visible', rep(FALSE, length(spec)*nlines ) ), 
+                label = spec[[i]]$T, 
+                method = 'restyle'
+                )
+   step$args[[2]][1:nlines+nlines*(i-1)] <- TRUE
+   steps[[i]] <- step
+} 
+# add slider control to plot
+p <- p %>% 
+  layout(sliders = list(list(x = 0, y=-.05, active = 0,
+                             currentvalue = list(prefix = "Temperature: ",suffix=" K"),
+                             steps = steps)),
+         xaxis = list(title = "Raman Shift [1/cm]",
+                     zeroline = TRUE, showline = TRUE, mirror = "ticks",linewidth = 2,
+                     tickfont=list(size=14),titlefont=list(size=16)), 
+         yaxis = list(title = "Intensity [arb. units]",
+                     zeroline = TRUE, showline = TRUE, mirror = "ticks",linewidth = 2,
+                     tickfont=list(size=14),titlefont=list(size=16))
+         ) 
+p
+```
+
+# Temperature evolution
+
+## RBM peak
+
+```{r, out.width='100%', warning = FALSE, fig.asp=.85,cache=FALSE}
+# Regrouping data in a 3-columns data.frame
+evol <- data.frame()
+for(i in 1:length(fRBM)){
+    d <- data.frame(w = spec[[i]]$RBM[,"x"],
+                    Intensity = spec[[i]]$RBM[,"ycor"]/max(spec[[i]]$RBM[,"ycor"]),
+                    # y = spec[[i]]$RBM[,"ycor"],
+                    Temperature = rep(spec[[i]]$T,length(spec[[i]]$RBM[,"ycor"]))
+                    )
+    evol <- rbind(evol,d)
+}
+# Smoothing
+library(akima)
+evol.interp <- with(evol, 
+                    interp(x = w, y = Temperature, z = Intensity, 
+                           duplicate="median",
+                           xo=seq(min(evol$w), max(evol$w), length = 200),
+                           yo=seq(min(evol$Temperature), max(evol$Temperature), length = 200),
+                           extrap=FALSE, linear=FALSE)
+                   )
+# Regrouping this list to a 3-columns data.frame
+melt_x <- rep(evol.interp$x, times=length(evol.interp$y))
+melt_y <- rep(evol.interp$y, each=length(evol.interp$x))
+melt_z <- as.vector(evol.interp$z)
+evol.smooth <- na.omit(data.frame(w=melt_x, Temperature=melt_y, Intensity=melt_z))
+# Plotting
+breaksx <- seq(0,2000,10)
+breaksy <- seq(0,400,10)
+colors <- colorRampPalette(c("white","royalblue","seagreen","orange","red","brown"))(500)
+PRBM <- ggplot(data=evol.smooth, aes(x=w, y=Temperature, fill=Intensity)) + 
+          geom_tile() + 
+          ggtitle("RBM band vs T")+
+          scale_fill_gradientn(colors=colors, name='  Intensity\n[arb. units]') +
+          labs(x = "Raman Shift [1/cm]",y="Temperature [K]") +
+          scale_x_continuous(limits = c(130,230), expand = c(0,0), 
+                             breaks = breaksx, labels = every_nth(breaksx, 2, inverse = TRUE)) + 
+          scale_y_continuous(expand = c(0,0), breaks = breaksy, 
+                             labels = every_nth(breaksy, 2, inverse = TRUE)) +
+          my_theme + theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank()) 
+ggplotly(PRBM)
+
+parRBM   <- as.data.frame(t(recup(spec,"parRBM","coef")))
+parRBM$T <- Temp
+RBMc <- data.frame(T=rep(Temp,length(grep("x0",names(parRBM)))),
+                   w=unlist(parRBM[grep("x0",names(parRBM))]),
+                   Pic=rep(names(parRBM)[grep("x0",names(parRBM))],each=length(Temp))
+                   )
+colors <- colorRampPalette(c("black","royalblue","seagreen","orange","red"))(4)
+PparRBM <- ggplot(data=RBMc, aes(x=T, y=w, color=Pic)) + 
+           ggtitle("RBM Peak positions vs T") +
+           geom_point(size=3) + 
+           scale_colour_manual(values = colors) +
+           labs(y = "Raman Shift [1/cm]", x="Temperature [K]") +
+           my_theme 
+ggplotly(PparRBM)
+```
+
+## G peak
+
+```{r, out.width='100%', warning = FALSE, fig.asp=.85,cache=FALSE}
+# Regrouping data in a 3-columns data.frame
+evol <- data.frame()
+for(i in 1:length(fG)){
+    d <- data.frame(w = spec[[i]]$G[,"x"],
+                    Intensity = spec[[i]]$G[,"ycor"]/max(spec[[i]]$G[,"ycor"]),
+                    Temperature = rep(spec[[i]]$T,length(spec[[i]]$G[,"ycor"]))
+                    )
+    evol <- rbind(evol,d)
+}
+# Smoothing
+library(akima)
+evol.interp <- with(evol, 
+                    interp(x = w, y = Temperature, z = Intensity, 
+                           duplicate="median",
+                           xo=seq(min(evol$w), max(evol$w), length = 200),
+                           yo=seq(min(evol$Temperature), max(evol$Temperature), length = 200),
+                           extrap=FALSE, linear=FALSE)
+                   )
+# Regrouping this list to a 3-columns data.frame
+melt_x <- rep(evol.interp$x, times=length(evol.interp$y))
+melt_y <- rep(evol.interp$y, each=length(evol.interp$x))
+melt_z <- as.vector(evol.interp$z)
+evol.smooth <- na.omit(data.frame(w=melt_x, Temperature=melt_y, Intensity=melt_z))
+# Plotting
+breaksx <- seq(0,2000,10)
+breaksy <- seq(0,400,10)
+colors <- colorRampPalette(c("white","royalblue","seagreen","orange","red","brown"))(500)
+PG <- ggplot(data=evol.smooth, aes(x=w, y=Temperature, fill=Intensity)) + 
+      geom_tile() + 
+      # geom_hline(yintercept=283)+
+      ggtitle("G band vs T")+
+      scale_fill_gradientn(colors=colors, name='  Intensity\n[arb. units]') +
+      labs(x = "Raman Shift [1/cm]",y="Temperature [K]") +
+      scale_x_continuous(limits=c(1540,1640), expand = c(0,0), breaks = breaksx, labels = every_nth(breaksx, 2, inverse = TRUE)) + 
+      # scale_x_continuous(expand = c(0,0), breaks = breaksx, labels = every_nth(breaksx, 2, inverse = TRUE)) + 
+      scale_y_continuous(expand = c(0,0), breaks = breaksy, labels = every_nth(breaksy, 2, inverse = TRUE)) +
+      my_theme + theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank())
+ggplotly(PG)
+
+parG   <- as.data.frame(t(recup(spec,"parG","coef")))
+parG$T <- Temp
+Gc <- data.frame(T=rep(Temp,length(grep("x0",names(parG)))),
+                 w=unlist(parG[grep("x0",names(parG))]),
+                 Pic=rep(names(parG)[grep("x0",names(parG))],each=length(Temp))
+                 )
+colors <- colorRampPalette(c("black","royalblue","seagreen","orange","red"))(5)
+PparG  <- ggplot(data=Gc, aes(x=T, y=w, color=Pic)) + 
+           ggtitle("G Peak positions vs T") +
+           geom_point(size=3) + 
+           scale_colour_manual(values = colors) +
+           labs(y = "Raman Shift [1/cm]", x="Temperature [K]") +
+           my_theme 
+ggplotly(PparG)
+```
+
+
+
+```{r, out.width='100%', warning = FALSE, fig.asp=.85,cache=FALSE, include=FALSE}
+# Output plots to files
+PRBM <- PRBM+theme(axis.ticks.length=unit(-0.2, "cm"),
+             axis.text.x = element_text(margin=unit(c(0.5,0.5,0.5,0.5), "cm")), 
+             axis.text.y = element_text(margin=unit(c(0.5,0.5,0.5,0.5), "cm"))) 
+PG <- PG+theme(axis.ticks.length=unit(-0.2, "cm"),
+             axis.text.x = element_text(margin=unit(c(0.5,0.5,0.5,0.5), "cm")), 
+             axis.text.y = element_text(margin=unit(c(0.5,0.5,0.5,0.5), "cm"))) 
+PparG <- PparG+theme(axis.ticks.length=unit(-0.2, "cm"),
+             axis.text.x = element_text(margin=unit(c(0.5,0.5,0.5,0.5), "cm")), 
+             axis.text.y = element_text(margin=unit(c(0.5,0.5,0.5,0.5), "cm"))) 
+PparRBM <- PparRBM+theme(axis.ticks.length=unit(-0.2, "cm"),
+             axis.text.x = element_text(margin=unit(c(0.5,0.5,0.5,0.5), "cm")), 
+             axis.text.y = element_text(margin=unit(c(0.5,0.5,0.5,0.5), "cm"))) 
+# library(tikzDevice)
+# tikz("Plots/Log.tex",height=6, width=8, pointsize = 10,standAlone=TRUE)
+pdf("Plots/Log.pdf",height=6, width=8)
+print(PRBM)
+print(PG)
+print(PparRBM)
+print(PparG)
+dev.off()
+```
+
+# Conclusions
+
+Blablabla
+
+
+# References
+
+

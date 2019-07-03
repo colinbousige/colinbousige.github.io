@@ -183,11 +183,7 @@ Write whatever you want in the "Source code" panel, and __run__ it by selecting 
 
 The code output will be seen in the "R Console" panel if it's a text, or in the "Graph" panel if it's a graph. A list of all defined variables and functions is available in the "Environment" panel.
 
-
-```{r fig1, fig.cap='The Rstudio environment', echo=FALSE, message=FALSE, warning=FALSE}
-knitr::include_graphics("./Img/Rstudio.png")
-```
-
+[![](/Img/rstudio.png)](/Img/rstudio.png)
 
 More on the [Rstudio cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
 
