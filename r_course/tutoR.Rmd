@@ -23,6 +23,7 @@ output:
         fig_caption : TRUE
         fig_number : TRUE
         url: 'https\://colinbousige.github.io/r_course/'
+        self_contained : TRUE
         sharing:
           facebook: no
           twitter: no
