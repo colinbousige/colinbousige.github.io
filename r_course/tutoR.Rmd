@@ -7,14 +7,14 @@ output:
     bookdown::gitbook:
       config:
         toc:
-          collapse: section
+          collapse: subsection
           scroll_highlight: yes
           before: <li><h4>Reproducible data treatment with R</h4></li>
           after: null
         toolbar:
           position: fixed
         edit : null
-        download: [["tutoR.Rmd","Rmd file"]]
+        download: [["tutoR.Rmd","Rmd"]]
         search: yes
         fontsettings:
           theme: white
@@ -23,7 +23,6 @@ output:
         fig_caption : TRUE
         fig_number : TRUE
         url: 'https\://colinbousige.github.io/r_course/'
-        self_contained : TRUE
         sharing:
           facebook: no
           twitter: no
@@ -35,6 +34,10 @@ output:
           all: []
 ---
 
+<!-- 
+Render with:
+bookdown::render_book("tutoR.Rmd")
+-->
 
 # About the class {-}
 
@@ -167,6 +170,18 @@ In the end, I still use *both* languages, each one for a different purpose:
 Both languages are great and being able to use both is the best thing that can happen to you (relatively speaking) – _especially since you can combine them in Rmarkdown using the [reticulate](https://rstudio.github.io/reticulate/) package_, which we will see later in this class. 
 
 So, since my goal is to provide you with tools for seamlessly read, make sense, and plot your data in the reproducible science philosophy, let's go with __R__.
+
+
+```{r, warnings=FALSE}
+x  <- seq(-3*pi,3*pi,length=1000)
+y  <- sinc(x)
+z  <- sinc(x)^2
+df <- data.frame(x=x, y=y)
+plot(x,y) # plot providing x and y data
+plot(df)  # plot providing a two-columns data.frame
+df <- data.frame(x=x, y=y, z=z, w=z*y)
+plot(df)  # plot providing a multi-columns data.frame
+```
 
 
 # Getting ready
