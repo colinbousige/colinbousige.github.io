@@ -327,8 +327,8 @@ noforloop &lt;-<span class="st"> </span><span class="cf">function</span>(x){
 }
 x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="fl">1e8</span>)
 <span class="kw">test_time</span>(forloop, x); <span class="kw">test_time</span>(noforloop, x)</code></pre>
-<pre><code>## [1] &quot;Elapsed time : 6.1160831451416 s -  forloop&quot;</code></pre>
-<pre><code>## [1] &quot;Elapsed time : 0.457313060760498 s -  noforloop&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time : 6.19043803215027 s -  forloop&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time : 0.46431303024292 s -  noforloop&quot;</code></pre>
 <p>Avoiding loops should therefore be though for when possible. R helps us in this way through the base functions <code>apply</code>, <code>sapply</code> and <code>lapply</code>.</p>
 <p>Take a look at the help on these functions, but the summary is that <code>apply(df, direction, function)</code> applies a function in the wanted direction (1 for rows, 2 for columns) of the given <code>data.frame</code> (or vector). Example:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
@@ -590,7 +590,7 @@ gitbook.start({
 "toolbar": {
 "position": "fixed"
 },
-"search": false,
+"search": true,
 "fig_caption": true,
 "fig_number": true,
 "url": "https\://colinbousige.github.io/r_course/",
