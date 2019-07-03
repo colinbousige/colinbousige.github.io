@@ -22,6 +22,7 @@ output:
           size: 2
         fig_caption : TRUE
         fig_number : TRUE
+        url: 'https\://colinbousige.github.io/r_course/'
         sharing:
           facebook: no
           twitter: no
