@@ -183,7 +183,7 @@ Write whatever you want in the "Source code" panel, and __run__ it by selecting 
 
 The code output will be seen in the "R Console" panel if it's a text, or in the "Graph" panel if it's a graph. A list of all defined variables and functions is available in the "Environment" panel.
 
-[![](Img/rstudio.png)](Img/rstudio.png)
+[![](img/rstudio.png)](img/rstudio.png)
 
 More on the [Rstudio cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf).
 
@@ -2655,7 +2655,7 @@ For cross referencing to figures and tables, use `output: bookdown::html_documen
 
 To knit your Rmd file to the desired output, in Rstudio, click the little triangle next to the "Knit" button, like this:
 
-[![](Img/compile_rmd.png)](Img/compile_rmd.png)
+[![](img/compile_rmd.png)](img/compile_rmd.png)
 
 The corresponding output file will be created in the same folder.
 
