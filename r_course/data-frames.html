@@ -530,8 +530,7 @@ df <span class="co"># is not tidy</span></code></pre>
 </details>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyr)
 df &lt;-<span class="st"> </span><span class="kw">gather</span>(df, <span class="kw">names</span>(df)[<span class="op">-</span><span class="dv">1</span>], <span class="dt">key=</span><span class="st">&quot;city&quot;</span>, <span class="dt">value=</span><span class="st">&quot;pop&quot;</span>)
-df <span class="co">#is tidy</span>
-<span class="kw">spread</span>(df, city, pop) <span class="co"># is not tidy</span></code></pre>
+df <span class="co">#is tidy</span></code></pre>
 <details>
 <p><summary>Show output</summary></p>
 <pre><code>##     Année          city     pop
@@ -695,6 +694,10 @@ df <span class="co">#is tidy</span>
 ## 158  1999      Toulouse  390350
 ## 159  2007      Toulouse  439453
 ## 160  2012      Toulouse  453317</code></pre>
+</details>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">spread</span>(df, city, pop) <span class="co"># is not tidy</span></code></pre>
+<details>
+<p><summary>Show output</summary></p>
 <pre><code>##   Année Angers Bordeaux  Brest  Dijon Grenoble Le.Havre Le.Mans  Lille
 ## 1  1962 115273   278403 136104 135694   156707   187845  132181 239955
 ## 2  1968 128557   266662 154023 145357   161616   207150  143246 238554
@@ -722,6 +725,7 @@ df <span class="co">#is tidy</span>
 ## 6        180210     264115 160639   390350
 ## 7        175318     272123 166537   439453
 ## 8        171483     274394 164899   453317</code></pre>
+</details>
 </details>
 <p>You can find more information on data import and <a href="https://garrettgman.github.io/tidying/">tidyness</a> on the <a href="https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf">data-import cheatsheet</a>.</p>
 </div>
@@ -849,7 +853,7 @@ gitbook.start({
 "toolbar": {
 "position": "fixed"
 },
-"search": false,
+"search": true,
 "fig_caption": true,
 "fig_number": true,
 "url": "https\://colinbousige.github.io/r_course/",
