@@ -13,7 +13,8 @@ output:
         toc:
           collapse: subsection
           scroll_highlight: yes
-          before: <li><h4>Reproducible data treatment with R</h4></li>
+          before: |
+            <li><a href="https://colinbousige.github.io/r_course/about-the-class.html">Reproducible data treatment with R</a></li>
           after: null
         toolbar:
           position: fixed
@@ -94,6 +95,7 @@ This class is indented to provide the students with the tools to handle themselv
 - [A digested version](https://perso.esiee.fr/~courivad/R/index.html)
 - Some [cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
 - The [R Graph Gallery](https://www.r-graph-gallery.com/)
+- The [R Graph Cookbook](https://r-graphics.org/index.html)
 - The tidyverse [website](https://ggplot2.tidyverse.org/)
 - The [ggplot cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
     + [Another one](http://r-statistics.co/ggplot2-cheatsheet.html)
@@ -109,11 +111,11 @@ This class is indented to provide the students with the tools to handle themselv
 
 ### Reproducible data treatment: why it matters {-}
 
-In 2016, Nature conducted a survey of 1576 researchers who took a brief online questionnaire on reproducibility in research. According to the survey, more than 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments. [^1]
+From the [wikipedia](https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research) page on reproducible research:
 
-> "Although 52% of those surveyed agree there is a significant 'crisis' of reproducibility, less than 31% think failure to reproduce published results means the result is probably wrong, and most say they still trust the published literature."[^2]
+> In 2016, Nature conducted a survey of 1576 researchers who took a brief online questionnaire on reproducibility in research. According to the survey, more than 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments. [...] Although 52% of those surveyed agree there is a significant 'crisis' of reproducibility, less than 31% think failure to reproduce published results means the result is probably wrong, and most say they still trust the published literature.[^2]
 
-[^1]: From [wikipedia](https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research)
+
 [^2]: [https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)
 
 Replicability and reproducibility are some of the keys to scientific integrity. Establishing a workflow in which your data are always treated in the same manner is thus a way to:
