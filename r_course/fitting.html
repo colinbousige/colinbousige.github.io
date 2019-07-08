@@ -24,7 +24,7 @@
 <meta name="author" content="Colin Bousige" />
 
 
-<meta name="date" content="2019-03-07" />
+<meta name="date" content="2019-08-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -404,8 +404,11 @@ A  &lt;-<span class="st"> </span><span class="kw">coef</span>(fit2)[<span class=
 <h3><span class="header-section-number">9.2.2</span> FME</h3>
 <p>Some times though, whatever the initial conditions of the fit you use, you will get the error message <code>Error in nlsModel(formula, mf, start, wts) : singular gradient matrix at initial parameter estimates</code>. If playing around with the initial parameters does not solve this problem, a more robust fitting method is needed. A good one is <code>modFit()</code> from the package <code>FME</code>, that also accepts constraints.</p>
 <p>With <code>modFit</code>, the algorithm minimizes the residual of the observed data minus the model, so the syntax is slightly different:</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(FME)
-myfunc &lt;-<span class="st"> </span><span class="cf">function</span>(x, params) {
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(FME)</code></pre>
+<pre><code>## Loading required package: deSolve</code></pre>
+<pre><code>## Loading required package: rootSolve</code></pre>
+<pre><code>## Loading required package: coda</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">myfunc &lt;-<span class="st"> </span><span class="cf">function</span>(x, params) {
     parms &lt;-<span class="st"> </span><span class="kw">as.list</span>(params)
     parms<span class="op">$</span>y0 <span class="op">+</span><span class="st"> </span><span class="kw">dnorm</span>(x, <span class="dt">sd=</span>parms<span class="op">$</span>A) <span class="op">+</span><span class="st"> </span><span class="kw">dnorm</span>(x, <span class="dt">mean=</span>parms<span class="op">$</span>x0, <span class="dt">sd=</span>parms<span class="op">$</span>B)
 }
@@ -445,7 +448,7 @@ fit &lt;-<span class="st"> </span><span class="kw">modFit</span>(<span class="dt
 <details>
 <p><summary><strong>Exercise 1</strong></summary></p>
 <ul>
-<li>Load <a href="Data/exo_fit.txt">exo_fit.txt</a> in a <code>data.frame</code>.</li>
+<li>Load <a href="Data/exo_fit.txt" download target="_blank">exo_fit.txt</a> in a <code>data.frame</code>.</li>
 <li>Using <code>lm</code> or <code>nls</code> fit each column as a function of <code>x</code> and display the “experimental” data and the fit on the same graph.
 <ul>
 <li>Tip: Take a look at the function <code>dnorm</code> to define a Gaussian</li>
@@ -464,7 +467,7 @@ write.table(df, "Data/exo_fit.txt", quote=FALSE, row.names=FALSE)
 <details>
 <p><summary><strong>Exercise 2: application to real data</strong></summary></p>
 <ul>
-<li>Load the Raman spectrum <a href="Data/rubis_1.txt">rubis_1.txt</a>, normalize it to [0,1] and plot it</li>
+<li>Load the Raman spectrum <a href="Data/rubis_01.txt" download target="_blank">rubis_01.txt</a>, normalize it to [0,1] and plot it</li>
 <li>Define the Lorentzian function</li>
 <li>Create a function that is the sum of 2 Lorentzians</li>
 <li>Guess grossly the initial parameters and plot the resulting curve</li>
@@ -481,27 +484,14 @@ write.table(df, "Data/exo_fit.txt", quote=FALSE, row.names=FALSE)
 </ul>
 <details>
 <p><summary>Solution</summary></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Load [PPC60_G_01.txt](Data/PPC60_G_01.txt) and plot it</span>
-d &lt;-<span class="st"> </span><span class="kw">read.table</span>(<span class="st">&quot;Data/rubis_1.txt&quot;</span>, <span class="dt">header=</span><span class="ot">FALSE</span>, <span class="dt">col.names=</span><span class="kw">c</span>(<span class="st">&quot;w&quot;</span>, <span class="st">&quot;Int&quot;</span>))</code></pre>
-<pre><code>## Warning in file(file, &quot;rt&quot;): cannot open file &#39;Data/rubis_1.txt&#39;: No such
-## file or directory</code></pre>
-<pre><code>## Error in file(file, &quot;rt&quot;): cannot open the connection</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r">norm01 &lt;-<span class="st"> </span><span class="cf">function</span>(x) {(x<span class="op">-</span><span class="kw">min</span>(x))<span class="op">/</span>(<span class="kw">max</span>(x)<span class="op">-</span><span class="kw">min</span>(x))}
-d<span class="op">$</span>Int_n &lt;-<span class="st"> </span><span class="kw">norm01</span>(d<span class="op">$</span>Int)</code></pre>
-<pre><code>## Warning in min(x): no non-missing arguments to min; returning Inf</code></pre>
-<pre><code>## Warning in max(x): no non-missing arguments to max; returning -Inf</code></pre>
-<pre><code>## Warning in min(x): no non-missing arguments to min; returning Inf</code></pre>
-<pre><code>## Error in `$&lt;-.data.frame`(`*tmp*`, Int_n, value = numeric(0)): replacement has 0 rows, data has 9</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">cex.lab=</span><span class="fl">1.5</span>, <span class="dt">cex.axis=</span><span class="fl">1.4</span>, <span class="dt">mgp =</span> <span class="kw">c</span>(<span class="fl">2.4</span>, <span class="fl">.5</span>, <span class="dv">0</span>),
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Load rubis_1.txt, normalize it to [0,1] and plot it</span>
+d &lt;-<span class="st"> </span><span class="kw">read.table</span>(<span class="st">&quot;Data/rubis_01.txt&quot;</span>, <span class="dt">header=</span><span class="ot">FALSE</span>, <span class="dt">col.names=</span><span class="kw">c</span>(<span class="st">&quot;w&quot;</span>, <span class="st">&quot;Int&quot;</span>))
+norm01 &lt;-<span class="st"> </span><span class="cf">function</span>(x) {(x<span class="op">-</span><span class="kw">min</span>(x))<span class="op">/</span>(<span class="kw">max</span>(x)<span class="op">-</span><span class="kw">min</span>(x))}
+d<span class="op">$</span>Int_n &lt;-<span class="st"> </span><span class="kw">norm01</span>(d<span class="op">$</span>Int)
+<span class="kw">par</span>(<span class="dt">cex.lab=</span><span class="fl">1.5</span>, <span class="dt">cex.axis=</span><span class="fl">1.4</span>, <span class="dt">mgp =</span> <span class="kw">c</span>(<span class="fl">2.4</span>, <span class="fl">.5</span>, <span class="dv">0</span>),
     <span class="dt">tck=</span><span class="fl">0.02</span>, <span class="dt">mar=</span><span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="fl">.5</span>), <span class="dt">lwd=</span><span class="dv">2</span>, <span class="dt">las=</span><span class="dv">1</span>)
-<span class="kw">plot</span>(d<span class="op">$</span>w, d<span class="op">$</span>Int_n)</code></pre>
-<pre><code>## Warning in min(x): no non-missing arguments to min; returning Inf</code></pre>
-<pre><code>## Warning in max(x): no non-missing arguments to max; returning -Inf</code></pre>
-<pre><code>## Warning in min(x): no non-missing arguments to min; returning Inf</code></pre>
-<pre><code>## Warning in max(x): no non-missing arguments to max; returning -Inf</code></pre>
-<pre><code>## Error in plot.window(...): need finite &#39;xlim&#39; values</code></pre>
-<p><img src="tutoR_files/figure-html/unnamed-chunk-84-1.png" width="672" /></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Define the Lorentzian function</span>
+<span class="kw">plot</span>(d<span class="op">$</span>w, d<span class="op">$</span>Int_n)
+<span class="co"># Define the Lorentzian function</span>
 Lorentzian &lt;-<span class="st"> </span><span class="cf">function</span>(x,<span class="dt">x0=</span><span class="dv">0</span>,<span class="dt">FWHM=</span><span class="dv">1</span>,<span class="dt">A=</span><span class="dv">1</span>,<span class="dt">y0=</span><span class="dv">0</span>){
     y0 <span class="op">+</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span>A<span class="op">/</span>(pi<span class="op">*</span>FWHM)<span class="op">/</span>( <span class="dv">1</span> <span class="op">+</span><span class="st"> </span>((x<span class="op">-</span>x0)<span class="op">/</span>(FWHM<span class="op">/</span><span class="dv">2</span>))<span class="op">^</span><span class="dv">2</span> )
 }
@@ -512,13 +502,14 @@ Lor2 &lt;-<span class="st"> </span><span class="cf">function</span>(x,x1,FWHM1,A
 }
 <span class="co"># Guess grossly the initial parameters and plot the resulting curve</span>
 <span class="kw">lines</span>(d<span class="op">$</span>w,<span class="kw">Lor2</span>(d<span class="op">$</span>w,<span class="dt">x1=</span><span class="dv">3160</span>, <span class="dt">FWHM1=</span><span class="dv">10</span>, <span class="dt">A1=</span><span class="dv">3</span>, <span class="dt">y1=</span><span class="fl">0.03</span>, 
-                   <span class="dt">x2=</span><span class="dv">3200</span>, <span class="dt">FWHM2=</span><span class="dv">10</span>, <span class="dt">A2=</span><span class="dv">7</span>, <span class="dt">y2=</span><span class="dv">0</span>), <span class="dt">col=</span><span class="st">&quot;red&quot;</span>)
-<span class="co"># Fit the data by a sum of 2 Lorentzians using `nls`</span>
+                   <span class="dt">x2=</span><span class="dv">3200</span>, <span class="dt">FWHM2=</span><span class="dv">10</span>, <span class="dt">A2=</span><span class="dv">7</span>, <span class="dt">y2=</span><span class="dv">0</span>), <span class="dt">col=</span><span class="st">&quot;red&quot;</span>)</code></pre>
+<p><img src="tutoR_files/figure-html/unnamed-chunk-84-1.png" width="672" /></p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Fit the data by a sum of 2 Lorentzians using `nls`</span>
 fit &lt;-<span class="st"> </span><span class="kw">nls</span>(<span class="dt">data=</span>d, Int_n <span class="op">~</span><span class="st"> </span><span class="kw">Lor2</span>(w,x1,FWHM1,A1,y1,x2,FWHM2,A2,y2), 
            <span class="dt">start=</span><span class="kw">list</span>(<span class="dt">x1=</span><span class="dv">3160</span>, <span class="dt">FWHM1=</span><span class="dv">10</span>, <span class="dt">A1=</span><span class="dv">3</span>, <span class="dt">y1=</span><span class="fl">0.03</span>,
                       <span class="dt">x2=</span><span class="dv">3200</span>, <span class="dt">FWHM2=</span><span class="dv">10</span>, <span class="dt">A2=</span><span class="dv">7</span>, <span class="dt">y2=</span><span class="dv">0</span>)
            )</code></pre>
-<pre><code>## Error in nls(data = d, Int_n ~ Lor2(w, x1, FWHM1, A1, y1, x2, FWHM2, A2, : parameters without starting value in &#39;data&#39;: Int_n, w</code></pre>
+<pre><code>## Error in nlsModel(formula, mf, start, wts): singular gradient matrix at initial parameter estimates</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co"># This doesn&#39;t work... we need to use a more robust fitting method</span>
 <span class="co"># Define a function returning the sum of two Lorentzians </span>
 <span class="co"># taking the parameters as a vector, `sumLor(x, params)`</span>
@@ -544,23 +535,15 @@ params &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dt">
             <span class="dt">y0=</span><span class="kw">c</span>(<span class="fl">0.01</span>,<span class="fl">0.01</span>))
 <span class="kw">par</span>(<span class="dt">cex.lab=</span><span class="fl">1.5</span>, <span class="dt">cex.axis=</span><span class="fl">1.4</span>, <span class="dt">mgp =</span> <span class="kw">c</span>(<span class="fl">2.4</span>, <span class="fl">.5</span>, <span class="dv">0</span>),
     <span class="dt">tck=</span><span class="fl">0.02</span>, <span class="dt">mar=</span><span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="fl">.5</span>), <span class="dt">lwd=</span><span class="dv">2</span>, <span class="dt">las=</span><span class="dv">1</span>)
-<span class="kw">plot</span>(d<span class="op">$</span>w, d<span class="op">$</span>Int_n, <span class="dt">pch=</span><span class="dv">16</span>, <span class="dt">col=</span><span class="kw">adjustcolor</span>(<span class="st">&quot;black&quot;</span>, <span class="dt">alpha=</span>.<span class="dv">5</span>), <span class="dt">cex=</span><span class="dv">1</span>)</code></pre>
-<pre><code>## Warning in min(x): no non-missing arguments to min; returning Inf
-
-## Warning in min(x): no non-missing arguments to max; returning -Inf</code></pre>
-<pre><code>## Warning in min(x): no non-missing arguments to min; returning Inf</code></pre>
-<pre><code>## Warning in max(x): no non-missing arguments to max; returning -Inf</code></pre>
-<pre><code>## Error in plot.window(...): need finite &#39;xlim&#39; values</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">lines</span>(d<span class="op">$</span>w, <span class="kw">sumLor</span>(d<span class="op">$</span>w, params), <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>)</code></pre>
-<pre><code>## Error in base::rowSums(x, na.rm = na.rm, dims = dims, ...): &#39;x&#39; must be an array of at least two dimensions</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Fit the data using `FME::modFit()`</span>
+<span class="kw">plot</span>(d<span class="op">$</span>w, d<span class="op">$</span>Int_n, <span class="dt">pch=</span><span class="dv">16</span>, <span class="dt">col=</span><span class="kw">adjustcolor</span>(<span class="st">&quot;black&quot;</span>, <span class="dt">alpha=</span>.<span class="dv">5</span>), <span class="dt">cex=</span><span class="dv">1</span>)
+<span class="kw">lines</span>(d<span class="op">$</span>w, <span class="kw">sumLor</span>(d<span class="op">$</span>w, params), <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>)
+<span class="co"># Fit the data using `FME::modFit()`</span>
 <span class="co"># What happens on the `y0` parameter? use a constraint to keep the parameters plausible</span>
 <span class="kw">library</span>(FME)
-fit &lt;-<span class="st"> </span><span class="kw">modFit</span>(<span class="dt">f=</span>ModCost, <span class="dt">p=</span>params, <span class="dt">lower=</span><span class="kw">c</span>(<span class="dt">x0=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">0</span>), <span class="dt">A=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">0</span>), <span class="dt">FWHM=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">0</span>),<span class="dt">y0=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">0</span>)))</code></pre>
-<pre><code>## Error in base::rowSums(x, na.rm = na.rm, dims = dims, ...): &#39;x&#39; must be an array of at least two dimensions</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Plot the resulting fit</span>
+fit &lt;-<span class="st"> </span><span class="kw">modFit</span>(<span class="dt">f=</span>ModCost, <span class="dt">p=</span>params, <span class="dt">lower=</span><span class="kw">c</span>(<span class="dt">x0=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">0</span>), <span class="dt">A=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">0</span>), <span class="dt">FWHM=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">0</span>),<span class="dt">y0=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">0</span>)))
+<span class="co"># Plot the resulting fit</span>
 <span class="kw">lines</span>(d<span class="op">$</span>w, <span class="kw">sumLor</span>(d<span class="op">$</span>w, <span class="kw">coef</span>(fit)), <span class="dt">col=</span><span class="st">&quot;red&quot;</span>)</code></pre>
-<pre><code>## Error in base::rowSums(x, na.rm = na.rm, dims = dims, ...): &#39;x&#39; must be an array of at least two dimensions</code></pre>
+<p><img src="tutoR_files/figure-html/unnamed-chunk-84-2.png" width="672" /></p>
 </details>
 </details>
 </div>

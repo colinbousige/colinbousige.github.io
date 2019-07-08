@@ -709,7 +709,8 @@ What will be the output for the R expression `max(a[b])`?
 
 Open Rstudio and create a new R script, save it as `population.R` in your wanted directory, say `Rcourse/`.
 
-[Download](Data/population.csv) the `population.csv` file and save it in your working directory.
+
+<a href="Data/population.csv" download target="_blank">Download</a> the `population.csv` file and save it in your working directory.
 
 A csv file contains raw data stored as plain text and separated by a comma (Comma Separated Values). Open it from a text editor, as Excel and the likes don't work well with csv files.
 
@@ -827,9 +828,9 @@ typeof(L2); L2
 ## Defining a data.frame
 
 
-In R, the principal object is *the data*. Hence the `data.frame` object, which is basically a table of vectors. A `data.frame` is a list presented under the form of a table – *i.e.* a spreadsheet. On a day-to-day basis, you will either define `data.frame` from existing vectors or other `data.frame`, or define a `data.frame` from a file (text, Excel...). In this example, we use [test.dat](Data/test.dat) and [test.xlsx](Data/test.xlsx).
+In R, the principal object is *the data*. Hence the `data.frame` object, which is basically a table of vectors. A `data.frame` is a list presented under the form of a table – *i.e.* a spreadsheet. On a day-to-day basis, you will either define `data.frame` from existing vectors or other `data.frame`, or define a `data.frame` from a file (text, Excel...). In this example, we use <a href="Data/test.dat" download target="_blank">test.dat</a> and <a href="Data/test.xlsx" download target="_blank">test.xlsx</a>.
 
-```{r, warnings=FALSE}
+```{r, warnings=FALSE, message=FALSE}
 # x = 10 random numbers between -10 and 10
 x  <- runif(10, min=-10, max=10) 
 y  <- sin(x)
@@ -930,7 +931,7 @@ df #is tidy
 <details>
     <summary>Show output</summary>
 
-```{r echo=FALSE}
+```{r echo=FALSE, message=FALSE}
 library(tidyr)
 df <- gather(df, names(df)[-1], key="city", value="pop")
 df #is tidy
@@ -967,7 +968,7 @@ More on tibbles [here](https://cran.r-project.org/web/packages/tibble/vignettes/
 rm(x)
 ```
 
-```{r, error=TRUE, warnings=FALSE}
+```{r, error=TRUE, warnings=FALSE, message=FALSE}
 library(tidyverse)
 tibble(x=runif(1e3), y=cumsum(x))
 data.frame(x=runif(1e3), y=cumsum(x))
@@ -990,7 +991,7 @@ Do the same with a `tibble`
 <details>
 <summary>**Exercise 2**</summary>
 
-Download [population.txt](Data/population.txt) and load it into a `data.frame`.
+Download <a href="Data/population.txt" download target="_blank">population.txt</a> and load it into a `data.frame`.
 
 - Are the data tidy?
 - What are the names of the columns?
@@ -1003,7 +1004,7 @@ Download [population.txt](Data/population.txt) and load it into a `data.frame`.
 <summary>Solution</summary>
 
 ```{r}
-# Download [population.txt](Data/population.txt) and load it into a `data.frame`.
+# Download population.txt and load it into a `data.frame`.
 popul <- read.table("Data/population.txt", header=TRUE)
 # Are the data tidy?
 head(popul)
@@ -1086,8 +1087,6 @@ Write a function returning a list (created if empty, incremented if existing) co
 
 ```{r, warnings=FALSE}
 people <- function(ppl=list(), name, age, gender){
-    # if the list is not provided, initialize it
-    if(length(ppl)==0) ppl <- list() 
     # increment vectors
     ppl[['name']]   <- c(ppl[['name']], name)
     ppl[['age']]    <- c(ppl[['age']], age)
@@ -1114,10 +1113,10 @@ Create the sinus cardinal function, $f(x)=\sin(x)/x$ for $x\neq0$ and $f(0)=1$.
 <summary>Solution</summary>
 
 ```{r, warnings=FALSE, fig.asp=.85}
-sinc <- function(x){
+sinc <- function(x, tol = sqrt(.Machine$double.eps) ){
     # sinus cardinal
     y <- rep(1,length(x))
-    b <- which(x!=0)
+    b <- which(x<tol)
     y[b] <- sin(x[b])/x[b]
     y
 }
@@ -1206,7 +1205,7 @@ Avoiding loops should therefore be though for when possible. R helps us in this 
 
 Take a look at the help on these functions, but the summary is that `apply(df, direction, function)` applies a function in the wanted direction (1 for rows, 2 for columns) of the given `data.frame` (or vector). Example:
 
-```{r}
+```{r, message=FALSE}
 library(tidyverse)
 dt <- tibble(x=1:5, y=x^2, z=x^3);dt
 apply(dt, 1, mean) # mean of the rows
@@ -1278,7 +1277,7 @@ unlist(lapply(LL, sum)); sapply(LL, sum)
 <details>
     <summary>**Exercise 3**</summary>
 
-- Download [population.csv](Data/population.csv) and load it into a `data.frame`
+- Download <a href="Data/population.csv" download target="_blank">population.csv</a> and load it into a `data.frame`
 - What is the total population over the years?
 - What is the mean population for each city?
 
@@ -1287,7 +1286,7 @@ unlist(lapply(LL, sum)); sapply(LL, sum)
     <summary>Solution</summary>
 
 ```{r}
-# Download [population.csv](Data/population.csv) and load it into a `data.frame`
+# Download population.csv and load it into a `data.frame`
 df <- read.csv("Data/population.csv")
 # What is the total population over the years?
 data.frame(year=df[,"Année"],
@@ -1499,7 +1498,7 @@ p1 <- qplot(x,y, geom="line") # ggplot2 quick plot
 p2 <- qplot(x,y, geom="point") # ggplot2 quick plot
 p1; p2
 ```
-```{r, echo=FALSE, warnings=FALSE}
+```{r, echo=FALSE, warnings=FALSE, message=FALSE}
 # some fake data
 x  <- seq(-10,10,.5)
 y  <- sinc(x)
@@ -1625,7 +1624,7 @@ p + my_theme
 ### Making interactive plots with ggplot2 and plotly
 
 Thanks to the `plotly` package, it is really easy to transform a `ggplot` plot into an interactive plot:
-```{r, include=FALSE, warning = FALSE}
+```{r, include=FALSE, warning = FALSE, message=FALSE}
 library(plotly)
 ```
 ```r
@@ -1645,7 +1644,7 @@ ggplotly(p)
 
 If you have several plot you want to gather on a grid and you can't use `facet_wrap` (because they come from different data sets), you can use the library `cowplot` and its function [plot_grid()](https://cran.r-project.org/web/packages/cowplot/vignettes/plot_grid.html):
 
-```{r}
+```{r, message=FALSE}
 library(cowplot)
 p1 <- qplot(1:10, sin(1:10))
 p2 <- qplot(1:10, cos(1:10))
@@ -1782,7 +1781,7 @@ smoothScatter(df)
 <details>
     <summary>**Exercise 1**</summary>
 
-- Download the two sample Raman spectra: [PPC60_G_01.txt](Data/PPC60_G_01.txt) and [PPC60_G_30.txt](Data/PPC60_G_30.txt)
+- Download the two sample Raman spectra: <a href="Data/PPC60_G_01.txt" download target="_blank">PPC60_G_01.txt</a> and <a href="Data/PPC60_G_30.txt" download target="_blank">PPC60_G_30.txt</a>
 - Load them in two separate `data.frame`
 - Plot them together using base graphics, one in red lines, one in blue points
     + Is the y axis alright? correct it if needed
@@ -1860,16 +1859,19 @@ df1$norm <- norm01(df1$Int)
 df2$name <- "PPC60_G_30"
 df2$norm <- norm01(df2$Int)
 df <- rbind(df1, df2)
+library(ggplot2)
 ggplot(df, aes(x=w, y=norm)) +
     geom_line(data=subset(df, name=="PPC60_G_01"), size=1, aes(color=name))+
     geom_point(data=subset(df, name=="PPC60_G_30"), size=2, aes(color=name))+
     scale_color_manual(values=c("red","royalblue"), name="") +
     labs(x="Raman Shift [1/cm]", y="Intensity [arb. unit]") +
     theme_bw() +
-    theme(legend.position = c(0.1,.9),
+    theme(legend.position = c(0.15,.92),
           text = element_text(size = 16,family = "Times"),
           axis.text = element_text(size = 16),
-          legend.text = element_text(size = 14))
+          legend.text = element_text(size = 14),
+          panel.grid.major = element_blank(), 
+          panel.grid.minor = element_blank())
 ```
 
 
@@ -1907,7 +1909,7 @@ plot_grid(p1, p2, p3, p4, p5, p6, labels="auto")
     <summary>**Exercise 3**</summary>
 
 
-- Download [population.csv](Data/population.csv) and load it into a `data.frame`
+- Download <a href="Data/population.csv" download target="_blank">population.csv</a> and load it into a `data.frame`
 - Is it a tidy `data.frame`?
     + Do we want a tidy `data.frame`?
     + Why?
@@ -1924,6 +1926,7 @@ plot_grid(p1, p2, p3, p4, p5, p6, labels="auto")
 df <- read.csv("Data/population.csv")
 library(tidyr)
 df <- gather(df, names(df)[-1], key="City", value="Population")
+df$City <- gsub("\\.", " ", df$City)
 names(df)[1] <- "Year"
 my_theme <- theme_bw()+
             theme(axis.text = element_text(size = 14,family = "Helvetica",colour="black"),
@@ -1935,7 +1938,9 @@ my_theme <- theme_bw()+
 colors <- c("royalblue","red")
 p1 <- ggplot(data=subset(df,City%in%c("Montpellier","Nantes")), aes(x=Year, y=Population, size=Population, color=City)) +
         geom_point() + 
+        geom_smooth(method="lm", aes(fill=City), alpha=0.1, show.legend = FALSE) + 
         scale_color_manual(values=colors)+
+        scale_fill_manual(values=colors)+
         ggtitle("Population in Montpellier and Nantes")+
         labs(x="Year", y="Population")+
         my_theme 
@@ -1974,6 +1979,7 @@ p3
 df <- read.csv("Data/population.csv")
 library(tidyr)
 df <- gather(df, names(df)[-1], key="City", value="Population")
+df$City <- gsub("\\.", " ", df$City) # replace dots by spaces in city names
 names(df)[1] <- "Year"
 # Plot the population vs. year with a different color for each city
 p <- ggplot(data=df, aes(x=Year, y=Population, color=City))
@@ -1996,14 +2002,18 @@ my_theme <- theme_bw()+
                   panel.border = element_rect(colour = "black", fill=NA, size=1)
                   )
 colors <- c("royalblue","red")
-p1 <- ggplot(data=subset(df,City%in%c("Montpellier","Nantes")), aes(x=Year, y=Population, size=Population, color=City)) +
+p1 <- ggplot(data=subset(df,City%in%c("Montpellier","Nantes")), 
+                aes(x=Year, y=Population, size=Population, color=City)) +
         geom_point() + 
+        geom_smooth(method="lm", aes(fill=City), alpha=0.1, show.legend = FALSE) + 
         scale_color_manual(values=colors)+
+        scale_fill_manual(values=colors)+
         ggtitle("Population in Montpellier and Nantes")+
         labs(x="Year", y="Population")+
         my_theme 
 p1
-p2 <- ggplot(data=subset(df,Year==2012), aes(x=reorder(City,-Population), y=Population/1e6, fill=Population/1e6)) +
+p2 <- ggplot(data=subset(df,Year==2012), 
+                aes(x=reorder(City,-Population), y=Population/1e6, fill=Population/1e6)) +
         geom_bar(stat="identity", position="dodge") + 
         ggtitle("Population in 2012 (in millions)")+
         labs(x="", y="Population (in millions)")+
@@ -2177,7 +2187,7 @@ lines(x, myfunc(x,fit$par), col="royalblue", lwd=2)
 <details>
     <summary>**Exercise 1**</summary>
 
-- Load [exo_fit.txt](Data/exo_fit.txt) in a `data.frame`.
+- Load <a href="Data/exo_fit.txt" download target="_blank">exo_fit.txt</a> in a `data.frame`.
 - Using `lm` or `nls` fit each column as a function of `x` and display the "experimental" data and the fit on the same graph.
     + Tip: Take a look at the function `dnorm` to define a Gaussian
 
@@ -2198,7 +2208,7 @@ write.table(df, "Data/exo_fit.txt", quote=FALSE, row.names=FALSE)
 <details>
     <summary>**Exercise 2: application to real data**</summary>
 
-- Load the Raman spectrum [rubis_1.txt](Data/rubis_1.txt), normalize it to [0,1] and plot it
+- Load the Raman spectrum <a href="Data/rubis_01.txt" download target="_blank">rubis_01.txt</a>, normalize it to [0,1] and plot it
 - Define the Lorentzian function
 - Create a function that is the sum of 2 Lorentzians
 - Guess grossly the initial parameters and plot the resulting curve
@@ -2216,8 +2226,8 @@ write.table(df, "Data/exo_fit.txt", quote=FALSE, row.names=FALSE)
     <summary>Solution</summary>
 
 ```{r, warnings=FALSE, error=TRUE}
-# Load [PPC60_G_01.txt](Data/PPC60_G_01.txt) and plot it
-d <- read.table("Data/rubis_1.txt", header=FALSE, col.names=c("w", "Int"))
+# Load rubis_1.txt, normalize it to [0,1] and plot it
+d <- read.table("Data/rubis_01.txt", header=FALSE, col.names=c("w", "Int"))
 norm01 <- function(x) {(x-min(x))/(max(x)-min(x))}
 d$Int_n <- norm01(d$Int)
 par(cex.lab=1.5, cex.axis=1.4, mgp = c(2.4, .5, 0),

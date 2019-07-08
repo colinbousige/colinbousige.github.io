@@ -24,7 +24,7 @@
 <meta name="author" content="Colin Bousige" />
 
 
-<meta name="date" content="2019-03-07" />
+<meta name="date" content="2019-08-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -302,8 +302,6 @@ geom_mean &lt;-<span class="st"> </span><span class="cf">function</span>(x, y){
 <details>
 <p><summary>Solution</summary></p>
 <pre class="sourceCode r"><code class="sourceCode r">people &lt;-<span class="st"> </span><span class="cf">function</span>(<span class="dt">ppl=</span><span class="kw">list</span>(), name, age, gender){
-    <span class="co"># if the list is not provided, initialize it</span>
-    <span class="cf">if</span>(<span class="kw">length</span>(ppl)<span class="op">==</span><span class="dv">0</span>) ppl &lt;-<span class="st"> </span><span class="kw">list</span>() 
     <span class="co"># increment vectors</span>
     ppl[[<span class="st">&#39;name&#39;</span>]]   &lt;-<span class="st"> </span><span class="kw">c</span>(ppl[[<span class="st">&#39;name&#39;</span>]], name)
     ppl[[<span class="st">&#39;age&#39;</span>]]    &lt;-<span class="st"> </span><span class="kw">c</span>(ppl[[<span class="st">&#39;age&#39;</span>]], age)
@@ -333,16 +331,16 @@ ppl</code></pre>
 <p>Create the sinus cardinal function, <span class="math inline">\(f(x)=\sin(x)/x\)</span> for <span class="math inline">\(x\neq0\)</span> and <span class="math inline">\(f(0)=1\)</span>.</p>
 <details>
 <p><summary>Solution</summary></p>
-<pre class="sourceCode r"><code class="sourceCode r">sinc &lt;-<span class="st"> </span><span class="cf">function</span>(x){
+<pre class="sourceCode r"><code class="sourceCode r">sinc &lt;-<span class="st"> </span><span class="cf">function</span>(x, <span class="dt">tol =</span> <span class="kw">sqrt</span>(.Machine<span class="op">$</span>double.eps) ){
     <span class="co"># sinus cardinal</span>
     y &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">1</span>,<span class="kw">length</span>(x))
-    b &lt;-<span class="st"> </span><span class="kw">which</span>(x<span class="op">!=</span><span class="dv">0</span>)
+    b &lt;-<span class="st"> </span><span class="kw">which</span>(x<span class="op">&lt;</span>tol)
     y[b] &lt;-<span class="st"> </span><span class="kw">sin</span>(x[b])<span class="op">/</span>x[b]
     y
 }
 <span class="kw">sinc</span>(<span class="kw">seq</span>(<span class="op">-</span>pi,pi,pi<span class="op">/</span><span class="dv">4</span>))</code></pre>
-<pre><code>## [1] 3.898172e-17 3.001054e-01 6.366198e-01 9.003163e-01 1.000000e+00
-## [6] 9.003163e-01 6.366198e-01 3.001054e-01 3.898172e-17</code></pre>
+<pre><code>## [1] 3.898172e-17 3.001054e-01 6.366198e-01 9.003163e-01          NaN
+## [6] 1.000000e+00 1.000000e+00 1.000000e+00 1.000000e+00</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="op">-</span><span class="dv">8</span><span class="op">*</span>pi,<span class="dv">8</span><span class="op">*</span>pi,.<span class="dv">1</span>)
 <span class="kw">plot</span>(x, <span class="kw">sinc</span>(x), <span class="dt">type=</span><span class="st">&quot;l&quot;</span>, <span class="dt">lwd=</span><span class="dv">3</span>);<span class="kw">abline</span>(<span class="dt">h=</span><span class="dv">0</span>,<span class="dt">v=</span><span class="dv">0</span>)</code></pre>
 <p><img src="tutoR_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>

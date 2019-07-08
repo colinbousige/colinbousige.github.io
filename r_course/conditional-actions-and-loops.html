@@ -24,7 +24,7 @@
 <meta name="author" content="Colin Bousige" />
 
 
-<meta name="date" content="2019-03-07" />
+<meta name="date" content="2019-08-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -328,8 +328,8 @@ noforloop &lt;-<span class="st"> </span><span class="cf">function</span>(x){
 }
 x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="fl">1e8</span>)
 <span class="kw">test_time</span>(forloop, x); <span class="kw">test_time</span>(noforloop, x)</code></pre>
-<pre><code>## [1] &quot;Elapsed time : 6.37671589851379 s -  forloop&quot;</code></pre>
-<pre><code>## [1] &quot;Elapsed time : 0.573873043060303 s -  noforloop&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time : 6.22512102127075 s -  forloop&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time : 0.473166942596436 s -  noforloop&quot;</code></pre>
 <p>Avoiding loops should therefore be though for when possible. R helps us in this way through the base functions <code>apply</code>, <code>sapply</code> and <code>lapply</code>.</p>
 <p>Take a look at the help on these functions, but the summary is that <code>apply(df, direction, function)</code> applies a function in the wanted direction (1 for rows, 2 for columns) of the given <code>data.frame</code> (or vector). Example:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
@@ -454,13 +454,13 @@ dt &lt;-<span class="st"> </span><span class="kw">tibble</span>(<span class="dt"
 <details>
 <p><summary><strong>Exercise 3</strong></summary></p>
 <ul>
-<li>Download <a href="Data/population.csv">population.csv</a> and load it into a <code>data.frame</code></li>
+<li>Download <a href="Data/population.csv" download target="_blank">population.csv</a> and load it into a <code>data.frame</code></li>
 <li>What is the total population over the years?</li>
 <li>What is the mean population for each city?</li>
 </ul>
 <details>
 <p><summary>Solution</summary></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Download [population.csv](Data/population.csv) and load it into a `data.frame`</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Download population.csv and load it into a `data.frame`</span>
 df &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;Data/population.csv&quot;</span>)
 <span class="co"># What is the total population over the years?</span>
 <span class="kw">data.frame</span>(<span class="dt">year=</span>df[,<span class="st">&quot;Année&quot;</span>],

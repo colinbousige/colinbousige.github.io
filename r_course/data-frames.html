@@ -24,7 +24,7 @@
 <meta name="author" content="Colin Bousige" />
 
 
-<meta name="date" content="2019-03-07" />
+<meta name="date" content="2019-08-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -256,7 +256,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">5</span> Data frames</h1>
 <div id="defining-a-data.frame" class="section level2">
 <h2><span class="header-section-number">5.1</span> Defining a data.frame</h2>
-<p>In R, the principal object is <em>the data</em>. Hence the <code>data.frame</code> object, which is basically a table of vectors. A <code>data.frame</code> is a list presented under the form of a table – <em>i.e.</em> a spreadsheet. On a day-to-day basis, you will either define <code>data.frame</code> from existing vectors or other <code>data.frame</code>, or define a <code>data.frame</code> from a file (text, Excel…). In this example, we use <a href="Data/test.dat">test.dat</a> and <a href="Data/test.xlsx">test.xlsx</a>.</p>
+<p>In R, the principal object is <em>the data</em>. Hence the <code>data.frame</code> object, which is basically a table of vectors. A <code>data.frame</code> is a list presented under the form of a table – <em>i.e.</em> a spreadsheet. On a day-to-day basis, you will either define <code>data.frame</code> from existing vectors or other <code>data.frame</code>, or define a <code>data.frame</code> from a file (text, Excel…). In this example, we use <a href="Data/test.dat" download target="_blank">test.dat</a> and <a href="Data/test.xlsx" download target="_blank">test.xlsx</a>.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co"># x = 10 random numbers between -10 and 10</span>
 x  &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="dv">10</span>, <span class="dt">min=</span><span class="op">-</span><span class="dv">10</span>, <span class="dt">max=</span><span class="dv">10</span>) 
 y  &lt;-<span class="st"> </span><span class="kw">sin</span>(x)
@@ -763,7 +763,7 @@ df <span class="co">#is tidy</span></code></pre>
 </details>
 <details>
 <p><summary><strong>Exercise 2</strong></summary></p>
-<p>Download <a href="Data/population.txt">population.txt</a> and load it into a <code>data.frame</code>.</p>
+<p>Download <a href="Data/population.txt" download target="_blank">population.txt</a> and load it into a <code>data.frame</code>.</p>
 <ul>
 <li>Are the data tidy?</li>
 <li>What are the names of the columns?</li>
@@ -776,7 +776,7 @@ df <span class="co">#is tidy</span></code></pre>
 </ul>
 <details>
 <p><summary>Solution</summary></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Download [population.txt](Data/population.txt) and load it into a `data.frame`.</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Download population.txt and load it into a `data.frame`.</span>
 popul &lt;-<span class="st"> </span><span class="kw">read.table</span>(<span class="st">&quot;Data/population.txt&quot;</span>, <span class="dt">header=</span><span class="ot">TRUE</span>)
 <span class="co"># Are the data tidy?</span>
 <span class="kw">head</span>(popul)</code></pre>
