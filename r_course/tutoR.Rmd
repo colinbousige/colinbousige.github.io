@@ -2243,6 +2243,7 @@ Lor2 <- function(x,x1,FWHM1,A1,y1,x2,FWHM2,A2,y2){
     Lorentzian(x,x0=x2,FWHM=FWHM2,A=A2,y0=y2) 
 }
 # Guess grossly the initial parameters and plot the resulting curve
+plot(d$w, d$Int_n)
 lines(d$w,Lor2(d$w,x1=3160, FWHM1=10, A1=3, y1=0.03, 
                    x2=3200, FWHM2=10, A2=7, y2=0), col="red")
 # Fit the data by a sum of 2 Lorentzians using `nls`

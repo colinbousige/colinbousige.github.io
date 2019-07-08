@@ -404,11 +404,8 @@ A  &lt;-<span class="st"> </span><span class="kw">coef</span>(fit2)[<span class=
 <h3><span class="header-section-number">9.2.2</span> FME</h3>
 <p>Some times though, whatever the initial conditions of the fit you use, you will get the error message <code>Error in nlsModel(formula, mf, start, wts) : singular gradient matrix at initial parameter estimates</code>. If playing around with the initial parameters does not solve this problem, a more robust fitting method is needed. A good one is <code>modFit()</code> from the package <code>FME</code>, that also accepts constraints.</p>
 <p>With <code>modFit</code>, the algorithm minimizes the residual of the observed data minus the model, so the syntax is slightly different:</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(FME)</code></pre>
-<pre><code>## Loading required package: deSolve</code></pre>
-<pre><code>## Loading required package: rootSolve</code></pre>
-<pre><code>## Loading required package: coda</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r">myfunc &lt;-<span class="st"> </span><span class="cf">function</span>(x, params) {
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(FME)
+myfunc &lt;-<span class="st"> </span><span class="cf">function</span>(x, params) {
     parms &lt;-<span class="st"> </span><span class="kw">as.list</span>(params)
     parms<span class="op">$</span>y0 <span class="op">+</span><span class="st"> </span><span class="kw">dnorm</span>(x, <span class="dt">sd=</span>parms<span class="op">$</span>A) <span class="op">+</span><span class="st"> </span><span class="kw">dnorm</span>(x, <span class="dt">mean=</span>parms<span class="op">$</span>x0, <span class="dt">sd=</span>parms<span class="op">$</span>B)
 }
@@ -501,6 +498,7 @@ Lor2 &lt;-<span class="st"> </span><span class="cf">function</span>(x,x1,FWHM1,A
 <span class="st">    </span><span class="kw">Lorentzian</span>(x,<span class="dt">x0=</span>x2,<span class="dt">FWHM=</span>FWHM2,<span class="dt">A=</span>A2,<span class="dt">y0=</span>y2) 
 }
 <span class="co"># Guess grossly the initial parameters and plot the resulting curve</span>
+<span class="kw">plot</span>(d<span class="op">$</span>w, d<span class="op">$</span>Int_n)
 <span class="kw">lines</span>(d<span class="op">$</span>w,<span class="kw">Lor2</span>(d<span class="op">$</span>w,<span class="dt">x1=</span><span class="dv">3160</span>, <span class="dt">FWHM1=</span><span class="dv">10</span>, <span class="dt">A1=</span><span class="dv">3</span>, <span class="dt">y1=</span><span class="fl">0.03</span>, 
                    <span class="dt">x2=</span><span class="dv">3200</span>, <span class="dt">FWHM2=</span><span class="dv">10</span>, <span class="dt">A2=</span><span class="dv">7</span>, <span class="dt">y2=</span><span class="dv">0</span>), <span class="dt">col=</span><span class="st">&quot;red&quot;</span>)</code></pre>
 <p><img src="tutoR_files/figure-html/unnamed-chunk-84-1.png" width="672" /></p>
