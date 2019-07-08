@@ -31,6 +31,37 @@ output:
 <!-- 
 Render with:
 bookdown::render_book("tutoR.Rmd")
+
+Header:
+---
+title    : Reproducible data treatment with R
+subtitle : An introduction
+author   : Colin Bousige
+date     : "`r format(Sys.time(), '%d/%m/%Y')`"
+url      : 'https\://colinbousige.github.io/r_course/'
+output: 
+    bookdown::gitbook:
+      self_contained: FALSE
+      fig_caption : TRUE
+      fig_number : TRUE
+      config:
+        toc:
+          collapse: subsection
+          scroll_highlight: yes
+          before: |
+            <li><a href="https://colinbousige.github.io/r_course/about-the-class.html">Reproducible data treatment with R</a></li>
+          after: null
+        toolbar:
+          position: fixed
+        edit : null
+        download: [["tutoR.Rmd","Rmd"]]
+        search: yes
+        fontsettings:
+          theme: white
+          family: sans
+          size: 2
+        sharing: no
+---
 -->
 
 # About the class {-}
@@ -2529,7 +2560,7 @@ Rmarkdown is basically the same thing as markdown (extension: .Rmd instead of .m
 
 And in-line code can be computed and rendered:
 ```markdown
-In-line code `r 1+2`
+In-line code ``r ''`r 1+2`
 ```
 will render as: In-line code `r 1+2`.
 
@@ -2600,7 +2631,10 @@ csl: "path/to/nature.csl"
 How to understand this header:
 
 - `---`: surrounds the YAML header. The body comes after that.
-- `title`, `author` and `date`: easy. The date can automatically be set to the current one by setting it to `r` `format(Sys.time(), '%d/%m/%Y')`.
+- `title`, `author` and `date`: easy. The date can automatically be set to the current one by setting it to:
+```
+``r ''`r format(Sys.time(), '%d/%m/%Y')`
+```
 - `output`: this tells pandoc the output format you want. When compiling, the compiler will only look to the _**first**_ entry -- in this case, `word_document`. So you don't need to put all these entries if you want a clean(er) code, but I like to have all these output possibilities written there, then I just have to switch the first entry to the one I want when I want to change the output format. The difference between `html_document` and `html_notebook` is that in notebooks you can fold/unfold the code chunks.
     + `reference_docx`: tells pandoc the reference style (template) to use. Just write a dummy .docx file in which you [edit the style](http://www.dummies.com/software/microsoft-office/word/how-to-change-an-existing-style-in-word-2016/), save it as `word-template.docx`, and you're good to go.
     + `latex`: the $\LaTeX$ engine. You can also use pdflatex, for example.
@@ -2670,6 +2704,54 @@ To knit your Rmd file to the desired output, in Rstudio, click the little triang
 
 The corresponding output file will be created in the same folder.
 
+## Going further: parameters
+
+You can even provide a list of parameters to your Rmarkdown file that you can retrieve in code chunks with `params$param_name`. More information [here](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html), but here is a short example: try compiling it directly using the "Knit" button, and then try compiling it using "Knit with parameters".
+
+
+````markdown
+---
+title: "Test"
+output: html_document
+params:
+  city:
+    label: "City:"
+    value: Angers
+    input: select
+    choices: !r unique(read.table("Data/population.txt", header=TRUE)$city)
+  printcode:
+    label: "Display Code"
+    value: TRUE
+  data:
+    label: "Input dataset:"
+    value: Data/population.txt
+    input: file
+---
+
+`r ''````{r, setup, include=FALSE}
+# set this option in the first code chunk in the document
+knitr::opts_chunk$set(echo = params$printcode)
+```
+
+Plotting ``r ''`r paste(params$data)`:
+
+`r ''````{r, message=FALSE}
+df <- read.table(params$data, header=TRUE)
+library(ggplot2)
+library(plotly)
+p<-ggplot(data=subset(df,city==params$city), 
+            aes(x=year, y=pop, size=pop)) +
+        geom_point() + 
+        geom_smooth(method="lm", alpha=0.1, show.legend = FALSE) + 
+        ggtitle(paste("Population in ",params$city,sep=""))+
+        labs(x="Year", y="Population")+
+        theme_light()
+ggplotly(p)
+```
+````
+
+
+The "Knit with parameters" launches a `Shiny` user interface allowing interactively choosing the parameters. All options are listed [here](https://bookdown.org/yihui/rmarkdown/params-knit.html#the-interactive-user-interface).
 
 ## Exercise
 
@@ -2689,6 +2771,14 @@ Create an html experimental logbook doing all the data treatment in the example 
 </details>
 
 
+<details>
+    <summary>**Exercise 3**</summary>
+
+Create an html experimental **notebook** doing all the data treatment in the example in the previous section **for a single experimental file** that you will provide as a parameter in the YAML header. The file path must be given as an interactive file input selection.
+
+</details>
+
+
 
 
 
@@ -2703,17 +2793,199 @@ Create an html experimental logbook doing all the data treatment in the example 
 # Graphical interfaces with Shiny
 
 
+You have had a preview of a `shiny` interface in the previous section with the interactive parameter input in a Rmarkdown file.
+
+Using the `shiny` package, you can actually easily build an interactive graphical user interface (GUI) in which you will be able to set parameters (values, files...), visualize the outputs (plots, images, tables...), and write files as output. This is very useful when you have to always repeat the same task with a varying input parameter, for example.
+
+Shiny applications must however be ran into Rstudio (you cannot output a standalone html document), or published onto [https://shiny.rstudio.com/](https://shiny.rstudio.com/).
+
+## Some reading
+
+- The Shiny [cheatsheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)
+- [Guide to application layout](https://shiny.rstudio.com/articles/layout-guide.html)
+- The [Shiny Gallery](https://shiny.rstudio.com/gallery/): find what you want to do and adapt it to your needs
+
+## Stand-alone shiny application
+
+A shiny application is a R file containing 3 elements:
+
+1. `ui`: definition of the interface layout (where are the buttons, text input, plot output, etc.) and the input parameters
+2. `server`: definition of the various actions to perform with the input parameters
+3. `shinyApp(ui, server)`: launches the shiny app with the above defined parameters
+
+In Rstudio, create a new "Shiny web app". It will create an `app.R` file containing this:
+
+```r
+library(shiny)
+# Define UI for application that draws a histogram
+ui <- fluidPage(
+    # Application title
+    titlePanel("Old Faithful Geyser Data"),
+    # Sidebar with a slider input for number of bins 
+    sidebarLayout(
+        sidebarPanel(
+            sliderInput("bins",
+                        "Number of bins:",
+                        min = 1,
+                        max = 50,
+                        value = 30)
+        ),
+        # Show a plot of the generated distribution
+        mainPanel(
+           plotOutput("distPlot")
+        )
+    )
+)
+# Define server logic required to draw a histogram
+server <- function(input, output) {
+    output$distPlot <- renderPlot({
+        # generate bins based on input$bins from ui.R
+        x    <- faithful[, 2]
+        bins <- seq(min(x), max(x), length.out = input$bins + 1)
+
+        # draw the histogram with the specified number of bins
+        hist(x, breaks = bins, col = 'darkgray', border = 'white')
+    })
+}
+# Run the application 
+shinyApp(ui = ui, server = server)
+```
+
+Run it by clicking "Run App": a window opens and you can pan the slider and see the resulting output.
+
+### The layout
+
+In the `ui <- fluidPage(...)` item, you define the layout of your application. In the above example:
+
+- `titlePanel("Title")` creates a title
+- `sidebarLayout()` separates the layout in a short one on the left (`sidebarPanel`) and a main one on the right (`mainPanel`)
+- `sliderInput("name", "text to display", min=min_value, max=max_value, value=current_value, step=step_value)` creates a slider to input a value. This value will be retrieved by `input$name` in the `server()` function.
+- `plotOutput("name")` plots the result of `output$name` defined in the `server()` function.
+
+### The server
+
+In the `server <- function(input, output){...}` function, you define the various actions and outputs in reaction to an input change. 
+
+In the above example, we define `output$distPlot` as a `renderPlot()` function whose results depends on `input$bins`. The plot is rendered in the `ui` by `plotOutput("distPlot")`.
 
 
+### Various useful functions
 
 
+### Example
+
+Create a new shiny app with the following, and play around with it. The input file should be the tidy <a href="Data/population.txt" download target="_blank">population.txt</a>.
+
+```r
+library(ggplot2)
+library(shiny)
+library(tidyverse)
+
+ui <- fluidPage(
+    titlePanel("City populations in France"),
+    sidebarLayout(
+        sidebarPanel(
+            fileInput("file_in", "Choose input file:",
+                      accept = c(".txt")
+            ),
+            selectInput("sel_city", "City:", choices = "", multiple = TRUE)
+        ),
+        mainPanel(
+            tabsetPanel(
+                tabPanel("Plot", plotOutput("cityplot", height = "800px")),
+                tabPanel("Table", tableOutput("table"))
+            )
+        )
+    )
+)
+
+server <- function(input, output, session) {
+    
+    # myData() returns the data if a file is provided
+    myData <- reactive({
+        inFile <- input$file_in
+        if (is.null(inFile)) {
+            return(NULL)
+        } else {
+            return(read.table(inFile$datapath, header=TRUE))
+        }
+    })
+    
+    # in case something changes, 
+    # update the city input selection list
+    observe({
+        updateSelectInput(session, "sel_city",
+                          choices = unique(myData()$city),
+                          selected = unique(myData()$city)[1])
+    })
+    
+    # plot the pop vs year for the selected cities
+    output$cityplot <- renderPlot({
+        df <- myData()
+        if(is.null(df)) return(NULL)
+        ggplot(data=subset(df, city %in% input$sel_city), 
+               aes(x=year, y=pop, size=pop, color=city)) +
+            geom_point() + 
+            geom_smooth(method="lm", alpha=0.1, show.legend = FALSE, 
+                        aes(fill=city)) + 
+            ggtitle(paste("Population in ",input$city,sep=""))+
+            labs(x="Year", y="Population")+
+            theme_light() +
+            theme(legend.text = element_text(size = 16))
+    })
+    
+    # show data as a table
+    output$table <- renderTable({
+        if(is.null(df)) return(NULL)
+        spread(myData(), city, pop)
+    }) 
+    
+}
+
+shinyApp(ui = ui, server = server)
+```
 
 
+## Rmarkdown-embedded shiny application
 
+A shiny application can even be embedded inside a Rmarkdown document by providing `runtime: shiny` in the YAML header. A short example here, try to compile it:
 
+````markdown
+---
+title: "Test"
+output: html_document
+runtime: shiny
+---
 
+This is a test Rmarkdown document.
 
+`r ''````{r, echo=FALSE, message=FALSE}
+library(ggplot2)
+library(plotly)
+df <- read.table("Data/population.txt", header=TRUE)
 
+shinyApp(
+  ui = fluidPage(
+    selectInput("city", "City:", choices = unique(df$city)),
+    plotlyOutput("cityplot")
+  ),
 
+  server = function(input, output) {
+    output$cityplot = renderPlotly({
+      p <- ggplot(data=subset(df,city==input$city), 
+                aes(x=year, y=pop, size=pop)) +
+            geom_point() + 
+            geom_smooth(method="lm", alpha=0.1, show.legend = FALSE) + 
+            ggtitle(paste("Population in ",input$city,sep=""))+
+            labs(x="Year", y="Population")+
+            theme_light()
+      ggplotly(p)
+    })
+  },
+
+  options = list(height = 800)
+)
+```
+````
 
 

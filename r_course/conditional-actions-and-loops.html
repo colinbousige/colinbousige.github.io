@@ -232,9 +232,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.3" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#further-readings-1"><i class="fa fa-check"></i><b>11.3</b> Further readings</a></li>
 <li class="chapter" data-level="11.4" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#example"><i class="fa fa-check"></i><b>11.4</b> Example</a></li>
 <li class="chapter" data-level="11.5" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#compilation"><i class="fa fa-check"></i><b>11.5</b> Compilation</a></li>
-<li class="chapter" data-level="11.6" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#exercise"><i class="fa fa-check"></i><b>11.6</b> Exercise</a></li>
+<li class="chapter" data-level="11.6" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#going-further-parameters"><i class="fa fa-check"></i><b>11.6</b> Going further: parameters</a></li>
+<li class="chapter" data-level="11.7" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#exercise"><i class="fa fa-check"></i><b>11.7</b> Exercise</a></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html"><i class="fa fa-check"></i><b>12</b> Graphical interfaces with Shiny</a></li>
+<li class="chapter" data-level="12" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html"><i class="fa fa-check"></i><b>12</b> Graphical interfaces with Shiny</a><ul>
+<li class="chapter" data-level="12.1" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#some-reading"><i class="fa fa-check"></i><b>12.1</b> Some reading</a></li>
+<li class="chapter" data-level="12.2" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#stand-alone-shiny-application"><i class="fa fa-check"></i><b>12.2</b> Stand-alone shiny application</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#the-layout"><i class="fa fa-check"></i><b>12.2.1</b> The layout</a></li>
+<li class="chapter" data-level="12.2.2" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#the-server"><i class="fa fa-check"></i><b>12.2.2</b> The server</a></li>
+<li class="chapter" data-level="12.2.3" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#example-1"><i class="fa fa-check"></i><b>12.2.3</b> Example</a></li>
+<li class="chapter" data-level="12.2.4" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#various-useful-functions"><i class="fa fa-check"></i><b>12.2.4</b> Various useful functions</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#rmarkdown-embedded-shiny-application"><i class="fa fa-check"></i><b>12.3</b> Rmarkdown-embedded shiny application</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -328,8 +338,8 @@ noforloop &lt;-<span class="st"> </span><span class="cf">function</span>(x){
 }
 x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="fl">1e8</span>)
 <span class="kw">test_time</span>(forloop, x); <span class="kw">test_time</span>(noforloop, x)</code></pre>
-<pre><code>## [1] &quot;Elapsed time : 7.09462189674377 s -  forloop&quot;</code></pre>
-<pre><code>## [1] &quot;Elapsed time : 0.648944139480591 s -  noforloop&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time : 6.15775203704834 s -  forloop&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time : 0.446110010147095 s -  noforloop&quot;</code></pre>
 <p>Avoiding loops should therefore be though for when possible. R helps us in this way through the base functions <code>apply</code>, <code>sapply</code> and <code>lapply</code>.</p>
 <p>Take a look at the help on these functions, but the summary is that <code>apply(df, direction, function)</code> applies a function in the wanted direction (1 for rows, 2 for columns) of the given <code>data.frame</code> (or vector). Example:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)

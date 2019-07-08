@@ -232,9 +232,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.3" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#further-readings-1"><i class="fa fa-check"></i><b>11.3</b> Further readings</a></li>
 <li class="chapter" data-level="11.4" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#example"><i class="fa fa-check"></i><b>11.4</b> Example</a></li>
 <li class="chapter" data-level="11.5" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#compilation"><i class="fa fa-check"></i><b>11.5</b> Compilation</a></li>
-<li class="chapter" data-level="11.6" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#exercise"><i class="fa fa-check"></i><b>11.6</b> Exercise</a></li>
+<li class="chapter" data-level="11.6" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#going-further-parameters"><i class="fa fa-check"></i><b>11.6</b> Going further: parameters</a></li>
+<li class="chapter" data-level="11.7" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#exercise"><i class="fa fa-check"></i><b>11.7</b> Exercise</a></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html"><i class="fa fa-check"></i><b>12</b> Graphical interfaces with Shiny</a></li>
+<li class="chapter" data-level="12" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html"><i class="fa fa-check"></i><b>12</b> Graphical interfaces with Shiny</a><ul>
+<li class="chapter" data-level="12.1" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#some-reading"><i class="fa fa-check"></i><b>12.1</b> Some reading</a></li>
+<li class="chapter" data-level="12.2" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#stand-alone-shiny-application"><i class="fa fa-check"></i><b>12.2</b> Stand-alone shiny application</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#the-layout"><i class="fa fa-check"></i><b>12.2.1</b> The layout</a></li>
+<li class="chapter" data-level="12.2.2" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#the-server"><i class="fa fa-check"></i><b>12.2.2</b> The server</a></li>
+<li class="chapter" data-level="12.2.3" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#example-1"><i class="fa fa-check"></i><b>12.2.3</b> Example</a></li>
+<li class="chapter" data-level="12.2.4" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#various-useful-functions"><i class="fa fa-check"></i><b>12.2.4</b> Various useful functions</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#rmarkdown-embedded-shiny-application"><i class="fa fa-check"></i><b>12.3</b> Rmarkdown-embedded shiny application</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -254,6 +264,188 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="graphical-interfaces-with-shiny" class="section level1">
 <h1><span class="header-section-number">12</span> Graphical interfaces with Shiny</h1>
+<p>You have had a preview of a <code>shiny</code> interface in the previous section with the interactive parameter input in a Rmarkdown file.</p>
+<p>Using the <code>shiny</code> package, you can actually easily build an interactive graphical user interface (GUI) in which you will be able to set parameters (values, files…), visualize the outputs (plots, images, tables…), and write files as output. This is very useful when you have to always repeat the same task with a varying input parameter, for example.</p>
+<p>Shiny applications must however be ran into Rstudio (you cannot output a standalone html document), or published onto <a href="https://shiny.rstudio.com/" class="uri">https://shiny.rstudio.com/</a>.</p>
+<div id="some-reading" class="section level2">
+<h2><span class="header-section-number">12.1</span> Some reading</h2>
+<ul>
+<li>The Shiny <a href="https://shiny.rstudio.com/images/shiny-cheatsheet.pdf">cheatsheet</a></li>
+<li><a href="https://shiny.rstudio.com/articles/layout-guide.html">Guide to application layout</a></li>
+<li>The <a href="https://shiny.rstudio.com/gallery/">Shiny Gallery</a>: find what you want to do and adapt it to your needs</li>
+</ul>
+</div>
+<div id="stand-alone-shiny-application" class="section level2">
+<h2><span class="header-section-number">12.2</span> Stand-alone shiny application</h2>
+<p>A shiny application is a R file containing 3 elements:</p>
+<ol style="list-style-type: decimal">
+<li><code>ui</code>: definition of the interface layout (where are the buttons, text input, plot output, etc.) and the input parameters</li>
+<li><code>server</code>: definition of the various actions to perform with the input parameters</li>
+<li><code>shinyApp(ui, server)</code>: launches the shiny app with the above defined parameters</li>
+</ol>
+<p>In Rstudio, create a new “Shiny web app”. It will create an <code>app.R</code> file containing this:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(shiny)
+<span class="co"># Define UI for application that draws a histogram</span>
+ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(
+    <span class="co"># Application title</span>
+    <span class="kw">titlePanel</span>(<span class="st">&quot;Old Faithful Geyser Data&quot;</span>),
+    <span class="co"># Sidebar with a slider input for number of bins </span>
+    <span class="kw">sidebarLayout</span>(
+        <span class="kw">sidebarPanel</span>(
+            <span class="kw">sliderInput</span>(<span class="st">&quot;bins&quot;</span>,
+                        <span class="st">&quot;Number of bins:&quot;</span>,
+                        <span class="dt">min =</span> <span class="dv">1</span>,
+                        <span class="dt">max =</span> <span class="dv">50</span>,
+                        <span class="dt">value =</span> <span class="dv">30</span>)
+        ),
+        <span class="co"># Show a plot of the generated distribution</span>
+        <span class="kw">mainPanel</span>(
+           <span class="kw">plotOutput</span>(<span class="st">&quot;distPlot&quot;</span>)
+        )
+    )
+)
+<span class="co"># Define server logic required to draw a histogram</span>
+server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output) {
+    output<span class="op">$</span>distPlot &lt;-<span class="st"> </span><span class="kw">renderPlot</span>({
+        <span class="co"># generate bins based on input$bins from ui.R</span>
+        x    &lt;-<span class="st"> </span>faithful[, <span class="dv">2</span>]
+        bins &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="kw">min</span>(x), <span class="kw">max</span>(x), <span class="dt">length.out =</span> input<span class="op">$</span>bins <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)
+
+        <span class="co"># draw the histogram with the specified number of bins</span>
+        <span class="kw">hist</span>(x, <span class="dt">breaks =</span> bins, <span class="dt">col =</span> <span class="st">&#39;darkgray&#39;</span>, <span class="dt">border =</span> <span class="st">&#39;white&#39;</span>)
+    })
+}
+<span class="co"># Run the application </span>
+<span class="kw">shinyApp</span>(<span class="dt">ui =</span> ui, <span class="dt">server =</span> server)</code></pre>
+<p>Run it by clicking “Run App”: a window opens and you can pan the slider and see the resulting output.</p>
+<div id="the-layout" class="section level3">
+<h3><span class="header-section-number">12.2.1</span> The layout</h3>
+<p>In the <code>ui &lt;- fluidPage(...)</code> item, you define the layout of your application. In the above example:</p>
+<ul>
+<li><code>titlePanel(&quot;Title&quot;)</code> creates a title</li>
+<li><code>sidebarLayout()</code> separates the layout in a short one on the left (<code>sidebarPanel</code>) and a main one on the right (<code>mainPanel</code>)</li>
+<li><code>sliderInput(&quot;name&quot;, &quot;text to display&quot;, min=min_value, max=max_value, value=current_value, step=step_value)</code> creates a slider to input a value. This value will be retrieved by <code>input$name</code> in the <code>server()</code> function.</li>
+<li><code>plotOutput(&quot;name&quot;)</code> plots the result of <code>output$name</code> defined in the <code>server()</code> function.</li>
+</ul>
+</div>
+<div id="the-server" class="section level3">
+<h3><span class="header-section-number">12.2.2</span> The server</h3>
+<p>In the <code>server &lt;- function(input, output){...}</code> function, you define the various actions and outputs in reaction to an input change.</p>
+<p>In the above example, we define <code>output$distPlot</code> as a <code>renderPlot()</code> function whose results depends on <code>input$bins</code>. The plot is rendered in the <code>ui</code> by <code>plotOutput(&quot;distPlot&quot;)</code>.</p>
+</div>
+<div id="example-1" class="section level3">
+<h3><span class="header-section-number">12.2.3</span> Example</h3>
+<p>Create a new shiny app with the following, and play around with it. The input file should be the tidy <a href="Data/population.txt" download target="_blank">population.txt</a>.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
+<span class="kw">library</span>(shiny)
+<span class="kw">library</span>(tidyverse)
+
+ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(
+    <span class="kw">titlePanel</span>(<span class="st">&quot;City populations in France&quot;</span>),
+    <span class="kw">sidebarLayout</span>(
+        <span class="kw">sidebarPanel</span>(
+            <span class="kw">fileInput</span>(<span class="st">&quot;file_in&quot;</span>, <span class="st">&quot;Choose input file:&quot;</span>,
+                      <span class="dt">accept =</span> <span class="kw">c</span>(<span class="st">&quot;.txt&quot;</span>)
+            ),
+            <span class="kw">selectInput</span>(<span class="st">&quot;sel_city&quot;</span>, <span class="st">&quot;City:&quot;</span>, <span class="dt">choices =</span> <span class="st">&quot;&quot;</span>, <span class="dt">multiple =</span> <span class="ot">TRUE</span>)
+        ),
+        <span class="kw">mainPanel</span>(
+            <span class="kw">tabsetPanel</span>(
+                <span class="kw">tabPanel</span>(<span class="st">&quot;Plot&quot;</span>, <span class="kw">plotOutput</span>(<span class="st">&quot;cityplot&quot;</span>, <span class="dt">height =</span> <span class="st">&quot;800px&quot;</span>)),
+                <span class="kw">tabPanel</span>(<span class="st">&quot;Table&quot;</span>, <span class="kw">tableOutput</span>(<span class="st">&quot;table&quot;</span>))
+            )
+        )
+    )
+)
+
+server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {
+    
+    <span class="co"># myData() returns the data if a file is provided</span>
+    myData &lt;-<span class="st"> </span><span class="kw">reactive</span>({
+        inFile &lt;-<span class="st"> </span>input<span class="op">$</span>file_in
+        <span class="cf">if</span> (<span class="kw">is.null</span>(inFile)) {
+            <span class="kw">return</span>(<span class="ot">NULL</span>)
+        } <span class="cf">else</span> {
+            <span class="kw">return</span>(<span class="kw">read.table</span>(inFile<span class="op">$</span>datapath, <span class="dt">header=</span><span class="ot">TRUE</span>))
+        }
+    })
+    
+    <span class="co"># in case something changes, </span>
+    <span class="co"># update the city input selection list</span>
+    <span class="kw">observe</span>({
+        <span class="kw">updateSelectInput</span>(session, <span class="st">&quot;sel_city&quot;</span>,
+                          <span class="dt">choices =</span> <span class="kw">unique</span>(<span class="kw">myData</span>()<span class="op">$</span>city),
+                          <span class="dt">selected =</span> <span class="kw">unique</span>(<span class="kw">myData</span>()<span class="op">$</span>city)[<span class="dv">1</span>])
+    })
+    
+    <span class="co"># plot the pop vs year for the selected cities</span>
+    output<span class="op">$</span>cityplot &lt;-<span class="st"> </span><span class="kw">renderPlot</span>({
+        df &lt;-<span class="st"> </span><span class="kw">myData</span>()
+        <span class="cf">if</span>(<span class="kw">is.null</span>(df)) <span class="kw">return</span>(<span class="ot">NULL</span>)
+        <span class="kw">ggplot</span>(<span class="dt">data=</span><span class="kw">subset</span>(df, city <span class="op">%in%</span><span class="st"> </span>input<span class="op">$</span>sel_city), 
+               <span class="kw">aes</span>(<span class="dt">x=</span>year, <span class="dt">y=</span>pop, <span class="dt">size=</span>pop, <span class="dt">color=</span>city)) <span class="op">+</span>
+<span class="st">            </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span>
+<span class="st">            </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>, <span class="dt">alpha=</span><span class="fl">0.1</span>, <span class="dt">show.legend =</span> <span class="ot">FALSE</span>, 
+                        <span class="kw">aes</span>(<span class="dt">fill=</span>city)) <span class="op">+</span><span class="st"> </span>
+<span class="st">            </span><span class="kw">ggtitle</span>(<span class="kw">paste</span>(<span class="st">&quot;Population in &quot;</span>,input<span class="op">$</span>city,<span class="dt">sep=</span><span class="st">&quot;&quot;</span>))<span class="op">+</span>
+<span class="st">            </span><span class="kw">labs</span>(<span class="dt">x=</span><span class="st">&quot;Year&quot;</span>, <span class="dt">y=</span><span class="st">&quot;Population&quot;</span>)<span class="op">+</span>
+<span class="st">            </span><span class="kw">theme_light</span>() <span class="op">+</span>
+<span class="st">            </span><span class="kw">theme</span>(<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))
+    })
+    
+    <span class="co"># show data as a table</span>
+    output<span class="op">$</span>table &lt;-<span class="st"> </span><span class="kw">renderTable</span>({
+        <span class="cf">if</span>(<span class="kw">is.null</span>(df)) <span class="kw">return</span>(<span class="ot">NULL</span>)
+        <span class="kw">spread</span>(<span class="kw">myData</span>(), city, pop)
+    }) 
+    
+}
+
+<span class="kw">shinyApp</span>(<span class="dt">ui =</span> ui, <span class="dt">server =</span> server)</code></pre>
+</div>
+<div id="various-useful-functions" class="section level3">
+<h3><span class="header-section-number">12.2.4</span> Various useful functions</h3>
+</div>
+</div>
+<div id="rmarkdown-embedded-shiny-application" class="section level2">
+<h2><span class="header-section-number">12.3</span> Rmarkdown-embedded shiny application</h2>
+<p>A shiny application can even be embedded inside a Rmarkdown document by providing <code>runtime: shiny</code> in the YAML header. A short example here, try to compile it:</p>
+<pre class="sourceCode markdown"><code class="sourceCode markdown">---
+title: &quot;Test&quot;
+output: html_document
+runtime: shiny
+---
+
+This is a test Rmarkdown document.
+
+```{r, echo=FALSE, message=FALSE}
+library(ggplot2)
+library(plotly)
+df &lt;- read.table(&quot;Data/population.txt&quot;, header=TRUE)
+
+shinyApp(
+  ui = fluidPage(
+<span class="bn">    selectInput(&quot;city&quot;, &quot;City:&quot;, choices = unique(df$city)),</span>
+<span class="bn">    plotlyOutput(&quot;cityplot&quot;)</span>
+  ),
+
+  server = function(input, output) {
+<span class="bn">    output$cityplot = renderPlotly({</span>
+<span class="bn">      p &lt;- ggplot(data=subset(df,city==input$city), </span>
+<span class="bn">                aes(x=year, y=pop, size=pop)) +</span>
+<span class="bn">            geom_point() + </span>
+<span class="bn">            geom_smooth(method=&quot;lm&quot;, alpha=0.1, show.legend = FALSE) + </span>
+<span class="bn">            ggtitle(paste(&quot;Population in &quot;,input$city,sep=&quot;&quot;))+</span>
+<span class="bn">            labs(x=&quot;Year&quot;, y=&quot;Population&quot;)+</span>
+<span class="bn">            theme_light()</span>
+<span class="bn">      ggplotly(p)</span>
+<span class="bn">    })</span>
+  },
+
+  options = list(height = 800)
+)
+```</code></pre>
+</div>
 </div>
 
 
