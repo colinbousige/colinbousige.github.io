@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>12 Graphical interfaces with Shiny | Reproducible data treatment with R</title>
+  <meta name="description" content="12 Graphical interfaces with Shiny | Reproducible data treatment with R" />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="12 Graphical interfaces with Shiny | Reproducible data treatment with R" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://colinbousige.github.io/rcourse/" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="12 Graphical interfaces with Shiny | Reproducible data treatment with R" />
+  
+  
+  
+
+<meta name="author" content="Colin Bousige" />
+
+
+<meta name="date" content="2019-09-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="writing-documents-with-rmarkdown.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.8.0/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.39.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.39.2/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://colinbousige.github.io/rcourse/about-the-class.html">Reproducible data treatment with R</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html"><i class="fa fa-check"></i>About the class</a><ul>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#objectives-of-the-class"><i class="fa fa-check"></i>Objectives of the class</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#prerequisites"><i class="fa fa-check"></i>Prerequisites</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#teaser"><i class="fa fa-check"></i>Teaser</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#further-reading"><i class="fa fa-check"></i>Further reading</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#motivations"><i class="fa fa-check"></i>Motivations</a><ul>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#reproducible-data-treatment-why-it-matters"><i class="fa fa-check"></i>Reproducible data treatment: why it matters</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#why-with-r-and-not-python"><i class="fa fa-check"></i>Why with R and not python?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="getting-ready.html"><a href="getting-ready.html"><i class="fa fa-check"></i><b>1</b> Getting ready</a><ul>
+<li class="chapter" data-level="1.1" data-path="getting-ready.html"><a href="getting-ready.html#the-easy-way"><i class="fa fa-check"></i><b>1.1</b> The easy way</a></li>
+<li class="chapter" data-level="1.2" data-path="getting-ready.html"><a href="getting-ready.html#the-more-advanced-way"><i class="fa fa-check"></i><b>1.2</b> The more advanced way</a></li>
+<li class="chapter" data-level="1.3" data-path="getting-ready.html"><a href="getting-ready.html#in-any-case-install-latex"><i class="fa fa-check"></i><b>1.3</b> In any case: install LaTeX</a></li>
+<li class="chapter" data-level="1.4" data-path="getting-ready.html"><a href="getting-ready.html#setting-up-the-environment"><i class="fa fa-check"></i><b>1.4</b> Setting up the environment</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="simple-variables.html"><a href="simple-variables.html"><i class="fa fa-check"></i><b>2</b> Simple variables</a><ul>
+<li class="chapter" data-level="2.1" data-path="simple-variables.html"><a href="simple-variables.html#scalars-and-booleans"><i class="fa fa-check"></i><b>2.1</b> Scalars and booleans</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="simple-variables.html"><a href="simple-variables.html#special-values"><i class="fa fa-check"></i><b>2.1.1</b> Special values</a></li>
+<li class="chapter" data-level="2.1.2" data-path="simple-variables.html"><a href="simple-variables.html#booleans"><i class="fa fa-check"></i><b>2.1.2</b> Booleans</a></li>
+<li class="chapter" data-level="2.1.3" data-path="simple-variables.html"><a href="simple-variables.html#complex-values"><i class="fa fa-check"></i><b>2.1.3</b> Complex values</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="simple-variables.html"><a href="simple-variables.html#strings"><i class="fa fa-check"></i><b>2.2</b> Strings</a></li>
+<li class="chapter" data-level="2.3" data-path="simple-variables.html"><a href="simple-variables.html#exercises"><i class="fa fa-check"></i><b>2.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="vectors.html"><a href="vectors.html"><i class="fa fa-check"></i><b>3</b> Vectors</a><ul>
+<li class="chapter" data-level="3.1" data-path="vectors.html"><a href="vectors.html#different-ways-of-defining-a-vector"><i class="fa fa-check"></i><b>3.1</b> Different ways of defining a vector</a></li>
+<li class="chapter" data-level="3.2" data-path="vectors.html"><a href="vectors.html#principal-operations-on-vectors"><i class="fa fa-check"></i><b>3.2</b> Principal operations on vectors</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="vectors.html"><a href="vectors.html#accessing-values"><i class="fa fa-check"></i><b>3.2.1</b> Accessing values</a></li>
+<li class="chapter" data-level="3.2.2" data-path="vectors.html"><a href="vectors.html#sorting"><i class="fa fa-check"></i><b>3.2.2</b> Sorting</a></li>
+<li class="chapter" data-level="3.2.3" data-path="vectors.html"><a href="vectors.html#maximum-and-minimum"><i class="fa fa-check"></i><b>3.2.3</b> Maximum and minimum</a></li>
+<li class="chapter" data-level="3.2.4" data-path="vectors.html"><a href="vectors.html#mathematical-operations"><i class="fa fa-check"></i><b>3.2.4</b> Mathematical operations</a></li>
+<li class="chapter" data-level="3.2.5" data-path="vectors.html"><a href="vectors.html#statistics-on-vectors"><i class="fa fa-check"></i><b>3.2.5</b> Statistics on vectors</a></li>
+<li class="chapter" data-level="3.2.6" data-path="vectors.html"><a href="vectors.html#more-stuff"><i class="fa fa-check"></i><b>3.2.6</b> More stuff</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="vectors.html"><a href="vectors.html#exercises-1"><i class="fa fa-check"></i><b>3.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="lists.html"><a href="lists.html"><i class="fa fa-check"></i><b>4</b> Lists</a></li>
+<li class="chapter" data-level="5" data-path="data-frames.html"><a href="data-frames.html"><i class="fa fa-check"></i><b>5</b> Data frames</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-frames.html"><a href="data-frames.html#defining-a-data.frame"><i class="fa fa-check"></i><b>5.1</b> Defining a data.frame</a></li>
+<li class="chapter" data-level="5.2" data-path="data-frames.html"><a href="data-frames.html#accessing-values-1"><i class="fa fa-check"></i><b>5.2</b> Accessing values</a></li>
+<li class="chapter" data-level="5.3" data-path="data-frames.html"><a href="data-frames.html#adding-columns-or-rows"><i class="fa fa-check"></i><b>5.3</b> Adding columns or rows</a></li>
+<li class="chapter" data-level="5.4" data-path="data-frames.html"><a href="data-frames.html#more-on-data.frame"><i class="fa fa-check"></i><b>5.4</b> More on data.frame</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="data-frames.html"><a href="data-frames.html#more-math-operations"><i class="fa fa-check"></i><b>5.4.1</b> More math operations</a></li>
+<li class="chapter" data-level="5.4.2" data-path="data-frames.html"><a href="data-frames.html#tidy-up"><i class="fa fa-check"></i><b>5.4.2</b> Tidy up!</a></li>
+<li class="chapter" data-level="5.4.3" data-path="data-frames.html"><a href="data-frames.html#tibbles"><i class="fa fa-check"></i><b>5.4.3</b> Tibbles</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="data-frames.html"><a href="data-frames.html#exercises-2"><i class="fa fa-check"></i><b>5.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>6</b> Functions</a><ul>
+<li class="chapter" data-level="6.1" data-path="functions.html"><a href="functions.html#definition"><i class="fa fa-check"></i><b>6.1</b> Definition</a></li>
+<li class="chapter" data-level="6.2" data-path="functions.html"><a href="functions.html#exercises-3"><i class="fa fa-check"></i><b>6.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html"><i class="fa fa-check"></i><b>7</b> Conditional actions and loops</a><ul>
+<li class="chapter" data-level="7.1" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#conditional-actions"><i class="fa fa-check"></i><b>7.1</b> Conditional actions</a></li>
+<li class="chapter" data-level="7.2" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#loops"><i class="fa fa-check"></i><b>7.2</b> Loops…</a></li>
+<li class="chapter" data-level="7.3" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#and-how-to-avoid-them"><i class="fa fa-check"></i><b>7.3</b> … and how to avoid them</a></li>
+<li class="chapter" data-level="7.4" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#exercises-4"><i class="fa fa-check"></i><b>7.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="plotting.html"><a href="plotting.html"><i class="fa fa-check"></i><b>8</b> Plotting</a><ul>
+<li class="chapter" data-level="8.1" data-path="plotting.html"><a href="plotting.html#base-graphics"><i class="fa fa-check"></i><b>8.1</b> Base graphics</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="plotting.html"><a href="plotting.html#basic-plotting"><i class="fa fa-check"></i><b>8.1.1</b> Basic plotting</a></li>
+<li class="chapter" data-level="8.1.2" data-path="plotting.html"><a href="plotting.html#adding-some-style"><i class="fa fa-check"></i><b>8.1.2</b> Adding some style</a></li>
+<li class="chapter" data-level="8.1.3" data-path="plotting.html"><a href="plotting.html#going-further"><i class="fa fa-check"></i><b>8.1.3</b> Going further</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="plotting.html"><a href="plotting.html#advanced-plotting-using-ggplot2"><i class="fa fa-check"></i><b>8.2</b> Advanced plotting using ggplot2</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="plotting.html"><a href="plotting.html#a-quick-plot"><i class="fa fa-check"></i><b>8.2.1</b> A quick plot</a></li>
+<li class="chapter" data-level="8.2.2" data-path="plotting.html"><a href="plotting.html#the-grammar-of-graphics"><i class="fa fa-check"></i><b>8.2.2</b> The grammar of graphics</a></li>
+<li class="chapter" data-level="8.2.3" data-path="plotting.html"><a href="plotting.html#theming"><i class="fa fa-check"></i><b>8.2.3</b> Theming</a></li>
+<li class="chapter" data-level="8.2.4" data-path="plotting.html"><a href="plotting.html#making-interactive-plots-with-ggplot2-and-plotly"><i class="fa fa-check"></i><b>8.2.4</b> Making interactive plots with ggplot2 and plotly</a></li>
+<li class="chapter" data-level="8.2.5" data-path="plotting.html"><a href="plotting.html#gathering-plots-on-a-grid"><i class="fa fa-check"></i><b>8.2.5</b> Gathering plots on a grid</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="plotting.html"><a href="plotting.html#d-color-plots"><i class="fa fa-check"></i><b>8.3</b> 3D color plots</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="plotting.html"><a href="plotting.html#the-ggplot2-solution"><i class="fa fa-check"></i><b>8.3.1</b> The ggplot2 solution</a></li>
+<li class="chapter" data-level="8.3.2" data-path="plotting.html"><a href="plotting.html#the-base-graphics-solution"><i class="fa fa-check"></i><b>8.3.2</b> The base graphics solution</a></li>
+<li class="chapter" data-level="8.3.3" data-path="plotting.html"><a href="plotting.html#the-plotly-solution"><i class="fa fa-check"></i><b>8.3.3</b> The plotly solution</a></li>
+<li class="chapter" data-level="8.3.4" data-path="plotting.html"><a href="plotting.html#d-density-of-points"><i class="fa fa-check"></i><b>8.3.4</b> 2D density of points</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="plotting.html"><a href="plotting.html#exercises-5"><i class="fa fa-check"></i><b>8.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="fitting.html"><a href="fitting.html"><i class="fa fa-check"></i><b>9</b> Fitting</a><ul>
+<li class="chapter" data-level="9.1" data-path="fitting.html"><a href="fitting.html#linear-fitting"><i class="fa fa-check"></i><b>9.1</b> Linear fitting</a></li>
+<li class="chapter" data-level="9.2" data-path="fitting.html"><a href="fitting.html#non-linear-fitting"><i class="fa fa-check"></i><b>9.2</b> Non linear fitting</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="fitting.html"><a href="fitting.html#base-r"><i class="fa fa-check"></i><b>9.2.1</b> Base R</a></li>
+<li class="chapter" data-level="9.2.2" data-path="fitting.html"><a href="fitting.html#fme"><i class="fa fa-check"></i><b>9.2.2</b> FME</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="fitting.html"><a href="fitting.html#exercises-6"><i class="fa fa-check"></i><b>9.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="practical-case-recursive-data-treatment.html"><a href="practical-case-recursive-data-treatment.html"><i class="fa fa-check"></i><b>10</b> Practical case: recursive data treatment</a></li>
+<li class="chapter" data-level="11" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html"><i class="fa fa-check"></i><b>11</b> Writing documents with Rmarkdown</a><ul>
+<li class="chapter" data-level="11.1" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#what-is-markdown"><i class="fa fa-check"></i><b>11.1</b> What is markdown?</a></li>
+<li class="chapter" data-level="11.2" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#and-rmarkdown"><i class="fa fa-check"></i><b>11.2</b> … and Rmarkdown?</a></li>
+<li class="chapter" data-level="11.3" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#further-reading-1"><i class="fa fa-check"></i><b>11.3</b> Further reading</a></li>
+<li class="chapter" data-level="11.4" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#example"><i class="fa fa-check"></i><b>11.4</b> Example</a></li>
+<li class="chapter" data-level="11.5" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#compilation"><i class="fa fa-check"></i><b>11.5</b> Compilation</a></li>
+<li class="chapter" data-level="11.6" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#going-further-parameters"><i class="fa fa-check"></i><b>11.6</b> Going further: parameters</a></li>
+<li class="chapter" data-level="11.7" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#exercise"><i class="fa fa-check"></i><b>11.7</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html"><i class="fa fa-check"></i><b>12</b> Graphical interfaces with Shiny</a><ul>
+<li class="chapter" data-level="12.1" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#stand-alone-shiny-application"><i class="fa fa-check"></i><b>12.1</b> Stand-alone shiny application</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#the-layout"><i class="fa fa-check"></i><b>12.1.1</b> The layout</a></li>
+<li class="chapter" data-level="12.1.2" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#the-server"><i class="fa fa-check"></i><b>12.1.2</b> The server</a></li>
+<li class="chapter" data-level="12.1.3" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#various-useful-functions"><i class="fa fa-check"></i><b>12.1.3</b> Various useful functions</a></li>
+<li class="chapter" data-level="12.1.4" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#example-1"><i class="fa fa-check"></i><b>12.1.4</b> Example</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#rmarkdown-embedded-shiny-application"><i class="fa fa-check"></i><b>12.2</b> Rmarkdown-embedded shiny application</a></li>
+<li class="chapter" data-level="12.3" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#deploying-your-shiny-app"><i class="fa fa-check"></i><b>12.3</b> Deploying your shiny app</a><ul>
+<li class="chapter" data-level="12.3.1" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#passing-the-app.r-file-to-your-users"><i class="fa fa-check"></i><b>12.3.1</b> Passing the app.R file to your users</a></li>
+<li class="chapter" data-level="12.3.2" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#deploying-to-shinyapps.io"><i class="fa fa-check"></i><b>12.3.2</b> Deploying to shinyapps.io</a></li>
+<li class="chapter" data-level="12.3.3" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#deploying-on-your-own-linux-server"><i class="fa fa-check"></i><b>12.3.3</b> Deploying on your own Linux server</a></li>
+<li class="chapter" data-level="12.3.4" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#building-an-executable"><i class="fa fa-check"></i><b>12.3.4</b> Building an executable</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#further-reading-2"><i class="fa fa-check"></i><b>12.4</b> Further reading</a></li>
+<li class="chapter" data-level="12.5" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#exercises-7"><i class="fa fa-check"></i><b>12.5</b> Exercises</a></li>
+</ul></li>
+<li class="divider"></li>
+<br><br><br><br>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Reproducible data treatment with R</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="graphical-interfaces-with-shiny" class="section level1">
+<h1><span class="header-section-number">12</span> Graphical interfaces with Shiny</h1>
+<p>You have had a preview of a <code>shiny</code> interface in the previous section with the interactive parameter input in a Rmarkdown file.</p>
+<p>Using the <code>shiny</code> package, you can actually easily build an interactive graphical user interface (GUI) in which you will be able to set parameters (values, files…), visualize the outputs (plots, images, tables…), and write files as output. This is very useful when you have to always repeat the same task with a varying input parameter, for example.</p>
+<div id="stand-alone-shiny-application" class="section level2">
+<h2><span class="header-section-number">12.1</span> Stand-alone shiny application</h2>
+<p>A shiny application is an <code>app.R</code> file (it must be named like that) containing 3 elements:</p>
+<ol style="list-style-type: decimal">
+<li><code>ui</code>: definition of the interface layout (where are the buttons, text input, plot output, etc.) and the input parameters</li>
+<li><code>server</code>: definition of the various actions to perform with the input parameters</li>
+<li><code>shinyApp(ui, server)</code>: launches the shiny app with the above defined parameters</li>
+</ol>
+<p>In Rstudio, create a new “Shiny web app”. It will create an <code>app.R</code> file containing this:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(shiny)
+<span class="co"># Define UI for application that draws a histogram</span>
+ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(
+    <span class="co"># Application title</span>
+    <span class="kw">titlePanel</span>(<span class="st">&quot;Old Faithful Geyser Data&quot;</span>),
+    <span class="co"># Sidebar with a slider input for number of bins </span>
+    <span class="kw">sidebarLayout</span>(
+        <span class="kw">sidebarPanel</span>(
+            <span class="kw">sliderInput</span>(<span class="st">&quot;bins&quot;</span>,
+                        <span class="st">&quot;Number of bins:&quot;</span>,
+                        <span class="dt">min =</span> <span class="dv">1</span>,
+                        <span class="dt">max =</span> <span class="dv">50</span>,
+                        <span class="dt">value =</span> <span class="dv">30</span>)
+        ),
+        <span class="co"># Show a plot of the generated distribution</span>
+        <span class="kw">mainPanel</span>(
+           <span class="kw">plotOutput</span>(<span class="st">&quot;distPlot&quot;</span>)
+        )
+    )
+)
+<span class="co"># Define server logic required to draw a histogram</span>
+server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {
+    output<span class="op">$</span>distPlot &lt;-<span class="st"> </span><span class="kw">renderPlot</span>({
+        <span class="co"># generate bins based on input$bins from ui.R</span>
+        x    &lt;-<span class="st"> </span>faithful[, <span class="dv">2</span>]
+        bins &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="kw">min</span>(x), <span class="kw">max</span>(x), <span class="dt">length.out =</span> input<span class="op">$</span>bins <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)
+
+        <span class="co"># draw the histogram with the specified number of bins</span>
+        <span class="kw">hist</span>(x, <span class="dt">breaks =</span> bins, <span class="dt">col =</span> <span class="st">&#39;darkgray&#39;</span>, <span class="dt">border =</span> <span class="st">&#39;white&#39;</span>)
+    })
+}
+<span class="co"># Run the application </span>
+<span class="kw">shinyApp</span>(<span class="dt">ui =</span> ui, <span class="dt">server =</span> server)</code></pre>
+<p>Run it by clicking “Run App”: a window opens and you can pan the slider and see the resulting output.</p>
+<p>In case you want to clean up the code, you can separate <code>app.R</code> into <code>ui.R</code> and <code>server.R</code>. No need to add the <code>shinyApp(ui = ui, server = server)</code> line in that case.</p>
+<p>All user-defined functions and variable definitions can be defined in a <code>global.R</code> file that will be sourced by default when launching the app.</p>
+<div id="the-layout" class="section level3">
+<h3><span class="header-section-number">12.1.1</span> The layout</h3>
+<p>In the <code>ui &lt;- fluidPage(...)</code> item, you define the layout of your application. In the above example:</p>
+<ul>
+<li><code>titlePanel(&quot;Title&quot;)</code> creates a title</li>
+<li><code>sidebarLayout()</code> separates the layout in a short one on the left (<code>sidebarPanel</code>) and a main one on the right (<code>mainPanel</code>)</li>
+<li><code>sliderInput(&quot;name_of_slider&quot;, &quot;text to display&quot;, min=min_value, max=max_value, value=current_value, step=step_value)</code> creates a slider to input a value. This value will be retrieved by <code>input$name_of_slider</code> in the <code>server()</code> function.</li>
+<li><code>plotOutput(&quot;name_of_plot&quot;)</code> plots the result of <code>output$name_of_plot</code> defined in the <code>server()</code> function.</li>
+</ul>
+<p>See the <a href="https://shiny.rstudio.com/articles/layout-guide.html">guide to application layout</a> for more layout options.</p>
+</div>
+<div id="the-server" class="section level3">
+<h3><span class="header-section-number">12.1.2</span> The server</h3>
+<p>In the <code>server &lt;- function(input, output){...}</code> function, you define the various actions and outputs in reaction to an input change.</p>
+<p>In the above example, we define <code>output$distPlot</code> as a <code>renderPlot()</code> function whose results depends on <code>input$bins</code>. The plot is rendered in the <code>ui</code> by <code>plotOutput(&quot;distPlot&quot;)</code>.</p>
+</div>
+<div id="various-useful-functions" class="section level3">
+<h3><span class="header-section-number">12.1.3</span> Various useful functions</h3>
+<div id="input" class="section level4">
+<h4><span class="header-section-number">12.1.3.1</span> Input</h4>
+<ul>
+<li><strong>Buttons</strong>:</li>
+</ul>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># # # # # # # # # </span>
+<span class="co"># In ui:</span>
+<span class="kw">actionButton</span>(<span class="st">&quot;button_name&quot;</span>, <span class="st">&quot;Text to display&quot;</span>)
+<span class="co"># # # # # # # # # </span>
+<span class="co"># In server:</span>
+<span class="kw">observeEvent</span>(input<span class="op">$</span>button_name, {
+    <span class="co"># do something</span>
+})
+<span class="co"># or</span>
+some_function &lt;-<span class="st"> </span><span class="kw">eventReactive</span>(input<span class="op">$</span>button_name, {
+                               <span class="co"># do something</span>
+                               })</code></pre>
+<ul>
+<li><strong>Text/numeric</strong>:</li>
+</ul>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># # # # # # # # # </span>
+<span class="co"># In ui:</span>
+<span class="kw">textInput</span>(<span class="st">&quot;text_name&quot;</span>, 
+            <span class="dt">label =</span> <span class="st">&quot;Text to display&quot;</span>, 
+            <span class="dt">value =</span> <span class="st">&quot;initial value&quot;</span>, 
+            <span class="dt">width =</span> <span class="st">&#39;100%&#39;</span>)
+
+<span class="kw">textAreaInput</span>(<span class="st">&quot;text_name&quot;</span>, 
+            <span class="dt">label=</span><span class="st">&quot;Text to display&quot;</span>, 
+            <span class="dt">value =</span> <span class="st">&quot;initial_value&quot;</span>, 
+            <span class="dt">rows =</span> <span class="dv">5</span>) <span class="op">%&gt;%</span>
+<span class="st">            </span>shiny<span class="op">::</span><span class="kw">tagAppendAttributes</span>(<span class="dt">style =</span> <span class="st">&#39;width: 100%;&#39;</span>)
+
+<span class="kw">numericInput</span>(<span class="st">&quot;value_name&quot;</span>, <span class="st">&#39;Text to display&#39;</span>, <span class="dt">value=</span><span class="dv">0</span>)
+<span class="co"># # # # # # # # # </span>
+<span class="co"># In server, retrieve it as:</span>
+input<span class="op">$</span>text_name
+input<span class="op">$</span>value_name</code></pre>
+<ul>
+<li><strong>Slider</strong></li>
+</ul>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># # # # # # # # # </span>
+<span class="co"># In ui:</span>
+<span class="kw">sliderInput</span>(<span class="st">&quot;slider_name&quot;</span>, <span class="st">&quot;Text to display&quot;</span>,
+            <span class="dt">min =</span> <span class="dv">1</span>,
+            <span class="dt">max =</span> <span class="dv">50</span>,
+            <span class="dt">step=</span> <span class="dv">1</span>,
+            <span class="dt">value =</span> <span class="dv">30</span>)
+<span class="co"># # # # # # # # # </span>
+<span class="co"># In server, retrieve it as:</span>
+input<span class="op">$</span>slider_name</code></pre>
+<ul>
+<li><strong>File</strong></li>
+</ul>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># # # # # # # # # </span>
+<span class="co"># In ui:</span>
+<span class="kw">fileInput</span>(<span class="st">&quot;file_in&quot;</span>, 
+          <span class="st">&quot;Choose input file:&quot;</span>, <span class="dt">accept =</span> <span class="kw">c</span>(<span class="st">&quot;.txt&quot;</span>) 
+          )
+<span class="co"># # # # # # # # # </span>
+<span class="co"># In server, retrieve it as:</span>
+input<span class="op">$</span>file_in<span class="op">$</span>datapath
+<span class="co"># For example, read it as a data.frame with myData():</span>
+myData &lt;-<span class="st"> </span><span class="kw">reactive</span>({
+        inFile &lt;-<span class="st"> </span>input<span class="op">$</span>file_in
+        <span class="cf">if</span> (<span class="kw">is.null</span>(inFile)) {
+            <span class="kw">return</span>(<span class="ot">NULL</span>)
+        } <span class="cf">else</span> {
+            <span class="kw">return</span>(<span class="kw">read.table</span>(inFile<span class="op">$</span>datapath, <span class="dt">header=</span><span class="ot">TRUE</span>))
+        }
+    })</code></pre>
+<ul>
+<li><strong>Dropdown menu</strong></li>
+</ul>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># # # # # # # # # </span>
+<span class="co"># In ui:</span>
+<span class="kw">selectInput</span>(<span class="st">&quot;menu_name&quot;</span>, <span class="st">&quot;Text to display&quot;</span>, 
+            <span class="dt">choices=</span><span class="kw">c</span>(<span class="st">&quot;choice 1&quot;</span>, <span class="st">&quot;choice 2&quot;</span>), 
+            <span class="dt">multiple =</span> <span class="ot">FALSE</span> <span class="co"># multiple selection possible</span>
+            )
+<span class="co"># # # # # # # # # </span>
+<span class="co"># In server, retrieve it as:</span>
+input<span class="op">$</span>menu_name</code></pre>
+</div>
+<div id="output" class="section level4">
+<h4><span class="header-section-number">12.1.3.2</span> Output</h4>
+<ul>
+<li><strong>Display a plot</strong></li>
+</ul>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># # # # # # # # # </span>
+<span class="co"># In ui:</span>
+<span class="kw">plotOutput</span>(<span class="st">&quot;plot_name&quot;</span>, <span class="dt">height =</span> <span class="dv">600</span>)
+<span class="co"># # # # # # # # # </span>
+<span class="co"># In server:</span>
+output<span class="op">$</span>plot_name &lt;-<span class="st"> </span><span class="kw">renderPlot</span>({
+        <span class="co"># do plot:</span>
+        <span class="kw">plot</span>(...)
+        <span class="co"># or</span>
+        <span class="kw">ggplot</span>(...)
+    })</code></pre>
+<p>If you want an interactive plot, use <code>plotlyOutput</code> and <code>renderPlotly</code> instead.</p>
+<ul>
+<li><strong>Display text</strong></li>
+</ul>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># # # # # # # # # </span>
+<span class="co"># In ui:</span>
+<span class="kw">textOutput</span>(<span class="st">&quot;text_to_display&quot;</span>)
+<span class="co"># Verbatim text (fixed width characters):</span>
+<span class="kw">verbatimTextOutput</span>(<span class="st">&quot;text_to_display&quot;</span>)
+<span class="co"># # # # # # # # # </span>
+<span class="co"># In server:</span>
+output<span class="op">$</span>text_to_display &lt;-<span class="st"> </span><span class="kw">renderText</span>({ <span class="st">&quot;some text&quot;</span> })
+output<span class="op">$</span>text_to_display &lt;-<span class="st"> </span><span class="kw">renderPrint</span>({ <span class="st">&quot;some text&quot;</span> })</code></pre>
+<ul>
+<li><strong>Display a table</strong></li>
+</ul>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># # # # # # # # # </span>
+<span class="co"># In ui:</span>
+<span class="kw">tableOutput</span>(<span class="st">&quot;table_to_display&quot;</span>)
+<span class="co"># # # # # # # # # </span>
+<span class="co"># In server:</span>
+output<span class="op">$</span>table_to_display &lt;-<span class="st"> </span><span class="kw">renderTable</span>( df )</code></pre>
+<p>Or in case you want interactive tables, use the package <a href="https://shiny.rstudio.com/articles/datatables.html">datatable</a>:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(DT)
+<span class="co"># # # # # # # # # </span>
+<span class="co"># In ui:</span>
+<span class="kw">dataTableOutput</span>(<span class="st">&quot;table_to_display&quot;</span>)
+<span class="co"># # # # # # # # # </span>
+<span class="co"># In server:</span>
+output<span class="op">$</span>table_to_display &lt;-<span class="st"> </span><span class="kw">renderDataTable</span>({ df })</code></pre>
+<ul>
+<li><strong>Reactive events</strong></li>
+</ul>
+<p>In case you want the plots or text display to react to a change in input value, you can wrap the corresponding output in the <code>reactive()</code> function on the server side:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># # # # # # # # # </span>
+<span class="co"># In ui:</span>
+<span class="kw">fileInput</span>(<span class="st">&quot;file_in&quot;</span>, 
+          <span class="st">&quot;Choose input file:&quot;</span>, <span class="dt">accept =</span> <span class="kw">c</span>(<span class="st">&quot;.txt&quot;</span>) 
+          )
+<span class="kw">selectInput</span>(<span class="st">&quot;menu&quot;</span>, <span class="st">&quot;Columns to display&quot;</span>, 
+            <span class="dt">choices=</span><span class="dv">1</span><span class="op">:</span><span class="dv">4</span>, 
+            <span class="dt">multiple =</span> <span class="ot">TRUE</span>)
+<span class="kw">tableOutput</span>(<span class="st">&quot;table&quot;</span>)
+<span class="co"># # # # # # # # # </span>
+<span class="co"># In server:</span>
+myData &lt;-<span class="st"> </span><span class="kw">reactive</span>({
+        inFile &lt;-<span class="st"> </span>input<span class="op">$</span>file_in
+        <span class="cf">if</span> (<span class="kw">is.null</span>(inFile)) {
+            <span class="kw">return</span>(<span class="ot">NULL</span>)
+        } <span class="cf">else</span> {
+            <span class="kw">return</span>(<span class="kw">read.table</span>(inFile<span class="op">$</span>datapath, <span class="dt">header=</span><span class="ot">TRUE</span>))
+        }
+    })
+tab &lt;-<span class="st"> </span><span class="kw">reactive</span>({
+      <span class="kw">myData</span>()[,<span class="kw">sort</span>(input<span class="op">$</span>menu)]
+   })
+output<span class="op">$</span>table &lt;-<span class="st"> </span><span class="kw">renderTable</span>( <span class="kw">tab</span>() )</code></pre>
+<p>The various input default values can be updated using the following functions on the server side:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Dropdown menu</span>
+<span class="kw">updateSelectInput</span>(session, <span class="st">&quot;menu_name&quot;</span>, <span class="dt">choices=</span>new_choices)
+<span class="co"># Text</span>
+<span class="kw">updateTextInput</span>(session, <span class="st">&quot;text_name&quot;</span>, <span class="dt">value =</span> new_value)
+<span class="co"># Numeric</span>
+<span class="kw">updateNumericInput</span>(session, <span class="st">&quot;value_name&quot;</span>, <span class="dt">value =</span> new_value)</code></pre>
+<ul>
+<li><strong>Writing a file</strong></li>
+</ul>
+<p>This is not a function of shiny, but you may want to write a text file:</p>
+<pre class="sourceCode r"><code class="sourceCode r">toprint &lt;-<span class="st"> </span><span class="kw">paste</span>(<span class="st">&quot;hello&quot;</span>, <span class="st">&quot;world&quot;</span>)
+outfile &lt;-<span class="st"> </span><span class="kw">file</span>(<span class="st">&quot;file_name.txt&quot;</span>, <span class="dt">encoding=</span><span class="st">&quot;UTF-8&quot;</span>)
+<span class="kw">write</span>(toprint, <span class="dt">file=</span>outfile)
+<span class="kw">close</span>(outfile)</code></pre>
+<p>You can for example write a Rmd file that you will render (as pdf, etc…) using <a href="https://www.rdocumentation.org/packages/rmarkdown/versions/1.13/topics/render">render()</a>:</p>
+<pre class="sourceCode r"><code class="sourceCode r">rmarkdown<span class="op">::</span><span class="kw">render</span>(<span class="st">&quot;file_name.Rmd&quot;</span>)</code></pre>
+</div>
+</div>
+<div id="example-1" class="section level3">
+<h3><span class="header-section-number">12.1.4</span> Example</h3>
+<p>Create a new shiny app with the following code, and play around with it. The input file should be the tidy <a href="Data/population.txt" download target="_blank">population.txt</a>.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
+<span class="kw">library</span>(shiny)
+<span class="kw">library</span>(plotly)
+<span class="kw">library</span>(tidyverse)
+<span class="kw">library</span>(DT)
+
+ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(
+    <span class="kw">titlePanel</span>(<span class="st">&quot;City population in France&quot;</span>),
+    <span class="kw">sidebarLayout</span>(
+        <span class="kw">sidebarPanel</span>(
+            <span class="kw">fileInput</span>(<span class="st">&quot;file_in&quot;</span>, <span class="st">&quot;Choose input file:&quot;</span>,
+                      <span class="dt">accept =</span> <span class="kw">c</span>(<span class="st">&quot;.txt&quot;</span>) ),
+            <span class="kw">selectInput</span>(<span class="st">&quot;sel_city&quot;</span>, <span class="st">&quot;City:&quot;</span>, <span class="dt">choices =</span> <span class="st">&quot;&quot;</span>, <span class="dt">multiple =</span> <span class="ot">TRUE</span>)
+        ),
+        <span class="kw">mainPanel</span>(
+            <span class="kw">tabsetPanel</span>(
+                <span class="kw">tabPanel</span>(<span class="st">&quot;Plot&quot;</span>, <span class="kw">plotlyOutput</span>(<span class="st">&quot;cityplot&quot;</span>, <span class="dt">height =</span> <span class="st">&quot;800px&quot;</span>)),
+                <span class="kw">tabPanel</span>(<span class="st">&quot;Table&quot;</span>, <span class="kw">dataTableOutput</span>(<span class="st">&quot;table&quot;</span>))
+            )
+        )
+    )
+)
+
+server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {
+    
+    <span class="co"># myData() returns the data if a file is provided</span>
+    myData &lt;-<span class="st"> </span><span class="kw">reactive</span>({
+        inFile &lt;-<span class="st"> </span>input<span class="op">$</span>file_in
+        <span class="cf">if</span> (<span class="kw">is.null</span>(inFile)) {
+            <span class="kw">return</span>(<span class="ot">NULL</span>)
+        } <span class="cf">else</span> {
+            <span class="kw">return</span>(<span class="kw">read.table</span>(inFile<span class="op">$</span>datapath, <span class="dt">header=</span><span class="ot">TRUE</span>))
+        }
+    })
+    
+    <span class="co"># in case something changes, </span>
+    <span class="co"># update the city input selection list</span>
+    <span class="kw">observe</span>({
+        <span class="kw">updateSelectInput</span>(session, <span class="st">&quot;sel_city&quot;</span>,
+                          <span class="dt">choices =</span> <span class="kw">unique</span>(<span class="kw">myData</span>()<span class="op">$</span>city),
+                          <span class="dt">selected =</span> <span class="kw">unique</span>(<span class="kw">myData</span>()<span class="op">$</span>city)[<span class="dv">1</span>])
+    })
+    
+    <span class="co"># plot the pop vs year for the selected cities</span>
+    output<span class="op">$</span>cityplot &lt;-<span class="st"> </span><span class="kw">renderPlotly</span>({
+        df &lt;-<span class="st"> </span><span class="kw">myData</span>()
+        <span class="cf">if</span>(<span class="kw">is.null</span>(df)) <span class="kw">return</span>(<span class="ot">NULL</span>)
+        p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data=</span><span class="kw">subset</span>(df, city <span class="op">%in%</span><span class="st"> </span>input<span class="op">$</span>sel_city), 
+                    <span class="kw">aes</span>(<span class="dt">x=</span>year, <span class="dt">y=</span>pop, <span class="dt">size=</span>pop, <span class="dt">color=</span>city)) <span class="op">+</span>
+<span class="st">            </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span>
+<span class="st">            </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>, <span class="dt">alpha=</span><span class="fl">0.1</span>, <span class="dt">show.legend =</span> <span class="ot">FALSE</span>, 
+                        <span class="kw">aes</span>(<span class="dt">fill=</span>city)) <span class="op">+</span><span class="st"> </span>
+<span class="st">            </span><span class="kw">ggtitle</span>(<span class="kw">paste</span>(<span class="st">&quot;Population in &quot;</span>,input<span class="op">$</span>city,<span class="dt">sep=</span><span class="st">&quot;&quot;</span>))<span class="op">+</span>
+<span class="st">            </span><span class="kw">labs</span>(<span class="dt">x=</span><span class="st">&quot;Year&quot;</span>, <span class="dt">y=</span><span class="st">&quot;Population&quot;</span>)<span class="op">+</span>
+<span class="st">            </span><span class="kw">theme_light</span>() <span class="op">+</span>
+<span class="st">            </span><span class="kw">theme</span>(<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size =</span> <span class="dv">16</span>))
+        <span class="kw">ggplotly</span>(p)
+    })
+    
+    <span class="co"># show data as a table</span>
+    output<span class="op">$</span>table &lt;-<span class="st"> </span><span class="kw">renderDataTable</span>({
+        <span class="cf">if</span>(<span class="kw">is.null</span>(df)) <span class="kw">return</span>(<span class="ot">NULL</span>)
+        <span class="kw">spread</span>(<span class="kw">myData</span>(), city, pop)
+    }) 
+    
+}
+
+<span class="kw">shinyApp</span>(<span class="dt">ui =</span> ui, <span class="dt">server =</span> server)</code></pre>
+</div>
+</div>
+<div id="rmarkdown-embedded-shiny-application" class="section level2">
+<h2><span class="header-section-number">12.2</span> Rmarkdown-embedded shiny application</h2>
+<p>A shiny application can even be embedded inside a Rmarkdown document by providing <code>runtime: shiny</code> in the YAML header. A short example here, try to compile it:</p>
+<pre class="sourceCode markdown"><code class="sourceCode markdown">---
+title: &quot;Test&quot;
+output: html_document
+runtime: shiny
+---
+
+This is a test Rmarkdown document.
+
+```{r, echo=FALSE, message=FALSE}
+library(ggplot2)
+library(plotly)
+df &lt;- read.table(&quot;Data/population.txt&quot;, header=TRUE)
+
+shinyApp(
+  ui = fluidPage(
+<span class="bn">    selectInput(&quot;city&quot;, &quot;City:&quot;, choices = unique(df$city)),</span>
+<span class="bn">    plotlyOutput(&quot;cityplot&quot;, height = 600)</span>
+  ),
+
+  server = function(input, output) {
+<span class="bn">    output$cityplot = renderPlotly({</span>
+<span class="bn">      p &lt;- ggplot(data=subset(df,city==input$city), </span>
+<span class="bn">                aes(x=year, y=pop, size=pop)) +</span>
+<span class="bn">            geom_point() + </span>
+<span class="bn">            geom_smooth(method=&quot;lm&quot;, alpha=0.1, show.legend = FALSE) + </span>
+<span class="bn">            ggtitle(paste(&quot;Population in &quot;,input$city,sep=&quot;&quot;))+</span>
+<span class="bn">            labs(x=&quot;Year&quot;, y=&quot;Population&quot;)+</span>
+<span class="bn">            theme_light()</span>
+<span class="bn">      ggplotly(p)</span>
+<span class="bn">    })</span>
+  }
+)
+```</code></pre>
+<p>The only “problem” with this solution is that the html file that is produced will not run the shiny app by itself, you have to open the Rmd file in Rstudio and hit “Run Document”.</p>
+</div>
+<div id="deploying-your-shiny-app" class="section level2">
+<h2><span class="header-section-number">12.3</span> Deploying your shiny app</h2>
+<p>There are 4 ways to deploy your app: passing the <code>app.R</code> file to your users, deploying to <a href="https://www.shinyapps.io/">shinyapps.io</a>, deploying on your own server, or building an executable with Electron.</p>
+<div id="passing-the-app.r-file-to-your-users" class="section level3">
+<h3><span class="header-section-number">12.3.1</span> Passing the app.R file to your users</h3>
+<p>This option is certainly easy: just send your <code>app.R</code> file (or Rmd file with shiny embedded app) as well as any other files needed (<em>e.g.</em> <code>global.R</code>) to your users, explain to them how to run it, and <em>voilà</em>.</p>
+<p>However, this needs a little bit of know-how from the users: they need to install R and Rstudio, install the needed packages, and run the app.</p>
+<p>A good option to remove the “package-installing” step is to define a function <code>check.package()</code> that will check if the package is installed, install it if needed, and load it:</p>
+<pre class="sourceCode r"><code class="sourceCode r">check.packages &lt;-<span class="st"> </span><span class="cf">function</span>(pkg){
+    new.pkg &lt;-<span class="st"> </span>pkg[<span class="op">!</span>(pkg <span class="op">%in%</span><span class="st"> </span><span class="kw">installed.packages</span>()[, <span class="st">&quot;Package&quot;</span>])]
+    <span class="cf">if</span> (<span class="kw">length</span>(new.pkg)) 
+        <span class="kw">install.packages</span>(new.pkg, <span class="dt">dependencies =</span> <span class="ot">TRUE</span>)
+    <span class="kw">sapply</span>(pkg, require, <span class="dt">character.only =</span> <span class="ot">TRUE</span>)
+}
+<span class="co"># Usage:</span>
+<span class="kw">check.packages</span>(<span class="st">&quot;ggplot2&quot;</span>)</code></pre>
+</div>
+<div id="deploying-to-shinyapps.io" class="section level3">
+<h3><span class="header-section-number">12.3.2</span> Deploying to shinyapps.io</h3>
+<p>Applications deployed on shinyapps.io will be accessible from anywhere through a weblink. See for example <a href="https://cbousige.shinyapps.io/rubypressure/">my application</a> to determine the pressure from a ruby Raman spectrum or the expected Raman shift for a given pressure and laser wavelength. Your application will however be public and you will have some limitations in the number of online applications and time of use (if you don’t pay a fee, see <a href="https://www.shinyapps.io/">here</a> for the various plans).</p>
+<ul>
+<li>First, create an account on <a href="https://www.shinyapps.io/admin/#/signup">shinyapps.io</a></li>
+<li>Follow the steps described <a href="https://docs.rstudio.com/shinyapps.io/getting-started.html#deploying-applications">here</a> to:
+<ul>
+<li><em>Configure RSconnect</em>: in your shinyapps.io dashboard, click your name, then Tokens, and create a token for a new app. Copy the text in the popup window.</li>
+<li><em>Deploy the app</em> from the Rstudio window by clicking on the “Publish” button in the top right corner of the interface. Follow the steps along the <em>shinyapps.io</em> way.</li>
+</ul></li>
+</ul>
+<p>Note that in that case, you should not have any <code>install.package()</code> command in your code. Most packages are supported by shinyapps.io.</p>
+</div>
+<div id="deploying-on-your-own-linux-server" class="section level3">
+<h3><span class="header-section-number">12.3.3</span> Deploying on your own Linux server</h3>
+<p>This option is more advanced and I’m not going into details for that, but you have a number of tutorials online. See <em>e.g.</em> <a href="https://shiny.rstudio.com/articles/shiny-server.html">here</a>, <a href="https://docs.rstudio.com/shiny-server/">here</a> or <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-shiny-server-on-ubuntu-16-04">here</a>.</p>
+<p>You might consider this option if you work in a company that want to handle privately its data (which sounds plausible) and not pay the shinyapps.io fee to password protect the app. In that case, just work with the IT department to get it running.</p>
+</div>
+<div id="building-an-executable" class="section level3">
+<h3><span class="header-section-number">12.3.4</span> Building an executable</h3>
+<p>On <strong>Windows</strong>, there is this possibility that looks nice but that I never tried because I don’t have Windows: <a href="https://ficonsulting.github.io/RInno/">RInno</a>.</p>
+<p>On <strong>any platform</strong>: there is the possibility described <a href="https://www.youtube.com/watch?v=ARrbbviGvjc">here</a> with the corresponding <a href="https://github.com/ColumbusCollaboratory/electron-quick-start">github page</a>. This option is actually awesome and a quite recent possibility. However, since the produced application will contain R and the needed packages, the executable file is quite heavy.</p>
+</div>
+</div>
+<div id="further-reading-2" class="section level2">
+<h2><span class="header-section-number">12.4</span> Further reading</h2>
+<ul>
+<li>The Shiny <a href="https://shiny.rstudio.com/images/shiny-cheatsheet.pdf">cheatsheet</a></li>
+<li><a href="https://shiny.rstudio.com/articles/layout-guide.html">Guide to application layout</a></li>
+<li>The <a href="https://shiny.rstudio.com/gallery/">Shiny Gallery</a>: find what you want to do and adapt it to your needs</li>
+<li>The official <a href="https://shiny.rstudio.com/tutorial/">Shiny video tutorial</a></li>
+</ul>
+</div>
+<div id="exercises-7" class="section level2">
+<h2><span class="header-section-number">12.5</span> Exercises</h2>
+<details>
+<p><summary><strong>Exercise 1</strong></summary></p>
+<ul>
+<li>Create a new empty app with a blank user-interface and run it.</li>
+<li>Add a title, a left panel and a main panel</li>
+<li>Add an input numerical value defaulting to 1 and with a step of 0.05, name it “bw”</li>
+<li>Add a slider input from 0 to 1e3 by steps of 1e2 defaulting to 5e2, name it “N_val”</li>
+<li>Add a plot of the <code>density</code> of <code>rnorm(N_val)</code> with bandwidth <code>bw</code></li>
+<li>Make sure <code>bw&gt;0</code>, otherwise don’t produce the plot</li>
+</ul>
+<details>
+<p><summary>Solution</summary></p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(shiny)
+
+ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(
+    <span class="kw">titlePanel</span>(<span class="st">&quot;Some title&quot;</span>),
+    <span class="kw">sidebarLayout</span>(
+        <span class="kw">sidebarPanel</span>(
+            <span class="kw">numericInput</span>(<span class="st">&quot;bw&quot;</span>, <span class="st">&quot;Enter bandwidth:&quot;</span>, <span class="dv">1</span>, <span class="dt">step=</span><span class="fl">0.05</span>),
+            <span class="kw">sliderInput</span>(<span class="st">&quot;N_val&quot;</span>, <span class="st">&quot;Number of points:&quot;</span>, 
+                        <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="fl">1e4</span>, <span class="dt">step=</span> <span class="fl">1e2</span>, <span class="dt">value =</span> <span class="fl">5e2</span>)
+        ),
+        <span class="kw">mainPanel</span>(
+            <span class="kw">plotOutput</span>(<span class="st">&quot;plot&quot;</span>, <span class="dt">height =</span> <span class="dv">600</span>)
+        )
+    )
+)
+
+server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {
+    
+    <span class="co"># plot the pop vs year for the selected cities</span>
+    output<span class="op">$</span>plot &lt;-<span class="st"> </span><span class="kw">renderPlot</span>({
+                        <span class="cf">if</span>(input<span class="op">$</span>bw<span class="op">==</span><span class="dv">0</span>) <span class="kw">return</span>(<span class="ot">NULL</span>)
+                        <span class="kw">plot</span>(<span class="kw">density</span>(<span class="kw">rnorm</span>(input<span class="op">$</span>N_val), <span class="dt">bw=</span><span class="kw">abs</span>(input<span class="op">$</span>bw)))
+                    })
+}
+
+<span class="kw">shinyApp</span>(<span class="dt">ui =</span> ui, <span class="dt">server =</span> server)</code></pre>
+</details>
+</details>
+<details>
+<p><summary><strong>Exercise 2</strong></summary></p>
+<p>Create a shiny application that will:</p>
+<ul>
+<li>read an input (through a file dialog) Raman spectrum from a ruby (<a href="Data/XP_data.zip" download target="_blank">XP_data.zip</a>)</li>
+<li>fit the data by two Lorentzians</li>
+<li>plot the data interactively</li>
+<li>ask for the laser wavelength as an input and give 568.189 nm as default</li>
+<li>write the corresponding pressure on the page using the <code>Pruby()</code> function defined in <code>myfunc.R</code> found in <a href="Data/XP_data.zip" download target="_blank">XP_data.zip</a>.</li>
+</ul>
+</details>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="writing-documents-with-rmarkdown.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": [["tutoR.Rmd", "Rmd"]],
+"toc": {
+"collapse": "subsubsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

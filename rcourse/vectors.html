@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Vectors | Reproducible data treatment with R</title>
+  <meta name="description" content="3 Vectors | Reproducible data treatment with R" />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Vectors | Reproducible data treatment with R" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://colinbousige.github.io/rcourse/" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Vectors | Reproducible data treatment with R" />
+  
+  
+  
+
+<meta name="author" content="Colin Bousige" />
+
+
+<meta name="date" content="2019-09-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="simple-variables.html">
+<link rel="next" href="lists.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.8.0/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.39.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.39.2/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://colinbousige.github.io/rcourse/about-the-class.html">Reproducible data treatment with R</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html"><i class="fa fa-check"></i>About the class</a><ul>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#objectives-of-the-class"><i class="fa fa-check"></i>Objectives of the class</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#prerequisites"><i class="fa fa-check"></i>Prerequisites</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#teaser"><i class="fa fa-check"></i>Teaser</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#further-reading"><i class="fa fa-check"></i>Further reading</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#motivations"><i class="fa fa-check"></i>Motivations</a><ul>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#reproducible-data-treatment-why-it-matters"><i class="fa fa-check"></i>Reproducible data treatment: why it matters</a></li>
+<li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html#why-with-r-and-not-python"><i class="fa fa-check"></i>Why with R and not python?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="getting-ready.html"><a href="getting-ready.html"><i class="fa fa-check"></i><b>1</b> Getting ready</a><ul>
+<li class="chapter" data-level="1.1" data-path="getting-ready.html"><a href="getting-ready.html#the-easy-way"><i class="fa fa-check"></i><b>1.1</b> The easy way</a></li>
+<li class="chapter" data-level="1.2" data-path="getting-ready.html"><a href="getting-ready.html#the-more-advanced-way"><i class="fa fa-check"></i><b>1.2</b> The more advanced way</a></li>
+<li class="chapter" data-level="1.3" data-path="getting-ready.html"><a href="getting-ready.html#in-any-case-install-latex"><i class="fa fa-check"></i><b>1.3</b> In any case: install LaTeX</a></li>
+<li class="chapter" data-level="1.4" data-path="getting-ready.html"><a href="getting-ready.html#setting-up-the-environment"><i class="fa fa-check"></i><b>1.4</b> Setting up the environment</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="simple-variables.html"><a href="simple-variables.html"><i class="fa fa-check"></i><b>2</b> Simple variables</a><ul>
+<li class="chapter" data-level="2.1" data-path="simple-variables.html"><a href="simple-variables.html#scalars-and-booleans"><i class="fa fa-check"></i><b>2.1</b> Scalars and booleans</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="simple-variables.html"><a href="simple-variables.html#special-values"><i class="fa fa-check"></i><b>2.1.1</b> Special values</a></li>
+<li class="chapter" data-level="2.1.2" data-path="simple-variables.html"><a href="simple-variables.html#booleans"><i class="fa fa-check"></i><b>2.1.2</b> Booleans</a></li>
+<li class="chapter" data-level="2.1.3" data-path="simple-variables.html"><a href="simple-variables.html#complex-values"><i class="fa fa-check"></i><b>2.1.3</b> Complex values</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="simple-variables.html"><a href="simple-variables.html#strings"><i class="fa fa-check"></i><b>2.2</b> Strings</a></li>
+<li class="chapter" data-level="2.3" data-path="simple-variables.html"><a href="simple-variables.html#exercises"><i class="fa fa-check"></i><b>2.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="vectors.html"><a href="vectors.html"><i class="fa fa-check"></i><b>3</b> Vectors</a><ul>
+<li class="chapter" data-level="3.1" data-path="vectors.html"><a href="vectors.html#different-ways-of-defining-a-vector"><i class="fa fa-check"></i><b>3.1</b> Different ways of defining a vector</a></li>
+<li class="chapter" data-level="3.2" data-path="vectors.html"><a href="vectors.html#principal-operations-on-vectors"><i class="fa fa-check"></i><b>3.2</b> Principal operations on vectors</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="vectors.html"><a href="vectors.html#accessing-values"><i class="fa fa-check"></i><b>3.2.1</b> Accessing values</a></li>
+<li class="chapter" data-level="3.2.2" data-path="vectors.html"><a href="vectors.html#sorting"><i class="fa fa-check"></i><b>3.2.2</b> Sorting</a></li>
+<li class="chapter" data-level="3.2.3" data-path="vectors.html"><a href="vectors.html#maximum-and-minimum"><i class="fa fa-check"></i><b>3.2.3</b> Maximum and minimum</a></li>
+<li class="chapter" data-level="3.2.4" data-path="vectors.html"><a href="vectors.html#mathematical-operations"><i class="fa fa-check"></i><b>3.2.4</b> Mathematical operations</a></li>
+<li class="chapter" data-level="3.2.5" data-path="vectors.html"><a href="vectors.html#statistics-on-vectors"><i class="fa fa-check"></i><b>3.2.5</b> Statistics on vectors</a></li>
+<li class="chapter" data-level="3.2.6" data-path="vectors.html"><a href="vectors.html#more-stuff"><i class="fa fa-check"></i><b>3.2.6</b> More stuff</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="vectors.html"><a href="vectors.html#exercises-1"><i class="fa fa-check"></i><b>3.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="lists.html"><a href="lists.html"><i class="fa fa-check"></i><b>4</b> Lists</a></li>
+<li class="chapter" data-level="5" data-path="data-frames.html"><a href="data-frames.html"><i class="fa fa-check"></i><b>5</b> Data frames</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-frames.html"><a href="data-frames.html#defining-a-data.frame"><i class="fa fa-check"></i><b>5.1</b> Defining a data.frame</a></li>
+<li class="chapter" data-level="5.2" data-path="data-frames.html"><a href="data-frames.html#accessing-values-1"><i class="fa fa-check"></i><b>5.2</b> Accessing values</a></li>
+<li class="chapter" data-level="5.3" data-path="data-frames.html"><a href="data-frames.html#adding-columns-or-rows"><i class="fa fa-check"></i><b>5.3</b> Adding columns or rows</a></li>
+<li class="chapter" data-level="5.4" data-path="data-frames.html"><a href="data-frames.html#more-on-data.frame"><i class="fa fa-check"></i><b>5.4</b> More on data.frame</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="data-frames.html"><a href="data-frames.html#more-math-operations"><i class="fa fa-check"></i><b>5.4.1</b> More math operations</a></li>
+<li class="chapter" data-level="5.4.2" data-path="data-frames.html"><a href="data-frames.html#tidy-up"><i class="fa fa-check"></i><b>5.4.2</b> Tidy up!</a></li>
+<li class="chapter" data-level="5.4.3" data-path="data-frames.html"><a href="data-frames.html#tibbles"><i class="fa fa-check"></i><b>5.4.3</b> Tibbles</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="data-frames.html"><a href="data-frames.html#exercises-2"><i class="fa fa-check"></i><b>5.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>6</b> Functions</a><ul>
+<li class="chapter" data-level="6.1" data-path="functions.html"><a href="functions.html#definition"><i class="fa fa-check"></i><b>6.1</b> Definition</a></li>
+<li class="chapter" data-level="6.2" data-path="functions.html"><a href="functions.html#exercises-3"><i class="fa fa-check"></i><b>6.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html"><i class="fa fa-check"></i><b>7</b> Conditional actions and loops</a><ul>
+<li class="chapter" data-level="7.1" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#conditional-actions"><i class="fa fa-check"></i><b>7.1</b> Conditional actions</a></li>
+<li class="chapter" data-level="7.2" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#loops"><i class="fa fa-check"></i><b>7.2</b> Loops…</a></li>
+<li class="chapter" data-level="7.3" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#and-how-to-avoid-them"><i class="fa fa-check"></i><b>7.3</b> … and how to avoid them</a></li>
+<li class="chapter" data-level="7.4" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#exercises-4"><i class="fa fa-check"></i><b>7.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="plotting.html"><a href="plotting.html"><i class="fa fa-check"></i><b>8</b> Plotting</a><ul>
+<li class="chapter" data-level="8.1" data-path="plotting.html"><a href="plotting.html#base-graphics"><i class="fa fa-check"></i><b>8.1</b> Base graphics</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="plotting.html"><a href="plotting.html#basic-plotting"><i class="fa fa-check"></i><b>8.1.1</b> Basic plotting</a></li>
+<li class="chapter" data-level="8.1.2" data-path="plotting.html"><a href="plotting.html#adding-some-style"><i class="fa fa-check"></i><b>8.1.2</b> Adding some style</a></li>
+<li class="chapter" data-level="8.1.3" data-path="plotting.html"><a href="plotting.html#going-further"><i class="fa fa-check"></i><b>8.1.3</b> Going further</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="plotting.html"><a href="plotting.html#advanced-plotting-using-ggplot2"><i class="fa fa-check"></i><b>8.2</b> Advanced plotting using ggplot2</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="plotting.html"><a href="plotting.html#a-quick-plot"><i class="fa fa-check"></i><b>8.2.1</b> A quick plot</a></li>
+<li class="chapter" data-level="8.2.2" data-path="plotting.html"><a href="plotting.html#the-grammar-of-graphics"><i class="fa fa-check"></i><b>8.2.2</b> The grammar of graphics</a></li>
+<li class="chapter" data-level="8.2.3" data-path="plotting.html"><a href="plotting.html#theming"><i class="fa fa-check"></i><b>8.2.3</b> Theming</a></li>
+<li class="chapter" data-level="8.2.4" data-path="plotting.html"><a href="plotting.html#making-interactive-plots-with-ggplot2-and-plotly"><i class="fa fa-check"></i><b>8.2.4</b> Making interactive plots with ggplot2 and plotly</a></li>
+<li class="chapter" data-level="8.2.5" data-path="plotting.html"><a href="plotting.html#gathering-plots-on-a-grid"><i class="fa fa-check"></i><b>8.2.5</b> Gathering plots on a grid</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="plotting.html"><a href="plotting.html#d-color-plots"><i class="fa fa-check"></i><b>8.3</b> 3D color plots</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="plotting.html"><a href="plotting.html#the-ggplot2-solution"><i class="fa fa-check"></i><b>8.3.1</b> The ggplot2 solution</a></li>
+<li class="chapter" data-level="8.3.2" data-path="plotting.html"><a href="plotting.html#the-base-graphics-solution"><i class="fa fa-check"></i><b>8.3.2</b> The base graphics solution</a></li>
+<li class="chapter" data-level="8.3.3" data-path="plotting.html"><a href="plotting.html#the-plotly-solution"><i class="fa fa-check"></i><b>8.3.3</b> The plotly solution</a></li>
+<li class="chapter" data-level="8.3.4" data-path="plotting.html"><a href="plotting.html#d-density-of-points"><i class="fa fa-check"></i><b>8.3.4</b> 2D density of points</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="plotting.html"><a href="plotting.html#exercises-5"><i class="fa fa-check"></i><b>8.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="fitting.html"><a href="fitting.html"><i class="fa fa-check"></i><b>9</b> Fitting</a><ul>
+<li class="chapter" data-level="9.1" data-path="fitting.html"><a href="fitting.html#linear-fitting"><i class="fa fa-check"></i><b>9.1</b> Linear fitting</a></li>
+<li class="chapter" data-level="9.2" data-path="fitting.html"><a href="fitting.html#non-linear-fitting"><i class="fa fa-check"></i><b>9.2</b> Non linear fitting</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="fitting.html"><a href="fitting.html#base-r"><i class="fa fa-check"></i><b>9.2.1</b> Base R</a></li>
+<li class="chapter" data-level="9.2.2" data-path="fitting.html"><a href="fitting.html#fme"><i class="fa fa-check"></i><b>9.2.2</b> FME</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="fitting.html"><a href="fitting.html#exercises-6"><i class="fa fa-check"></i><b>9.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="practical-case-recursive-data-treatment.html"><a href="practical-case-recursive-data-treatment.html"><i class="fa fa-check"></i><b>10</b> Practical case: recursive data treatment</a></li>
+<li class="chapter" data-level="11" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html"><i class="fa fa-check"></i><b>11</b> Writing documents with Rmarkdown</a><ul>
+<li class="chapter" data-level="11.1" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#what-is-markdown"><i class="fa fa-check"></i><b>11.1</b> What is markdown?</a></li>
+<li class="chapter" data-level="11.2" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#and-rmarkdown"><i class="fa fa-check"></i><b>11.2</b> … and Rmarkdown?</a></li>
+<li class="chapter" data-level="11.3" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#further-reading-1"><i class="fa fa-check"></i><b>11.3</b> Further reading</a></li>
+<li class="chapter" data-level="11.4" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#example"><i class="fa fa-check"></i><b>11.4</b> Example</a></li>
+<li class="chapter" data-level="11.5" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#compilation"><i class="fa fa-check"></i><b>11.5</b> Compilation</a></li>
+<li class="chapter" data-level="11.6" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#going-further-parameters"><i class="fa fa-check"></i><b>11.6</b> Going further: parameters</a></li>
+<li class="chapter" data-level="11.7" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#exercise"><i class="fa fa-check"></i><b>11.7</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html"><i class="fa fa-check"></i><b>12</b> Graphical interfaces with Shiny</a><ul>
+<li class="chapter" data-level="12.1" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#stand-alone-shiny-application"><i class="fa fa-check"></i><b>12.1</b> Stand-alone shiny application</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#the-layout"><i class="fa fa-check"></i><b>12.1.1</b> The layout</a></li>
+<li class="chapter" data-level="12.1.2" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#the-server"><i class="fa fa-check"></i><b>12.1.2</b> The server</a></li>
+<li class="chapter" data-level="12.1.3" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#various-useful-functions"><i class="fa fa-check"></i><b>12.1.3</b> Various useful functions</a></li>
+<li class="chapter" data-level="12.1.4" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#example-1"><i class="fa fa-check"></i><b>12.1.4</b> Example</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#rmarkdown-embedded-shiny-application"><i class="fa fa-check"></i><b>12.2</b> Rmarkdown-embedded shiny application</a></li>
+<li class="chapter" data-level="12.3" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#deploying-your-shiny-app"><i class="fa fa-check"></i><b>12.3</b> Deploying your shiny app</a><ul>
+<li class="chapter" data-level="12.3.1" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#passing-the-app.r-file-to-your-users"><i class="fa fa-check"></i><b>12.3.1</b> Passing the app.R file to your users</a></li>
+<li class="chapter" data-level="12.3.2" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#deploying-to-shinyapps.io"><i class="fa fa-check"></i><b>12.3.2</b> Deploying to shinyapps.io</a></li>
+<li class="chapter" data-level="12.3.3" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#deploying-on-your-own-linux-server"><i class="fa fa-check"></i><b>12.3.3</b> Deploying on your own Linux server</a></li>
+<li class="chapter" data-level="12.3.4" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#building-an-executable"><i class="fa fa-check"></i><b>12.3.4</b> Building an executable</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#further-reading-2"><i class="fa fa-check"></i><b>12.4</b> Further reading</a></li>
+<li class="chapter" data-level="12.5" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#exercises-7"><i class="fa fa-check"></i><b>12.5</b> Exercises</a></li>
+</ul></li>
+<li class="divider"></li>
+<br><br><br><br>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Reproducible data treatment with R</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="vectors" class="section level1">
+<h1><span class="header-section-number">3</span> Vectors</h1>
+<p><strong>R is a vectorized language</strong> with built-in arithmetic and relational operators, mathematical functions and types of number. It means that each mathematical function and operator works on a set of data rather than a single scalar value as traditional computer language do, and thus <strong>formal looping can <em>usually</em> be avoided</strong>.</p>
+<div id="different-ways-of-defining-a-vector" class="section level2">
+<h2><span class="header-section-number">3.1</span> Different ways of defining a vector</h2>
+<pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">3</span>,<span class="dv">12</span>,<span class="fl">4.2</span>,<span class="st">&quot;skdjnc&quot;</span>); x <span class="co"># x is a vector of strings</span></code></pre>
+<pre><code>## [1] &quot;1&quot;      &quot;5&quot;      &quot;3&quot;      &quot;12&quot;     &quot;4.2&quot;    &quot;skdjnc&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">3</span>,<span class="dv">12</span>,<span class="fl">4.2</span>); x <span class="co"># x is a vector of doubles</span></code></pre>
+<pre><code>## [1]  1.0  5.0  3.0 12.0  4.2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="dv">1</span><span class="op">:</span><span class="dv">10</span></code></pre>
+<pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="dv">1</span><span class="op">:</span><span class="dv">10</span><span class="op">*</span>.<span class="dv">1</span>  <span class="co"># no need to loop on the elements to multiply them!</span></code></pre>
+<pre><code>##  [1] 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="dv">1</span><span class="op">:</span><span class="dv">10</span> <span class="op">+</span><span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">10</span><span class="op">*</span>.<span class="dv">5</span> <span class="co"># or to add/subtract/multiply vectors</span></code></pre>
+<pre><code>##  [1]  1.5  3.0  4.5  6.0  7.5  9.0 10.5 12.0 13.5 15.0</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="dv">1</span><span class="op">:</span><span class="dv">10</span><span class="op">*</span><span class="dv">1</span><span class="op">:</span><span class="dv">10</span></code></pre>
+<pre><code>##  [1]   1   4   9  16  25  36  49  64  81 100</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">seq</span>(<span class="op">-</span><span class="dv">10</span>,<span class="dv">10</span>,<span class="dt">by=</span>.<span class="dv">5</span>)</code></pre>
+<pre><code>##  [1] -10.0  -9.5  -9.0  -8.5  -8.0  -7.5  -7.0  -6.5  -6.0  -5.5  -5.0
+## [12]  -4.5  -4.0  -3.5  -3.0  -2.5  -2.0  -1.5  -1.0  -0.5   0.0   0.5
+## [23]   1.0   1.5   2.0   2.5   3.0   3.5   4.0   4.5   5.0   5.5   6.0
+## [34]   6.5   7.0   7.5   8.0   8.5   9.0   9.5  10.0</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">seq</span>(<span class="op">-</span><span class="dv">10</span>,<span class="dv">10</span>,<span class="dt">length=</span><span class="dv">6</span>)</code></pre>
+<pre><code>## [1] -10  -6  -2   2   6  10</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">seq</span>(<span class="op">-</span><span class="dv">10</span>,<span class="dv">10</span>,<span class="dt">along=</span>x)</code></pre>
+<pre><code>## [1] -10  -5   0   5  10</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">rep</span>(<span class="dv">0</span>,<span class="dv">10</span>)</code></pre>
+<pre><code>##  [1] 0 0 0 0 0 0 0 0 0 0</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">rep</span>(<span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">2</span>), <span class="dv">5</span>)</code></pre>
+<pre><code>##  [1] 0 2 0 2 0 2 0 2 0 2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">rep</span>(<span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">2</span>),<span class="dt">each=</span><span class="dv">5</span>)</code></pre>
+<pre><code>##  [1] 0 0 0 0 0 2 2 2 2 2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">rnorm</span>(<span class="dv">10</span>, <span class="dt">mean=</span><span class="dv">3</span>, <span class="dt">sd=</span><span class="dv">1</span>) <span class="co"># vector with 10 random values</span></code></pre>
+<pre><code>##  [1] 4.550409 3.623000 3.162134 3.364277 2.525439 1.675451 2.844811
+##  [8] 2.623984 2.679005 2.776677</code></pre>
+</div>
+<div id="principal-operations-on-vectors" class="section level2">
+<h2><span class="header-section-number">3.2</span> Principal operations on vectors</h2>
+<pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">3</span>,<span class="dv">12</span>,<span class="dv">3</span>,<span class="fl">4.2</span>)
+y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dt">a=</span><span class="dv">0</span>,<span class="dt">b=</span><span class="dv">2</span>,<span class="dt">c=</span><span class="dv">1</span>,<span class="dt">d=</span><span class="dv">9</span>,<span class="dt">e=</span><span class="dv">10</span>,<span class="dt">f=</span><span class="op">-</span><span class="dv">1</span>) <span class="co"># each element can be named</span>
+x; y</code></pre>
+<pre><code>## [1]  1.0  5.0  3.0 12.0  3.0  4.2</code></pre>
+<pre><code>##  a  b  c  d  e  f 
+##  0  2  1  9 10 -1</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">names</span>(x);<span class="kw">names</span>(y)</code></pre>
+<pre><code>## NULL</code></pre>
+<pre><code>## [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot;</code></pre>
+<div id="accessing-values" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Accessing values</h3>
+<p><strong>!!! In R, indexes numbering start at 1 !!!</strong></p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># accessing by indexes</span>
+x[<span class="dv">1</span>]; y[<span class="dv">4</span>]; </code></pre>
+<pre><code>## [1] 1</code></pre>
+<pre><code>## d 
+## 9</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># accessing by name</span>
+y[<span class="kw">c</span>(<span class="st">&#39;b&#39;</span>,<span class="st">&#39;d&#39;</span>)]; y[[<span class="st">&#39;c&#39;</span>]]</code></pre>
+<pre><code>## b d 
+## 2 9</code></pre>
+<pre><code>## [1] 1</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># access index 1, 5 and 2</span>
+x[<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">2</span>)] </code></pre>
+<pre><code>## [1] 1 3 5</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># remove elements 1 and 3</span>
+x[<span class="op">-</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">3</span>)] </code></pre>
+<pre><code>## [1]  5.0 12.0  3.0  4.2</code></pre>
+</div>
+<div id="sorting" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Sorting</h3>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># ascending</span>
+<span class="kw">sort</span>(x) </code></pre>
+<pre><code>## [1]  1.0  3.0  3.0  4.2  5.0 12.0</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># descending</span>
+<span class="kw">sort</span>(x, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>) </code></pre>
+<pre><code>## [1] 12.0  5.0  4.2  3.0  3.0  1.0</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># find the order of the indexes of the sorting</span>
+<span class="kw">order</span>(x); x[<span class="kw">order</span>(x)]</code></pre>
+<pre><code>## [1] 1 3 5 6 2 4</code></pre>
+<pre><code>## [1]  1.0  3.0  3.0  4.2  5.0 12.0</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># find duplicates</span>
+<span class="kw">duplicated</span>(x)</code></pre>
+<pre><code>## [1] FALSE FALSE FALSE FALSE  TRUE FALSE</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># remove duplicates</span>
+<span class="kw">unique</span>(x)</code></pre>
+<pre><code>## [1]  1.0  5.0  3.0 12.0  4.2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># choose 3 random values</span>
+<span class="kw">sample</span>(x, <span class="dv">3</span>)</code></pre>
+<pre><code>## [1]  5 12  3</code></pre>
+</div>
+<div id="maximum-and-minimum" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Maximum and minimum</h3>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># maximum of x and its index</span>
+x; <span class="kw">max</span>(x); <span class="kw">which.max</span>(x) </code></pre>
+<pre><code>## [1]  1.0  5.0  3.0 12.0  3.0  4.2</code></pre>
+<pre><code>## [1] 12</code></pre>
+<pre><code>## [1] 4</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># minimum of y and its index</span>
+y; <span class="kw">min</span>(y); <span class="kw">which.min</span>(y)</code></pre>
+<pre><code>##  a  b  c  d  e  f 
+##  0  2  1  9 10 -1</code></pre>
+<pre><code>## [1] -1</code></pre>
+<pre><code>## f 
+## 6</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># range of a vector</span>
+<span class="kw">range</span>(x)</code></pre>
+<pre><code>## [1]  1 12</code></pre>
+</div>
+<div id="mathematical-operations" class="section level3">
+<h3><span class="header-section-number">3.2.4</span> Mathematical operations</h3>
+<pre class="sourceCode r"><code class="sourceCode r">x <span class="op">+</span><span class="st"> </span><span class="dv">2</span>             <span class="co"># addition of a value to all elements</span></code></pre>
+<pre><code>## [1]  3.0  7.0  5.0 14.0  5.0  6.2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">x<span class="op">*</span><span class="dv">2</span>               <span class="co"># multiplication / division</span></code></pre>
+<pre><code>## [1]  2.0 10.0  6.0 24.0  6.0  8.4</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">x<span class="op">%/%</span><span class="dv">3</span>             <span class="co"># integer division</span></code></pre>
+<pre><code>## [1] 0 1 1 4 1 1</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sqrt</span>(<span class="kw">abs</span>(<span class="kw">cos</span>(x))) <span class="co"># math functions apply on all elements</span></code></pre>
+<pre><code>## [1] 0.7350526 0.5325995 0.9949837 0.9186152 0.9949837 0.7001863</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">x<span class="op">^</span><span class="fl">2.5</span>             <span class="co"># power</span></code></pre>
+<pre><code>## [1]   1.00000  55.90170  15.58846 498.83063  15.58846  36.15124</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">x<span class="op">*</span>y               <span class="co"># multiplication of vectors of the same size</span></code></pre>
+<pre><code>##     a     b     c     d     e     f 
+##   0.0  10.0   3.0 108.0  30.0  -4.2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">x<span class="op">*</span><span class="dv">1</span><span class="op">:</span><span class="dv">2</span>             <span class="co"># multiplication of vectors of different sizes</span></code></pre>
+<pre><code>## [1]  1.0 10.0  3.0 24.0  3.0  8.4</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">x<span class="op">%%</span><span class="dv">2</span>              <span class="co"># modulo</span></code></pre>
+<pre><code>## [1] 1.0 1.0 1.0 0.0 1.0 0.2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">x <span class="op">%o%</span><span class="st"> </span>y           <span class="co"># outer product of vectors (the result is a matrix)</span></code></pre>
+<pre><code>##      a    b    c     d   e     f
+## [1,] 0  2.0  1.0   9.0  10  -1.0
+## [2,] 0 10.0  5.0  45.0  50  -5.0
+## [3,] 0  6.0  3.0  27.0  30  -3.0
+## [4,] 0 24.0 12.0 108.0 120 -12.0
+## [5,] 0  6.0  3.0  27.0  30  -3.0
+## [6,] 0  8.4  4.2  37.8  42  -4.2</code></pre>
+</div>
+<div id="statistics-on-vectors" class="section level3">
+<h3><span class="header-section-number">3.2.5</span> Statistics on vectors</h3>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">length</span>(x)  <span class="co"># size of vector</span></code></pre>
+<pre><code>## [1] 6</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(x) <span class="co"># statistics on vector</span></code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##     1.0     3.0     3.6     4.7     4.8    12.0</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sum</span>(x)     <span class="co"># sum of all terms</span></code></pre>
+<pre><code>## [1] 28.2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(x)    <span class="co"># average value</span></code></pre>
+<pre><code>## [1] 4.7</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">median</span>(x)  <span class="co"># median value</span></code></pre>
+<pre><code>## [1] 3.6</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sd</span>(x)      <span class="co"># standard deviation</span></code></pre>
+<pre><code>## [1] 3.823611</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">table</span>(x)   <span class="co"># count occurrence of values</span></code></pre>
+<pre><code>## x
+##   1   3 4.2   5  12 
+##   1   2   1   1   1</code></pre>
+</div>
+<div id="more-stuff" class="section level3">
+<h3><span class="header-section-number">3.2.6</span> More stuff</h3>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># cumulative sum</span>
+<span class="kw">cumsum</span>(x)</code></pre>
+<pre><code>## [1]  1.0  6.0  9.0 21.0 24.0 28.2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># term-by-term difference</span>
+<span class="kw">diff</span>(x)</code></pre>
+<pre><code>## [1]  4.0 -2.0  9.0 -9.0  1.2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># reverse order</span>
+<span class="kw">rev</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>)</code></pre>
+<pre><code>## [1] 5 4 3 2 1</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># append values</span>
+<span class="kw">append</span>(x, <span class="dv">4</span>)    <span class="co"># at the end</span></code></pre>
+<pre><code>## [1]  1.0  5.0  3.0 12.0  3.0  4.2  4.0</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">append</span>(x, <span class="dv">4</span>, <span class="dv">3</span>) <span class="co"># or after a given index</span></code></pre>
+<pre><code>## [1]  1.0  5.0  3.0  4.0 12.0  3.0  4.2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># concatenate vectors</span>
+z &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="op">-</span><span class="dv">1</span><span class="op">:</span><span class="dv">4</span>, <span class="ot">NA</span>, <span class="op">-</span>x); z</code></pre>
+<pre><code>##  [1]  -1.0   0.0   1.0   2.0   3.0   4.0    NA  -1.0  -5.0  -3.0 -12.0
+## [12]  -3.0  -4.2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># find NA values</span>
+<span class="kw">is.na</span>(z); <span class="kw">anyNA</span>(z)</code></pre>
+<pre><code>##  [1] FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE
+## [12] FALSE FALSE</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># remove NA values (operator &quot;!&quot; means &quot;is not&quot;)</span>
+z &lt;-<span class="st"> </span>z[<span class="op">!</span><span class="kw">is.na</span>(z)]; z</code></pre>
+<pre><code>##  [1]  -1.0   0.0   1.0   2.0   3.0   4.0  -1.0  -5.0  -3.0 -12.0  -3.0
+## [12]  -4.2</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># returns a vector of the indexes verifying the condition</span>
+z<span class="op">==</span><span class="dv">2</span>; <span class="kw">which</span>(z<span class="op">==</span><span class="dv">2</span>)</code></pre>
+<pre><code>##  [1] FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [12] FALSE</code></pre>
+<pre><code>## [1] 4</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># positive values of z</span>
+z; z<span class="op">&gt;</span><span class="dv">0</span>; z[z<span class="op">&gt;</span><span class="dv">0</span>]; z[<span class="kw">which</span>(z<span class="op">&gt;</span><span class="dv">0</span>)]</code></pre>
+<pre><code>##  [1]  -1.0   0.0   1.0   2.0   3.0   4.0  -1.0  -5.0  -3.0 -12.0  -3.0
+## [12]  -4.2</code></pre>
+<pre><code>##  [1] FALSE FALSE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE
+## [12] FALSE</code></pre>
+<pre><code>## [1] 1 2 3 4</code></pre>
+<pre><code>## [1] 1 2 3 4</code></pre>
+</div>
+</div>
+<div id="exercises-1" class="section level2">
+<h2><span class="header-section-number">3.3</span> Exercises</h2>
+<details>
+<p><summary><strong>Exercise 1</strong></summary></p>
+<p>Consider two vectors, x, y:</p>
+<pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">5</span>
+y &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">4</span>, <span class="dt">along=</span>x)</code></pre>
+<p>Without typing it into Rstudio, what are the values of <code>x</code>, <code>y</code>, and <code>x*y</code>?</p>
+</details>
+<details>
+<p><summary><strong>Exercise 2</strong></summary></p>
+<p>Consider two vectors, a, b</p>
+<pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">6</span>)
+b &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">9</span>)</code></pre>
+<p>What is the value of: <code>a&lt;=b</code>?</p>
+</details>
+<details>
+<p><summary><strong>Exercise 3</strong></summary></p>
+<p>If</p>
+<pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">12</span>)</code></pre>
+<p>What is the value of: <code>length(x)</code></p>
+</details>
+<details>
+<p><summary><strong>Exercise 4</strong></summary></p>
+<p>If</p>
+<pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">12</span><span class="op">:</span><span class="dv">5</span>)</code></pre>
+<p>What is the value of: <code>is.numeric(a)</code></p>
+</details>
+<details>
+<p><summary><strong>Exercise 5</strong></summary></p>
+<p>Consider two vectors, x, y</p>
+<pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">12</span><span class="op">:</span><span class="dv">4</span>)
+y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>)</code></pre>
+<p>What is the value of: <code>which(!is.finite(x/y))</code>?</p>
+</details>
+<details>
+<p><summary><strong>Exercise 6</strong></summary></p>
+<p>Consider two vectors, x, y</p>
+<pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span>letters[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>]
+y &lt;-<span class="st"> </span>letters[<span class="dv">15</span><span class="op">:</span><span class="dv">24</span>]</code></pre>
+<p>What is the value of: <code>x&lt;y</code>?</p>
+</details>
+<details>
+<p><summary><strong>Exercise 7</strong></summary></p>
+<p>If</p>
+<pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&#39;blue&#39;</span>,<span class="st">&#39;red&#39;</span>,<span class="st">&#39;green&#39;</span>,<span class="st">&#39;yellow&#39;</span>)</code></pre>
+<p>What is the value of: <code>is.character(x)</code>?</p>
+</details>
+<details>
+<p><summary><strong>Exercise 8</strong></summary></p>
+<p>If</p>
+<pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&#39;blue&#39;</span>,<span class="dv">10</span>,<span class="st">&#39;green&#39;</span>,<span class="dv">20</span>)</code></pre>
+<p>What is the value of: <code>is.character(x)</code>?</p>
+</details>
+<details>
+<p><summary><strong>Exercise 9</strong></summary></p>
+<p>Assign value 5 to variable x.</p>
+<p>Is there a difference between <code>1:x-1</code> and <code>1:(x-1)</code> ?</p>
+<p>Explain.</p>
+</details>
+<details>
+<p><summary><strong>Exercise 10</strong></summary></p>
+<p>Generate the sequence <code>9, 18, 27, 36, 45, 54, 63, 72, 81, 90</code> in 4 different manners.</p>
+</details>
+<details>
+<p><summary><strong>Exercise 11</strong></summary></p>
+<p>If <code>x &lt;- c(&quot;w&quot;, &quot;h&quot;, &quot;f&quot;, &quot;g&quot;, &quot;k&quot;)</code>, what will be the output for <code>x[c(2,3)]</code>?</p>
+<ol style="list-style-type: decimal">
+<li>“h”, “f”</li>
+<li>“h”</li>
+<li>“f”</li>
+</ol>
+<p>What will be the third value in the index vector operation <code>x[c(2, 4, 4)]</code>?</p>
+<ol style="list-style-type: decimal">
+<li>“h”</li>
+<li>NA</li>
+<li>“g”</li>
+</ol>
+<p>What will be the fourth value in the index vector operation <code>x[-2]</code>?</p>
+<ol style="list-style-type: decimal">
+<li>“h”</li>
+<li>“g”</li>
+<li>“k”</li>
+</ol>
+</details>
+<details>
+<p><summary><strong>Exercise 11</strong></summary></p>
+<p>Let <code>a &lt;- c(2, 4, 6, 8)</code> and <code>b &lt;- c(TRUE, FALSE, TRUE, FALSE)</code>.</p>
+<p>What will be the output for the R expression <code>max(a[b])</code>?</p>
+</details>
+<details>
+<p><summary><strong>Exercise 12: Case Application</strong></summary></p>
+<p>(adapted from <a href="https://perso.esiee.fr/~courivad/R/05-vectors.html#application-population-in-french-cities-1962-2012">here</a>)</p>
+<p>Open Rstudio and create a new R script, save it as <code>population.R</code> in your wanted directory, say <code>Rcourse/</code>.</p>
+<p><a href="Data/population.csv" download target="_blank">Download</a> the <code>population.csv</code> file and save it in your working directory.</p>
+<p>A csv file contains raw data stored as plain text and separated by a comma (Comma Separated Values). Open it from a text editor, as Excel and the likes don’t work well with csv files.</p>
+<p>We can of course directly load such file with R and store its data in an appropriate format (<em>i.e.</em> a <code>data.frame</code>), but this is for a next section. For now, just copy-paste the text in the Rstudio script area to:</p>
+<ul>
+<li>Create a <code>cities</code> vector containing all the cities listed in <code>population.csv</code></li>
+<li>Create a <code>pop_1962</code> and <code>pop_2012</code> vectors containing the populations of each city at these years. Print the 2 vectors.</li>
+<li>Use names() to name values of <code>pop_1962</code> and <code>pop_2012</code>. Print the 2 vectors again. Are there any change?</li>
+<li>What are the cities with more than 200000 people in 1962? For these, how many residents in 2012?</li>
+<li>What is the population evolution of Montpellier and Nantes?</li>
+<li>Create a <code>pop_diff</code> vector to store population change between 1962 and 2012</li>
+<li>Print cities with a negative change</li>
+<li>Print cities which broke the 300000 people barrier between 1962 and 2012</li>
+<li>Compute the total change in population of the 10 largest cities (as of 1962) between 1962 and 2012.</li>
+<li>Compute the population mean for year 1962</li>
+<li>Compute the population mean of Paris</li>
+<li>Sort the cities by decreasing order of population for both years</li>
+<li>Check to see which cities changed rank during these years (check out the <code>match</code> function).</li>
+</ul>
+<details>
+<p><summary>Solution</summary></p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Create a `cities` vector containing all the cities listed in `population.csv`</span>
+cities &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Angers&quot;</span>, <span class="st">&quot;Bordeaux&quot;</span>, <span class="st">&quot;Brest&quot;</span>, <span class="st">&quot;Dijon&quot;</span>, <span class="st">&quot;Grenoble&quot;</span>, <span class="st">&quot;Le Havre&quot;</span>, 
+            <span class="st">&quot;Le Mans&quot;</span>, <span class="st">&quot;Lille&quot;</span>, <span class="st">&quot;Lyon&quot;</span>, <span class="st">&quot;Marseille&quot;</span>, <span class="st">&quot;Montpellier&quot;</span>, <span class="st">&quot;Nantes&quot;</span>, 
+            <span class="st">&quot;Nice&quot;</span>, <span class="st">&quot;Paris&quot;</span>, <span class="st">&quot;Reims&quot;</span>, <span class="st">&quot;Rennes&quot;</span>, <span class="st">&quot;Saint-Étienne&quot;</span>, <span class="st">&quot;Strasbourg&quot;</span>, 
+            <span class="st">&quot;Toulon&quot;</span>, <span class="st">&quot;Toulouse&quot;</span>)
+<span class="co"># Create a `pop_1962` and `pop_2012` vectors containing the populations </span>
+<span class="co"># of each city at these years. Print the 2 vectors. </span>
+pop_<span class="dv">1962</span> &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">115273</span>,<span class="dv">278403</span>,<span class="dv">136104</span>,<span class="dv">135694</span>,<span class="dv">156707</span>,<span class="dv">187845</span>,<span class="dv">132181</span>,<span class="dv">239955</span>,
+              <span class="dv">535746</span>,<span class="dv">778071</span>,<span class="dv">118864</span>,<span class="dv">240048</span>,<span class="dv">292958</span>,<span class="dv">2790091</span>,<span class="dv">134856</span>,<span class="dv">151948</span>,
+              <span class="dv">210311</span>,<span class="dv">228971</span>,<span class="dv">161797</span>,<span class="dv">323724</span>)
+pop_<span class="dv">2012</span> &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">149017</span>,<span class="dv">241287</span>,<span class="dv">139676</span>,<span class="dv">152071</span>,<span class="dv">158346</span>,<span class="dv">173142</span>,<span class="dv">143599</span>,<span class="dv">228652</span>,
+              <span class="dv">496343</span>,<span class="dv">852516</span>,<span class="dv">268456</span>,<span class="dv">291604</span>,<span class="dv">343629</span>,<span class="dv">2240621</span>,<span class="dv">181893</span>,<span class="dv">209860</span>,
+              <span class="dv">171483</span>,<span class="dv">274394</span>,<span class="dv">164899</span>,<span class="dv">453317</span>)
+pop_<span class="dv">1962</span>; pop_<span class="dv">2012</span></code></pre>
+<pre><code>##  [1]  115273  278403  136104  135694  156707  187845  132181  239955
+##  [9]  535746  778071  118864  240048  292958 2790091  134856  151948
+## [17]  210311  228971  161797  323724</code></pre>
+<pre><code>##  [1]  149017  241287  139676  152071  158346  173142  143599  228652
+##  [9]  496343  852516  268456  291604  343629 2240621  181893  209860
+## [17]  171483  274394  164899  453317</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Use names() to name values of `pop_1962` and `pop_2012`. </span>
+<span class="co"># Print the 2 vectors again. Are there any change?</span>
+<span class="kw">names</span>(pop_<span class="dv">2012</span>) &lt;-<span class="st"> </span><span class="kw">names</span>(pop_<span class="dv">1962</span>) &lt;-<span class="st"> </span>cities
+pop_<span class="dv">1962</span>; pop_<span class="dv">2012</span></code></pre>
+<pre><code>##        Angers      Bordeaux         Brest         Dijon      Grenoble 
+##        115273        278403        136104        135694        156707 
+##      Le Havre       Le Mans         Lille          Lyon     Marseille 
+##        187845        132181        239955        535746        778071 
+##   Montpellier        Nantes          Nice         Paris         Reims 
+##        118864        240048        292958       2790091        134856 
+##        Rennes Saint-Étienne    Strasbourg        Toulon      Toulouse 
+##        151948        210311        228971        161797        323724</code></pre>
+<pre><code>##        Angers      Bordeaux         Brest         Dijon      Grenoble 
+##        149017        241287        139676        152071        158346 
+##      Le Havre       Le Mans         Lille          Lyon     Marseille 
+##        173142        143599        228652        496343        852516 
+##   Montpellier        Nantes          Nice         Paris         Reims 
+##        268456        291604        343629       2240621        181893 
+##        Rennes Saint-Étienne    Strasbourg        Toulon      Toulouse 
+##        209860        171483        274394        164899        453317</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># What are the cities with more than 200000 people in 1962? </span>
+<span class="co"># For these, how many residents in 2012?</span>
+cities200k &lt;-<span class="st"> </span>cities[pop_<span class="dv">1962</span><span class="op">&gt;</span><span class="dv">200000</span>]
+cities200k; pop_<span class="dv">2012</span>[cities200k]</code></pre>
+<pre><code>##  [1] &quot;Bordeaux&quot;      &quot;Lille&quot;         &quot;Lyon&quot;          &quot;Marseille&quot;    
+##  [5] &quot;Nantes&quot;        &quot;Nice&quot;          &quot;Paris&quot;         &quot;Saint-Étienne&quot;
+##  [9] &quot;Strasbourg&quot;    &quot;Toulouse&quot;</code></pre>
+<pre><code>##      Bordeaux         Lille          Lyon     Marseille        Nantes 
+##        241287        228652        496343        852516        291604 
+##          Nice         Paris Saint-Étienne    Strasbourg      Toulouse 
+##        343629       2240621        171483        274394        453317</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># What is the population evolution of Montpellier and Nantes?</span>
+pop_<span class="dv">2012</span>[<span class="st">&#39;Montpellier&#39;</span>] <span class="op">-</span><span class="st"> </span>pop_<span class="dv">1962</span>[<span class="st">&#39;Montpellier&#39;</span>]; pop_<span class="dv">2012</span>[<span class="st">&#39;Nantes&#39;</span>] <span class="op">-</span><span class="st"> </span>pop_<span class="dv">1962</span>[<span class="st">&#39;Nantes&#39;</span>]</code></pre>
+<pre><code>## Montpellier 
+##      149592</code></pre>
+<pre><code>## Nantes 
+##  51556</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Create a `pop_diff` vector to store population change between 1962 and 2012</span>
+pop_diff &lt;-<span class="st"> </span>pop_<span class="dv">2012</span> <span class="op">-</span><span class="st"> </span>pop_<span class="dv">1962</span>
+<span class="co"># Print cities with a negative change</span>
+cities[pop_diff<span class="op">&lt;</span><span class="dv">0</span>]</code></pre>
+<pre><code>## [1] &quot;Bordeaux&quot;      &quot;Le Havre&quot;      &quot;Lille&quot;         &quot;Lyon&quot;         
+## [5] &quot;Paris&quot;         &quot;Saint-Étienne&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Print cities which broke the 300000 people barrier between 1962 and 2012</span>
+cities[pop_<span class="dv">2012</span><span class="op">&gt;</span><span class="dv">300000</span> <span class="op">&amp;</span><span class="st"> </span>pop_<span class="dv">1962</span><span class="op">&lt;</span><span class="dv">300000</span>]</code></pre>
+<pre><code>## [1] &quot;Nice&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Compute the total change in population of the 10 largest cities</span>
+<span class="co"># (as of 1962) between 1962 and 2012.</span>
+ten_largest &lt;-<span class="st"> </span>cities[<span class="kw">order</span>(pop_<span class="dv">1962</span>, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>)[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>]]
+<span class="kw">sum</span>(pop_<span class="dv">2012</span>[ten_largest] <span class="op">-</span><span class="st"> </span>pop_<span class="dv">1962</span>[ten_largest])</code></pre>
+<pre><code>## [1] -324432</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Compute the population mean for year 1962</span>
+<span class="kw">mean</span>(pop_<span class="dv">1962</span>)</code></pre>
+<pre><code>## [1] 367477.3</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Compute the population mean of Paris</span>
+<span class="kw">mean</span>(<span class="kw">c</span>(pop_<span class="dv">1962</span>[<span class="st">&#39;Paris&#39;</span>], pop_<span class="dv">2012</span>[<span class="st">&#39;Paris&#39;</span>]))</code></pre>
+<pre><code>## [1] 2515356</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Sort the cities by decreasing order of population for both years</span>
+(pop_<span class="dv">1962</span>_sorted &lt;-<span class="st"> </span><span class="kw">sort</span>(pop_<span class="dv">1962</span>, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>))</code></pre>
+<pre><code>##         Paris     Marseille          Lyon      Toulouse          Nice 
+##       2790091        778071        535746        323724        292958 
+##      Bordeaux        Nantes         Lille    Strasbourg Saint-Étienne 
+##        278403        240048        239955        228971        210311 
+##      Le Havre        Toulon      Grenoble        Rennes         Brest 
+##        187845        161797        156707        151948        136104 
+##         Dijon         Reims       Le Mans   Montpellier        Angers 
+##        135694        134856        132181        118864        115273</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">(pop_<span class="dv">2012</span>_sorted &lt;-<span class="st"> </span><span class="kw">sort</span>(pop_<span class="dv">2012</span>, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>))</code></pre>
+<pre><code>##         Paris     Marseille          Lyon      Toulouse          Nice 
+##       2240621        852516        496343        453317        343629 
+##        Nantes    Strasbourg   Montpellier      Bordeaux         Lille 
+##        291604        274394        268456        241287        228652 
+##        Rennes         Reims      Le Havre Saint-Étienne        Toulon 
+##        209860        181893        173142        171483        164899 
+##      Grenoble         Dijon        Angers       Le Mans         Brest 
+##        158346        152071        149017        143599        139676</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Check to see which cities changed rank (and by how much) </span>
+<span class="co"># during these years (check out the `match` function).</span>
+ranked_cities &lt;-<span class="st"> </span><span class="kw">match</span>(<span class="kw">names</span>(pop_<span class="dv">1962</span>_sorted),<span class="kw">names</span>(pop_<span class="dv">2012</span>_sorted)) <span class="op">-</span><span class="st"> </span><span class="kw">seq_along</span>(cities)
+<span class="kw">names</span>(ranked_cities) &lt;-<span class="st"> </span><span class="kw">names</span>(pop_<span class="dv">1962</span>_sorted)
+ranked_cities</code></pre>
+<pre><code>##         Paris     Marseille          Lyon      Toulouse          Nice 
+##             0             0             0             0             0 
+##      Bordeaux        Nantes         Lille    Strasbourg Saint-Étienne 
+##             3            -1             2            -2             4 
+##      Le Havre        Toulon      Grenoble        Rennes         Brest 
+##             2             3             3            -3             5 
+##         Dijon         Reims       Le Mans   Montpellier        Angers 
+##             1            -5             1           -11            -2</code></pre>
+</details>
+</details>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="simple-variables.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="lists.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": [["tutoR.Rmd", "Rmd"]],
+"toc": {
+"collapse": "subsubsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
