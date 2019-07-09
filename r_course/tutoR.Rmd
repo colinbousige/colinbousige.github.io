@@ -3,7 +3,7 @@ title    : Reproducible data treatment with R
 subtitle : An introduction
 author   : Colin Bousige
 date     : "`r format(Sys.time(), '%d/%m/%Y')`"
-url      : 'https\://colinbousige.github.io/r_course/'
+url      : 'https\://colinbousige.github.io/rcourse/'
 output: 
     bookdown::gitbook:
       self_contained: FALSE
@@ -11,11 +11,11 @@ output:
       fig_number : TRUE
       config:
         toc:
-          collapse: subsection
+          collapse: subsubsection
           scroll_highlight: yes
           before: |
-            <li><a href="https://colinbousige.github.io/r_course/about-the-class.html">Reproducible data treatment with R</a></li>
-          after: null
+            <li><a href="https://colinbousige.github.io/rcourse/about-the-class.html">Reproducible data treatment with R</a></li>
+          after: <br><br><br><br>
         toolbar:
           position: fixed
         edit : null
@@ -118,23 +118,33 @@ ggplotly(PparRBM)
 **Stay tuned! You've come to the right place.**
 
 
-## Further readings {-}
+## Further reading {-}
 
 This class is indented to provide the students with the tools to handle themselves with R, Rmarkdown and Shiny, and _not_ to provide an extensive review of everything that is possible with R. To go further:
 
-- [R manual on CRAN](https://cran.r-project.org/doc/manuals/r-release/R-intro.html)
-- [A digested version](https://perso.esiee.fr/~courivad/R/index.html)
-- Some [cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
-- The [R Graph Gallery](https://www.r-graph-gallery.com/)
-- The [R Graph Cookbook](https://r-graphics.org/index.html)
-- The tidyverse [website](https://ggplot2.tidyverse.org/)
-- The [ggplot cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
-    + [Another one](http://r-statistics.co/ggplot2-cheatsheet.html)
-    + [Another one](http://www.sthda.com/english/wiki/be-awesome-in-ggplot2-a-practical-guide-to-be-highly-effective-r-software-and-data-visualization) quite extensive
-- [Rmarkdown cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
-- [Rmarkdown cookbook](https://dr-harper.github.io/rmarkdown-cookbook/index.html)
+- **R**
+    + [R manual on CRAN](https://cran.r-project.org/doc/manuals/r-release/R-intro.html)
+    + [A digested version](https://perso.esiee.fr/~courivad/R/index.html)
+    + Some [cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
+    + The tidyverse [website](https://ggplot2.tidyverse.org/)
+- **Plotting**
+    + The [R Graph Gallery](https://www.r-graph-gallery.com/)
+    + The [R Graph Cookbook](https://r-graphics.org/index.html)
+    + The [ggplot cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)
+        * [Another one](http://r-statistics.co/ggplot2-cheatsheet.html)
+        * [Another one](http://www.sthda.com/english/wiki/be-awesome-in-ggplot2-a-practical-guide-to-be-highly-effective-r-software-and-data-visualization) quite extensive
+        * [Another one](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html)
+- **Rmarkdown**
+    + Rmarkdown [cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+    + Rmarkdown [cookbook](https://dr-harper.github.io/rmarkdown-cookbook/index.html)
+    + Rmarkdown [code chunks](https://bookdown.org/yihui/rmarkdown/r-code.html)
+    + Rmarkdown mixing [languages](https://bookdown.org/yihui/rmarkdown/language-engines.html)
+- **Shiny**
+    + The Shiny [cheatsheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)
+    + Guide to application [layout](https://shiny.rstudio.com/articles/layout-guide.html)
+    + The [Shiny Gallery](https://shiny.rstudio.com/gallery/): find what you want to do and adapt it to your needs
+    + The official [Shiny video tutorial](https://shiny.rstudio.com/tutorial/)
 - And as always, if you have a question, [Google](https://www.google.fr/search?source=hp&ei=g0MLXeGwKNLPgweV04-IBA&q=r+how+to&oq=r+how+to) is your friend!
-
 
 
 ## Motivations {-}
@@ -1079,6 +1089,15 @@ geom_mean <- function(x, y){
 geom_mean(1,2) #returns a
 ```
 
+The result of a function can be a list, a data.frame, a vector... or nothing. And you can attribute the result of a function to a variable:
+
+```{r, warnings=FALSE}
+person <- function(name, age){
+    list(name=name, age=age)
+}
+joe <- person(name="Joe", age=33)
+```
+
 One can add default values to variables:
 ```{r, warnings=FALSE}
 testfunc <- function(x,y=1){
@@ -1506,7 +1525,7 @@ points(x, jitter(rep(.01,length(x)), amount=.01),
 
 ## Advanced plotting using ggplot2
 
-Further (more detailed) readings [here](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html) and on the [cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf) for example.
+Further (more detailed) reading [here](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html) and on the [cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf) for example.
 
 `ggplot2` is a package (now even available for python) that completely changes the methodology of plotting data. With `ggplot2`, data are gathered in a **tidy** `data.frame`, and each column can be used as a parameter to tweak colors, point size, etc.
 
@@ -2584,7 +2603,7 @@ Example:
 - chunk 3: r, plot the data
 
 
-## Further readings
+## Further reading
 
 To see all about Rmarkdown and combining languages in a single document:
 
@@ -2797,17 +2816,9 @@ You have had a preview of a `shiny` interface in the previous section with the i
 
 Using the `shiny` package, you can actually easily build an interactive graphical user interface (GUI) in which you will be able to set parameters (values, files...), visualize the outputs (plots, images, tables...), and write files as output. This is very useful when you have to always repeat the same task with a varying input parameter, for example.
 
-Shiny applications must however be ran into Rstudio (you cannot output a standalone html document), or published onto [https://shiny.rstudio.com/](https://shiny.rstudio.com/).
-
-## Some reading
-
-- The Shiny [cheatsheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)
-- [Guide to application layout](https://shiny.rstudio.com/articles/layout-guide.html)
-- The [Shiny Gallery](https://shiny.rstudio.com/gallery/): find what you want to do and adapt it to your needs
-
 ## Stand-alone shiny application
 
-A shiny application is a R file containing 3 elements:
+A shiny application is an `app.R` file (it must be named like that) containing 3 elements:
 
 1. `ui`: definition of the interface layout (where are the buttons, text input, plot output, etc.) and the input parameters
 2. `server`: definition of the various actions to perform with the input parameters
@@ -2837,7 +2848,7 @@ ui <- fluidPage(
     )
 )
 # Define server logic required to draw a histogram
-server <- function(input, output) {
+server <- function(input, output, session) {
     output$distPlot <- renderPlot({
         # generate bins based on input$bins from ui.R
         x    <- faithful[, 2]
@@ -2853,14 +2864,21 @@ shinyApp(ui = ui, server = server)
 
 Run it by clicking "Run App": a window opens and you can pan the slider and see the resulting output.
 
+In case you want to clean up the code, you can separate `app.R` into `ui.R` and `server.R`. No need to add the `shinyApp(ui = ui, server = server)` line in that case.
+
+All user-defined functions and variable definitions can be defined in a `global.R` file that will be sourced by default when launching the app.
+
+
 ### The layout
 
 In the `ui <- fluidPage(...)` item, you define the layout of your application. In the above example:
 
 - `titlePanel("Title")` creates a title
 - `sidebarLayout()` separates the layout in a short one on the left (`sidebarPanel`) and a main one on the right (`mainPanel`)
-- `sliderInput("name", "text to display", min=min_value, max=max_value, value=current_value, step=step_value)` creates a slider to input a value. This value will be retrieved by `input$name` in the `server()` function.
-- `plotOutput("name")` plots the result of `output$name` defined in the `server()` function.
+- `sliderInput("name_of_slider", "text to display", min=min_value, max=max_value, value=current_value, step=step_value)` creates a slider to input a value. This value will be retrieved by `input$name_of_slider` in the `server()` function.
+- `plotOutput("name_of_plot")` plots the result of `output$name_of_plot` defined in the `server()` function.
+
+See the [guide to application layout](https://shiny.rstudio.com/articles/layout-guide.html) for more layout options.
 
 ### The server
 
@@ -2868,32 +2886,241 @@ In the `server <- function(input, output){...}` function, you define the various
 
 In the above example, we define `output$distPlot` as a `renderPlot()` function whose results depends on `input$bins`. The plot is rendered in the `ui` by `plotOutput("distPlot")`.
 
-
 ### Various useful functions
+
+#### Input
+
+- **Buttons**: 
+
+```r
+# # # # # # # # # 
+# In ui:
+actionButton("button_name", "Text to display")
+# # # # # # # # # 
+# In server:
+observeEvent(input$button_name, {
+    # do something
+})
+# or
+some_function <- eventReactive(input$button_name, {
+                               # do something
+                               })
+```
+
+- **Text/numeric**: 
+
+```r
+# # # # # # # # # 
+# In ui:
+textInput("text_name", 
+            label = "Text to display", 
+            value = "initial value", 
+            width = '100%')
+
+textAreaInput("text_name", 
+            label="Text to display", 
+            value = "initial_value", 
+            rows = 5) %>%
+            shiny::tagAppendAttributes(style = 'width: 100%;')
+
+numericInput("value_name", 'Text to display', value=0)
+# # # # # # # # # 
+# In server, retrieve it as:
+input$text_name
+input$value_name
+```
+
+- **Slider**
+
+```r
+# # # # # # # # # 
+# In ui:
+sliderInput("slider_name", "Text to display",
+            min = 1,
+            max = 50,
+            step= 1,
+            value = 30)
+# # # # # # # # # 
+# In server, retrieve it as:
+input$slider_name
+```
+
+- **File**
+
+```r
+# # # # # # # # # 
+# In ui:
+fileInput("file_in", 
+          "Choose input file:", accept = c(".txt") 
+          )
+# # # # # # # # # 
+# In server, retrieve it as:
+input$file_in$datapath
+# For example, read it as a data.frame with myData():
+myData <- reactive({
+        inFile <- input$file_in
+        if (is.null(inFile)) {
+            return(NULL)
+        } else {
+            return(read.table(inFile$datapath, header=TRUE))
+        }
+    })
+```
+
+- **Dropdown menu**
+
+```r
+# # # # # # # # # 
+# In ui:
+selectInput("menu_name", "Text to display", 
+            choices=c("choice 1", "choice 2"), 
+            multiple = FALSE # multiple selection possible
+            )
+# # # # # # # # # 
+# In server, retrieve it as:
+input$menu_name
+```
+
+#### Output
+
+- **Display a plot**
+
+```r
+# # # # # # # # # 
+# In ui:
+plotOutput("plot_name", height = 600)
+# # # # # # # # # 
+# In server:
+output$plot_name <- renderPlot({
+        # do plot:
+        plot(...)
+        # or
+        ggplot(...)
+    })
+```
+
+If you want an interactive plot, use `plotlyOutput` and `renderPlotly` instead.
+
+- **Display text**
+
+```r
+# # # # # # # # # 
+# In ui:
+textOutput("text_to_display")
+# Verbatim text (fixed width characters):
+verbatimTextOutput("text_to_display")
+# # # # # # # # # 
+# In server:
+output$text_to_display <- renderText({ "some text" })
+output$text_to_display <- renderPrint({ "some text" })
+```
+
+- **Display a table**
+
+```r
+# # # # # # # # # 
+# In ui:
+tableOutput("table_to_display")
+# # # # # # # # # 
+# In server:
+output$table_to_display <- renderTable( df )
+```
+
+Or in case you want interactive tables, use the package [datatable](https://shiny.rstudio.com/articles/datatables.html):
+```r
+library(DT)
+# # # # # # # # # 
+# In ui:
+dataTableOutput("table_to_display")
+# # # # # # # # # 
+# In server:
+output$table_to_display <- renderDataTable({ df })
+```
+
+- **Reactive events**
+
+In case you want the plots or text display to react to a change in input value, you can wrap the corresponding output in the `reactive()` function on the server side:
+
+```r
+# # # # # # # # # 
+# In ui:
+fileInput("file_in", 
+          "Choose input file:", accept = c(".txt") 
+          )
+selectInput("menu", "Columns to display", 
+            choices=1:4, 
+            multiple = TRUE)
+tableOutput("table")
+# # # # # # # # # 
+# In server:
+myData <- reactive({
+        inFile <- input$file_in
+        if (is.null(inFile)) {
+            return(NULL)
+        } else {
+            return(read.table(inFile$datapath, header=TRUE))
+        }
+    })
+tab <- reactive({
+      myData()[,sort(input$menu)]
+   })
+output$table <- renderTable( tab() )
+```
+
+The various input default values can be updated using the following functions on the server side:
+
+```r
+# Dropdown menu
+updateSelectInput(session, "menu_name", choices=new_choices)
+# Text
+updateTextInput(session, "text_name", value = new_value)
+# Numeric
+updateNumericInput(session, "value_name", value = new_value)
+```
+
+
+- **Writing a file**
+
+This is not a function of shiny, but you may want to write a text file:
+
+```r
+toprint <- paste("hello", "world")
+outfile <- file("file_name.txt", encoding="UTF-8")
+write(toprint, file=outfile)
+close(outfile)
+```
+
+You can for example write a Rmd file that you will render (as pdf, etc...) using [render()](https://www.rdocumentation.org/packages/rmarkdown/versions/1.13/topics/render):
+
+```r
+rmarkdown::render("file_name.Rmd")
+```
+
 
 
 ### Example
 
-Create a new shiny app with the following, and play around with it. The input file should be the tidy <a href="Data/population.txt" download target="_blank">population.txt</a>.
+Create a new shiny app with the following code, and play around with it. The input file should be the tidy <a href="Data/population.txt" download target="_blank">population.txt</a>.
 
 ```r
 library(ggplot2)
 library(shiny)
+library(plotly)
 library(tidyverse)
+library(DT)
 
 ui <- fluidPage(
-    titlePanel("City populations in France"),
+    titlePanel("City population in France"),
     sidebarLayout(
         sidebarPanel(
             fileInput("file_in", "Choose input file:",
-                      accept = c(".txt")
-            ),
+                      accept = c(".txt") ),
             selectInput("sel_city", "City:", choices = "", multiple = TRUE)
         ),
         mainPanel(
             tabsetPanel(
-                tabPanel("Plot", plotOutput("cityplot", height = "800px")),
-                tabPanel("Table", tableOutput("table"))
+                tabPanel("Plot", plotlyOutput("cityplot", height = "800px")),
+                tabPanel("Table", dataTableOutput("table"))
             )
         )
     )
@@ -2920,11 +3147,11 @@ server <- function(input, output, session) {
     })
     
     # plot the pop vs year for the selected cities
-    output$cityplot <- renderPlot({
+    output$cityplot <- renderPlotly({
         df <- myData()
         if(is.null(df)) return(NULL)
-        ggplot(data=subset(df, city %in% input$sel_city), 
-               aes(x=year, y=pop, size=pop, color=city)) +
+        p <- ggplot(data=subset(df, city %in% input$sel_city), 
+                    aes(x=year, y=pop, size=pop, color=city)) +
             geom_point() + 
             geom_smooth(method="lm", alpha=0.1, show.legend = FALSE, 
                         aes(fill=city)) + 
@@ -2932,10 +3159,11 @@ server <- function(input, output, session) {
             labs(x="Year", y="Population")+
             theme_light() +
             theme(legend.text = element_text(size = 16))
+        ggplotly(p)
     })
     
     # show data as a table
-    output$table <- renderTable({
+    output$table <- renderDataTable({
         if(is.null(df)) return(NULL)
         spread(myData(), city, pop)
     }) 
@@ -2967,7 +3195,7 @@ df <- read.table("Data/population.txt", header=TRUE)
 shinyApp(
   ui = fluidPage(
     selectInput("city", "City:", choices = unique(df$city)),
-    plotlyOutput("cityplot")
+    plotlyOutput("cityplot", height = 600)
   ),
 
   server = function(input, output) {
@@ -2981,11 +3209,141 @@ shinyApp(
             theme_light()
       ggplotly(p)
     })
-  },
-
-  options = list(height = 800)
+  }
 )
 ```
 ````
+
+The only "problem" with this solution is that the html file that is produced will not run the shiny app by itself, you have to open the Rmd file in Rstudio and hit "Run Document".
+
+## Deploying your shiny app
+
+There are 4 ways to deploy your app: passing the `app.R` file to your users, deploying to [shinyapps.io](https://www.shinyapps.io/), deploying on your own server, or building an executable with Electron.
+
+### Passing the app.R file to your users
+
+This option is certainly easy: just send your `app.R` file (or Rmd file with shiny embedded app) as well as any other files needed (*e.g.* `global.R`) to your users, explain to them how to run it, and *voilà*.
+
+However, this needs a little bit of know-how from the users: they need to install R and Rstudio, install the needed packages, and run the app.
+
+A good option to remove the "package-installing" step is to define a function `check.package()` that will check if the package is installed, install it if needed, and load it:
+
+```r
+check.packages <- function(pkg){
+    new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+    if (length(new.pkg)) 
+        install.packages(new.pkg, dependencies = TRUE)
+    sapply(pkg, require, character.only = TRUE)
+}
+# Usage:
+check.packages("ggplot2")
+```
+
+
+### Deploying to shinyapps.io
+
+Applications deployed on shinyapps.io will be accessible from anywhere through a weblink. See for example [my application](https://cbousige.shinyapps.io/rubypressure/) to determine the pressure from a ruby Raman spectrum or the expected Raman shift for a given pressure and laser wavelength. Your application will however be public and you will have some limitations in the number of online applications and time of use (if you don't pay a fee, see [here](https://www.shinyapps.io/) for the various plans).
+
+- First, create an account on [shinyapps.io](https://www.shinyapps.io/admin/#/signup)
+- Follow the steps described [here](https://docs.rstudio.com/shinyapps.io/getting-started.html#deploying-applications) to:
+    + *Configure RSconnect*: in your shinyapps.io dashboard, click your name, then Tokens, and create a token for a new app. Copy the text in the popup window.
+    + *Deploy the app* from the Rstudio window by clicking on the "Publish" button in the top right corner of the interface. Follow the steps along the *shinyapps.io* way.
+
+Note that in that case, you should not have any `install.package()` command in your code. Most packages are supported by shinyapps.io.
+
+
+### Deploying on your own Linux server
+
+This option is more advanced and I'm not going into details for that, but you have a number of tutorials online. See *e.g.* [here](https://shiny.rstudio.com/articles/shiny-server.html), [here](https://docs.rstudio.com/shiny-server/) or [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-shiny-server-on-ubuntu-16-04).
+
+You might consider this option if you work in a company that want to handle privately its data (which sounds plausible) and not pay the shinyapps.io fee to password protect the app. In that case, just work with the IT department to get it running.
+
+
+### Building an executable
+
+On **Windows**, there is this possibility that looks nice but that I never tried because I don't have Windows: [RInno](https://ficonsulting.github.io/RInno/).
+
+On **any platform**: there is the possibility described [here](https://www.youtube.com/watch?v=ARrbbviGvjc) with the corresponding [github page](https://github.com/ColumbusCollaboratory/electron-quick-start). This option is actually awesome and a quite recent possibility. However, since the produced application will contain R and the needed packages, the executable file is quite heavy.
+
+
+
+
+## Further reading
+
+- The Shiny [cheatsheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)
+- [Guide to application layout](https://shiny.rstudio.com/articles/layout-guide.html)
+- The [Shiny Gallery](https://shiny.rstudio.com/gallery/): find what you want to do and adapt it to your needs
+- The official [Shiny video tutorial](https://shiny.rstudio.com/tutorial/)
+
+
+
+## Exercises
+
+<details>
+    <summary>**Exercise 1**</summary>
+
+- Create a new empty app with a blank user-interface and run it.
+- Add a title, a left panel and a main panel
+- Add an input numerical value defaulting to 1 and with a step of 0.05, name it "bw"
+- Add a slider input from 0 to 1e3 by steps of 1e2 defaulting to 5e2,  name it "N_val"
+- Add a plot of the `density` of `rnorm(N_val)` with bandwidth `bw`
+- Make sure `bw>0`, otherwise don't produce the plot
+
+<details>
+    <summary>Solution</summary>
+
+```r
+library(shiny)
+
+ui <- fluidPage(
+    titlePanel("Some title"),
+    sidebarLayout(
+        sidebarPanel(
+            numericInput("bw", "Enter bandwidth:", 1, step=0.05),
+            sliderInput("N_val", "Number of points:", 
+                        min = 0, max = 1e4, step= 1e2, value = 5e2)
+        ),
+        mainPanel(
+            plotOutput("plot", height = 600)
+        )
+    )
+)
+
+server <- function(input, output, session) {
+    
+    # plot the pop vs year for the selected cities
+    output$plot <- renderPlot({
+                        if(input$bw==0) return(NULL)
+                        plot(density(rnorm(input$N_val), bw=abs(input$bw)))
+                    })
+}
+
+shinyApp(ui = ui, server = server)
+```
+
+</details>
+</details>
+
+
+
+
+<details>
+    <summary>**Exercise 2**</summary>
+
+Create a shiny application that will:
+
+- read an input (through a file dialog) Raman spectrum from a ruby (<a href="Data/XP_data.zip" download target="_blank">XP_data.zip</a>)
+- fit the data by two Lorentzians
+- plot the data interactively
+- ask for the laser wavelength as an input and give 568.189 nm as default
+- write the corresponding pressure on the page using the `Pruby()` function defined in `myfunc.R` found in <a href="Data/XP_data.zip" download target="_blank">XP_data.zip</a>.
+
+
+</details>
+
+
+
+
+
 
 
