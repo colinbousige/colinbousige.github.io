@@ -3,7 +3,7 @@ title    : Reproducible data treatment with R
 subtitle : An introduction
 author   : Colin Bousige
 date     : "`r format(Sys.time(), '%d/%m/%Y')`"
-url      : 'https\://colinbousige.github.io/rcourse/'
+url      : 'https\://colinbousige.github.io/r_course/'
 output: 
     bookdown::gitbook:
       self_contained: FALSE
@@ -14,7 +14,7 @@ output:
           collapse: subsubsection
           scroll_highlight: yes
           before: |
-            <li><a href="https://colinbousige.github.io/rcourse/about-the-class.html">Reproducible data treatment with R</a></li>
+            <li><a href="https://colinbousige.github.io/r_course/about-the-class.html">Reproducible data treatment with R</a></li>
           after: <br><br><br><br>
         toolbar:
           position: fixed

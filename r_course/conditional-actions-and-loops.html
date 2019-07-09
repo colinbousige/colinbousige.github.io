@@ -10,7 +10,7 @@
 
   <meta property="og:title" content="7 Conditional actions and loops | Reproducible data treatment with R" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://colinbousige.github.io/rcourse/" />
+  <meta property="og:url" content="https://colinbousige.github.io/r_course/" />
   
   
   
@@ -134,7 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="https://colinbousige.github.io/rcourse/about-the-class.html">Reproducible data treatment with R</a></li>
+<li><a href="https://colinbousige.github.io/r_course/about-the-class.html">Reproducible data treatment with R</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="about-the-class.html"><a href="about-the-class.html"><i class="fa fa-check"></i>About the class</a><ul>
@@ -347,8 +347,8 @@ noforloop &lt;-<span class="st"> </span><span class="cf">function</span>(x){
 }
 x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="fl">1e8</span>)
 <span class="kw">test_time</span>(forloop, x); <span class="kw">test_time</span>(noforloop, x)</code></pre>
-<pre><code>## [1] &quot;Elapsed time : 6.78165984153748 s -  forloop&quot;</code></pre>
-<pre><code>## [1] &quot;Elapsed time : 0.552930116653442 s -  noforloop&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time : 6.91918921470642 s -  forloop&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time : 0.476989984512329 s -  noforloop&quot;</code></pre>
 <p>Avoiding loops should therefore be though for when possible. R helps us in this way through the base functions <code>apply</code>, <code>sapply</code> and <code>lapply</code>.</p>
 <p>Take a look at the help on these functions, but the summary is that <code>apply(df, direction, function)</code> applies a function in the wanted direction (1 for rows, 2 for columns) of the given <code>data.frame</code> (or vector). Example:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
