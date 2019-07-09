@@ -1166,7 +1166,7 @@ Create the sinus cardinal function, $f(x)=\sin(x)/x$ for $x\neq0$ and $f(0)=1$.
 sinc <- function(x, tol = sqrt(.Machine$double.eps) ){
     # sinus cardinal
     y <- rep(1,length(x))
-    b <- which(x<tol)
+    b <- which(abs(x)>tol)
     y[b] <- sin(x[b])/x[b]
     y
 }
