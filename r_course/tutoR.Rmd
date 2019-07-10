@@ -127,6 +127,7 @@ This class is indented to provide the students with the tools to handle themselv
     + [A digested version](https://perso.esiee.fr/~courivad/R/index.html)
     + Some [cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
     + The tidyverse [website](https://ggplot2.tidyverse.org/)
+    + [Tibbles](https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html).
 - **Plotting**
     + The [R Graph Gallery](https://www.r-graph-gallery.com/)
     + The [R Graph Cookbook](https://r-graphics.org/index.html)
@@ -1096,6 +1097,7 @@ person <- function(name, age){
     list(name=name, age=age)
 }
 joe <- person(name="Joe", age=33)
+joe
 ```
 
 One can add default values to variables:
@@ -1154,24 +1156,19 @@ lines(xx, spline_interp(xx), col="red")
 
 **Exercise 1**
 
-Write a function returning a list (created if empty, incremented if existing) containing the name, age and gender of the people in the class. Use it to print the list as a list or as a data.frame.
+Write a function returning a `tibble` (created if not supplied, incremented if supplied) containing the name, age and gender of the people in the class. Print it.
 
 <details>
 <summary>Solution</summary>
 
 ```{r, warnings=FALSE}
-people <- function(ppl=list(), name, age, gender){
-    # increment vectors
-    ppl[['name']]   <- c(ppl[['name']], name)
-    ppl[['age']]    <- c(ppl[['age']], age)
-    ppl[['gender']] <- c(ppl[['gender']], gender)
-    # return the list
-    ppl
+library(tidyverse)
+people <- function(ppl=tibble(), name, age, gender){
+    rbind(ppl, tibble(name=name, age=age, gender=gender))
 }
 ppl <- people(name="Colin", age=33, gender="Male")
 ppl <- people(ppl=ppl, name="Vincent", age=39, gender="Male")
 ppl
-as.data.frame(ppl)
 ```
 
 </details>

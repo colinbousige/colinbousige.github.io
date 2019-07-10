@@ -292,7 +292,13 @@ geom_mean &lt;-<span class="st"> </span><span class="cf">function</span>(x, y){
 <pre class="sourceCode r"><code class="sourceCode r">person &lt;-<span class="st"> </span><span class="cf">function</span>(name, age){
     <span class="kw">list</span>(<span class="dt">name=</span>name, <span class="dt">age=</span>age)
 }
-joe &lt;-<span class="st"> </span><span class="kw">person</span>(<span class="dt">name=</span><span class="st">&quot;Joe&quot;</span>, <span class="dt">age=</span><span class="dv">33</span>)</code></pre>
+joe &lt;-<span class="st"> </span><span class="kw">person</span>(<span class="dt">name=</span><span class="st">&quot;Joe&quot;</span>, <span class="dt">age=</span><span class="dv">33</span>)
+joe</code></pre>
+<pre><code>## $name
+## [1] &quot;Joe&quot;
+## 
+## $age
+## [1] 33</code></pre>
 <p>One can add default values to variables:</p>
 <pre class="sourceCode r"><code class="sourceCode r">testfunc &lt;-<span class="st"> </span><span class="cf">function</span>(x,<span class="dt">y=</span><span class="dv">1</span>){
     x<span class="op">*</span>y
@@ -343,32 +349,21 @@ yy_spline     &lt;-<span class="st"> </span><span class="kw">spline</span>(x, y,
 <div id="exercises-3" class="section level2">
 <h2><span class="header-section-number">6.3</span> Exercises</h2>
 <p><strong>Exercise 1</strong></p>
-<p>Write a function returning a list (created if empty, incremented if existing) containing the name, age and gender of the people in the class. Use it to print the list as a list or as a data.frame.</p>
+<p>Write a function returning a <code>tibble</code> (created if not supplied, incremented if supplied) containing the name, age and gender of the people in the class. Print it.</p>
 <details>
 <p><summary>Solution</summary></p>
-<pre class="sourceCode r"><code class="sourceCode r">people &lt;-<span class="st"> </span><span class="cf">function</span>(<span class="dt">ppl=</span><span class="kw">list</span>(), name, age, gender){
-    <span class="co"># increment vectors</span>
-    ppl[[<span class="st">&#39;name&#39;</span>]]   &lt;-<span class="st"> </span><span class="kw">c</span>(ppl[[<span class="st">&#39;name&#39;</span>]], name)
-    ppl[[<span class="st">&#39;age&#39;</span>]]    &lt;-<span class="st"> </span><span class="kw">c</span>(ppl[[<span class="st">&#39;age&#39;</span>]], age)
-    ppl[[<span class="st">&#39;gender&#39;</span>]] &lt;-<span class="st"> </span><span class="kw">c</span>(ppl[[<span class="st">&#39;gender&#39;</span>]], gender)
-    <span class="co"># return the list</span>
-    ppl
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
+people &lt;-<span class="st"> </span><span class="cf">function</span>(<span class="dt">ppl=</span><span class="kw">tibble</span>(), name, age, gender){
+    <span class="kw">rbind</span>(ppl, <span class="kw">tibble</span>(<span class="dt">name=</span>name, <span class="dt">age=</span>age, <span class="dt">gender=</span>gender))
 }
 ppl &lt;-<span class="st"> </span><span class="kw">people</span>(<span class="dt">name=</span><span class="st">&quot;Colin&quot;</span>, <span class="dt">age=</span><span class="dv">33</span>, <span class="dt">gender=</span><span class="st">&quot;Male&quot;</span>)
 ppl &lt;-<span class="st"> </span><span class="kw">people</span>(<span class="dt">ppl=</span>ppl, <span class="dt">name=</span><span class="st">&quot;Vincent&quot;</span>, <span class="dt">age=</span><span class="dv">39</span>, <span class="dt">gender=</span><span class="st">&quot;Male&quot;</span>)
 ppl</code></pre>
-<pre><code>## $name
-## [1] &quot;Colin&quot;   &quot;Vincent&quot;
-## 
-## $age
-## [1] 33 39
-## 
-## $gender
-## [1] &quot;Male&quot; &quot;Male&quot;</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">as.data.frame</span>(ppl)</code></pre>
-<pre><code>##      name age gender
-## 1   Colin  33   Male
-## 2 Vincent  39   Male</code></pre>
+<pre><code>## # A tibble: 2 x 3
+##   name      age gender
+##   &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt; 
+## 1 Colin      33 Male  
+## 2 Vincent    39 Male</code></pre>
 </details>
 <p><br>
 <br></p>
