@@ -24,7 +24,7 @@
 <meta name="author" content="Colin Bousige" />
 
 
-<meta name="date" content="2019-09-07" />
+<meta name="date" content="2019-10-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -188,7 +188,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>6</b> Functions</a><ul>
 <li class="chapter" data-level="6.1" data-path="functions.html"><a href="functions.html#definition"><i class="fa fa-check"></i><b>6.1</b> Definition</a></li>
-<li class="chapter" data-level="6.2" data-path="functions.html"><a href="functions.html#exercises-3"><i class="fa fa-check"></i><b>6.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2" data-path="functions.html"><a href="functions.html#interpolation-of-data"><i class="fa fa-check"></i><b>6.2</b> Interpolation of data</a></li>
+<li class="chapter" data-level="6.3" data-path="functions.html"><a href="functions.html#exercises-3"><i class="fa fa-check"></i><b>6.3</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html"><i class="fa fa-check"></i><b>7</b> Conditional actions and loops</a><ul>
 <li class="chapter" data-level="7.1" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#conditional-actions"><i class="fa fa-check"></i><b>7.1</b> Conditional actions</a></li>
@@ -319,8 +320,28 @@ joe &lt;-<span class="st"> </span><span class="kw">person</span>(<span class="dt
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">testfunc3</span>(plot, <span class="dv">1</span><span class="op">:</span><span class="dv">10</span>, <span class="kw">sin</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>), <span class="dt">type=</span><span class="st">&quot;l&quot;</span>)</code></pre>
 <p><img src="tutoR_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
 </div>
+<div id="interpolation-of-data" class="section level2">
+<h2><span class="header-section-number">6.2</span> Interpolation of data</h2>
+<p>It is possible to interpolate data through the <code>approxfun()</code> and <code>splinefun()</code> functions: while the former uses linear interpolation, the latter uses cubic splines (polynomials).</p>
+<pre class="sourceCode r"><code class="sourceCode r">x  &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>, <span class="dv">15</span><span class="op">:</span><span class="dv">30</span>)
+xx &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">1</span>, <span class="dv">30</span>, <span class="fl">.1</span>)
+y  &lt;-<span class="st"> </span><span class="kw">sin</span>(x)
+<span class="co"># Linear interpolation</span>
+linear_interp &lt;-<span class="st"> </span><span class="kw">approxfun</span>(x,y)        <span class="co">#is a function</span>
+yy_lin        &lt;-<span class="st"> </span><span class="kw">approx</span>(x, y, <span class="dt">xout=</span>xx) <span class="co">#is a list containing x and y</span>
+<span class="co"># Cubic spline interpolation</span>
+spline_interp &lt;-<span class="st"> </span><span class="kw">splinefun</span>(x,y)        <span class="co">#is a function</span>
+yy_spline     &lt;-<span class="st"> </span><span class="kw">spline</span>(x, y, <span class="dt">xout=</span>xx) <span class="co">#is a list containing x and y</span>
+
+<span class="kw">par</span>(<span class="dt">family =</span> <span class="st">&quot;Helvetica&quot;</span>, <span class="dt">cex.lab=</span><span class="fl">1.5</span>, <span class="dt">cex.axis=</span><span class="fl">1.4</span>, 
+    <span class="dt">mgp =</span> <span class="kw">c</span>(<span class="fl">2.4</span>, <span class="fl">.5</span>, <span class="dv">0</span>), <span class="dt">tck=</span><span class="fl">0.02</span>, <span class="dt">mar=</span><span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="fl">.5</span>), <span class="dt">lwd=</span><span class="dv">2</span>, <span class="dt">las=</span><span class="dv">1</span>)
+<span class="kw">plot</span>(x, y, <span class="dt">pch=</span><span class="dv">16</span>, <span class="dt">cex=</span><span class="dv">2</span>)
+<span class="kw">lines</span>(xx, <span class="kw">linear_interp</span>(xx), <span class="dt">col=</span><span class="st">&quot;royalblue&quot;</span>)
+<span class="kw">lines</span>(xx, <span class="kw">spline_interp</span>(xx), <span class="dt">col=</span><span class="st">&quot;red&quot;</span>)</code></pre>
+<p><img src="tutoR_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
+</div>
 <div id="exercises-3" class="section level2">
-<h2><span class="header-section-number">6.2</span> Exercises</h2>
+<h2><span class="header-section-number">6.3</span> Exercises</h2>
 <p><strong>Exercise 1</strong></p>
 <p>Write a function returning a list (created if empty, incremented if existing) containing the name, age and gender of the people in the class. Use it to print the list as a list or as a data.frame.</p>
 <details>
@@ -367,7 +388,7 @@ ppl</code></pre>
 ## [6] 9.003163e-01 6.366198e-01 3.001054e-01 3.898172e-17</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="op">-</span><span class="dv">8</span><span class="op">*</span>pi,<span class="dv">8</span><span class="op">*</span>pi,.<span class="dv">1</span>)
 <span class="kw">plot</span>(x, <span class="kw">sinc</span>(x), <span class="dt">type=</span><span class="st">&quot;l&quot;</span>, <span class="dt">lwd=</span><span class="dv">3</span>);<span class="kw">abline</span>(<span class="dt">h=</span><span class="dv">0</span>,<span class="dt">v=</span><span class="dv">0</span>)</code></pre>
-<p><img src="tutoR_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
+<p><img src="tutoR_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
 </details>
 </div>
 </div>

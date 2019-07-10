@@ -24,7 +24,7 @@
 <meta name="author" content="Colin Bousige" />
 
 
-<meta name="date" content="2019-09-07" />
+<meta name="date" content="2019-10-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -188,7 +188,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>6</b> Functions</a><ul>
 <li class="chapter" data-level="6.1" data-path="functions.html"><a href="functions.html#definition"><i class="fa fa-check"></i><b>6.1</b> Definition</a></li>
-<li class="chapter" data-level="6.2" data-path="functions.html"><a href="functions.html#exercises-3"><i class="fa fa-check"></i><b>6.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2" data-path="functions.html"><a href="functions.html#interpolation-of-data"><i class="fa fa-check"></i><b>6.2</b> Interpolation of data</a></li>
+<li class="chapter" data-level="6.3" data-path="functions.html"><a href="functions.html#exercises-3"><i class="fa fa-check"></i><b>6.3</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html"><i class="fa fa-check"></i><b>7</b> Conditional actions and loops</a><ul>
 <li class="chapter" data-level="7.1" data-path="conditional-actions-and-loops.html"><a href="conditional-actions-and-loops.html#conditional-actions"><i class="fa fa-check"></i><b>7.1</b> Conditional actions</a></li>
@@ -347,8 +348,8 @@ noforloop &lt;-<span class="st"> </span><span class="cf">function</span>(x){
 }
 x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="fl">1e8</span>)
 <span class="kw">test_time</span>(forloop, x); <span class="kw">test_time</span>(noforloop, x)</code></pre>
-<pre><code>## [1] &quot;Elapsed time : 6.91918921470642 s -  forloop&quot;</code></pre>
-<pre><code>## [1] &quot;Elapsed time : 0.476989984512329 s -  noforloop&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time : 6.24429702758789 s -  forloop&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time : 0.471179962158203 s -  noforloop&quot;</code></pre>
 <p>Avoiding loops should therefore be though for when possible. R helps us in this way through the base functions <code>apply</code>, <code>sapply</code> and <code>lapply</code>.</p>
 <p>Take a look at the help on these functions, but the summary is that <code>apply(df, direction, function)</code> applies a function in the wanted direction (1 for rows, 2 for columns) of the given <code>data.frame</code> (or vector). Example:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)

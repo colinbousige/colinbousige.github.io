@@ -1126,6 +1126,30 @@ testfunc3(sum,1:10)
 testfunc3(plot, 1:10, sin(1:10), type="l")
 ```
 
+
+## Interpolation of data
+
+It is possible to interpolate data through the `approxfun()` and `splinefun()` functions: while the former uses linear interpolation, the latter uses cubic splines (polynomials).
+
+```{r}
+x  <- c(1:10, 15:30)
+xx <- seq(1, 30, .1)
+y  <- sin(x)
+# Linear interpolation
+linear_interp <- approxfun(x,y)        #is a function
+yy_lin        <- approx(x, y, xout=xx) #is a list containing x and y
+# Cubic spline interpolation
+spline_interp <- splinefun(x,y)        #is a function
+yy_spline     <- spline(x, y, xout=xx) #is a list containing x and y
+
+par(family = "Helvetica", cex.lab=1.5, cex.axis=1.4, 
+    mgp = c(2.4, .5, 0), tck=0.02, mar=c(4, 4, 2, .5), lwd=2, las=1)
+plot(x, y, pch=16, cex=2)
+lines(xx, linear_interp(xx), col="royalblue")
+lines(xx, spline_interp(xx), col="red")
+```
+
+
 ## Exercises
 
 **Exercise 1**
