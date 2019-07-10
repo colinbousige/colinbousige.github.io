@@ -287,14 +287,13 @@ A **full** $\LaTeX$ distribution (emphasis on **full**) will be needed to knit m
 
 Make sure you have the following packages installed by launching (⌘+⏎ or Ctrl+⏎) the following commands:
 ```r
-install.packages("rstudioapi")
 install.packages("devtools")
 install.packages("tools")
 install.packages("tidyverse")
 install.packages("rmarkdown")
 install.packages("knitr")
 install.packages("shiny")
-install.packages("openxlsx")
+install.packages("FME")
 ```
 
 Later on, a package can be loaded by calling:
@@ -897,9 +896,9 @@ read.table("Data/test.dat")            # default column name is V1, V2, V3, etc
 read.table("Data/test.dat",header=TRUE)# use first line as column names
 read.table("Data/test.dat",skip=1)     # skip first line. 
 # ?read.table for more options
-library(openxlsx) # load openxlsx to read Excel files
-read.xlsx("Data/test.xlsx", sheet=1)
-read.xlsx("Data/test.xlsx", sheet=2)
+library(readxl) # load readxl from tidyverse to read Excel files
+read_excel("Data/test.xlsx", sheet=1)
+read_excel("Data/test.xlsx", sheet=2)
 ```
 
 ## Accessing values 

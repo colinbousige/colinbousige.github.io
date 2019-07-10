@@ -349,24 +349,28 @@ A &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">
 ## 1  1  2
 ## 2  2  3</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co"># ?read.table for more options</span>
-<span class="kw">library</span>(openxlsx) <span class="co"># load openxlsx to read Excel files</span>
-<span class="kw">read.xlsx</span>(<span class="st">&quot;Data/test.xlsx&quot;</span>, <span class="dt">sheet=</span><span class="dv">1</span>)</code></pre>
-<pre><code>##     x          y
-## 1   1  5.2073549
-## 2   2  6.5464871
-## 3   3  3.7056000
-## 4   4  0.2159875
-## 5   5  0.2053786
-## 6   6  4.6029225
-## 7   7 10.2849330
-## 8   8 12.9467912
-## 9   9 11.0605924
-## 10 10  7.2798944</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">read.xlsx</span>(<span class="st">&quot;Data/test.xlsx&quot;</span>, <span class="dt">sheet=</span><span class="dv">2</span>)</code></pre>
-<pre><code>##    hello    world
-## 1     ac       th
-## 2    asc      thh
-## 3  ascsa    dthdh
+<span class="kw">library</span>(readxl) <span class="co"># load readxl from tidyverse to read Excel files</span>
+<span class="kw">read_excel</span>(<span class="st">&quot;Data/test.xlsx&quot;</span>, <span class="dt">sheet=</span><span class="dv">1</span>)</code></pre>
+<pre><code>## # A tibble: 10 x 2
+##        x      y
+##    &lt;dbl&gt;  &lt;dbl&gt;
+##  1     1  5.21 
+##  2     2  6.55 
+##  3     3  3.71 
+##  4     4  0.216
+##  5     5  0.205
+##  6     6  4.60 
+##  7     7 10.3  
+##  8     8 12.9  
+##  9     9 11.1  
+## 10    10  7.28</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">read_excel</span>(<span class="st">&quot;Data/test.xlsx&quot;</span>, <span class="dt">sheet=</span><span class="dv">2</span>)</code></pre>
+<pre><code>## # A tibble: 4 x 2
+##   hello  world   
+##   &lt;chr&gt;  &lt;chr&gt;   
+## 1 ac     th      
+## 2 asc    thh     
+## 3 ascsa  dthdh   
 ## 4 ascacs dthtdhdh</code></pre>
 </div>
 <div id="accessing-values-1" class="section level2">
@@ -760,16 +764,16 @@ df <span class="co">#is tidy</span></code></pre>
 <pre><code>## # A tibble: 1,000 x 2
 ##        x     y
 ##    &lt;dbl&gt; &lt;dbl&gt;
-##  1 0.193 0.193
-##  2 0.831 1.02 
-##  3 0.710 1.73 
-##  4 0.829 2.56 
-##  5 0.294 2.86 
-##  6 0.867 3.72 
-##  7 0.133 3.86 
-##  8 0.791 4.65 
-##  9 0.928 5.58 
-## 10 0.421 6.00 
+##  1 0.692 0.692
+##  2 0.930 1.62 
+##  3 0.691 2.31 
+##  4 0.699 3.01 
+##  5 0.214 3.22 
+##  6 0.492 3.72 
+##  7 0.953 4.67 
+##  8 0.165 4.83 
+##  9 0.604 5.44 
+## 10 0.835 6.27 
 ## # … with 990 more rows</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data.frame</span>(<span class="dt">x=</span><span class="kw">runif</span>(<span class="fl">1e3</span>), <span class="dt">y=</span><span class="kw">cumsum</span>(x))</code></pre>
 <pre><code>## Error in data.frame(x = runif(1000), y = cumsum(x)): object &#39;x&#39; not found</code></pre>

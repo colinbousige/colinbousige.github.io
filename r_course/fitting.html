@@ -374,17 +374,17 @@ fit &lt;-<span class="st"> </span><span class="kw">nls</span>(y <span class="op"
 ## 
 ## Parameters:
 ##    Estimate Std. Error t value Pr(&gt;|t|)    
-## y0 0.047380   0.002416   19.61   &lt;2e-16 ***
-## x0 1.980732   0.022766   87.00   &lt;2e-16 ***
-## A  0.497010   0.007090   70.11   &lt;2e-16 ***
-## B  0.960872   0.019047   50.45   &lt;2e-16 ***
+## y0 0.046899   0.002477   18.93   &lt;2e-16 ***
+## x0 2.023957   0.025517   79.32   &lt;2e-16 ***
+## A  0.495029   0.007224   68.53   &lt;2e-16 ***
+## B  1.019904   0.021360   47.75   &lt;2e-16 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Residual standard error: 0.02869 on 137 degrees of freedom
+## Residual standard error: 0.02942 on 137 degrees of freedom
 ## 
 ## Number of iterations to convergence: 8 
-## Achieved convergence tolerance: 1.555e-06</code></pre>
+## Achieved convergence tolerance: 3.397e-07</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r">x0 &lt;-<span class="st"> </span><span class="kw">coef</span>(fit)[<span class="st">&quot;x0&quot;</span>]; y0 &lt;-<span class="st"> </span><span class="kw">coef</span>(fit)[<span class="st">&quot;y0&quot;</span>]
 A  &lt;-<span class="st"> </span><span class="kw">coef</span>(fit)[<span class="st">&quot;A&quot;</span>];  B  &lt;-<span class="st"> </span><span class="kw">coef</span>(fit)[<span class="st">&quot;B&quot;</span>]
 <span class="co"># Plotting the resulting function in red</span>
@@ -425,8 +425,11 @@ A  &lt;-<span class="st"> </span><span class="kw">coef</span>(fit2)[<span class=
 <h3><span class="header-section-number">9.2.2</span> FME</h3>
 <p>Some times though, whatever the initial conditions of the fit you use, you will get the error message <code>Error in nlsModel(formula, mf, start, wts) : singular gradient matrix at initial parameter estimates</code>. If playing around with the initial parameters does not solve this problem, a more robust fitting method is needed. A good one is <code>modFit()</code> from the package <code>FME</code>, that also accepts constraints.</p>
 <p>With <code>modFit</code>, the algorithm minimizes the residual of the observed data minus the model, so the syntax is slightly different:</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(FME)
-myfunc &lt;-<span class="st"> </span><span class="cf">function</span>(x, params) {
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(FME)</code></pre>
+<pre><code>## Loading required package: deSolve</code></pre>
+<pre><code>## Loading required package: rootSolve</code></pre>
+<pre><code>## Loading required package: coda</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r">myfunc &lt;-<span class="st"> </span><span class="cf">function</span>(x, params) {
     parms &lt;-<span class="st"> </span><span class="kw">as.list</span>(params)
     parms<span class="op">$</span>y0 <span class="op">+</span><span class="st"> </span><span class="kw">dnorm</span>(x, <span class="dt">sd=</span>parms<span class="op">$</span>A) <span class="op">+</span><span class="st"> </span><span class="kw">dnorm</span>(x, <span class="dt">mean=</span>parms<span class="op">$</span>x0, <span class="dt">sd=</span>parms<span class="op">$</span>B)
 }
@@ -439,21 +442,21 @@ fit &lt;-<span class="st"> </span><span class="kw">modFit</span>(<span class="dt
 <pre><code>## 
 ## Parameters:
 ##    Estimate Std. Error t value Pr(&gt;|t|)    
-## y0 0.047380   0.002416   19.61   &lt;2e-16 ***
-## x0 1.980731   0.022766   87.00   &lt;2e-16 ***
-## A  0.497010   0.007090   70.11   &lt;2e-16 ***
-## B  0.960872   0.019047   50.45   &lt;2e-16 ***
+## y0 0.046899   0.002477   18.93   &lt;2e-16 ***
+## x0 2.023957   0.025517   79.32   &lt;2e-16 ***
+## A  0.495029   0.007224   68.53   &lt;2e-16 ***
+## B  1.019905   0.021360   47.75   &lt;2e-16 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Residual standard error: 0.02869 on 137 degrees of freedom
+## Residual standard error: 0.02942 on 137 degrees of freedom
 ## 
 ## Parameter correlation:
 ##           y0        x0         A         B
-## y0 1.000e+00 2.542e-07 2.458e-07 1.094e-06
-## x0 2.542e-07 1.000e+00 3.423e-02 7.552e-03
-## A  2.458e-07 3.423e-02 1.000e+00 2.206e-01
-## B  1.094e-06 7.552e-03 2.206e-01 1.000e+00</code></pre>
+## y0 1.000e+00 1.526e-06 1.398e-06 6.236e-06
+## x0 1.526e-06 1.000e+00 1.729e-02 3.823e-03
+## A  1.398e-06 1.729e-02 1.000e+00 2.211e-01
+## B  6.236e-06 3.823e-03 2.211e-01 1.000e+00</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">cex.lab=</span><span class="fl">1.5</span>, <span class="dt">cex.axis=</span><span class="fl">1.4</span>, <span class="dt">mgp =</span> <span class="kw">c</span>(<span class="fl">2.4</span>, <span class="fl">.5</span>, <span class="dv">0</span>),
     <span class="dt">tck=</span><span class="fl">0.02</span>, <span class="dt">mar=</span><span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="fl">.5</span>), <span class="dt">lwd=</span><span class="dv">2</span>, <span class="dt">las=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(x, y, <span class="dt">pch=</span><span class="dv">16</span>, <span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="fl">1.1</span>), <span class="dt">main=</span><span class="st">&quot;FME::modFit&quot;</span>)

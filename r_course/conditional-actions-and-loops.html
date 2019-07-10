@@ -290,7 +290,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co"># if else in on line</span>
 x &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">5</span>, <span class="dt">mean=</span><span class="dv">5</span>)
 <span class="kw">ifelse</span>(x<span class="op">&gt;</span><span class="dv">5</span>, <span class="st">&quot;larger than 5&quot;</span>, <span class="st">&quot;lower than 5&quot;</span>) </code></pre>
-<pre><code>## [1] &quot;larger than 5&quot; &quot;larger than 5&quot; &quot;lower than 5&quot;  &quot;lower than 5&quot; 
+<pre><code>## [1] &quot;larger than 5&quot; &quot;larger than 5&quot; &quot;larger than 5&quot; &quot;larger than 5&quot;
 ## [5] &quot;larger than 5&quot;</code></pre>
 </div>
 <div id="loops" class="section level2">
@@ -349,8 +349,8 @@ noforloop &lt;-<span class="st"> </span><span class="cf">function</span>(x){
 }
 x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="fl">1e8</span>)
 <span class="kw">test_time</span>(forloop, x); <span class="kw">test_time</span>(noforloop, x)</code></pre>
-<pre><code>## [1] &quot;Elapsed time : 6.70155000686646 s -  forloop&quot;</code></pre>
-<pre><code>## [1] &quot;Elapsed time : 0.608696937561035 s -  noforloop&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time : 6.56463599205017 s -  forloop&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time : 0.445221900939941 s -  noforloop&quot;</code></pre>
 <p>Avoiding loops should therefore be though for when possible. R helps us in this way through the base functions <code>apply</code>, <code>sapply</code> and <code>lapply</code>.</p>
 <p>Take a look at the help on these functions, but the summary is that <code>apply(df, direction, function)</code> applies a function in the wanted direction (1 for rows, 2 for columns) of the given <code>data.frame</code> (or vector). Example:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
@@ -430,16 +430,16 @@ dt &lt;-<span class="st"> </span><span class="kw">tibble</span>(<span class="dt"
 <pre><code>## # A tibble: 1,000 x 2
 ##          x y    
 ##      &lt;dbl&gt; &lt;chr&gt;
-##  1  0.208  x&gt;0  
-##  2 -0.700  x&lt;=0 
-##  3  0.630  x&gt;0  
-##  4  0.563  x&gt;0  
-##  5 -0.980  x&lt;=0 
-##  6  0.721  x&gt;0  
-##  7  0.0670 x&gt;0  
-##  8  0.207  x&gt;0  
-##  9 -0.321  x&lt;=0 
-## 10  0.899  x&gt;0  
+##  1  0.734  x&gt;0  
+##  2 -0.373  x&lt;=0 
+##  3 -0.548  x&lt;=0 
+##  4  0.266  x&gt;0  
+##  5  0.947  x&gt;0  
+##  6  0.316  x&gt;0  
+##  7  0.909  x&gt;0  
+##  8  0.552  x&gt;0  
+##  9  0.449  x&gt;0  
+## 10 -0.0918 x&lt;=0 
 ## # … with 990 more rows</code></pre>
 </details>
 <details>
@@ -458,18 +458,18 @@ dt &lt;-<span class="st"> </span><span class="kw">tibble</span>(<span class="dt"
            )
 <span class="kw">lapply</span>(LL, sum)</code></pre>
 <pre><code>## $A
-## [1] 47.91722
+## [1] 49.89303
 ## 
 ## $B
-## [1] 15.40265
+## [1] 17.48917
 ## 
 ## $C
-## [1] 101.5066</code></pre>
+## [1] 100.2427</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">unlist</span>(<span class="kw">lapply</span>(LL, sum)); <span class="kw">sapply</span>(LL, sum)</code></pre>
 <pre><code>##         A         B         C 
-##  47.91722  15.40265 101.50664</code></pre>
+##  49.89303  17.48917 100.24267</code></pre>
 <pre><code>##         A         B         C 
-##  47.91722  15.40265 101.50664</code></pre>
+##  49.89303  17.48917 100.24267</code></pre>
 </details>
 </details>
 <details>
