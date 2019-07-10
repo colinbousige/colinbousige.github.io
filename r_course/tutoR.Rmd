@@ -2723,6 +2723,7 @@ Here's a code chunk in R:
 x <- seq(0,10,.1)
 plot(x, sin(x))
 ```
+
 And one in python:
 `r ''````{python}
 x = 1+1
@@ -2739,11 +2740,25 @@ What's nice with html output, it's that you can include _interactive_ figures wi
 
 For cross referencing to figures and tables, use `output: bookdown::html_document2` instead of `output: html_document` (requires the package `bookdown`), and see [here](https://dr-harper.github.io/rmarkdown-cookbook/crossRef.html) for details.
 
+
+## Code chunks options
+
+You can add options to a code chunk, like:
+
+- `echo=FALSE`: hide the code, show the output
+- `include=FALSE`: hide the code and the output
+- `warnings=FALSE`: hide the warning messages
+- `error=TRUE`: will compute the code chunk despite errors
+- `cache=TRUE`: cache the result of the chunk for faster re-compilation
+- `fig.asp`: figure aspect ratio
+- `fig.caption`: figure caption
+- ...[and more](https://yihui.name/knitr/options/)
+
 ## Compilation
 
 To knit your Rmd file to the desired output, in Rstudio, click the little triangle next to the "Knit" button, like this:
 
-[![](img/compile_rmd.png)](img/compile_rmd.png)
+[![](Plots/compile_rmd.png)](Plots/compile_rmd.png)
 
 The corresponding output file will be created in the same folder.
 
@@ -2761,6 +2776,7 @@ params:
     label: "City:"
     value: Angers
     input: select
+    multiple: TRUE
     choices: !r unique(read.table("Data/population.txt", header=TRUE)$city)
   printcode:
     label: "Display Code"
@@ -2782,11 +2798,11 @@ Plotting ``r ''`r paste(params$data)`:
 df <- read.table(params$data, header=TRUE)
 library(ggplot2)
 library(plotly)
-p<-ggplot(data=subset(df,city==params$city), 
-            aes(x=year, y=pop, size=pop)) +
+p<-ggplot(data=subset(df, city %in% params$city), 
+            aes(x=year, y=pop, size=pop, color=city)) +
         geom_point() + 
-        geom_smooth(method="lm", alpha=0.1, show.legend = FALSE) + 
-        ggtitle(paste("Population in ",params$city,sep=""))+
+        geom_smooth(method="lm", aes(fill=city), alpha=0.1, show.legend = FALSE) + 
+        ggtitle(paste("Population in ",paste(params$city, collapse=", "),sep=""))+
         labs(x="Year", y="Population")+
         theme_light()
 ggplotly(p)

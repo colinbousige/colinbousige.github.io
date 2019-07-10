@@ -232,10 +232,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.2" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#and-rmarkdown"><i class="fa fa-check"></i><b>11.2</b> … and Rmarkdown?</a></li>
 <li class="chapter" data-level="11.3" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#further-reading-1"><i class="fa fa-check"></i><b>11.3</b> Further reading</a></li>
 <li class="chapter" data-level="11.4" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#example"><i class="fa fa-check"></i><b>11.4</b> Example</a></li>
-<li class="chapter" data-level="11.5" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#compilation"><i class="fa fa-check"></i><b>11.5</b> Compilation</a></li>
-<li class="chapter" data-level="11.6" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#going-further-parameters"><i class="fa fa-check"></i><b>11.6</b> Going further: parameters</a></li>
-<li class="chapter" data-level="11.7" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#and-what-about-jupyter-notebooks"><i class="fa fa-check"></i><b>11.7</b> And what about JuPyteR notebooks?</a></li>
-<li class="chapter" data-level="11.8" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#exercise"><i class="fa fa-check"></i><b>11.8</b> Exercise</a></li>
+<li class="chapter" data-level="11.5" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#code-chunks-options"><i class="fa fa-check"></i><b>11.5</b> Code chunks options</a></li>
+<li class="chapter" data-level="11.6" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#compilation"><i class="fa fa-check"></i><b>11.6</b> Compilation</a></li>
+<li class="chapter" data-level="11.7" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#going-further-parameters"><i class="fa fa-check"></i><b>11.7</b> Going further: parameters</a></li>
+<li class="chapter" data-level="11.8" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#and-what-about-jupyter-notebooks"><i class="fa fa-check"></i><b>11.8</b> And what about JuPyteR notebooks?</a></li>
+<li class="chapter" data-level="11.9" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#exercise"><i class="fa fa-check"></i><b>11.9</b> Exercise</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html"><i class="fa fa-check"></i><b>12</b> Graphical interfaces with Shiny</a><ul>
 <li class="chapter" data-level="12.1" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#stand-alone-shiny-application"><i class="fa fa-check"></i><b>12.1</b> Stand-alone shiny application</a><ul>
@@ -435,6 +436,7 @@ Here&#39;s a code chunk in R:
 x &lt;- seq(0,10,.1)
 plot(x, sin(x))
 ```
+
 And one in python:
 ```{python}
 x = 1+1
@@ -447,14 +449,28 @@ x = 1+1
 <p>What’s nice with html output, it’s that you can include <em>interactive</em> figures with <code>plotly</code> like we saw in the previous sections. Of course, this won’t work with static documents like PDF or Word…</p>
 <p>For cross referencing to figures and tables, use <code>output: bookdown::html_document2</code> instead of <code>output: html_document</code> (requires the package <code>bookdown</code>), and see <a href="https://dr-harper.github.io/rmarkdown-cookbook/crossRef.html">here</a> for details.</p>
 </div>
+<div id="code-chunks-options" class="section level2">
+<h2><span class="header-section-number">11.5</span> Code chunks options</h2>
+<p>You can add options to a code chunk, like:</p>
+<ul>
+<li><code>echo=FALSE</code>: hide the code, show the output</li>
+<li><code>include=FALSE</code>: hide the code and the output</li>
+<li><code>warnings=FALSE</code>: hide the warning messages</li>
+<li><code>error=TRUE</code>: will compute the code chunk despite errors</li>
+<li><code>cache=TRUE</code>: cache the result of the chunk for faster re-compilation</li>
+<li><code>fig.asp</code>: figure aspect ratio</li>
+<li><code>fig.caption</code>: figure caption</li>
+<li>…<a href="https://yihui.name/knitr/options/">and more</a></li>
+</ul>
+</div>
 <div id="compilation" class="section level2">
-<h2><span class="header-section-number">11.5</span> Compilation</h2>
+<h2><span class="header-section-number">11.6</span> Compilation</h2>
 <p>To knit your Rmd file to the desired output, in Rstudio, click the little triangle next to the “Knit” button, like this:</p>
-<p><a href="img/compile_rmd.png"><img src="img/compile_rmd.png" /></a></p>
+<p><a href="Plots/compile_rmd.png"><img src="Plots/compile_rmd.png" /></a></p>
 <p>The corresponding output file will be created in the same folder.</p>
 </div>
 <div id="going-further-parameters" class="section level2">
-<h2><span class="header-section-number">11.6</span> Going further: parameters</h2>
+<h2><span class="header-section-number">11.7</span> Going further: parameters</h2>
 <p>You can even provide a list of parameters to your Rmarkdown file that you can retrieve in code chunks with <code>params$param_name</code>. More information <a href="https://bookdown.org/yihui/rmarkdown/parameterized-reports.html">here</a>, but here is a short example: try compiling it directly using the “Knit” button, and then try compiling it using “Knit with parameters”.</p>
 <pre class="sourceCode markdown"><code class="sourceCode markdown">---
 title: &quot;Test&quot;
@@ -464,6 +480,7 @@ params:
 <span class="bn">    label: &quot;City:&quot;</span>
 <span class="bn">    value: Angers</span>
 <span class="bn">    input: select</span>
+<span class="bn">    multiple: TRUE</span>
 <span class="bn">    choices: !r unique(read.table(&quot;Data/population.txt&quot;, header=TRUE)$city)</span>
   printcode:
 <span class="bn">    label: &quot;Display Code&quot;</span>
@@ -485,11 +502,11 @@ Plotting <span class="bn">`r paste(params$data)`</span>:
 df &lt;- read.table(params$data, header=TRUE)
 library(ggplot2)
 library(plotly)
-p&lt;-ggplot(data=subset(df,city==params$city), 
-<span class="bn">            aes(x=year, y=pop, size=pop)) +</span>
+p&lt;-ggplot(data=subset(df, city %in% params$city), 
+<span class="bn">            aes(x=year, y=pop, size=pop, color=city)) +</span>
 <span class="bn">        geom_point() + </span>
-<span class="bn">        geom_smooth(method=&quot;lm&quot;, alpha=0.1, show.legend = FALSE) + </span>
-<span class="bn">        ggtitle(paste(&quot;Population in &quot;,params$city,sep=&quot;&quot;))+</span>
+<span class="bn">        geom_smooth(method=&quot;lm&quot;, aes(fill=city), alpha=0.1, show.legend = FALSE) + </span>
+<span class="bn">        ggtitle(paste(&quot;Population in &quot;,paste(params$city, collapse=&quot;, &quot;),sep=&quot;&quot;))+</span>
 <span class="bn">        labs(x=&quot;Year&quot;, y=&quot;Population&quot;)+</span>
 <span class="bn">        theme_light()</span>
 ggplotly(p)
@@ -497,12 +514,12 @@ ggplotly(p)
 <p>The “Knit with parameters” launches a <code>Shiny</code> user interface allowing interactively choosing the parameters. All options are listed <a href="https://bookdown.org/yihui/rmarkdown/params-knit.html#the-interactive-user-interface">here</a>.</p>
 </div>
 <div id="and-what-about-jupyter-notebooks" class="section level2">
-<h2><span class="header-section-number">11.7</span> And what about JuPyteR notebooks?</h2>
+<h2><span class="header-section-number">11.8</span> And what about JuPyteR notebooks?</h2>
 <p><a href="https://jupyter.org/">JuPyteR notebooks</a> (for Julia, Python and R) are basically a web-based interactive version or Rmarkdown documents working with <strong>Ju</strong>lia, <strong>Pyt</strong>hon and <strong>R</strong>.</p>
 <p>But the installation is a tad complicated for the non initiate, and, well, it is just like Rmarkdown but less easy to use and share, in my opinion. But if you mostly work with python, then you have to get used to it since Rmarkdown is better suited for R.</p>
 </div>
 <div id="exercise" class="section level2">
-<h2><span class="header-section-number">11.8</span> Exercise</h2>
+<h2><span class="header-section-number">11.9</span> Exercise</h2>
 <details>
 <p><summary><strong>Exercise 1</strong></summary></p>
 <p>Create a new Rmd document in Rstudio, fill it with what you want, and output it in different formats.</p>
