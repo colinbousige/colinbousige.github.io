@@ -101,6 +101,7 @@ load("plot_data.Rdata")
 ```{r, echo=FALSE}
 p
 ggplotly(PparRBM)
+remove(list = ls())
 ```
 
 <br>
@@ -120,7 +121,7 @@ ggplotly(PparRBM)
 
 ## Further reading {-}
 
-This class is indented to provide the students with the tools to handle themselves with R, Rmarkdown and Shiny, and _not_ to provide an extensive review of everything that is possible with R. To go further:
+This class is indented to provide the students with the tools to handle themselves with R, Rmarkdown and Shiny, and not to provide an extensive review of everything that is possible with R. To go further:
 
 - **R**
     + [R manual on CRAN](https://cran.r-project.org/doc/manuals/r-release/R-intro.html)
@@ -153,21 +154,20 @@ This class is indented to provide the students with the tools to handle themselv
 
 ### Reproducible data treatment: why it matters {-}
 
-From the [wikipedia](https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research) page on reproducible research:
+An introduction from the [wikipedia](https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research) page on reproducible research:
 
-> In 2016, Nature conducted a survey of 1576 researchers who took a brief online questionnaire on reproducibility in research. According to the survey, more than 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments. [...] Although 52% of those surveyed agree there is a significant 'crisis' of reproducibility, less than 31% think failure to reproduce published results means the result is probably wrong, and most say they still trust the published literature.[^2]
+> In 2016, Nature conducted a survey of 1576 researchers who took a brief online questionnaire on reproducibility in research. According to the survey, more than 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments. [...] Although 52% of those surveyed agree there is a significant 'crisis' of reproducibility, less than 31% think failure to reproduce published results means the result is probably wrong, and most say they still trust the published literature.[^1]
 
+[^1]: [https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)
 
-[^2]: [https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)
+*Replicability* and *reproducibility* are some of the keys to **scientific integrity**. Establishing a workflow in which your data are always treated in the same manner is a **necessity**, because it is a way to:
 
-Replicability and reproducibility are some of the keys to scientific integrity. Establishing a workflow in which your data are always treated in the same manner is thus a way to:
+- **Minimize errors** inherent to human manipulation
+- **Keep track** of all the treatments you perform on your data and document your methodology: this allows others to reproduce your data, but also *yourself*.
+- Help you to **make sense** of all your data, and avoid disregarding some data (hence help you keep your scientific integrity)
+- **Gain tremendous amounts of time**
 
-- Reduce error risks inherent to human manipulation
-- Keep track of all the treatments you perform on your data and document your methodology
-- Help you to make sense of all your data, and avoid disregarding some data (hence help you keep your scientific integrity)
-- Gain tremendous amounts of time
-
-It is the objective of this class to provide you the tools necessary to work with this philosophy.
+It is the objective of this class to provide you the tools necessary to work within this philosophy.
 
 
 ### Why with R and not python? {-}
@@ -199,7 +199,7 @@ Each language has his own strengths and weaknesses. To my tastes, I would say th
 |              Rmarkdown               | &#10004;&#10004;&#10004;&#10004;&#10004;&#10004;&#10004;&#10004;&#10004;&#10004; |         &#10004;         |
 
 Well, it's all very subjective, really.
-In the end, I still use *both* languages, each one for a different purpose:
+In the end, *I still use both languages*, each one for a different purpose:
 
 - Let's say I want to produce an initial atomic configuration for a molecular dynamics simulation, or read a molecular dynamics trajectory and compute some quantities such as a pair correlation or a mean square displacement: **python** (or even _C_, if I need to treat large trajectories).
 - Now if I want to make sense of some experimental measurements or results of simulations, do some fits and produce publication-quality graphs or experimental reports: **R**.
@@ -232,7 +232,7 @@ More on the [Rstudio cheatsheet](https://github.com/rstudio/cheatsheets/raw/mast
 ## The more advanced way
 
 
-If you don't want to use Rstudio but rather want to keep with your favorite text editor, like I do[^3]  ([Sublime Text](https://www.sublimetext.com/3), [Atom](https://atom.io/), [Visual Studio Code](https://code.visualstudio.com/)...)
+If you don't want to use Rstudio but rather want to keep with your favorite text editor, like I do[^2]  ([Sublime Text](https://www.sublimetext.com/3), [Atom](https://atom.io/), [Visual Studio Code](https://code.visualstudio.com/)...)
 
 - I still recommend [downloading](https://cran.r-project.org/) and installing R via CRAN (I had some packages problems due to a homebrew installation).
 - To be fully operational with Rmarkdown files without using Rstudio, you need to install `pandoc`:
@@ -245,7 +245,7 @@ pip install pandoc-fignos
 pip install pandoc-tablenos
 ```
 
-[^3]: I personally use [Sublime Text 3](https://www.sublimetext.com/3) with the following packages:<br>
+[^2]: I personally use [Sublime Text 3](https://www.sublimetext.com/3) with the following packages:<br>
 <ul>
     <li>First, install [Package control](https://packagecontrol.io/installation)</li>
     <li>Set up command line launch: <br>`ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" \`<br>` /usr/local/bin/sublime`</li>
@@ -1148,7 +1148,9 @@ par(family = "Helvetica", cex.lab=1.5, cex.axis=1.4,
     mgp = c(2.4, .5, 0), tck=0.02, mar=c(4, 4, 2, .5), lwd=2, las=1)
 plot(x, y, pch=16, cex=2)
 lines(xx, linear_interp(xx), col="royalblue")
+# equivalent to: lines(yy_lin, col="royalblue")
 lines(xx, spline_interp(xx), col="red")
+# equivalent to: lines(yy_spline, col="red")
 ```
 
 
@@ -1764,6 +1766,7 @@ P1 <- ggplot(data=fake_data, aes(x=w, y=T, fill=Intensity)) +
           theme_bw()
 ggplotly(P1)
 # Some other way : a stacking of plots 
+norm01 <- function(x) {(x-min(x))/(max(x)-min(x))}
 fake_data$offset <- norm01(fake_data$Intensity) + rep(1:length(T)-1, each=length(x))
 colors <- colorRampPalette(c("royalblue","seagreen","orange","red","brown"))(Nspec)
 P2 <- ggplot(data=fake_data, aes(x=w, y=offset, color=T, group=T)) + 
@@ -2793,6 +2796,15 @@ ggplotly(p)
 
 The "Knit with parameters" launches a `Shiny` user interface allowing interactively choosing the parameters. All options are listed [here](https://bookdown.org/yihui/rmarkdown/params-knit.html#the-interactive-user-interface).
 
+
+
+## And what about JuPyteR notebooks?
+
+[JuPyteR notebooks](https://jupyter.org/) (for Julia, Python and R) are basically a web-based interactive version or Rmarkdown documents working with **Ju**lia, **Pyt**hon and **R**. 
+
+But the installation is a tad complicated for the non initiate, and, well, it is just like Rmarkdown but less easy to use and share, in my opinion. But if you mostly work with python, then you have to get used to it since Rmarkdown is better suited for R.
+
+
 ## Exercise
 
 <details>
@@ -2817,11 +2829,6 @@ Create an html experimental logbook doing all the data treatment in the example 
 Create an html experimental **notebook** doing all the data treatment in the example in the previous section **for a single experimental file** that you will provide as a parameter in the YAML header. The file path must be given as an interactive file input selection.
 
 </details>
-
-
-
-
-
 
 
 

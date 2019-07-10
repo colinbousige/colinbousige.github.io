@@ -234,7 +234,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.4" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#example"><i class="fa fa-check"></i><b>11.4</b> Example</a></li>
 <li class="chapter" data-level="11.5" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#compilation"><i class="fa fa-check"></i><b>11.5</b> Compilation</a></li>
 <li class="chapter" data-level="11.6" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#going-further-parameters"><i class="fa fa-check"></i><b>11.6</b> Going further: parameters</a></li>
-<li class="chapter" data-level="11.7" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#exercise"><i class="fa fa-check"></i><b>11.7</b> Exercise</a></li>
+<li class="chapter" data-level="11.7" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#and-what-about-jupyter-notebooks"><i class="fa fa-check"></i><b>11.7</b> And what about JuPyteR notebooks?</a></li>
+<li class="chapter" data-level="11.8" data-path="writing-documents-with-rmarkdown.html"><a href="writing-documents-with-rmarkdown.html#exercise"><i class="fa fa-check"></i><b>11.8</b> Exercise</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html"><i class="fa fa-check"></i><b>12</b> Graphical interfaces with Shiny</a><ul>
 <li class="chapter" data-level="12.1" data-path="graphical-interfaces-with-shiny.html"><a href="graphical-interfaces-with-shiny.html#stand-alone-shiny-application"><i class="fa fa-check"></i><b>12.1</b> Stand-alone shiny application</a><ul>
@@ -343,8 +344,10 @@ yy_spline     &lt;-<span class="st"> </span><span class="kw">spline</span>(x, y,
     <span class="dt">mgp =</span> <span class="kw">c</span>(<span class="fl">2.4</span>, <span class="fl">.5</span>, <span class="dv">0</span>), <span class="dt">tck=</span><span class="fl">0.02</span>, <span class="dt">mar=</span><span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="fl">.5</span>), <span class="dt">lwd=</span><span class="dv">2</span>, <span class="dt">las=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(x, y, <span class="dt">pch=</span><span class="dv">16</span>, <span class="dt">cex=</span><span class="dv">2</span>)
 <span class="kw">lines</span>(xx, <span class="kw">linear_interp</span>(xx), <span class="dt">col=</span><span class="st">&quot;royalblue&quot;</span>)
+<span class="co"># equivalent to: lines(yy_lin, col=&quot;royalblue&quot;)</span>
 <span class="kw">lines</span>(xx, <span class="kw">spline_interp</span>(xx), <span class="dt">col=</span><span class="st">&quot;red&quot;</span>)</code></pre>
 <p><img src="tutoR_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># equivalent to: lines(yy_spline, col=&quot;red&quot;)</span></code></pre>
 </div>
 <div id="exercises-3" class="section level2">
 <h2><span class="header-section-number">6.3</span> Exercises</h2>
