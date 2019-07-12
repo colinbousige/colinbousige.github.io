@@ -8,5 +8,5 @@ date   : 2017-10-27T19:56:21+02:00
 
 This is a short introduction to the R language and its application to data treatment for physico-chemists.
 
-> Go [here](/r_course/about-the-class.html)
+> Go [here](http://lmi.cnrs.fr/r_course/about-the-class.html)
 
