@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Colin Bousige</copyright>
-    <lastBuildDate>Fri, 27 Oct 2017 19:56:21 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Introduction to R for data treatment and plotting</title>
       <link>/post/tutor/</link>
-      <pubDate>Fri, 27 Oct 2017 19:56:21 +0200</pubDate>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/tutor/</guid>
       <description> This is a short introduction to the R language and its application to data treatment for physico-chemists.

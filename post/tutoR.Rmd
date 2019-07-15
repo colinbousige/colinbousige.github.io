@@ -3,10 +3,10 @@ title: Introduction to R for data treatment and plotting
 summary : A short introduction to the R language and its application to data treatment for physico-chemists
 tags : ["R"]
 author : Colin Bousige
-date   : 2017-10-27T19:56:21+02:00
+date   : 2019-07-15
 ---
 
 This is a short introduction to the R language and its application to data treatment for physico-chemists.
 
-> Go [here](http://lmi.cnrs.fr/r_course/about-the-class.html)
+> Go [here](http://lmi.cnrs.fr/r/)
 
