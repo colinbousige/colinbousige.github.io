@@ -1,4 +1,4 @@
-Did you mean:
+Did you mean to reach the following projects:
 
-- [https://colinbousige.github.io/rclass](https://colinbousige.github.io/rclass)
-- [https://colinbousige.github.io/tutor](https://colinbousige.github.io/tutor)
+- [Online course: Reproducible data treatment with R](https://colinbousige.github.io/rclass)
+- [Associated `tutor` package](https://colinbousige.github.io/tutor)
